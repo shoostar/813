@@ -160,13 +160,13 @@ header {
 /* NAVIGATION */
 nav {
   position: fixed;
-  top: 2em;
+  top: 2.75em;
   right: 2em;
   z-index: 2;
 }
   @media screen and (min-width: 1200px) {
     nav {
-      top: 3em;
+      top: 4em;
       right: 3em;
     }
   }
