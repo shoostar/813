@@ -13,7 +13,7 @@
 html { height: 100%; }
 html, body {
   background: white;
-  font: 14px/1.5em 'futura-pt', sans-serif;
+  font: 14px/1.5em 'adobe-garamond-pro', serif;
   color: #121212;
 }
   @media screen and (min-width: 800px) {
@@ -27,7 +27,7 @@ html, body {
     }
   }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   color: rgb(236, 27, 54);
 }
 h1 {
@@ -69,7 +69,7 @@ h1.heading, h2.heading, h3.heading, h4.heading, h5.heading, h6.heading {
   margin-bottom: 2em;
 }
 p, ul, ol, dl, blockquote {
-  
+  margin-bottom: 1.5em;
 }
 pre, code {
   font-family: 'source-code-pro', sans-serif;
@@ -77,29 +77,23 @@ pre, code {
 em { font-style: italic; }
 strong { font-weight: 700; }
 small { font-size: 60%; line-height: 150%; }
-a:not(nav a):not(nav a):link, a:not(nav a):visited {
-  color: #101010;
-}
-a:not(nav a):hover, a:not(nav a):focus, a:not(nav a):active {
-  color: #101010;
-}
 a:link, a:visited {
-  color: #E01424;
+  color: rgba(236, 27, 54, 1);
 }
   a:hover, a:focus, a:active {
-    color: #EB4242;
+    color: rgba(236, 27, 54, 0.5);
   }
 hr {
   border: 0;
   height: 1px;
   border-bottom: 1px solid #DDDDDD;
-  margin: 3em 0em;
+  margin: 4em 0em 0em;
   width: 100%;
 }
   hr.wedge {
-    height: 10px;
-    width: 100px;
-    background: rgba(255, 255, 255, 0.10);
+    height: 3px;
+    width: 50px;
+    background: rgb(236, 27, 54);
     border: 0;
     text-align: left;
   }
@@ -124,15 +118,15 @@ ul {
 
 /* HEADER */
 header {
-  background: #F7F7F7 url('../img/813-bg.svg') no-repeat;
-  background-position: calc(0% - 25%) calc(0% - 65%);
-  background-size: 50%;
+  background: #F7F7F7 url('../img/veum-bg.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
   height: 100vh;
   padding: 1em 1em 1.5em 1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  overflow: hidden;
+  overflow: hidden !important;
 }
   @media screen and (min-width: 1200px) {
     header {
@@ -142,46 +136,54 @@ header {
   header .logo {
     max-width: 2em;
     margin-bottom: 0 !important;
-    position: relative;
+    position: fixed;
+    top: 2em;
+    left: 2em;
+    z-index: 2;
   }
-  header .logo-tagline {
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    display: inline-block;
-    position: relative;
-    top: 0.4em;
-    left: 1em;
-    color: rgba(255, 255, 255, 1);
-    font-size: 70%;
-    font-weight: 300;
-  }
-  header .header-tagline {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-  }
-  header h5 {
-    letter-spacing: 2px;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.5);
-  }
-    header h5 strong {
-      color: rgba(255, 255, 255, 0.75);
+    @media screen and (min-width: 1200px) {
+      header .logo {
+        top: 3em;
+        left: 3em;
+      }
     }
-  header .rough-edge {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    max-width: 100%;
+  header .logo-bg {
+    position: fixed;
+    top: -3.5em;
+    left: -2em;
+    max-width: 25%;
+    z-index: 0;
   }
 
 
 
 /* NAVIGATION */
 nav {
-
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  z-index: 2;
 }
+  @media screen and (min-width: 1200px) {
+    nav {
+      top: 3em;
+      right: 3em;
+    }
+  }
+  nav a {
+    font-family: 'proxima-nova', sans-serif;
+    font-weight: 900;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-left: 3em;
+    letter-spacing: 1px;
+  }
+    @media screen and (min-width: 1200px) {
+      nav a {
+        font-size: 1rem;
+        letter-spacing: 2px;
+      }
+    }
 
 .heading-clients::before {
   content: '';
@@ -245,27 +247,50 @@ section {
   background: gray;
   height: 15em;
 }
+.portfolio-logo {
+  max-width: 10em;
+  margin-bottom: 3em;
+}
 .view-work {
-  background: rgb(236, 27, 54);
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  padding: 0.75em 2em;
+  border: 3px solid #393C48;
+  border-radius: .35em;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 75%;
+  margin-top: 3em;
+  display: inline-block;
 }
 
 /* FOOTER */
 footer {
-  color: rgba(0, 0, 0, 0.5);
-  padding: 1em;
+  background: url('../img/map.jpg') center center no-repeat;
+  background-size: cover;
+  font-family: 'proxima-nova' sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 2em 1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
 }
   @media screen and (min-width: 1200px) {
     footer {
-      padding: 2em;
+      padding: 4em 2em;
     }
   }
   footer .row {
     justify-content: space-between !important;
+  }
+  footer span {
+    font-size: 65%;
+    line-height: 1.5em;
+  }
+  footer strong {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  footer .copyright {
+    color: rgba(255, 255, 255, 0.25);
   }
