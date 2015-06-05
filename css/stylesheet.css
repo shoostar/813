@@ -144,7 +144,7 @@ header {
     @media screen and (min-width: 1200px) {
       header .logo {
         top: 3em;
-        left: 3em;
+        left: 3.5em;
       }
     }
   header .logo-bg {
@@ -167,7 +167,7 @@ nav {
   @media screen and (min-width: 1200px) {
     nav {
       top: 4em;
-      right: 3em;
+      right: 3.5em;
     }
   }
   nav a {
@@ -232,11 +232,11 @@ nav {
 
 /* SECTIONS */
 section {
-  padding: 1em;
+  padding: 2em 1em;
 }
   @media screen and (min-width: 1200px) {
     section {
-      padding: 2em;
+      padding: 4em 2em;
     }
   }
   .client-list {
@@ -278,7 +278,7 @@ footer {
 }
   @media screen and (min-width: 1200px) {
     footer {
-      padding: 4em 2em;
+      padding: 8em 2em;
     }
   }
   footer .row {
@@ -293,4 +293,11 @@ footer {
   }
   footer .copyright {
     color: rgba(255, 255, 255, 0.25);
+  }
+  footer .muffin {
+    margin: 0 2em;
+    font-size: 200%;
+    font-weight: 100;
+    position: relative;
+    top: 0.125em;
   }
