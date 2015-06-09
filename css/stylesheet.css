@@ -13,21 +13,12 @@
 html { height: 100%; }
 html, body {
   background: white;
-  font: 14px/1.5em 'adobe-garamond-pro', serif;
+  font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
   color: #121212;
 }
-  @media screen and (min-width: 800px) {
-    body {
-      font-size: 18px;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    body {
-      font-size: 24px;
-    }
-  }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'proxima-nova', sans-serif;
+  font-family: 'Dosis', sans-serif;
   color: rgb(236, 27, 54);
 }
 h1 {
@@ -71,17 +62,45 @@ h1.heading, h2.heading, h3.heading, h4.heading, h5.heading, h6.heading {
 p, ul, ol, dl, blockquote {
   margin-bottom: 1.5em;
 }
+p{
+  font-size: 2.5vw;
+  line-height: 1.5em;
+}
+  @media screen and (min-width: 800px){
+    p{
+      font-size: 4vw;
+    }
+  }
+  @media screen and (min-width: 1200px){
+    p{
+      font-size: 3vw;
+      font-weight: 300;
+    }
+  }
 pre, code {
   font-family: 'source-code-pro', sans-serif;
 }
 em { font-style: italic; }
 strong { font-weight: 700; }
-small { font-size: 60%; line-height: 150%; }
+small {
+  font-size: 1.5vw;
+}
+  @media screen and (min-width: 800px){
+    small {
+      font-size: 2.5vw;
+    }
+  }
+  @media screen and (min-width: 1200px){
+    small {
+      font-size: 3vw;
+      font-weight: 300;
+    }
+  }
 a:link, a:visited {
-  color: rgba(236, 27, 54, 1);
+  color: #BF263C;
 }
   a:hover, a:focus, a:active {
-    color: rgba(236, 27, 54, 0.5);
+    color: #D8334A;
   }
 hr {
   border: 0;
@@ -98,8 +117,8 @@ hr {
     text-align: left;
   }
 ul {
-  list-style: circle;
-  list-style-position: outside;
+  list-style: none;
+  list-style-position: inside;
 }
   ul li > ul {
     list-style: square;
@@ -118,7 +137,7 @@ ul {
 
 /* HEADER */
 header {
-  background: #F7F7F7 url('../img/veum-bg.jpg') no-repeat;
+  background: #323133;
   background-position: center center;
   background-size: cover;
   height: 100vh;
@@ -126,128 +145,60 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  color: #808080;
   overflow: hidden !important;
 }
   @media screen and (min-width: 1200px) {
     header {
-      padding: 2em 2em 3em 2em;
+      padding: 3em 15%;
     }
   }
   header .logo {
-    max-width: 1.5em;
+    max-width: 3em;
     margin-bottom: 0 !important;
-    position: fixed;
-    top: 2em;
-    left: 2em;
-    z-index: 2;
   }
     @media screen and (min-width: 1200px) {
       header .logo {
-        top: 3em;
-        left: 3.5em;
+
       }
     }
-  header .logo-bg {
-    position: fixed;
-    top: -3.5em;
-    left: -2em;
-    max-width: 25%;
-    z-index: 0;
-  }
-  header .logo-tagline {
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    display: inline-block;
-    position: relative;
-    top: 0.5em;
-    left: 5em;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 70%;
-    font-weight: 300;
+  header small {
+    color: #1D1D1D;
   }
 
 
 
 /* NAVIGATION */
 nav {
-  position: fixed;
-  top: 2.5em;
-  right: 2em;
-  z-index: 2;
+
 }
   @media screen and (min-width: 1200px) {
     nav {
-      top: 3.5em;
-      right: 3.5em;
+
     }
   }
   nav a {
-    font-family: 'proxima-nova', sans-serif;
     font-weight: 900;
-    font-size: 0.75rem;
     text-transform: uppercase;
     margin-left: 3em;
     letter-spacing: 1px;
   }
     @media screen and (min-width: 1200px) {
       nav a {
-        font-size: 1rem;
         letter-spacing: 2px;
       }
     }
 
-.heading-clients::before {
-  content: '';
-  height: 0.2em;
-  width: 0.2em;
-  display: block;
-  background: #DDDDDD;
-  border-radius: 0.1em;
-  position: relative;
-  top: 1.5em;
-  left: 1.5em;
-}
-.heading-clients::after {
-  content: '';
-  height: 0.4em;
-  width: 0.4em;
-  display: block;
-  background: #DDDDDD;
-  border-radius: 0.2em;
-  position: relative;
-  top: -0.5em;
-  left: 3.5em;
-}
-.heading-work::before {
-  content: '';
-  height: 0.24em;
-  width: 0.24em;
-  display: block;
-  background: #DDDDDD;
-  border-radius: 0.12em;
-  position: relative;
-  top: -0.5em;
-  left: 1.5em;
-}
-.heading-work::after {
-  content: '';
-  height: 0.36em;
-  width: 0.36em;
-  display: block;
-  background: #DDDDDD;
-  border-radius: 0.18em;
-  position: relative;
-  top: 0.25em;
-  left: 3.5em;
-}
+
 
 /* SECTIONS */
 section {
   padding: 2em 1em;
+  background: #1D1D1D;
 }
   @media screen and (min-width: 1200px) {
     section {
-      padding: 4em 2em;
+      padding: 4em 15%;
     }
   }
   .client-list {
@@ -266,20 +217,18 @@ section {
   padding: 0.75em 2em;
   border: 3px solid #393C48;
   border-radius: .35em;
-  font-family: 'proxima-nova', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 75%;
   margin-top: 3em;
   display: inline-block;
 }
 
 /* FOOTER */
 footer {
-  background: url('../img/map.jpg') center center no-repeat;
+  background: #1D1D1D url('../img/maps.jpg') center center no-repeat;
   background-size: cover;
   font-family: 'proxima-nova' sans-serif;
-  color: rgba(255, 255, 255, 0.5);
+  color: #3C3B3D;
   padding: 2em 1em;
   display: flex;
   flex-direction: row;
@@ -289,26 +238,19 @@ footer {
 }
   @media screen and (min-width: 1200px) {
     footer {
-      padding: 8em 2em;
+      padding: 8em 15%;
     }
   }
-  footer .row {
-    justify-content: space-between !important;
+  footer .w--1of2 {
+    flex: 0 0 50% !important;
   }
-  footer span {
-    font-size: 65%;
-    line-height: 1.5em;
+  footer .logo {
+    max-width: 5em;
+    margin-bottom: 0 !important;
   }
-  footer strong {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  footer .copyright {
-    color: rgba(255, 255, 255, 0.25);
-  }
-  footer .muffin {
-    margin: 0 2em;
-    font-size: 200%;
-    font-weight: 100;
-    position: relative;
-    top: 0.125em;
+
+
+
+  .bottomed {
+    align-self: flex-end;
   }
