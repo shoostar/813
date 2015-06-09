@@ -64,7 +64,7 @@ p, ul, ol, dl, blockquote {
 }
 p{
   font-size: 3vw;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
   /*@media screen and (min-width: 800px){
     p{
