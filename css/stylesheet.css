@@ -63,12 +63,12 @@ p, ul, ol, dl, blockquote {
   margin-bottom: 1.5em;
 }
 p{
-  font-size: 2.5vw;
+  font-size: 4vw;
   line-height: 1.5em;
 }
   @media screen and (min-width: 800px){
     p{
-      font-size: 4vw;
+      font-size: 2.75vw;
     }
   }
   @media screen and (min-width: 1200px){
@@ -83,16 +83,17 @@ pre, code {
 em { font-style: italic; }
 strong { font-weight: 700; }
 small {
-  font-size: 1.5vw;
+  font-size: 2.5vw;
+  line-height: 1.5em;
 }
   @media screen and (min-width: 800px){
     small {
-      font-size: 2.5vw;
+      font-size: 1.75vw;
     }
   }
   @media screen and (min-width: 1200px){
     small {
-      font-size: 3vw;
+      font-size: 1.5vw;
       font-weight: 300;
     }
   }
