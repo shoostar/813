@@ -63,10 +63,10 @@ p, ul, ol, dl, blockquote {
   margin-bottom: 1.5em;
 }
 p{
-  font-size: 4vw;
+  font-size: 3vw;
   line-height: 1.5em;
 }
-  @media screen and (min-width: 800px){
+  /*@media screen and (min-width: 800px){
     p{
       font-size: 2.75vw;
     }
@@ -76,27 +76,27 @@ p{
       font-size: 3vw;
       font-weight: 300;
     }
-  }
+  }*/
 pre, code {
   font-family: 'source-code-pro', sans-serif;
 }
 em { font-style: italic; }
 strong { font-weight: 700; }
-small {
-  font-size: 2.5vw;
-  line-height: 1.5em;
+p small {
+  font-size: 2vw;
+  line-height: 1rem !important;
 }
-  @media screen and (min-width: 800px){
-    small {
+  /*@media screen and (min-width: 800px){
+    p small {
       font-size: 1.75vw;
     }
   }
   @media screen and (min-width: 1200px){
-    small {
+    p small {
       font-size: 1.5vw;
       font-weight: 300;
     }
-  }
+  }*/
 a:link, a:visited {
   color: #BF263C;
 }
