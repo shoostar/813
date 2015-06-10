@@ -135,7 +135,7 @@ header {
   background: #323133;
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   padding: 1em 1em 1.5em 1em;
   display: flex;
   flex-direction: row;
@@ -149,7 +149,7 @@ header {
   }
   header .logo {
     max-width: 3em;
-    margin-bottom: 0 !important;
+    margin-bottom: 1em !important;
   }
     @media screen and (min-width: 1200px) {
       header .logo {
