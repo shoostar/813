@@ -15,18 +15,27 @@ html, body {
   background: white;
   font-size: 100%;
   font-family: 'Open Sans', sans-serif;
-  color: #121212;
+  color: #1D1D1D;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Dosis', sans-serif;
-  color: rgb(236, 27, 54);
+  color: #808080;
 }
 h1 {
-  font-size: 3em; /* 48 / 16 */
+  font-size: 5vw; /* 48 / 16 */
   font-weight: 300;
-  line-height: 1.25em; /* 48 / 48 */
-  margin-bottom: 0.5em; /* 24 / 48 */
+  margin-bottom: 1em; /* 24 / 48 */
 }
+  @media screen and (min-width: 800px){
+    h1{
+      font-size: 4vw;
+    }
+  }
+  @media screen and (min-width: 1200px){
+    h1{
+      font-size: 3vw;
+      font-weight: 300;
+    }
+  }
 h2 {
   font-size: 2.25em; /* 36 / 16 */
   line-height: 1.333333333333333em; /* 48 / 36 */
@@ -66,37 +75,22 @@ p{
   font-size: 3vw;
   line-height: 1.5;
 }
-  /*@media screen and (min-width: 800px){
+  @media screen and (min-width: 800px){
     p{
-      font-size: 2.75vw;
+      font-size: 2.5vw;
     }
   }
   @media screen and (min-width: 1200px){
     p{
-      font-size: 3vw;
+      font-size: 1.5vw;
       font-weight: 300;
     }
-  }*/
+  }
 pre, code {
   font-family: 'source-code-pro', sans-serif;
 }
 em { font-style: italic; }
 strong { font-weight: 700; }
-p small {
-  font-size: 2vw;
-  line-height: 1rem !important;
-}
-  /*@media screen and (min-width: 800px){
-    p small {
-      font-size: 1.75vw;
-    }
-  }
-  @media screen and (min-width: 1200px){
-    p small {
-      font-size: 1.5vw;
-      font-weight: 300;
-    }
-  }*/
 a:link, a:visited {
   color: #BF263C;
 }
@@ -146,7 +140,6 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  color: #808080;
   overflow: hidden !important;
 }
   @media screen and (min-width: 1200px) {
@@ -163,9 +156,6 @@ header {
 
       }
     }
-  header small {
-    color: #1D1D1D;
-  }
 
 
 
