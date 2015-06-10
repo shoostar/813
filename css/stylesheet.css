@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #808080;
 }
 h1 {
-  font-size: 5vw; /* 48 / 16 */
+  font-size: 6vw; /* 48 / 16 */
   font-weight: 300;
   margin-bottom: 1em; /* 24 / 48 */
 }
@@ -72,7 +72,7 @@ p, ul, ol, dl, blockquote {
   margin-bottom: 1.5em;
 }
 p{
-  font-size: 3vw;
+  font-size: 4vw;
   line-height: 1.5;
 }
   @media screen and (min-width: 800px){
