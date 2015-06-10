@@ -169,16 +169,16 @@ nav {
     }
   }
   nav a {
-    font-weight: 900;
-    text-transform: uppercase;
-    margin-left: 3em;
+    margin-right: 2em;
     letter-spacing: 1px;
+    font-size: 4vw;
   }
     @media screen and (min-width: 1200px) {
       nav a {
         letter-spacing: 2px;
       }
     }
+
 
 
 
