@@ -1,5 +1,9 @@
 /* COLORS */
-/* Red      rgb(236, 27, 54) */
+/* #878271 - creme */
+/* #2E302E - dark creme */
+/* #1D2120 - medium grey */
+/* #191C1B - dark grey */
+/* #141414 - slate */
 
 
 
@@ -12,13 +16,14 @@
 * { box-sizing: border-box; }
 html { height: 100%; }
 html, body {
-  background: #1D1D1D;
+  background: #EEEFF7;
   font-size: 100%;
-  font-family: 'Open Sans', sans-serif;
-  color: #1D1D1D;
+  font-family: 'utopia-std', serif;
+  color: #31353D;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #808080;
+  font-family: 'brandon-grotesque', serif;
+  color: #1C1D21;
 }
 h1 {
   font-size: 6vw; /* 48 / 16 */
@@ -91,10 +96,10 @@ pre, code {
 em { font-style: italic; }
 strong { font-weight: 700; }
 a:link, a:visited {
-  color: #BF263C;
+  color: #445878;
 }
   a:hover, a:focus, a:active {
-    color: #D8334A;
+    color: #92CDCF;
   }
 hr {
   border: 0;
@@ -127,11 +132,15 @@ ul {
 
 
 
+main {
+  background: #EEEFF7;
+}
+
 
 
 /* HEADER */
 header {
-  background: #323133;
+  background: #EEEFF7;
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
@@ -143,8 +152,11 @@ header {
 }
   @media screen and (min-width: 1200px) {
     header {
-      padding: 3em 15%;
+      padding: 3em 10%;
     }
+  }
+  header p {
+    color: ;
   }
   header .logo {
     max-width: 3em;
@@ -193,7 +205,7 @@ section {
 }
   @media screen and (min-width: 1200px) {
     section {
-      padding: 4em 15%;
+      padding: 4em 10%;
     }
   }
   .client-list {
@@ -201,12 +213,15 @@ section {
   }
 
 .portfolio-item {
-  background: gray;
-  height: 15em;
+  overflow: hidden;
 }
 .portfolio-logo {
   max-width: 10em;
   margin-bottom: 3em;
+}
+.imac {
+  position: relative;
+  top: -0em;
 }
 .view-work {
   padding: 0.75em 2em;
@@ -220,7 +235,7 @@ section {
 
 /* FOOTER */
 footer {
-  background: #1D1D1D url('../img/maps.jpg') center center no-repeat;
+  background: url('../img/maps.jpg') center center no-repeat;
   background-size: cover;
   font-family: 'proxima-nova' sans-serif;
   color: #3C3B3D;
@@ -233,7 +248,7 @@ footer {
 }
   @media screen and (min-width: 1200px) {
     footer {
-      padding: 8em 15%;
+      padding: 8em 10%;
     }
   }
   footer .w--1of2 {
