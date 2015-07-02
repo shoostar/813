@@ -1,0 +1,338 @@
+/* COLORS */
+/* #878271 - creme */
+/* #2E302E - dark creme */
+/* #1D2120 - medium grey */
+/* #191C1B - dark grey */
+/* #141414 - slate */
+
+
+
+@import url('sanitize.css');
+@import url('grid.css');
+
+/* Add some basic typography.
+======================================= */
+
+* { box-sizing: border-box; }
+html, body {
+  background: #FFFFFF;
+  font-size: 100%;
+  font-family: 'adobe-garamond-pro', serif;
+  color: #FFFFFF;
+  height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'futura-pt', sans-serif;
+  letter-spacing: 0.125em;
+}
+h1 {
+  font-size: 6vw; /* 48 / 16 */
+  font-weight: 300;
+  margin-bottom: 1em; /* 24 / 48 */
+}
+  @media screen and (min-width: 800px){
+    h1{
+      font-size: 4vw;
+    }
+  }
+  @media screen and (min-width: 1200px){
+    h1{
+      font-size: 3vw;
+      font-weight: 300;
+    }
+  }
+h2 {
+  font-size: 2.25em; /* 36 / 16 */
+  line-height: 1.333333333333333em; /* 48 / 36 */
+  margin-bottom: .6666666666666667em; /* 24 / 36 */
+}
+h3 {
+  font-size: 1.5em; /* 24 / 16 */
+  line-height: 1em; /* 24 / 24 */
+  margin-bottom: 1em; /* 24 / 24 */
+}
+h4 {
+  font-size: 1.3125em; /* 21 / 16 */
+  line-height: 1.142857142857143em; /* 24 / 21 */
+  margin-bottom: 1.142857142857143em; /* 24 / 21 */
+}
+h5 {
+  font-size: 1.125em; /* 18 / 16 */
+  line-height: 1.333333333333333em; /* 24 / 18 */
+  margin-bottom: 1.333333333333333em; /* 24 / 18 */
+}
+h6 {
+  font-size: 1em; /* 16 / 16 */
+  line-height: 1.5em; /* 24 / 16 */
+  /*margin-bottom: 1.5em; /* 24 / 16 */
+}
+p, ul, ol, dl, blockquote {
+  margin-bottom: 1.5em;
+  font-size: 4vw;
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: 0.0625em;
+}
+  @media screen and (min-width: 800px){
+    p, ul, ol, dl, blockquote {
+      font-size: 2.5vw;
+    }
+  }
+  @media screen and (min-width: 1200px){
+    p, ul, ol, dl, blockquote {
+      font-size: 1.5vw;
+    }
+  }
+pre, code {
+  font-family: 'source-code-pro', sans-serif;
+}
+em { font-style: italic; }
+strong { font-weight: 700; }
+a:link, a:visited {
+  color: #92CDCF;
+}
+  a:hover, a:focus, a:active {
+    color: #92CDCF;
+  }
+hr {
+  border: 0;
+  height: 1px;
+  border-bottom: 1px solid #DDDDDD;
+  margin: 4em 0em 0em;
+  width: 100%;
+}
+  hr.wedge {
+    height: 3px;
+    width: 50px;
+    background: rgb(236, 27, 54);
+    border: 0;
+    text-align: left;
+  }
+ul {
+  list-style: none;
+  list-style-position: inside;
+}
+  ul li > ul {
+    list-style: square;
+    list-style-position: inside;
+  }
+  ul.checked {
+    list-style-type: none;
+  }
+    ul.checked li {
+      font-weight: 700;
+    }
+
+
+
+main {
+  background: #EEEFF7;
+  height: 100vh;
+}
+
+
+
+/* HEADER */
+header {
+  background: #EEEFF7 url('../img/veum-bg.jpg') center center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden !important;
+}
+  @media screen and (min-width: 1200px) {
+    header {
+      
+    }
+  }
+  header * {
+    align-items: center;
+  }
+  header .logo {
+    width: 20em;
+  }
+
+
+
+/* NAVIGATION */
+nav {
+  position: relative;
+  z-index: 100;
+}
+  nav .logo-container {
+    background: black;
+    width: 8em;
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  nav .logo {
+    width: 2em;
+  }
+  nav .menu-container {
+    width: 8em;
+    height: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 8em;
+    left: 0;
+  }
+  nav .menu-icon, nav .menu-icon::before, nav .menu-icon::after {
+    width: 2em;
+    height: 4px;
+    display: block;
+    background: black;
+    margin: 0 auto;
+  }
+    nav .menu-icon::before, nav .menu-icon::after {
+      content: '';
+      position: relative;
+    }
+      nav .menu-icon::before {
+        top: -7px;
+      }
+      nav .menu-icon::after {
+        margin-top: 3px;
+      }
+
+
+
+/* SECTIONS */
+section {
+  padding: 0;
+}
+  @media screen and (min-width: 1200px) {
+    section {
+      
+    }
+  }
+  .about {
+    background: url('../img/map.jpg') center center no-repeat;
+
+    padding: 10vw 0;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+    .about * {
+      align-items: center;
+    }
+  .thanks {
+    background: white;
+    color: black;
+    padding: 10vw 0;
+  }
+  .projects [class*='w--'] {
+    background: black;
+    min-height: 40vw;
+    position: relative;
+  }
+    .projects .weird-heading {
+      font-size: 300%;
+      color: white;
+      margin-top: calc(50% + 1em);
+      margin-left: 33.3333%;
+    }
+      .projects small {
+        font-size: 1.5rem !important;
+      }
+      .projects .weird-heading::before {
+        height: 4px;
+        width: 33.3333%;
+        background: white;
+        position: relative;
+        right: calc(33.3333% + 1em);
+        top: 0.75em;
+        margin-right: -33.3333%;
+        display: inline-block;
+        content: '';
+        margin-bottom: 1em;
+      }
+    .projects .bvdt {
+      background: #000000 url('../img/wilderness-photo.jpg') center center no-repeat;
+      background-size: cover;
+    }
+    .projects .koffee {
+      background: #000000 url('../img/coffee-beans.jpg') center center no-repeat;
+      background-size: cover;
+    }
+    .projects .c4sauce {
+      background: #000000 url('../img/peppers.jpg') center center no-repeat;
+      background-size: cover;
+    }
+    .project-overlay {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 4em;
+      display: flex;
+      min-height: 40vw;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
+      .project-overlay .logo {
+        max-height: 10em;
+        max-width: 15em;
+        margin: 0 auto;
+      }
+
+
+
+/* FOOTER */
+footer {
+  padding-bottom: 10vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+  @media screen and (min-width: 800px) {
+    footer {
+      padding-bottom: 0;
+    }
+  }
+  footer p {
+    transform: rotate(0deg);
+    position: relative;
+    left: 4em;
+    color: #000000;
+    font-family: 'futura-pt', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+    @media screen and (min-width: 800px) {
+      footer p {
+        transform: rotate(270deg);
+        position: fixed;
+        left: -2.25em;
+        bottom: 8em;
+      }
+    }
+  .lighter {
+    opacity: 0.25;
+  }
+  footer .w--1of2 {
+    flex: 0 0 50% !important;
+  }
+  footer .logo {
+    max-width: 5em;
+    margin-bottom: 0 !important;
+  }
+
+
+
+  .bottomed {
+    align-self: flex-end;
+  }
