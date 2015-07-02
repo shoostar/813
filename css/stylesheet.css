@@ -92,19 +92,19 @@ a:link, a:visited {
   color: #92CDCF;
 }
   a:hover, a:focus, a:active {
-    color: #92CDCF;
+    color: #EEEFF7;
   }
 hr {
   border: 0;
   height: 1px;
   border-bottom: 1px solid #DDDDDD;
-  margin: 4em 0em 0em;
+  margin: 4em 0em;
   width: 100%;
 }
   hr.wedge {
-    height: 3px;
-    width: 50px;
-    background: rgb(236, 27, 54);
+    height: 4px;
+    width: 100px;
+    background: #92CDCF;
     border: 0;
     text-align: left;
   }
@@ -126,7 +126,6 @@ ul {
 
 
 main {
-  background: #EEEFF7;
   height: 100vh;
 }
 
@@ -210,6 +209,7 @@ nav {
 /* SECTIONS */
 section {
   padding: 0;
+  color: black;
 }
   @media screen and (min-width: 1200px) {
     section {
@@ -235,6 +235,7 @@ section {
   }
   .projects [class*='w--'] {
     background: black;
+    color: white;
     min-height: 40vw;
     position: relative;
   }
