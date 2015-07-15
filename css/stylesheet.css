@@ -272,6 +272,10 @@ section {
       background: #000000 url('../img/peppers.jpg') center center no-repeat;
       background-size: cover;
     }
+    .projects .sugfest {
+      background: #000000 url('../img/sugar-island-fest.jpg') center center no-repeat;
+      background-size: cover;
+    }
     .project-overlay {
       background: rgba(0, 0, 0, 0.8);
       padding: 4em;
@@ -281,6 +285,18 @@ section {
       flex-direction: column;
       justify-content: center;
     }
+      .bvdt .project-overlay:hover {
+        background: rgba(50, 50, 50, 0.8)
+      }
+      .koffee .project-overlay:hover {
+        background: rgba(60, 30, 5, 0.8)
+      }
+      .c4sauce .project-overlay:hover {
+        background: rgba(70, 15, 5, 0.8)
+      }
+      .sugfest .project-overlay:hover {
+        background: rgba(10, 15, 45, 0.8)
+      }
       .project-overlay .logo {
         max-height: 10em;
         max-width: 15em;
@@ -317,7 +333,7 @@ footer {
       footer p {
         transform: rotate(270deg);
         position: fixed;
-        left: -2.25em;
+        left: -2em;
         bottom: 8em;
       }
     }
