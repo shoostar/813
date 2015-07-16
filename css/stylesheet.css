@@ -284,7 +284,11 @@ section {
       height: auto;
       flex-direction: column;
       justify-content: center;
+      transition: background 0.2s ease-in-out;
     }
+      .project-overlay:hover {
+        cursor: pointer;
+      }
       .bvdt .project-overlay:hover {
         background: rgba(50, 50, 50, 0.8)
       }
