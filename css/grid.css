@@ -1,6 +1,6 @@
 /* [STRUCTURE] layout containers and blocks */
 main { width: calc(100%); margin: 0; padding: 0; }
-  @media screen and (min-width: 800px) { main { width: calc(100% - 8em); margin: 0 0 0 8em; } }
+  @media screen and (min-width: 800px) { main { width: calc(80%); margin: 0 auto; } }
 .row { flex: 1 0 100%; padding: 0; display: flex; flex-wrap: wrap; flex-direction: row; }
 [class^='w--'] { flex: 1 0 100%; margin: 0; padding: 4em; }
 .column-main, .column-sidebar { width: 100%; margin: 0; padding: 0; }

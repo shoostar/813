@@ -15,7 +15,7 @@
 
 * { box-sizing: border-box; }
 html, body {
-  background: #FFFFFF;
+  background: #F7F7F7;
   font-size: 100%;
   font-family: 'adobe-garamond-pro', serif;
   color: #FFFFFF;
@@ -127,6 +127,7 @@ ul {
 
 main {
   height: 100vh;
+  background: white;
 }
 
 
@@ -236,13 +237,13 @@ section {
   .projects [class*='w--'] {
     background: black;
     color: white;
-    min-height: 40vw;
+    min-height: 33.3333vw;
     position: relative;
   }
     .projects .weird-heading {
       font-size: 200%;
       color: white;
-      margin-top: calc(50% + 2em);
+      margin-top: calc(16.6666vw - 2em);
       margin-left: 33.3333%;
     }
       .projects small {
@@ -280,7 +281,7 @@ section {
       background: rgba(0, 0, 0, 0.8);
       padding: 4em;
       display: flex;
-      min-height: 40vw;
+      min-height: 33.3333vw;
       height: auto;
       flex-direction: column;
       justify-content: center;
@@ -326,6 +327,7 @@ footer {
   footer p {
     transform: rotate(0deg);
     position: relative;
+    bottom: -2.25em;
     left: 4em;
     color: #000000;
     font-family: 'futura-pt', sans-serif;
@@ -337,7 +339,7 @@ footer {
       footer p {
         transform: rotate(270deg);
         position: fixed;
-        left: -2em;
+        left: calc(5% - 6em);
         bottom: 8em;
       }
     }
