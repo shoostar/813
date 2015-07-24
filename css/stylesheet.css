@@ -219,7 +219,6 @@ section {
   }
   .about {
     background: url('../img/map.jpg') center center no-repeat;
-
     padding: 10vw 0;
     display: flex;
     flex-direction: column !important;
@@ -229,6 +228,16 @@ section {
     .about * {
       align-items: center;
     }
+  .clients {
+    background: black;
+  }
+    .clients [class*='w--'] ul {
+      -webkit-columns: 2;
+         -moz-columns: 2;
+              columns: 2;
+      -moz-column-fill: balance;
+           column-fill: balance;
+    }
   .thanks {
     background: white;
     color: black;
@@ -237,30 +246,9 @@ section {
   .projects [class*='w--'] {
     background: black;
     color: white;
-    min-height: 33.3333vw;
+    height: 50vh;
     position: relative;
   }
-    .projects .weird-heading {
-      font-size: 200%;
-      color: white;
-      margin-top: calc(16.6666vw - 2em);
-      margin-left: 33.3333%;
-    }
-      .projects small {
-        font-size: 1.5rem !important;
-      }
-      .projects .weird-heading::before {
-        height: 4px;
-        width: 33.3333%;
-        background: white;
-        position: relative;
-        right: calc(33.3333% + 1em);
-        top: 0.75em;
-        margin-right: -33.3333%;
-        display: inline-block;
-        content: '';
-        margin-bottom: 1em;
-      }
     .projects .bvdt {
       background: #000000 url('../img/wilderness-photo.jpg') center center no-repeat;
       background-size: cover;
@@ -281,7 +269,7 @@ section {
       background: rgba(0, 0, 0, 0.8);
       padding: 4em;
       display: flex;
-      min-height: 33.3333vw;
+      min-height: 50vh;
       height: auto;
       flex-direction: column;
       justify-content: center;
