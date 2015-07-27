@@ -165,7 +165,7 @@ nav {
   z-index: 100;
 }
   nav .logo-container {
-    background: black;
+    
     width: 8em;
     height: 8em;
     display: flex;
@@ -177,33 +177,6 @@ nav {
   nav .logo {
     width: 2em;
   }
-  nav .menu-container {
-    width: 8em;
-    height: 8em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    top: 8em;
-    left: 0;
-  }
-  nav .menu-icon, nav .menu-icon::before, nav .menu-icon::after {
-    width: 2em;
-    height: 4px;
-    display: block;
-    background: black;
-    margin: 0 auto;
-  }
-    nav .menu-icon::before, nav .menu-icon::after {
-      content: '';
-      position: relative;
-    }
-      nav .menu-icon::before {
-        top: -7px;
-      }
-      nav .menu-icon::after {
-        margin-top: 3px;
-      }
 
 
 
@@ -219,24 +192,13 @@ section {
   }
   .about {
     background: url('../img/map.jpg') center center no-repeat;
-    padding: 10vw 0;
-    display: flex;
-    flex-direction: column !important;
-    justify-content: center;
-    align-items: center;
+    background-size: cover;
+    color: white;
+    
   }
-    .about * {
-      align-items: center;
-    }
-  .clients {
-    background: black;
-  }
-    .clients [class*='w--'] ul {
-      -webkit-columns: 2;
-         -moz-columns: 2;
-              columns: 2;
-      -moz-column-fill: balance;
-           column-fill: balance;
+    .about .row {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10vw 0;
     }
   .thanks {
     background: white;
@@ -300,42 +262,22 @@ section {
 
 /* FOOTER */
 footer {
-  padding-bottom: 10vw;
+  padding: 2em 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
 }
-  @media screen and (min-width: 800px) {
-    footer {
-      padding-bottom: 0;
-    }
-  }
   footer p {
-    transform: rotate(0deg);
-    position: relative;
-    bottom: -2.25em;
-    left: 4em;
     color: #000000;
     font-family: 'futura-pt', sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 700;
   }
-    @media screen and (min-width: 800px) {
-      footer p {
-        transform: rotate(270deg);
-        position: fixed;
-        left: calc(5% - 6em);
-        bottom: 8em;
-      }
-    }
   .lighter {
     opacity: 0.25;
   }
-  footer .w--1of2 {
-    flex: 0 0 50% !important;
+  .orange {
+    color: #D01A04;
   }
   footer .logo {
     max-width: 5em;
