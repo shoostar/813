@@ -134,48 +134,31 @@ main {
 
 /* HEADER */
 header {
-  background: #EEEFF7 url('../img/veum-bg.jpg') center center no-repeat;
+  background: url('../img/map.jpg') center center no-repeat;
   background-size: cover;
-  min-height: 100vh;
-  padding: 0;
-  display: flex;
-  flex-direction: column !important;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  overflow: hidden !important;
+  color: white;
 }
   @media screen and (min-width: 1200px) {
     header {
       
     }
   }
+  header .row {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10vw 0;
+  }
   header * {
     align-items: center;
   }
   header .logo {
-    width: 20em;
-  }
-
-
-
-/* NAVIGATION */
-nav {
-  position: relative;
-  z-index: 100;
-}
-  nav .logo-container {
-    
-    width: 8em;
-    height: 8em;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  nav .logo {
     width: 2em;
+  }
+  header ul {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+    -moz-column-fill: balance;
+         column-fill: balance;
   }
 
 
@@ -190,16 +173,6 @@ section {
       
     }
   }
-  .about {
-    background: url('../img/map.jpg') center center no-repeat;
-    background-size: cover;
-    color: white;
-    
-  }
-    .about .row {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 10vw 0;
-    }
   .thanks {
     background: white;
     color: black;
@@ -208,9 +181,14 @@ section {
   .projects [class*='w--'] {
     background: black;
     color: white;
-    height: 50vh;
+    height: 75vh;
     position: relative;
   }
+    .projects [class*='w--'] .half {
+      color: white;
+      height: 37.5vh !important;
+      position: relative;
+    }
     .projects .bvdt {
       background: #000000 url('../img/wilderness-photo.jpg') center center no-repeat;
       background-size: cover;
@@ -227,31 +205,61 @@ section {
       background: #000000 url('../img/sugar-island-fest.jpg') center center no-repeat;
       background-size: cover;
     }
+    .projects .veum {
+      background: #000000 url('../img/veum-bg.jpg') center center no-repeat;
+      background-size: cover;
+    }
     .project-overlay {
-      background: rgba(0, 0, 0, 0.8);
       padding: 4em;
       display: flex;
-      min-height: 50vh;
+      min-height: 75vh;
       height: auto;
       flex-direction: column;
       justify-content: center;
       transition: background 0.2s ease-in-out;
     }
+      .half .project-overlay {
+        padding: 4em;
+        display: flex;
+        min-height: 37.5vh;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        transition: background 0.2s ease-in-out;
+      }
       .project-overlay:hover {
         cursor: pointer;
       }
-      .bvdt .project-overlay:hover {
-        background: rgba(50, 50, 50, 0.8)
+      .bvdt .project-overlay {
+        background: rgba(15, 15, 15, 1)
       }
-      .koffee .project-overlay:hover {
-        background: rgba(60, 30, 5, 0.8)
+        .bvdt .project-overlay:hover {
+          background: rgba(15, 15, 15, 0.8)
+        }
+      .koffee .project-overlay {
+        background: rgba(60, 30, 5, 1)
       }
-      .c4sauce .project-overlay:hover {
-        background: rgba(70, 15, 5, 0.8)
+        .koffee .project-overlay:hover {
+          background: rgba(60, 30, 5, 0.8)
+        }
+      .c4sauce .project-overlay {
+        background: rgba(208, 26, 4, 1)
       }
-      .sugfest .project-overlay:hover {
-        background: rgba(10, 15, 45, 0.8)
+        .c4sauce .project-overlay:hover {
+          background: rgba(208, 26, 4, 0.8)
+        }
+      .sugfest .project-overlay {
+        background: rgba(10, 15, 45, 1)
       }
+        .sugfest .project-overlay:hover {
+          background: rgba(10, 15, 45, 0.8)
+        }
+      .veum .project-overlay {
+        background: rgba(255, 255, 255, 1)
+      }
+        .veum .project-overlay:hover {
+          background: rgba(255, 255, 255, 0)
+        }
       .project-overlay .logo {
         max-height: 10em;
         max-width: 15em;
@@ -261,10 +269,8 @@ section {
 
 
 /* FOOTER */
-footer {
-  padding: 2em 0;
-  display: flex;
-  flex-direction: row;
+footer [class*='w--'] {
+  padding: 5vw 0;
 }
   footer p {
     color: #000000;
@@ -276,8 +282,8 @@ footer {
   .lighter {
     opacity: 0.25;
   }
-  .orange {
-    color: #D01A04;
+  .blue {
+    color: #92CDCF;
   }
   footer .logo {
     max-width: 5em;
