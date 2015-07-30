@@ -145,20 +145,13 @@ header {
   }
   header .row {
     background: rgba(0, 0, 0, 0.5);
-    padding: 10vw 0;
+    padding: 6vw 0;
   }
   header * {
     align-items: center;
   }
   header .logo {
     width: 2em;
-  }
-  header ul {
-    -webkit-columns: 2;
-       -moz-columns: 2;
-            columns: 2;
-    -moz-column-fill: balance;
-         column-fill: balance;
   }
 
 
@@ -176,7 +169,7 @@ section {
   .thanks {
     background: white;
     color: black;
-    padding: 10vw 0;
+    padding: 6vw 0;
   }
   .projects [class*='w--'] {
     background: black;
@@ -191,6 +184,10 @@ section {
     }
     .projects .bvdt {
       background: #000000 url('../img/wilderness-photo.jpg') center center no-repeat;
+      background-size: cover;
+    }
+    .projects .whisky {
+      background: #000000 url('../img/whisky.jpg') center center no-repeat;
       background-size: cover;
     }
     .projects .koffee {
@@ -231,40 +228,93 @@ section {
         cursor: pointer;
       }
       .bvdt .project-overlay {
-        background: rgba(15, 15, 15, 1)
+        background: rgba(15, 15, 15, 0.8)
       }
         .bvdt .project-overlay:hover {
-          background: rgba(15, 15, 15, 0.8)
+          background: rgba(15, 15, 15, 1)
+        }
+      .whisky .project-overlay {
+        background: rgba(106, 82, 55, 0.8)
+      }
+        .whisky .project-overlay:hover {
+          background: rgba(106, 82, 55, 1)
         }
       .koffee .project-overlay {
-        background: rgba(60, 30, 5, 1)
+        background: rgba(60, 30, 5, 0.8)
       }
         .koffee .project-overlay:hover {
-          background: rgba(60, 30, 5, 0.8)
+          background: rgba(60, 30, 5, 1)
         }
       .c4sauce .project-overlay {
-        background: rgba(208, 26, 4, 1)
+        background: rgba(208, 26, 4, 0.8)
       }
         .c4sauce .project-overlay:hover {
-          background: rgba(208, 26, 4, 0.8)
+          background: rgba(208, 26, 4, 1)
         }
       .sugfest .project-overlay {
-        background: rgba(10, 15, 45, 1)
+        background: rgba(10, 15, 45, 0.8)
       }
         .sugfest .project-overlay:hover {
-          background: rgba(10, 15, 45, 0.8)
+          background: rgba(10, 15, 45, 1)
         }
       .veum .project-overlay {
-        background: rgba(255, 255, 255, 1)
+        background: rgba(255, 255, 255, 0)
       }
         .veum .project-overlay:hover {
-          background: rgba(255, 255, 255, 0)
+          background: rgba(255, 255, 255, 1)
         }
-      .project-overlay .logo {
-        max-height: 10em;
-        max-width: 15em;
-        margin: 0 auto;
+      .project-overlay .description {
+        opacity: 0;
+        mix-blend-mode: overlay;
+        transition: opacity 0.2s ease-in-out;
       }
+        .project-overlay:hover .description {
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+          }
+      .project-overlay .logo-container {
+        height: 37.5vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
+      }
+        .project-overlay .logo-container .logo {
+          max-height: 12em;
+          max-width: 15em;
+          margin: 0 auto;
+        }
+      .project-overlay .desc-container {
+        height: 37.5vh;
+        width: 100%;
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+        .half .project-overlay .logo-container {
+          height: 18.75vh;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          text-align: center;
+        }
+          .half .project-overlay .logo-container .logo {
+            max-height: 6em;
+            max-width: 7.5em;
+            margin: 0 auto;
+          }
+        .half .project-overlay .desc-container {
+          height: 18.75vh;
+          width: 100%;
+          padding: 4em;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+        
 
 
 
