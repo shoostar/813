@@ -345,3 +345,20 @@ footer [class*='w--'] {
   .bottomed {
     align-self: flex-end;
   }
+
+
+
+  .test-box-50 {
+    width: 50vw;
+    height: 50vw;
+    padding: 5vw;
+    background: #00A79D;
+    color: #146863;
+  }
+  .test-box-25 {
+    width: 25vw;
+    height: 25vw;
+    padding: 5vw;
+    background: #C49A6C;
+    color: #76614A;
+  }
