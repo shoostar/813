@@ -361,7 +361,6 @@ footer [class*='w--'] {
     margin: 0;
     background: #00A79D;
     color: #146863;
-    display: inline-block;
   }
     @media screen and (min-width: 800px) {
       .test-box-50 {
@@ -382,7 +381,6 @@ footer [class*='w--'] {
     margin: 0;
     background: #C49A6C;
     color: #76614A;
-    display: inline-block;
   }
     @media screen and (min-width: 800px) {
       .test-box-25 {
