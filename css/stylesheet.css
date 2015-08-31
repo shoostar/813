@@ -13,7 +13,16 @@
 /* Add some basic typography.
 ======================================= */
 
-* { box-sizing: border-box; }
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
 html, body {
   background: #F7F7F7;
   font-size: 100%;
@@ -23,22 +32,19 @@ html, body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'futura-pt', sans-serif;
-  letter-spacing: 0.125em;
 }
 h1 {
-  font-size: 6vw; /* 48 / 16 */
-  font-weight: 300;
+  font-size: 7vw; /* 48 / 16 */
   margin-bottom: 1em; /* 24 / 48 */
 }
   @media screen and (min-width: 800px){
     h1{
-      font-size: 4vw;
+      font-size: 4.5vw;
     }
   }
   @media screen and (min-width: 1200px){
     h1{
       font-size: 3vw;
-      font-weight: 300;
     }
   }
 h2 {
@@ -75,12 +81,12 @@ p, ul, ol, dl, blockquote {
 }
   @media screen and (min-width: 800px){
     p, ul, ol, dl, blockquote {
-      font-size: 3.5vw;
+      font-size: 3vw;
     }
   }
   @media screen and (min-width: 1200px){
     p, ul, ol, dl, blockquote {
-      font-size: 2.5vw;
+      font-size: 2vw;
     }
   }
 pre, code {
@@ -352,9 +358,17 @@ footer [class*='w--'] {
     width: 100vw;
     height: auto;
     padding: 5vw;
+    margin: 0;
     background: #00A79D;
     color: #146863;
+    display: inline-block;
   }
+    @media screen and (min-width: 800px) {
+      .test-box-50 {
+        width: 50vw;
+        height: 50vw;
+      }
+    }
     @media screen and (min-width: 1200px) {
       .test-box-50 {
         width: 50vw;
@@ -365,9 +379,17 @@ footer [class*='w--'] {
     width: 100vw;
     height: auto;
     padding: 5vw;
+    margin: 0;
     background: #C49A6C;
     color: #76614A;
+    display: inline-block;
   }
+    @media screen and (min-width: 800px) {
+      .test-box-25 {
+        width: 50vw;
+        height: 50vw;
+      }
+    }
     @media screen and (min-width: 1200px) {
       .test-box-25 {
         width: 25vw;
