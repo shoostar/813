@@ -364,14 +364,14 @@ footer [class*='w--'] {
   }
     @media screen and (min-width: 800px) {
       .test-box-50 {
-        width: 50vw;
-        height: 50vw;
+        width: 49vw;
+        height: 49vw;
       }
     }
     @media screen and (min-width: 1200px) {
       .test-box-50 {
-        width: 50vw;
-        height: 50vw;
+        width: 49.5vw;
+        height: 49.5vw;
       }
     }
   .test-box-25 {
@@ -384,13 +384,13 @@ footer [class*='w--'] {
   }
     @media screen and (min-width: 800px) {
       .test-box-25 {
-        width: 50vw;
-        height: 50vw;
+        width: 49vw;
+        height: 49vw;
       }
     }
     @media screen and (min-width: 1200px) {
       .test-box-25 {
-        width: 25vw;
-        height: 25vw;
+        width: 24.5vw;
+        height: 24.5vw;
       }
     }
