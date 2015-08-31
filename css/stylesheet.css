@@ -349,16 +349,28 @@ footer [class*='w--'] {
 
 
   .test-box-50 {
-    width: 50vw;
-    height: 50vw;
+    width: 100vw;
+    height: auto;
     padding: 5vw;
     background: #00A79D;
     color: #146863;
   }
+    @media screen and (min-width: 1200px) {
+      .test-box-50 {
+        width: 50vw;
+        height: 50vw;
+      }
+    }
   .test-box-25 {
-    width: 25vw;
-    height: 25vw;
+    width: 100vw;
+    height: auto;
     padding: 5vw;
     background: #C49A6C;
     color: #76614A;
   }
+    @media screen and (min-width: 1200px) {
+      .test-box-25 {
+        width: 25vw;
+        height: 25vw;
+      }
+    }
