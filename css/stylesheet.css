@@ -74,19 +74,19 @@ h6 {
 }
 p, ul, ol, dl, blockquote {
   margin-bottom: 1.5em;
-  font-size: 5vw;
+  font-size: 4vw;
   line-height: 1.5;
   font-weight: 300;
   letter-spacing: 0.025em;
 }
   @media screen and (min-width: 800px){
     p, ul, ol, dl, blockquote {
-      font-size: 3vw;
+      font-size: 2.25vw;
     }
   }
   @media screen and (min-width: 1200px){
     p, ul, ol, dl, blockquote {
-      font-size: 2vw;
+      font-size: 1.75vw;
     }
   }
 pre, code {
@@ -355,38 +355,38 @@ footer [class*='w--'] {
 
 
   .test-box-50 {
-    flex: 1 1 100vw;
-    height: auto;
-    padding: 5vw;
+    flex: 1 1 100%;
+    min-height: 50vw;
+    padding: 5%;
     margin: 0;
     background: #00A79D;
     color: #146863;
   }
     @media screen and (min-width: 800px) {
       .test-box-50 {
-        flex: 0 1 49vw;
+        flex: 0 1 50%;
       }
     }
     @media screen and (min-width: 1200px) {
       .test-box-50 {
-        flex: 0 1 49vw;
+        flex: 0 1 50%;
       }
     }
   .test-box-25 {
     flex: 1 1 100vw;
-    height: auto;
-    padding: 5vw;
+    height: 25vw;
+    padding: 5%;
     margin: 0;
     background: #C49A6C;
     color: #76614A;
   }
     @media screen and (min-width: 800px) {
       .test-box-25 {
-        flex: 1 1 49vw;
+        flex: 0 0 50%;
       }
     }
     @media screen and (min-width: 1200px) {
       .test-box-25 {
-        flex: 0 1 24vw;
+        flex: 0 0 25%;
       }
     }
