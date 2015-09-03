@@ -197,8 +197,8 @@ footer {
     margin: 0;
     color: grey;
     display: flex;
-    flex-direction: column !important;
-    justify-content: center !important;
+    flex-direction: column;
+    justify-content: center;
   }
     @media screen and (min-width: 800px) {
       .test-box-logo {
@@ -292,22 +292,14 @@ footer {
     .test-box-25-4 {
       color: grey;
     }
-  .test-box-100 {
-    flex: 1 1 100vw;
-    height: 25vw;
-    padding: 6%;
-    margin: 0;
-  }
-    @media screen and (min-width: 800px) {
-      .test-box-100 {
-        padding: 5%;
-      }
-    }
-    @media screen and (min-width: 1200px) {
-      .test-box-100 {
-        padding: 4%;
-      }
-    }
+
+
+
+footer .test-box-25-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 
@@ -351,3 +343,10 @@ footer {
     }
   }
 
+
+
+.twitter {
+  width: 10%;
+  max-width: 3em;
+  margin: 0 auto;
+}
