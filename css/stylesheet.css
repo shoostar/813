@@ -24,7 +24,7 @@ html {
   box-sizing: inherit;
 }
 html, body {
-  background: #F7F7F7;
+  background: #FFFFFF;
   font-size: 100%;
   font-family: 'adobe-garamond-pro', serif;
   color: #FFFFFF;
@@ -131,8 +131,7 @@ ul {
 
 
 main {
-  height: 100vh;
-  background: white;
+  
 }
 
 
@@ -148,213 +147,69 @@ header {
       
     }
   }
-  header .row {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 6vw 0;
-  }
-  header * {
-    align-items: center;
-  }
-  header .logo {
-    width: 2em;
-  }
 
 
 
 /* SECTIONS */
 section {
-  padding: 0;
-  color: black;
+
 }
   @media screen and (min-width: 1200px) {
     section {
       
     }
-  }
-  .thanks {
-    background: white;
-    color: black;
-    padding: 6vw 0;
-  }
-  .projects [class*='w--'] {
-    background: black;
-    color: white;
-    height: 75vh;
-    position: relative;
-  }
-    .projects [class*='w--'] .half {
-      color: white;
-      height: 37.5vh !important;
-      position: relative;
-    }
-    .projects .bvdt {
-      background: #000000 url('../img/wilderness-photo.jpg') center center no-repeat;
-      background-size: cover;
-    }
-    .projects .whisky {
-      background: #000000 url('../img/whisky.jpg') center center no-repeat;
-      background-size: cover;
-    }
-    .projects .koffee {
-      background: #000000 url('../img/coffee-beans.jpg') center center no-repeat;
-      background-size: cover;
-    }
-    .projects .c4sauce {
-      background: #000000 url('../img/peppers.jpg') center center no-repeat;
-      background-size: cover;
-    }
-    .projects .sugfest {
-      background: #000000 url('../img/sugar-island-fest.jpg') center center no-repeat;
-      background-size: cover;
-    }
-    .projects .veum {
-      background: #000000 url('../img/veum-bg.jpg') center center no-repeat;
-      background-size: cover;
-    }
-    .project-overlay {
-      padding: 4em;
-      display: flex;
-      min-height: 75vh;
-      height: auto;
-      flex-direction: column;
-      justify-content: center;
-      transition: background 0.2s ease-in-out;
-    }
-      .half .project-overlay {
-        padding: 4em;
-        display: flex;
-        min-height: 37.5vh;
-        height: auto;
-        flex-direction: column;
-        justify-content: center;
-        transition: background 0.2s ease-in-out;
-      }
-      .project-overlay:hover {
-        cursor: pointer;
-      }
-      .bvdt .project-overlay {
-        background: rgba(15, 15, 15, 0.8)
-      }
-        .bvdt .project-overlay:hover {
-          background: rgba(15, 15, 15, 1)
-        }
-      .whisky .project-overlay {
-        background: rgba(106, 82, 55, 0.8)
-      }
-        .whisky .project-overlay:hover {
-          background: rgba(106, 82, 55, 1)
-        }
-      .koffee .project-overlay {
-        background: rgba(60, 30, 5, 0.8)
-      }
-        .koffee .project-overlay:hover {
-          background: rgba(60, 30, 5, 1)
-        }
-      .c4sauce .project-overlay {
-        background: rgba(208, 26, 4, 0.8)
-      }
-        .c4sauce .project-overlay:hover {
-          background: rgba(208, 26, 4, 1)
-        }
-      .sugfest .project-overlay {
-        background: rgba(10, 15, 45, 0.8)
-      }
-        .sugfest .project-overlay:hover {
-          background: rgba(10, 15, 45, 1)
-        }
-      .veum .project-overlay {
-        background: rgba(255, 255, 255, 0)
-      }
-        .veum .project-overlay:hover {
-          background: rgba(255, 255, 255, 1)
-        }
-      .project-overlay .description {
-        opacity: 0;
-        mix-blend-mode: overlay;
-        transition: opacity 0.2s ease-in-out;
-      }
-        .project-overlay:hover .description {
-            opacity: 1;
-            transition: opacity 0.2s ease-in-out;
-          }
-      .project-overlay .logo-container {
-        height: 37.5vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        text-align: center;
-      }
-        .project-overlay .logo-container .logo {
-          max-height: 12em;
-          max-width: 15em;
-          margin: 0 auto;
-        }
-      .project-overlay .desc-container {
-        height: 37.5vh;
-        width: 100%;
-        padding: 4em;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      }
-        .half .project-overlay .logo-container {
-          height: 18.75vh;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          text-align: center;
-        }
-          .half .project-overlay .logo-container .logo {
-            max-height: 6em;
-            max-width: 7.5em;
-            margin: 0 auto;
-          }
-        .half .project-overlay .desc-container {
-          height: 18.75vh;
-          width: 100%;
-          padding: 4em;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-        }
-        
+  }    
 
 
 
 /* FOOTER */
-footer [class*='w--'] {
-  padding: 5vw 0;
+footer {
+  
 }
-  footer p {
-    color: #000000;
-    font-family: 'futura-pt', sans-serif;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 700;
-  }
-  .lighter {
-    opacity: 0.25;
-  }
-  .blue {
-    color: #92CDCF;
-  }
-  footer .logo {
-    max-width: 5em;
-    margin-bottom: 0 !important;
-  }
 
 
 
-  .bottomed {
-    align-self: flex-end;
-  }
-
-
-
-  .test-box-50 {
+  .test-box-logo {
     flex: 1 1 100%;
+    height: 50vw;
+    padding: 5%;
+    margin: 0;
+    color: grey;
+  }
+    @media screen and (min-width: 800px) {
+      .test-box-logo {
+        flex: 1 1 50%;
+        padding: 4%;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      .test-box-logo {
+        flex: 1 1 50%;
+        padding: 3%;
+      }
+    }
+  .test-box-about {
+    flex: 1 1 100%;
+    min-height: 50vw;
+    padding: 5%;
+    margin: 0;
+    background: white;
+    color: darkgrey;
+  }
+    @media screen and (min-width: 800px) {
+      .test-box-about {
+        flex: 1 1 50%;
+        padding: 4%;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      .test-box-about {
+        flex: 1 1 50%;
+        padding: 3%;
+      }
+    }
+  .test-box-50 {
+    flex: 1 1 50%;
     min-height: 50vw;
     padding: 5%;
     margin: 0;
@@ -363,31 +218,32 @@ footer [class*='w--'] {
   }
     @media screen and (min-width: 800px) {
       .test-box-50 {
-        flex: 0 1 50%;
+        flex: 1 1 50%;
         padding: 4%;
       }
     }
     @media screen and (min-width: 1200px) {
       .test-box-50 {
-        flex: 0 1 50%;
+        flex: 1 1 50%;
         padding: 3%;
       }
     }
-  .test-box-25-1, .test-box-25-2 {
-    flex: 1 1 100vw;
-    height: 25vw;
+  .test-box-25-1, .test-box-25-2, .test-box-25-3, .test-box-25-4 {
+    flex: 1 1 50%;
+    height: 50vw;
     padding: 5%;
     margin: 0;
   }
     @media screen and (min-width: 800px) {
-      .test-box-25-1, .test-box-25-2 {
-        flex: 0 0 50%;
+      .test-box-25-1, .test-box-25-2, .test-box-25-3, .test-box-25-4 {
+        flex: 1 1 50%;
         padding: 4%;
       }
     }
     @media screen and (min-width: 1200px) {
-      .test-box-25-1, .test-box-25-2 {
+      .test-box-25-1, .test-box-25-2, .test-box-25-3, .test-box-25-4 {
         flex: 0 0 25%;
+        height: 25vw;
         padding: 3%;
       }
     }
@@ -399,3 +255,68 @@ footer [class*='w--'] {
       background: #EF4136;
       color: #8C342F;
     }
+    .test-box-25-3 {
+      background: #00A79D;
+      color: #146863;
+    }
+    .test-box-25-4 {
+      color: grey;
+    }
+  .test-box-100 {
+    flex: 1 1 100vw;
+    height: 25vw;
+    padding: 5%;
+    margin: 0;
+  }
+    @media screen and (min-width: 800px) {
+      .test-box-100 {
+        padding: 4%;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      .test-box-100 {
+        padding: 3%;
+      }
+    }
+
+
+
+.o--v--25 {
+  margin-top: 0;
+}
+  @media screen and (min-width: 800px) {
+    .o--v--25 {
+      margin-top: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .o--v--25 {
+      margin-top: 25vw;
+    }
+  }
+.o--v--neg25 {
+  margin-top: 0;
+}
+  @media screen and (min-width: 800px) {
+    .o--v--neg25 {
+      margin-top: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .o--v--neg25 {
+      margin-top: -25vw;
+    }
+  }
+.o--v--50 {
+  margin-top: 0;
+}
+  @media screen and (min-width: 800px) {
+    .o--v--50 {
+      margin-top: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .o--v--50 {
+      margin-top: 50vw;
+    }
+  }
