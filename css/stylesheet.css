@@ -31,7 +31,7 @@ html, body {
   height: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
 }
 h1 {
   font-size: 7vw; /* 48 / 16 */
@@ -159,8 +159,9 @@ header .logo {
 }
 header nav {
   align-self: flex-start !important;
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   font-size: 1.25em;
+  letter-spacing: 0.25vw;
 }
   header nav a {
     text-transform: uppercase;
@@ -299,6 +300,7 @@ footer .test-box-25-4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: 'proxima-nova', sans-serif;
 }
 
 
