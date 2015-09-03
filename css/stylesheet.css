@@ -39,7 +39,7 @@ h1 {
 }
   @media screen and (min-width: 800px){
     h1{
-      font-size: 5vw;
+      font-size: 3.5vw;
     }
   }
   @media screen and (min-width: 1200px){
@@ -152,7 +152,7 @@ header {
       
     }
   }
-header .logo {
+header .logo, footer .logo {
   width: 10%;
   max-width: 3em;
   margin: 0 auto;
