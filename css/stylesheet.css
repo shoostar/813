@@ -365,3 +365,25 @@ footer .test-box-25-4 {
   max-width: 3em;
   margin: 0 auto;
 }
+
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-logo {
+  max-width: 65%;
+  max-height: 20vw;
+}
+  @media screen and (min-width: 800px) {
+    .portfolio-logo {
+      max-height: 15vw;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .portfolio-logo {
+      max-height: 10vw;
+    }
+  }
