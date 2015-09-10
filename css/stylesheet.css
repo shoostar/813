@@ -372,6 +372,7 @@ footer .test-box-25-4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .portfolio-logo {
   max-width: 65%;
@@ -386,4 +387,27 @@ footer .test-box-25-4 {
     .portfolio-logo {
       max-height: 10vw;
     }
+  }
+.mockup-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 6vw;
+  width: 100%;
+  height: 100%;
+  background: red;
+  opacity: 0;
+}
+  @media screen and (min-width: 800px) {
+    .mockup-info {
+      padding: 5vw;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .mockup-info {
+      padding: 4vw;
+    }
+  }
+  .portfolio-item:hover .mockup-info {
+    opacity: 1;
   }
