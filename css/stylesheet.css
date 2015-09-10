@@ -99,10 +99,10 @@ pre, code {
 em { font-style: italic; }
 strong { font-weight: 700; }
 a:link, a:visited {
-  color: #92CDCF;
+  color: #AAAAAA;
 }
   a:hover, a:focus, a:active {
-    color: #EEEFF7;
+    color: #303030;
   }
 hr {
   border: 0;
@@ -155,7 +155,6 @@ header {
 header .logo, footer .logo {
   width: 10%;
   max-width: 3em;
-  margin: 0 auto;
 }
 header nav {
   align-self: flex-start !important;
@@ -210,6 +209,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
     @media screen and (min-width: 800px) {
       .test-box-logo {
@@ -308,9 +308,12 @@ footer {
 
 footer .test-box-25-4 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   font-family: 'proxima-nova', sans-serif;
+  font-weight: 700 !important;
+  letter-spacing: 0.125vw;
 }
 
 
