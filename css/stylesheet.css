@@ -397,6 +397,8 @@ footer .test-box-25-4 {
   height: 100%;
   background: red;
   opacity: 0;
+  transition: all 0.2s ease-in-out;
+  color: black;
 }
   @media screen and (min-width: 800px) {
     .mockup-info {
