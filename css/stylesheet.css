@@ -39,12 +39,12 @@ h1 {
   margin-bottom: 1em;
 }
   @media screen and (min-width: 800px){
-    h1{
+    h1 {
       font-size: 3.5vw;
     }
   }
   @media screen and (min-width: 1200px){
-    h1{
+    h1 {
       font-size: 3.5vw;
     }
   }
@@ -58,6 +58,16 @@ h2 {
   line-height: 1.333333333333333em;
   margin-bottom: .6666666666666667em;
 }
+  @media screen and (min-width: 800px){
+    h2 {
+      font-size: 3.5vw;
+    }
+  }
+  @media screen and (min-width: 1200px){
+    h2 {
+      font-size: 2.5vw;
+    }
+  }
 h3 {
   font-size: 1.5em;
   line-height: 1em;
