@@ -408,6 +408,8 @@ footer .test-box-25-4 {
       padding: 4vw;
     }
   }
-  .portfolio-item:hover .mockup-info {
-    opacity: 1;
+  @media screen and (min-width: 800px) {
+    .portfolio-item:hover .mockup-info {
+      opacity: 1;
+    }
   }
