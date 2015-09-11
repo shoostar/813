@@ -444,19 +444,35 @@ footer .test-box-25-4 {
         padding: 4vw;
       }
     }
-    .test-box-50 .mockup-info .overlay {
-      background: rgba(118, 97, 74, 1);
-      color: #C49A6C;
+    .test-box-50 .mockup-info {
+      background: url('../img/coffee-beans.jpg') center center no-repeat;
+      background-size: cover;
     }
-    .test-box-25-1 .mockup-info .overlay {
-      background: rgba(125, 126, 126, 1);
-      color: #D1D3D4;
+      .test-box-50 .mockup-info .overlay {
+        background: rgba(118, 97, 74, 0.85);
+        color: #C49A6C;
+      }
+    .test-box-25-1 .mockup-info {
+      background: url('../img/wilderness-photo.jpg') center center no-repeat;
+      background-size: cover;
     }
-    .test-box-25-2 .mockup-info .overlay {
-      background: rgba(140, 52, 47, 1);
-      color: #EF4136;
+      .test-box-25-1 .mockup-info .overlay {
+        background: rgba(125, 126, 126, 0.85);
+        color: #D1D3D4;
+      }
+    .test-box-25-2 .mockup-info {
+      background: url('../img/peppers.jpg') center center no-repeat;
+      background-size: cover;
     }
-    .test-box-25-3 .mockup-info .overlay {
-      background: rgba(20, 104, 99, 1);
-      color: #00A79D;
+      .test-box-25-2 .mockup-info .overlay {
+        background: rgba(140, 52, 47, 0.85);
+        color: #EF4136;
+      }
+    .test-box-25-3 .mockup-info {
+      background: url('../img/sugar-island-fest.jpg') center center no-repeat;
+      background-size: cover;
     }
+      .test-box-25-3 .mockup-info .overlay {
+        background: rgba(20, 104, 99, .85);
+        color: #00A79D;
+      }
