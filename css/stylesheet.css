@@ -482,9 +482,10 @@ footer .test-box-25-4 {
 
 
 
-  .copyright:hover .hidden-text {
+  .copyright .hidden-text {
     opacity: 1;
     letter-spacing: inherit;
+    color: #707070;
   }
 
 
@@ -496,10 +497,16 @@ footer .test-box-25-4 {
       .copyright:hover {
         background: #303030;
         color: white;
+        cursor: help;
       }
     .copyright .hidden-text {
       opacity: 0;
       transition: all 0.25s ease-in-out;
       letter-spacing: -6px;
+      color: white;
     }
+      .copyright:hover .hidden-text {
+        opacity: 1;
+        letter-spacing: inherit;
+      }
   }
