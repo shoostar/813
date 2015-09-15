@@ -420,9 +420,6 @@ footer .test-box-25-4 {
   transform: translate(0, 0);
   padding: 0vw;
 }
-  .mockup-info:hover {
-    padding: 0 0 2vw 2vw;
-  }
   @media screen and (min-width: 800px) {
     .portfolio-item:hover .mockup-info {
       opacity: 1;
@@ -457,6 +454,15 @@ footer .test-box-25-4 {
       .test-box-50 .mockup-info .overlay {
         background: rgba(118, 97, 74, 0.85);
         color: #C49A6C;
+        border: 0vw solid #C49A6C;
+        padding-left: 4vw;
+        padding-bottom: 0vw;
+        transition: all 0.2s ease-in-out;
+      }
+      .test-box-50 .mockup-info:hover .overlay {
+        border: 1vw solid #C49A6C;
+        padding-left: 3vw;
+        padding-bottom: 3vw;
       }
     .test-box-25-1 .mockup-info {
       background: url('../img/wilderness-photo.jpg') center center no-repeat;
@@ -465,6 +471,15 @@ footer .test-box-25-4 {
       .test-box-25-1 .mockup-info .overlay {
         background: rgba(125, 126, 126, 0.85);
         color: #D1D3D4;
+        border: 0vw solid #D1D3D4;
+        padding-left: 4vw;
+        padding-bottom: 0vw;
+        transition: all 0.2s ease-in-out;
+      }
+      .test-box-25-1 .mockup-info:hover .overlay {
+        border: 1vw solid #D1D3D4;
+        padding-left: 3vw;
+        padding-bottom: 3vw;
       }
     .test-box-25-2 .mockup-info {
       background: url('../img/peppers.jpg') center center no-repeat;
@@ -473,6 +488,15 @@ footer .test-box-25-4 {
       .test-box-25-2 .mockup-info .overlay {
         background: rgba(140, 52, 47, 0.85);
         color: #EF4136;
+        border: 0vw solid #EF4136;
+        padding-left: 4vw;
+        padding-bottom: 0vw;
+        transition: all 0.2s ease-in-out;
+      }
+      .test-box-25-2 .mockup-info:hover .overlay {
+        border: 1vw solid #EF4136;
+        padding-left: 3vw;
+        padding-bottom: 3vw;
       }
     .test-box-25-3 .mockup-info {
       background: url('../img/sugar-island-fest.jpg') center center no-repeat;
@@ -481,6 +505,15 @@ footer .test-box-25-4 {
       .test-box-25-3 .mockup-info .overlay {
         background-color: rgba(20, 104, 99, .85);
         color: #00A79D;
+        border: 0vw solid #00A79D;
+        padding-left: 4vw;
+        padding-bottom: 0vw;
+        transition: all 0.2s ease-in-out;
+      }
+      .test-box-25-3 .mockup-info:hover .overlay {
+        border: 1vw solid #00A79D;
+        padding-left: 3vw;
+        padding-bottom: 3vw;
       }
     .mockup-info .overlay-desc {
       postion: absolute;
@@ -488,29 +521,23 @@ footer .test-box-25-4 {
       left: 5em;
     }
     .mockup-info h5 {
-      transform: translate(-1vw, 1.5vw);
       transition: all 0.15s ease-in-out;
       opacity: 0;
       position: relative;
       z-index: 2;
     }
       .mockup-info:hover h5 {
-        transform: translate(-1vw, 1.5vw);
         opacity: 1;
       }
     .mockup-info h2 {
-      position: absolute;
-      overflow: hidden;
       font-family: 'adobe-garamond-pro', serif;
       font-weight: 300;
       color: white;
-      transform: translate(-1vw, -1.5vw);
       transition: all 0.15s ease-in-out;
       z-index: 1;
       opacity: 0;
     }
       .mockup-info:hover h2 {
-        transform: translate(-1vw, -1.5vw);
         opacity: 1;
       }
 
@@ -526,7 +553,7 @@ footer .test-box-25-4 {
   @media screen and (min-width: 800px) {
     .copyright {
       background: white;
-      transition: all 0.1s ease-in-out;
+      transition: all 0.15s ease-in-out;
     }
       .copyright:hover {
         background: #303030;
@@ -535,7 +562,7 @@ footer .test-box-25-4 {
       }
     .copyright .hidden-text {
       opacity: 0;
-      transition: all 0.1s ease-in-out;
+      transition: all 0.15s ease-in-out;
       letter-spacing: -6px;
       color: white;
     }
