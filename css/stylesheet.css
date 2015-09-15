@@ -60,7 +60,7 @@ h2 {
 }
   @media screen and (min-width: 800px){
     h2 {
-      font-size: 3.5vw;
+      font-size: 4.75vw;
     }
   }
   @media screen and (min-width: 1200px){
@@ -415,10 +415,14 @@ footer .test-box-25-4 {
   background: url('../img/koffee.jpg') center center no-repeat;
   background-size: cover;
   opacity: 0;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.15s ease-in-out;
   color: black;
   transform: translate(0, 0);
+  padding: 0vw;
 }
+  .mockup-info:hover {
+    padding: 0 0 2vw 2vw;
+  }
   @media screen and (min-width: 800px) {
     .portfolio-item:hover .mockup-info {
       opacity: 1;
@@ -427,22 +431,23 @@ footer .test-box-25-4 {
   .mockup-info .overlay {
     width: 100%;
     height: 100%;
-    padding: 6vw;
+    padding: 5vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: center;
-    align-items: center;
+    align-items: flex-start;
+    overflow: hidden !important;
   }
     @media screen and (min-width: 800px) {
       .mockup-info .overlay {
-        padding: 5vw;
+        padding: 4vw;
       }
     }
     @media screen and (min-width: 1200px) {
       .mockup-info .overlay {
-        padding: 4vw;
+        padding: 3vw;
       }
     }
     .test-box-50 .mockup-info {
@@ -474,11 +479,40 @@ footer .test-box-25-4 {
       background-size: cover;
     }
       .test-box-25-3 .mockup-info .overlay {
-        background: rgba(20, 104, 99, .85);
+        background-color: rgba(20, 104, 99, .85);
         color: #00A79D;
       }
-
-
+    .mockup-info .overlay-desc {
+      postion: absolute;
+      bottom: 5em;
+      left: 5em;
+    }
+    .mockup-info h5 {
+      transform: translate(-1vw, 1.5vw);
+      transition: all 0.15s ease-in-out;
+      opacity: 0;
+      position: relative;
+      z-index: 2;
+    }
+      .mockup-info:hover h5 {
+        transform: translate(-1vw, 1.5vw);
+        opacity: 1;
+      }
+    .mockup-info h2 {
+      position: absolute;
+      overflow: hidden;
+      font-family: 'adobe-garamond-pro', serif;
+      font-weight: 300;
+      color: white;
+      transform: translate(-1vw, -1.5vw);
+      transition: all 0.15s ease-in-out;
+      z-index: 1;
+      opacity: 0;
+    }
+      .mockup-info:hover h2 {
+        transform: translate(-1vw, -1.5vw);
+        opacity: 1;
+      }
 
 
 
@@ -492,7 +526,7 @@ footer .test-box-25-4 {
   @media screen and (min-width: 800px) {
     .copyright {
       background: white;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.1s ease-in-out;
     }
       .copyright:hover {
         background: #303030;
@@ -501,7 +535,7 @@ footer .test-box-25-4 {
       }
     .copyright .hidden-text {
       opacity: 0;
-      transition: all 0.25s ease-in-out;
+      transition: all 0.1s ease-in-out;
       letter-spacing: -6px;
       color: white;
     }
