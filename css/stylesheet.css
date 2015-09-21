@@ -164,7 +164,7 @@ header {
     }
   }
 header .logo, footer .logo {
-  width: 10%;
+  width: 5vw;
   max-width: 3em;
 }
 
@@ -571,3 +571,19 @@ footer .test-box-25-4 {
         letter-spacing: inherit;
       }
   }
+
+
+
+  .w--1of2 {
+    padding: 6%;
+  }
+    @media screen and (min-width: 800px) {
+      .w--1of2 {
+        padding: 5%;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      .w--1of2 {
+        padding: 4%;
+      }
+    }
