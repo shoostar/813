@@ -154,7 +154,7 @@ main {
 
 /* HEADER */
 header {
-  background: url('../img/giphy.gif') center center no-repeat;
+  background: url('../img/map.jpg') center center no-repeat;
   background-size: cover;
 }
   header .row {
@@ -348,6 +348,7 @@ footer {
   align-items: center;
   position: relative;
   background-color: #5B6195 !important;
+  border: 1px solid rgb(39, 31, 48);
 }
 .portfolio-logo {
   max-width: 65%;
@@ -409,15 +410,12 @@ footer {
       .test-box-50 .mockup-info .overlay {
         background: rgba(118, 97, 74, 0.85);
         color: #C49A6C;
-        border: 0vw solid rgb(39, 31, 48);
         padding-left: 4vw;
         padding-bottom: 0vw;
         transition: all 0.2s ease-in-out;
       }
       .test-box-50 .mockup-info:hover .overlay {
-        border: 1vw solid rgb(39, 31, 48);
-        padding-left: 3vw;
-        padding-bottom: 3vw;
+        padding-bottom: 4vw;
       }
     .test-box-25-1 .mockup-info {
       background: url('../img/wilderness-photo.jpg') center center no-repeat;
@@ -426,15 +424,12 @@ footer {
       .test-box-25-1 .mockup-info .overlay {
         background: rgba(125, 126, 126, 0.85);
         color: #D1D3D4;
-        border: 0vw solid rgb(39, 31, 48);
         padding-left: 4vw;
         padding-bottom: 0vw;
         transition: all 0.2s ease-in-out;
       }
       .test-box-25-1 .mockup-info:hover .overlay {
-        border: 1vw solid rgb(39, 31, 48);
-        padding-left: 3vw;
-        padding-bottom: 3vw;
+        padding-bottom: 4vw;
       }
     .test-box-25-2 .mockup-info {
       background: url('../img/peppers.jpg') center center no-repeat;
@@ -443,15 +438,12 @@ footer {
       .test-box-25-2 .mockup-info .overlay {
         background: rgba(140, 52, 47, 0.85);
         color: #EF4136;
-        border: 0vw solid rgb(39, 31, 48);
         padding-left: 4vw;
         padding-bottom: 0vw;
         transition: all 0.2s ease-in-out;
       }
       .test-box-25-2 .mockup-info:hover .overlay {
-        border: 1vw solid rgb(39, 31, 48);
-        padding-left: 3vw;
-        padding-bottom: 3vw;
+        padding-bottom: 4vw;
       }
     .test-box-25-3 .mockup-info {
       background: url('../img/sugar-island-fest.jpg') center center no-repeat;
@@ -460,15 +452,12 @@ footer {
       .test-box-25-3 .mockup-info .overlay {
         background-color: rgba(20, 104, 99, .85);
         color: #00A79D;
-        border: 0vw solid rgb(39, 31, 48);
         padding-left: 4vw;
         padding-bottom: 0vw;
         transition: all 0.2s ease-in-out;
       }
       .test-box-25-3 .mockup-info:hover .overlay {
-        border: 1vw solid rgb(39, 31, 48);
-        padding-left: 3vw;
-        padding-bottom: 3vw;
+        padding-bottom: 4vw;
       }
     .mockup-info .overlay-desc {
       postion: absolute;
@@ -513,7 +502,7 @@ footer {
   @media screen and (min-width: 1200px) {
     .test-box-25-4 {
       flex: 1 1 25%;
-      height: inherit !important;
+      height: inherit;
     }
   }
 
