@@ -496,12 +496,12 @@ footer {
 }
   @media screen and (min-width: 800px) {
     .test-box-25-4 {
-      flex: 1 0 50%;
+      flex: 1 0 100%;
     }
   }
   @media screen and (min-width: 1200px) {
     .test-box-25-4 {
-      flex: 1 1 25%;
+      flex: 1 1 100%;
       height: inherit;
     }
   }
