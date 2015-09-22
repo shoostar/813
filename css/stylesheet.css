@@ -514,3 +514,17 @@ footer {
     font-family: 'proxima-nova', sans-serif;
     font-weight: 700;
   }
+
+footer.w--1of2 {
+  padding: 6% !important;
+}
+  @media screen and (min-width: 800px) {
+    footer.w--1of2 {
+      padding: 5% !important;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    footer.w--1of2 {
+      padding: 4% !important;
+    }
+  }
