@@ -154,7 +154,7 @@ main {
 
 /* HEADER */
 header {
-  background: url('../img/map.jpg') center center no-repeat;
+  background: url('../img/giphy.gif') center center no-repeat;
   background-size: cover;
 }
   header .row {
@@ -512,7 +512,8 @@ footer {
   }
   @media screen and (min-width: 1200px) {
     .test-box-25-4 {
-      flex: 1 0 25%;
+      flex: 1 1 25%;
+      height: inherit !important;
     }
   }
 
