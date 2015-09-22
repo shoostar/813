@@ -24,7 +24,7 @@ html {
   box-sizing: inherit;
 }
 html, body {
-  background: #FFFFFF;
+  background: rgb(39, 31, 48);
   font-size: 100%;
   font-family: 'adobe-garamond-pro', serif;
   color: #707070;
@@ -51,7 +51,7 @@ h1 {
   h1.about-me {
     font-family: 'adobe-garamond-pro', serif;
     font-weight: 300;
-    color: #D1D3D4;
+    color: rgb(13, 1, 6);
   }
 h2 {
   font-size: 2.25em;
@@ -154,18 +154,21 @@ main {
 
 /* HEADER */
 header {
-  background: #303030;
+  background: url('../img/map.jpg') center center no-repeat;
   background-size: cover;
-  color: white;
 }
+  header .row {
+    background: rgb(50, 20, 160);
+    mix-blend-mode: lighten;
+  }
   @media screen and (min-width: 1200px) {
     header {
       
     }
   }
 header .logo, footer .logo {
-  width: 5vw;
-  max-width: 3em;
+  width: 20vw;
+  max-width: 8em;
 }
 
   header nav a {
@@ -173,7 +176,11 @@ header .logo, footer .logo {
     font-size: 3vw;
     letter-spacing: 0.25vw;
     text-transform: uppercase;
+    color: rgb(13, 1, 6) !important;
   }
+    header nav a:hover {
+      color: rgb(101, 126, 212) !important;
+    }
   header nav a:not(:last-of-type) {
     margin-right: 2em;
   }
@@ -225,8 +232,10 @@ footer {
     color: grey;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
   }
     @media screen and (min-width: 800px) {
       .test-box-logo {
@@ -245,14 +254,13 @@ footer {
     min-height: 50vw;
     padding: 6%;
     margin: 0;
-    background: white;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
-    align-items: flex-start;
-    color: darkgrey;
+    align-items: flex-end;
+    color: rgb(91, 97, 149);
   }
     @media screen and (min-width: 800px) {
       .test-box-about {
@@ -317,72 +325,20 @@ footer {
       background: #00A79D;
       color: #146863;
     }
-    .test-box-25-4 {
-      color: grey;
-    }
 
 
 
-footer .test-box-25-4 {
-  width: 100% !important;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: 'proxima-nova', sans-serif;
-  font-weight: 700 !important;
-  letter-spacing: 0.125vw;
-}
 
+.ov--25 { margin-top: 0; }
+  @media screen and (min-width: 800px) { .ov--25 { margin-top: 0; } }
+  @media screen and (min-width: 1200px) { .ov--25 { margin-top: 25vw; } }
+.ov--neg25 { margin-top: 0; }
+  @media screen and (min-width: 800px) { .ov--neg25 { margin-top: 0; } }
+  @media screen and (min-width: 1200px) { .ov--neg25 { margin-top: -25vw; } }
+.ov--50 { margin-top: 0; }
+  @media screen and (min-width: 800px) { .ov--50 { margin-top: 0; } }
+  @media screen and (min-width: 1200px) { .ov--50 { margin-top: 50vw; } }
 
-
-.o--v--25 {
-  margin-top: 0;
-}
-  @media screen and (min-width: 800px) {
-    .o--v--25 {
-      margin-top: 0;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    .o--v--25 {
-      margin-top: 25vw;
-    }
-  }
-.o--v--neg25 {
-  margin-top: 0;
-}
-  @media screen and (min-width: 800px) {
-    .o--v--neg25 {
-      margin-top: 0;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    .o--v--neg25 {
-      margin-top: -25vw;
-    }
-  }
-.o--v--50 {
-  margin-top: 0;
-}
-  @media screen and (min-width: 800px) {
-    .o--v--50 {
-      margin-top: 0;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    .o--v--50 {
-      margin-top: 50vw;
-    }
-  }
-
-
-
-.twitter {
-  width: 10%;
-  max-width: 3em;
-  margin: 0 auto;
-}
 
 
 .portfolio-item {
@@ -391,6 +347,7 @@ footer .test-box-25-4 {
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: #5B6195 !important;
 }
 .portfolio-logo {
   max-width: 65%;
@@ -412,8 +369,6 @@ footer .test-box-25-4 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../img/koffee.jpg') center center no-repeat;
-  background-size: cover;
   opacity: 0;
   transition: all 0.2s ease-in-out;
   color: black;
@@ -454,13 +409,13 @@ footer .test-box-25-4 {
       .test-box-50 .mockup-info .overlay {
         background: rgba(118, 97, 74, 0.85);
         color: #C49A6C;
-        border: 0vw solid #C49A6C;
+        border: 0vw solid rgb(39, 31, 48);
         padding-left: 4vw;
         padding-bottom: 0vw;
         transition: all 0.2s ease-in-out;
       }
       .test-box-50 .mockup-info:hover .overlay {
-        border: 1vw solid #C49A6C;
+        border: 1vw solid rgb(39, 31, 48);
         padding-left: 3vw;
         padding-bottom: 3vw;
       }
@@ -471,13 +426,13 @@ footer .test-box-25-4 {
       .test-box-25-1 .mockup-info .overlay {
         background: rgba(125, 126, 126, 0.85);
         color: #D1D3D4;
-        border: 0vw solid #D1D3D4;
+        border: 0vw solid rgb(39, 31, 48);
         padding-left: 4vw;
         padding-bottom: 0vw;
         transition: all 0.2s ease-in-out;
       }
       .test-box-25-1 .mockup-info:hover .overlay {
-        border: 1vw solid #D1D3D4;
+        border: 1vw solid rgb(39, 31, 48);
         padding-left: 3vw;
         padding-bottom: 3vw;
       }
@@ -488,13 +443,13 @@ footer .test-box-25-4 {
       .test-box-25-2 .mockup-info .overlay {
         background: rgba(140, 52, 47, 0.85);
         color: #EF4136;
-        border: 0vw solid #EF4136;
+        border: 0vw solid rgb(39, 31, 48);
         padding-left: 4vw;
         padding-bottom: 0vw;
         transition: all 0.2s ease-in-out;
       }
       .test-box-25-2 .mockup-info:hover .overlay {
-        border: 1vw solid #EF4136;
+        border: 1vw solid rgb(39, 31, 48);
         padding-left: 3vw;
         padding-bottom: 3vw;
       }
@@ -505,13 +460,13 @@ footer .test-box-25-4 {
       .test-box-25-3 .mockup-info .overlay {
         background-color: rgba(20, 104, 99, .85);
         color: #00A79D;
-        border: 0vw solid #00A79D;
+        border: 0vw solid rgb(39, 31, 48);
         padding-left: 4vw;
         padding-bottom: 0vw;
         transition: all 0.2s ease-in-out;
       }
       .test-box-25-3 .mockup-info:hover .overlay {
-        border: 1vw solid #00A79D;
+        border: 1vw solid rgb(39, 31, 48);
         padding-left: 3vw;
         padding-bottom: 3vw;
       }
@@ -541,49 +496,31 @@ footer .test-box-25-4 {
         opacity: 1;
       }
 
+.test-box-25-4 {
+  flex: 1 0 100%;
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: flex-start;
+}
+  @media screen and (min-width: 800px) {
+    .test-box-25-4 {
+      flex: 1 0 50%;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .test-box-25-4 {
+      flex: 1 0 25%;
+    }
+  }
 
-
-  .copyright .hidden-text {
+  .copyright {
     opacity: 1;
     letter-spacing: inherit;
-    color: #707070;
+    color: #5B6195;
+    align-self: flex-end !important;
+    font-family: 'proxima-nova', sans-serif;
+    font-weight: 700;
   }
-
-
-  @media screen and (min-width: 800px) {
-    .copyright {
-      background: white;
-      transition: all 0.2s ease-in-out;
-    }
-      .copyright:hover {
-        background: #303030;
-        color: white;
-        cursor: help;
-      }
-    .copyright .hidden-text {
-      opacity: 0;
-      transition: all 0.2s ease-in-out;
-      letter-spacing: -6px;
-      color: white;
-    }
-      .copyright:hover .hidden-text {
-        opacity: 1;
-        letter-spacing: inherit;
-      }
-  }
-
-
-
-  .w--1of2 {
-    padding: 6%;
-  }
-    @media screen and (min-width: 800px) {
-      .w--1of2 {
-        padding: 5%;
-      }
-    }
-    @media screen and (min-width: 1200px) {
-      .w--1of2 {
-        padding: 4%;
-      }
-    }

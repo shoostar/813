@@ -1,5 +1,5 @@
 /* [STRUCTURE] layout containers and blocks */
-main { width: 100%; margin: 0; padding: 0; }
+main { width: 100%; margin: 0 auto; padding: 0; }
 .row { flex: 1 0 100%; padding: 0; display: flex; flex-wrap: wrap; flex-direction: row; }
 [class^='w--'] { flex: 1 0 100%; margin: 0; padding: 4em; }
 .column-main, .column-sidebar { width: 100%; margin: 0; padding: 0; }
@@ -47,6 +47,7 @@ main { width: 100%; margin: 0; padding: 0; }
 [class*='o--'] { margin-left: 0; }
   @media (min-width: 1200px) {
     .o--2of3 { margin-left: 66.6666% !important; }
+    .o--3of4 { margin-left: 75% !important; }
     .o--1of2 { margin-left: 50% !important;      }
     .o--2of5 { margin-left: 40% !important;      }
     .o--1of3 { margin-left: 33.3333% !important; }
@@ -54,6 +55,9 @@ main { width: 100%; margin: 0; padding: 0; }
     .o--1of5 { margin-left: 20% !important;      }
     .o--1of6 { margin-left: 16.6666% !important; }
   }
+
+/* [VERTICAL OFFSETS] push blocks up or down, applied to grid blocks */
+
 
 /* [UTILITIES] bahavior modifier classes, applied to containers and grid blocks */
 .hide { display: none; visibility: hidden; }
