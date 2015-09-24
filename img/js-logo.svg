@@ -5,10 +5,7 @@
 	 <style type="text/css">
       path{fill:#0D0106;}
       #lettering path{fill:#0D0106;opacity:0;}
-      @media all and (max-width: 800px) {
-      	#lettering path{opacity:0;}
-      }
-      @media all and (min-width: 120px) {
+      @media screen and (min-width: 148px) {
       	#lettering path{opacity:1;}
       }
     </style>

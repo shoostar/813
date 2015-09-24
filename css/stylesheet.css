@@ -168,8 +168,15 @@ header {
   }
 header .logo, footer .logo {
   width: 20vw;
-  max-width: 8em;
+  max-width: 9.25em;
 }
+  @media screen and (max-width: 800px) {
+    header .logo {
+      position: absolute;
+      top: 1.25vw;
+      left: 1.5vw;
+    }
+  }
 
   header nav a {
     font-family: 'proxima-nova', sans-serif;
