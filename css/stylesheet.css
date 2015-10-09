@@ -24,17 +24,17 @@ html {
   box-sizing: inherit;
 }
 html, body {
-  background: rgb(39, 31, 48);
+  background: rgb(0, 0, 0);
   font-size: 100%;
-  font-family: 'adobe-garamond-pro', serif;
+  font-family: 'ocr-a-std', sans-serif;
   color: #707070;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'proxima-nova', sans-serif;
+
 }
 h1 {
-  font-size: 7vw;
+  font-size: 5vw;
   line-height: 1.5em;
   margin-bottom: 1em;
 }
@@ -45,16 +45,11 @@ h1 {
   }
   @media screen and (min-width: 1200px){
     h1 {
-      font-size: 3.5vw;
+      font-size: 2.5vw;
     }
   }
-  h1.about-me {
-    font-family: 'adobe-garamond-pro', serif;
-    font-weight: 300;
-    color: rgb(13, 1, 6);
-  }
 h2 {
-  font-size: 2.25em;
+  font-size: 5.25vw;
   line-height: 1.333333333333333em;
   margin-bottom: .6666666666666667em;
 }
@@ -154,61 +149,55 @@ main {
 
 /* HEADER */
 header {
-  background: url('../img/map.jpg') center center no-repeat;
+  background: url('../img/paint.jpeg') left center no-repeat;
   background-size: cover;
 }
   header .row {
-    background: rgb(50, 20, 160);
-    mix-blend-mode: lighten;
+    background: rgb(242, 36, 23);
+    mix-blend-mode: multiply;
+    height: 100vh;
   }
   @media screen and (min-width: 1200px) {
     header {
       
     }
   }
-header .logo, footer .logo {
-  width: 20vw;
-  max-width: 9.25em;
-}
-  @media screen and (max-width: 800px) {
-    header .logo {
-      position: absolute;
-      top: 1.25vw;
-      left: 1.5vw;
-    }
+  h1.logo {
+    text-align: center;
+    color: rgb(242, 36, 23);
+    font-weight: 700;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    line-height: 1.5;
   }
-
-  header nav a {
-    font-family: 'proxima-nova', sans-serif;
+  nav {
+    position: fixed;
+    bottom: 5vw;
+    left: 5vw;
+  }
+  nav a {
     font-size: 3vw;
     letter-spacing: 0.25vw;
     text-transform: uppercase;
-    color: rgb(13, 1, 6) !important;
+    color: rgb(242, 36, 23) !important;
   }
-    header nav a:hover {
-      color: rgb(101, 126, 212) !important;
+    nav a:hover {
+      color: rgb(255, 255, 255) !important;
     }
-  header nav a:not(:last-of-type) {
+  nav a:not(:last-of-type) {
     margin-right: 2em;
   }
     @media screen and (min-width: 800px){
-      header nav a {
+      nav a {
         font-size: 1.75vw;
       }
     }
     @media screen and (min-width: 1200px){
-      header nav a {
+      nav a {
         font-size: 1.25vw;
       }
     }
-header .w--1of2 {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-}
 
 
 
@@ -233,7 +222,6 @@ footer {
 
   .test-box-logo {
     flex: 1 1 100%;
-    height: 50vw;
     padding: 6%;
     margin: 0;
     color: grey;
@@ -258,16 +246,13 @@ footer {
     }
   .test-box-about {
     flex: 1 1 100%;
-    min-height: 50vw;
-    padding: 6%;
     margin: 0;
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: flex-start;
-    align-items: flex-end;
-    color: rgb(91, 97, 149);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
     @media screen and (min-width: 800px) {
       .test-box-about {
@@ -277,7 +262,7 @@ footer {
     }
     @media screen and (min-width: 1200px) {
       .test-box-about {
-        flex: 1 1 50%;
+        flex: 1 1 100%;
         padding: 4%;
       }
     }
@@ -516,7 +501,7 @@ footer {
   .copyright {
     opacity: 1;
     letter-spacing: inherit;
-    color: #5B6195;
+    color: rgb(242, 36, 23) !important;
     align-self: flex-end !important;
     font-family: 'proxima-nova', sans-serif;
     font-weight: 700;
