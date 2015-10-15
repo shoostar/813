@@ -1,10 +1,11 @@
-/* COLORS */
-/* #878271 - creme */
-/* #2E302E - dark creme */
-/* #1D2120 - medium grey */
-/* #191C1B - dark grey */
-/* #141414 - slate */
-
+/* COLORS *//*
+NAME              BASE               |   LIGHT               |   DARK
+Red ------------- rgb(192, 29, 43)   |   rgb(211, 96, 106)   |   rgb(160, 14, 21)
+Slate ----------- rgb(48, 48, 64)    |   rgb(109, 109, 121)  |   rgb(24, 24, 32)
+Grey ------------ rgb(103, 115, 132) |   rgb(148, 156, 168)  |   rgb(51, 57, 70)
+Blue ------------ rgb(0, 157, 220)   |   rgb(76, 186, 230)   |   rgb(0, 108, 202)
+Midnight Blue --- rgb(36, 22, 35)    |   rgb(101, 91, 100)   |   rgb(18, 11, 17)
+*//* END COLORS */
 
 
 @import url('sanitize.css');
@@ -24,57 +25,46 @@ html {
   box-sizing: inherit;
 }
 html, body {
-  background: rgb(0, 0, 0);
+  background: white;
   font-size: 100%;
-  font-family: 'ocr-a-std', sans-serif;
-  color: #707070;
+  font-family: 'aktiv-grotesk', sans-serif;
+  color: rgb(48, 48, 64);
 }
 
 h1, h2, h3, h4, h5, h6 {
-
+  font-family: 'aktiv-grotesk', sans-serif;
+  color: rgb(109, 109, 121);
 }
+  .section-title::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 30px;
+    margin-top: 1.5em;
+    background: rgb(0, 157, 220);
+  }
 h1 {
-  font-size: 5vw;
+  font-size: 4em;
   line-height: 1.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.25em;
 }
-  @media screen and (min-width: 800px){
-    h1 {
-      font-size: 3.5vw;
-    }
-  }
-  @media screen and (min-width: 1200px){
-    h1 {
-      font-size: 2.5vw;
-    }
-  }
 h2 {
-  font-size: 5.25vw;
+  font-size: 3.125em;
   line-height: 1.333333333333333em;
   margin-bottom: .6666666666666667em;
 }
-  @media screen and (min-width: 800px){
-    h2 {
-      font-size: 4.75vw;
-    }
-  }
-  @media screen and (min-width: 1200px){
-    h2 {
-      font-size: 2.5vw;
-    }
-  }
 h3 {
-  font-size: 1.5em;
+  font-size: 2.5em;
   line-height: 1em;
   margin-bottom: 1em;
 }
 h4 {
-  font-size: 1.3125em;
+  font-size: 2.125em;
   line-height: 1.142857142857143em;
   margin-bottom: 1.142857142857143em;
 }
 h5 {
-  font-size: 1.125em;
+  font-size: 1.75em;
   line-height: 1.333333333333333em;
   margin-bottom: 1.333333333333333em;
 }
@@ -82,39 +72,39 @@ h6 {
   font-size: 1em;
   line-height: 1.5em;
   margin-bottom: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
 }
 p, ul, ol, dl, blockquote {
-  margin-bottom: 1.5em;
-  font-size: 4vw;
-  line-height: 1.5;
-  font-weight: 300;
+  font-weight: 400;
 }
-  @media screen and (min-width: 800px){
-    p, ul, ol, dl, blockquote {
-      font-size: 2.25vw;
-    }
-  }
-  @media screen and (min-width: 1200px){
-    p, ul, ol, dl, blockquote {
-      font-size: 1.75vw;
-    }
-  }
+p, ul, ol, dl, blockquote, strong {
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+}
 pre, code {
   font-family: 'source-code-pro', sans-serif;
 }
 em { font-style: italic; }
 strong { font-weight: 700; }
 a:link, a:visited {
-  color: #AAAAAA;
+  color: rgb(0, 157, 220);
+  font-weight: bold;
+  padding-bottom: 0.25rem;
+  border-bottom: 0px solid rgb(0, 157, 220);
+  transition: border-bottom ease-in-out 0.2s;
 }
   a:hover, a:focus, a:active {
-    color: #303030;
+    color: rgb(0, 157, 220);
+    border-bottom: 3px solid rgb(0, 157, 220);
   }
 hr {
   border: 0;
   height: 1px;
-  border-bottom: 1px solid #DDDDDD;
-  margin: 4em 0em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 2em 0em;
   width: 100%;
 }
   hr.wedge {
@@ -149,67 +139,129 @@ main {
 
 /* HEADER */
 header {
-  background: url('../img/paint.jpeg') left center no-repeat;
-  background-size: cover;
+
 }
-  header .row {
-    background: rgb(242, 36, 23);
-    mix-blend-mode: multiply;
-    height: 100vh;
+.logo {
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.5;
+  width: 8em;
+}
+
+
+
+/* NAVIGATION */
+nav {
+  position: fixed;
+  bottom: 5vw;
+  left: 5vw;
+}
+nav a {
+  font-size: 3vw;
+  letter-spacing: 0.25vw;
+  text-transform: uppercase;
+  color: rgb(242, 36, 23) !important;
+}
+  nav a:hover {
+    color: rgb(255, 255, 255) !important;
   }
-  @media screen and (min-width: 1200px) {
-    header {
-      
+nav a:not(:last-of-type) {
+  margin-right: 2em;
+}
+
+
+
+/* ARTICLES */
+article header {
+  padding: 2em;
+  margin-bottom: 2em;
+}
+article p:first-of-type {
+  font-size: 2.25em;
+  margin-bottom: 0.75em;
+}
+
+
+
+/* BUTTONS */
+button, a.button {
+  padding: 0.75em 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875em;
+  letter-spacing: 0.0625em;
+  background: rgb(0, 157, 220);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  transition: all ease-in-out 0.2s;
+  color: white;
+  border: none;
+  outline: none;
+}
+  button:hover, a.button:hover {
+    background: rgb(76, 186, 230);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  button:focus, a.button:focus {
+    background: rgb(0, 108, 202);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+    button.small, a.button.small {
+      padding: 0.5em 1.5em;
+      font-size: 0.75em;
     }
-  }
-  h1.logo {
-    text-align: center;
-    color: rgb(242, 36, 23);
-    font-weight: 700;
-    position: fixed;
-    top: 50px;
-    left: 50px;
-    line-height: 1.5;
-  }
-  nav {
-    position: fixed;
-    bottom: 5vw;
-    left: 5vw;
-  }
-  nav a {
-    font-size: 3vw;
-    letter-spacing: 0.25vw;
-    text-transform: uppercase;
-    color: rgb(242, 36, 23) !important;
-  }
-    nav a:hover {
-      color: rgb(255, 255, 255) !important;
+    button.large, a.button.large {
+      padding: 0.75em 2em;
+      font-size: 1.5em;
     }
-  nav a:not(:last-of-type) {
-    margin-right: 2em;
+
+
+
+button.red, a.button.red {
+  background: rgb(192, 29, 43);
+}
+  button.red:hover, a.button.red:hover {
+    background: rgb(211, 96, 106);
   }
-    @media screen and (min-width: 800px){
-      nav a {
-        font-size: 1.75vw;
-      }
-    }
-    @media screen and (min-width: 1200px){
-      nav a {
-        font-size: 1.25vw;
-      }
-    }
+  button.red:focus, a.button.red:focus {
+    background: rgb(160, 14, 21);
+  }
+
+button.slate, a.button.slate {
+  background: rgb(48, 48, 64);
+}
+  button.slate:hover, a.button.slate:hover {
+    background: rgb(109, 109, 121);
+  }
+  button.slate:focus, a.button.slate:focus {
+    background: rgb(24, 24, 32);
+  }
+
+button.grey, a.button.grey {
+  background: rgb(103, 115, 132);
+}
+  button.grey:hover, a.button.grey:hover {
+    background: rgb(148, 156, 168);
+  }
+  button.grey:focus, a.button.grey:focus {
+    background: rgb(51, 57, 70);
+  }
+
+button.midnight, a.button.midnight {
+  background: rgb(36, 22, 35);
+}
+  button.midnight:hover, a.button.midnight:hover {
+    background: rgb(101, 91, 100);
+  }
+  button.midnight:focus, a.button.midnight:focus {
+    background: rgb(18, 11, 17);
+  }
 
 
 
 /* SECTIONS */
 section {
-
+  
 }
-  @media screen and (min-width: 1200px) {
-    section {
-      
-    }
-  }    
 
 
 
@@ -220,303 +272,27 @@ footer {
 
 
 
-  .test-box-logo {
-    flex: 1 1 100%;
-    padding: 6%;
-    margin: 0;
-    color: grey;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: flex-start;
-    align-items: flex-start;
-  }
-    @media screen and (min-width: 800px) {
-      .test-box-logo {
-        flex: 1 1 50%;
-        padding: 5%;
-      }
-    }
-    @media screen and (min-width: 1200px) {
-      .test-box-logo {
-        flex: 1 1 50%;
-        padding: 4%;
-      }
-    }
-  .test-box-about {
-    flex: 1 1 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
-    @media screen and (min-width: 800px) {
-      .test-box-about {
-        flex: 1 1 50%;
-        padding: 5%;
-      }
-    }
-    @media screen and (min-width: 1200px) {
-      .test-box-about {
-        flex: 1 1 100%;
-        padding: 4%;
-      }
-    }
-  .test-box-50 {
-    flex: 1 1 50%;
-    min-height: 50vw;
-    padding: 6%;
-    margin: 0;
-    background: #C49A6C;
-    color: #76614A;
-  }
-    @media screen and (min-width: 800px) {
-      .test-box-50 {
-        flex: 1 1 50%;
-        padding: 5%;
-      }
-    }
-    @media screen and (min-width: 1200px) {
-      .test-box-50 {
-        flex: 1 1 50%;
-        padding: 4%;
-      }
-    }
-  .test-box-25-1, .test-box-25-2, .test-box-25-3, .test-box-25-4 {
-    flex: 1 1 50%;
-    height: 50vw;
-    padding: 6%;
-    margin: 0;
-  }
-    @media screen and (min-width: 800px) {
-      .test-box-25-1, .test-box-25-2, .test-box-25-3, .test-box-25-4 {
-        flex: 1 1 50%;
-        padding: 5%;
-      }
-    }
-    @media screen and (min-width: 1200px) {
-      .test-box-25-1, .test-box-25-2, .test-box-25-3, .test-box-25-4 {
-        flex: 0 0 25%;
-        height: 25vw;
-        padding: 4%;
-      }
-    }
-    .test-box-25-1 {
-      background: #D1D3D4;
-      color: #7D7E7E;
-    }
-    .test-box-25-2 {
-      background: #EF4136;
-      color: #8C342F;
-    }
-    .test-box-25-3 {
-      background: #00A79D;
-      color: #146863;
-    }
-
-
-
-
-.ov--25 { margin-top: 0; }
-  @media screen and (min-width: 800px) { .ov--25 { margin-top: 0; } }
-  @media screen and (min-width: 1200px) { .ov--25 { margin-top: 25vw; } }
-.ov--neg25 { margin-top: 0; }
-  @media screen and (min-width: 800px) { .ov--neg25 { margin-top: 0; } }
-  @media screen and (min-width: 1200px) { .ov--neg25 { margin-top: -25vw; } }
-.ov--50 { margin-top: 0; }
-  @media screen and (min-width: 800px) { .ov--50 { margin-top: 0; } }
-  @media screen and (min-width: 1200px) { .ov--50 { margin-top: 50vw; } }
-
-
-
-.portfolio-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: #5B6195 !important;
-  border: 1px solid rgb(39, 31, 48);
+/* TABLES */
+table {
+  margin: 0;
+  padding: 0;
 }
-.portfolio-logo {
-  max-width: 65%;
-  max-height: 20vw;
+table th,
+table td {
+  padding: 10px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
 }
-  @media screen and (min-width: 800px) {
-    .portfolio-logo {
-      max-height: 15vw;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    .portfolio-logo {
-      max-height: 10vw;
-    }
-  }
-.mockup-info {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-  color: black;
-  transform: translate(0, 0);
-  padding: 0vw;
+table th {
+  border-width: 2px;
 }
-  @media screen and (min-width: 800px) {
-    .portfolio-item:hover .mockup-info {
-      opacity: 1;
-    }
-  }
-  .mockup-info .overlay {
-    width: 100%;
-    height: 100%;
-    padding: 5vw;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-content: center;
-    align-items: flex-start;
-    overflow: hidden !important;
-  }
-    @media screen and (min-width: 800px) {
-      .mockup-info .overlay {
-        padding: 4vw;
-      }
-    }
-    @media screen and (min-width: 1200px) {
-      .mockup-info .overlay {
-        padding: 3vw;
-      }
-    }
-    .test-box-50 .mockup-info {
-      background: url('../img/coffee-beans.jpg') center center no-repeat;
-      background-size: cover;
-    }
-      .test-box-50 .mockup-info .overlay {
-        background: rgba(118, 97, 74, 0.85);
-        color: #C49A6C;
-        padding-left: 4vw;
-        padding-bottom: 0vw;
-        transition: all 0.2s ease-in-out;
-      }
-      .test-box-50 .mockup-info:hover .overlay {
-        padding-bottom: 4vw;
-      }
-    .test-box-25-1 .mockup-info {
-      background: url('../img/wilderness-photo.jpg') center center no-repeat;
-      background-size: cover;
-    }
-      .test-box-25-1 .mockup-info .overlay {
-        background: rgba(125, 126, 126, 0.85);
-        color: #D1D3D4;
-        padding-left: 4vw;
-        padding-bottom: 0vw;
-        transition: all 0.2s ease-in-out;
-      }
-      .test-box-25-1 .mockup-info:hover .overlay {
-        padding-bottom: 4vw;
-      }
-    .test-box-25-2 .mockup-info {
-      background: url('../img/peppers.jpg') center center no-repeat;
-      background-size: cover;
-    }
-      .test-box-25-2 .mockup-info .overlay {
-        background: rgba(140, 52, 47, 0.85);
-        color: #EF4136;
-        padding-left: 4vw;
-        padding-bottom: 0vw;
-        transition: all 0.2s ease-in-out;
-      }
-      .test-box-25-2 .mockup-info:hover .overlay {
-        padding-bottom: 4vw;
-      }
-    .test-box-25-3 .mockup-info {
-      background: url('../img/sugar-island-fest.jpg') center center no-repeat;
-      background-size: cover;
-    }
-      .test-box-25-3 .mockup-info .overlay {
-        background-color: rgba(20, 104, 99, .85);
-        color: #00A79D;
-        padding-left: 4vw;
-        padding-bottom: 0vw;
-        transition: all 0.2s ease-in-out;
-      }
-      .test-box-25-3 .mockup-info:hover .overlay {
-        padding-bottom: 4vw;
-      }
-    .mockup-info .overlay-desc {
-      postion: absolute;
-      bottom: 5em;
-      left: 5em;
-    }
-    .mockup-info h5 {
-      transition: all 0.2s ease-in-out;
-      opacity: 0;
-      position: relative;
-      z-index: 2;
-    }
-      .mockup-info:hover h5 {
-        opacity: 1;
-      }
-    .mockup-info h2 {
-      font-family: 'adobe-garamond-pro', serif;
-      font-weight: 300;
-      color: white;
-      transition: all 0.2s ease-in-out;
-      z-index: 1;
-      opacity: 0;
-    }
-      .mockup-info:hover h2 {
-        opacity: 1;
-      }
-
-.test-box-25-4 {
-  flex: 1 0 100%;
-  display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-content: center;
-    align-items: flex-start;
+table td {
+  color: #666;
 }
-  @media screen and (min-width: 800px) {
-    .test-box-25-4 {
-      flex: 1 0 100%;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    .test-box-25-4 {
-      flex: 1 1 100%;
-      height: inherit;
-    }
-  }
-
-  .copyright {
-    opacity: 1;
-    letter-spacing: inherit;
-    color: rgb(242, 36, 23) !important;
-    align-self: flex-end !important;
-    font-family: 'proxima-nova', sans-serif;
-    font-weight: 700;
-  }
-
-footer.w--1of2 {
-  padding: 6% !important;
+table tr:last-child th,
+table tr:last-child td {
+  border-bottom: none;
 }
-  @media screen and (min-width: 800px) {
-    footer.w--1of2 {
-      padding: 5% !important;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    footer.w--1of2 {
-      padding: 4% !important;
-    }
-  }
+table tr:nth-child(even) {
+  background: #eee;
+}

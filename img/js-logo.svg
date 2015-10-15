@@ -3,8 +3,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 238.6781 234.0575" style="enable-background:new 0 0 238.6781 234.0575;" xml:space="preserve">
 	 <style type="text/css">
-      path{fill:rgb(50, 50, 50);}
-      #lettering path{fill:rgb(50, 50, 50);opacity:0;}
+      path{fill:rgb(0, 0, 0);}
+      #lettering path{fill:rgb(0, 0, 0);opacity:0;}
       @media screen and (min-width: 148px) {
       	#lettering path{opacity:1;}
       }

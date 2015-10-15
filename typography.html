@@ -3,33 +3,30 @@
   <meta charset="utf-8">
   <link rel="shortcut icon" href="img/ffrobot.ico" type="image/x-icon">
   <link rel="icon" href="img/ffrobot.ico" type="image/x-icon">
-  <title>js.dev | Jon Schuster's portfolio</title>
+  <title>js.dev typography and style guide</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="css/stylesheet.css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="//use.typekit.net/egg6cmb.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
+  <script src="https://use.typekit.net/huh6mpu.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 
 <body>
 
-<main>
-  <header>
-    <div class="row">
-      <div class="w--1of2 o--1of4 pinned">
-        <img class="logo" src="img/js-logo.svg" alt="" />
-        <nav>
-          <a href="about.html">profile</a>
-          <a href="#">work</a>
-          <a href="#">notes</a>
-        </nav>
-      </div>
+<header>
+  <div class="row">
+    <div class="w--1of1 text-center">
+      <img class="logo" src="img/js-logo.svg" alt="" />
     </div>
-  </header>
+  </div>
+</header>
+
+<main>
   <section>
     <div class="row">
-      <div class="w--1of2 o--1of4 pinned">
+      <div class="w--1of4 o--1of4 pinned">
+        <h6 class="section-title">headings</h6>
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
@@ -37,6 +34,71 @@
         <h5>Heading 5</h5>
         <h6>Heading 6</h6>
       </div>
+      <div class="w--1of4 pinned">
+        <h6 class="section-title">linked headings</h6>
+        <h1><a href="#">Heading 1</a></h1>
+        <h2><a href="#">Heading 2</a></h2>
+        <h3><a href="#">Heading 3</a></h3>
+        <h4><a href="#">Heading 4</a></h4>
+        <h5><a href="#">Heading 5</a></h5>
+        <h6><a href="#">Heading 6</a></h6>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section>
+    <div class="row">
+      <div class="w--1of2 o--1of4 pinned">
+        <h6 class="section-title">buttons &amp; links</h6>
+        <button class="large">.large</button>
+        <button>button</button>
+        <button class="small">.small</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="w--1of2 o--1of4 pinned">
+        <a href="#" class="button large">.large</a>
+        <a href="#" class="button">anchor</a>
+        <a href="#" class="button small">.small</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="w--1of2 o--1of4 pinned">
+        <a href="#" class="button red">.red</a>
+        <a href="#" class="button slate">.slate</a>
+        <a href="#" class="button grey">.grey</a>
+        <a href="#" class="button midnight">.midnight</a>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section>
+    <div class="row">
+      <aside class="w--1of4 pinned text-right">
+        <p><small><em>This is an aside. It's used to pull excerpts from a paragraph, or displaying quotes. You can also use it for display figures or other small captioned objects.</small></em></p>
+      </aside>
+      <div class="w--1of2 pinned">
+        <p>This is an example paragraph. It's not really that long of one, but at least it gets the point across. I'm also going to use this opportunity to showcase some inline paragraph styling as well.</p>
+        <p>Just for good measure, let's go ahead and cap off this event with another basic paragraph.</p>
+        <a href="#">View Site</a>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;<a href="#" class="bottomless">See Case Study</a>
+        <hr>
+        <p>Project winning pitch work and hands on work on the concepting &amp; look and feel phases of the official Nickelodeon App.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section>
+    <div class="row">
+      <article class="w--1of2 o--1of4 pinned">
+        <p>When writing within an article context, the first paragraph will always be larger, so as to indicate itself as an introduction.</p>
+        <p>The second paragraph (and every paragraph thereafter) will remain the base font size. This makes things a bit easier to read once you get past the main intro. There's no reason to make this any bigger, as we don't want the visual impact to disctract readers.</p>
+        <p>Just for good measure, let's go ahead and cap off this event with another basic paragraph.</p>
+        <a href="#">View Site</a>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;<a href="#" class="bottomless">See Case Study</a>
+        <hr>
+        <p>Project winning pitch work and hands on work on the concepting &amp; look and feel phases of the official Nickelodeon App.</p>
+        <a href="#">View Project</a>
+      </article>
     </div>
   </section>
 </main>
