@@ -78,28 +78,51 @@ h6 {
 p, ul, ol, dl, blockquote {
   font-weight: 400;
 }
-p, ul, ol, dl, blockquote, strong {
-  margin-bottom: 1.5em;
-  font-size: 1.5em;
+p, ul, ol, dl, blockquote, strong, pre, code {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   letter-spacing: 0.025em;
 }
 pre, code {
-  font-family: 'source-code-pro', sans-serif;
+  font-family: "source-code-pro", sans-serif;
+  font-weight: bold;
 }
+  pre {
+    background: rgba(148, 156, 168, 0.25);
+    padding: 1em;
+    border-radius: 0.125rem;
+    margin: 1.75em 0 !important;
+    display: block;
+  }
 em { font-style: italic; }
 strong { font-weight: 700; }
 a:link, a:visited {
   color: rgb(0, 157, 220);
   font-weight: bold;
-  padding-bottom: 0.25rem;
-  border-bottom: 0px solid rgb(0, 157, 220);
-  transition: border-bottom ease-in-out 0.2s;
+  position: relative;
+  z-index: 100;
 }
   a:hover, a:focus, a:active {
     color: rgb(0, 157, 220);
-    border-bottom: 3px solid rgb(0, 157, 220);
   }
+  a:not(.button)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -0.25em;
+    top: -15%;
+    width: 10%;
+    height: 10%;
+    background: rgba(36, 22, 35, 0);
+    transition: all ease-in-out 0.2s;
+  }
+    a:not(.button):hover::after {
+      width: 90%;
+      height: 75%;
+      background: rgba(36, 22, 35, 0.1);
+    }
 hr {
   border: 0;
   height: 1px;
@@ -107,13 +130,23 @@ hr {
   margin: 2em 0em;
   width: 100%;
 }
-  hr.wedge {
+  hr.fin {
     height: 4px;
     width: 100px;
-    background: #92CDCF;
+    margin: 10em auto !important;
+    display: block;
+    background: rgb(76, 186, 230);
     border: 0;
-    text-align: left;
+    text-align: center;
   }
+    hr.fin::after {
+      content: 'fin.';
+      position: relative;
+      top: -0.825em;
+      font-size: 200%;
+      font-style: italic;
+      font-family: serif;
+    }
 ul {
   list-style: none;
   list-style-position: inside;
@@ -138,14 +171,21 @@ main {
 
 
 /* HEADER */
-header {
-
+header .w--1of2 {
+  flex: 1 1 100% !important;
 }
+  @media screen and (min-width: 1200px) {
+    header .w--1of2 {
+      flex: 0 0 50% !important;
+    }
+  }
 .logo {
-  text-align: center;
+  margin: 0 auto 2em auto;
+  display: block;
   font-weight: 700;
   line-height: 1.5;
   width: 8em;
+  max-width: 25%;
 }
 
 
@@ -173,18 +213,46 @@ nav a:not(:last-of-type) {
 
 /* ARTICLES */
 article header {
-  padding: 2em;
-  margin-bottom: 2em;
+
 }
-article p:first-of-type {
-  font-size: 2.25em;
+body.article article p:first-of-type {
+  font-size: 2em;
   margin-bottom: 0.75em;
 }
+  article p a:link, article p a:visited {
+    color: rgb(0, 157, 220);
+    font-weight: bold;
+    border-bottom: 0px solid rgb(0, 157, 220);
+    transition: border-bottom ease-in-out 0.2s;
+  }
+    article p a:hover, article p a:focus, article p a:active {
+      color: rgb(0, 157, 220);
+      border-bottom: 3px solid rgb(0, 157, 220);
+    }
+    article p a:link::after, article p a:visited::after, article p a:hover::after, article p a:focus::after, article p a:active::after {
+      background: transparent !important;
+    }
+article footer p {
+  color: rgb(148, 156, 168);
+  font-size: 1em !important;
+  margin-top: 1.75em;
+}
+aside {
+  margin-left: 8.33333334% !important;
+  display: block;
+}
+  aside p {
+    font-size: 85%;
+    line-height: 1.725;
+    padding-top: 0.725em;
+    text-align: right;
+  }
 
 
 
 /* BUTTONS */
 button, a.button {
+  display: inline-block;
   padding: 0.75em 2em;
   text-transform: uppercase;
   font-weight: 700;
@@ -196,6 +264,8 @@ button, a.button {
   color: white;
   border: none;
   outline: none;
+  cursor: pointer;
+  border-radius: 0.125rem;
 }
   button:hover, a.button:hover {
     background: rgb(76, 186, 230);

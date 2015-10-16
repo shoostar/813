@@ -1,5 +1,5 @@
 /* [STRUCTURE] layout containers and blocks */
-main { width: 100%; margin: 0 auto; padding: 0; }
+main { width: 100%; margin: 0 auto; padding: 0 4em; }
 .row { flex: 1 0 100%; padding: 0; display: flex; flex-wrap: wrap; flex-direction: row; }
 [class^='w--'] { flex: 1 0 100%; margin: 0; padding: 4em; }
 .column-main, .column-sidebar { width: 100%; margin: 0; padding: 0; }
