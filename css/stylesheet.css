@@ -79,11 +79,21 @@ p, ul, ol, dl, blockquote {
   font-weight: 400;
 }
 p, ul, ol, dl, blockquote, strong, pre, code {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  margin-bottom: 1.5em;
+  font-size: 3vw;
   line-height: 1.5;
   letter-spacing: 0.025em;
 }
+  @media screen and (min-width: 800px) {
+    p, ul, ol, dl, blockquote, strong, pre, code {
+      font-size: 2.125vw;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    p, ul, ol, dl, blockquote, strong, pre, code {
+      font-size: 1.25vw;
+    }
+  }
 pre, code {
   font-family: "source-code-pro", sans-serif;
   font-weight: bold;
@@ -234,9 +244,19 @@ body.article article p:first-of-type {
     }
 article footer p {
   color: rgb(148, 156, 168);
-  font-size: 1em !important;
-  margin-top: 1.75em;
+  font-size: 1.875vw;
+  margin-top: 1.75rem;
 }
+  @media screen and (min-width: 800px) {
+    article footer p {
+      font-size: 1.375vw;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    article footer p {
+      font-size: 0.875vw;
+    }
+  }
 aside {
   margin-left: 8.33333334% !important;
   display: block;
