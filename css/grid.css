@@ -6,8 +6,9 @@ main { width: 100%; margin: 0 auto; padding: 0; }
   }
 [class^='w--'] { flex: 1 0 100%; margin: 0; padding: 8vw; }
   @media screen and (min-width: 1200px) {
-    [class^='w--'] { padding: 0 4vw; }
+    [class^='w--'] { padding: 4vw; }
   }
+}
 .column-main, .column-sidebar { width: 100%; margin: 0; padding: 0; }
 .main-container { padding: 0; margin: 0; }
 

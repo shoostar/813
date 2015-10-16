@@ -48,6 +48,7 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'aktiv-grotesk', sans-serif;
   color: rgb(109, 109, 121);
+  margin-bottom: 1rem;
 }
   .section-title::after {
     content: '';
@@ -81,7 +82,7 @@ p, ul, ol, dl, blockquote {
   font-weight: 400;
 }
 p, ul, ol, dl, blockquote, strong, pre, code {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   line-height: 1.5;
   letter-spacing: 0.025em;
 }
@@ -218,10 +219,6 @@ nav a:not(:last-of-type) {
 article header {
 
 }
-body.article article p:first-of-type {
-  font-size: 125%;
-  margin-bottom: 0.75em;
-}
   article p a:link, article p a:visited {
     color: rgb(0, 157, 220);
     font-weight: bold;
@@ -245,7 +242,7 @@ aside {
   display: block;
 }
   aside p {
-    line-height: 1.725;
+    font-size: 75%;
     padding-top: 0.725em;
     text-align: right;
   }
