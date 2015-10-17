@@ -235,11 +235,15 @@ article header {
 article footer p {
   font-size: 75%;
   color: rgb(148, 156, 168);
-  margin-top: 1.75rem;
+  margin-top: 1.5rem;
 }
 aside {
   margin-left: 8.33333334% !important;
   display: block;
+  position: absolute;
+  left: -0%;
+  width: 16.666%;
+  float: left !important;
 }
   aside p {
     font-size: 75%;
@@ -341,36 +345,7 @@ footer {
 
 
 
-/* TABLES */
-table {
-  margin: 0;
-  padding: 0;
-}
-table th,
-table td {
-  padding: 10px 20px;
-  text-align: left;
-  border-bottom: 1px solid #ccc;
-}
-table th {
-  border-width: 2px;
-}
-table td {
-  color: #666;
-}
-table tr:last-child th,
-table tr:last-child td {
-  border-bottom: none;
-}
-table tr:nth-child(even) {
-  background: #eee;
-}
-
-
-
 /* FORMS */
-/* Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -431,8 +406,8 @@ label > .label-body {
   font-weight: normal; }
 
 
-/* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* LISTS */
 ul {
   list-style: circle inside; }
 ol {
@@ -448,3 +423,26 @@ ol ul {
   font-size: 90%; }
 li {
   margin-bottom: 1rem; }
+
+
+
+/* TABLES */
+table {
+  width: 100%; }
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+figcaption {
+  margin-top: 0.75rem;
+  font-size: 65%;
+  font-style: italic;
+  color: rgb(109, 109, 121);
+}
