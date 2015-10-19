@@ -88,15 +88,22 @@ p, ul, ol, dl, blockquote, strong, pre, code {
 }
 pre, code {
   font-family: "source-code-pro", sans-serif;
-  font-weight: bold;
+  background: rgba(148, 156, 168, 0.25);
+  border-radius: 0.125rem;
 }
   pre {
-    background: rgba(148, 156, 168, 0.25);
-    padding: 1em;
-    border-radius: 0.125rem;
-    margin: 1.75em 0 !important;
+    padding: 1em 0.5rem;
+    margin: 1.75rem 0 0 0 !important;
     display: block;
+    text-align: left;
   }
+  code {
+    padding: 0 0.5rem !important;
+    margin-bottom: 0 !important;
+  }
+    pre > code {
+      background: none;
+    }
 em { font-style: italic; }
 strong { font-weight: 700; }
 a:link, a:visited {
@@ -388,16 +395,18 @@ select {
   .field-container.half {
     width: 100%;
     display: block;
-    float: left;
+    margin-left: 0;
   }
     @media screen and (min-width: 800px) {
       .field-container.half {
         width: calc(50% - 1vw);
+        float: left;
+      }
+      .field-container.half:nth-of-type(even) {
+        margin-left: 2vw;
       }
     }
-    .field-container.half:nth-of-type(even) {
-      margin-left: 2vw !important;
-    }
+
 textarea {
   min-height: 10rem;
   padding-top: 0.5rem;
