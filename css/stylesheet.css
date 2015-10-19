@@ -93,7 +93,7 @@ pre, code {
 }
   pre {
     padding: 1em 0.5rem;
-    margin: 1.75rem 0 0 0 !important;
+    margin: 1.5rem 0 !important;
     display: block;
     text-align: left;
   }
@@ -232,21 +232,33 @@ nav a:not(:last-of-type) {
 article header {
 
 }
+article p:first-of-type {
+  font-size: 150%;
+}
   article p a:link, article p a:visited {
     color: rgb(0, 157, 220);
     font-weight: bold;
-    border-bottom: 0px solid rgb(0, 157, 220);
-    transition: border-bottom ease-in-out 0.2s;
   }
+    article p a:link::before, article p a:visited::before {
+      content: '';
+      height: 2px;
+      width: 10%;
+      display: inline-block;
+      background: rgba(0, 157, 220, 1);
+      position: absolute;
+      top: 1.25em;
+    } 
+      article p a:hover::before, article p a:focus::before, article p a:active::before {
+        width: 100%;
+      }
     article p a:hover, article p a:focus, article p a:active {
       color: rgb(0, 157, 220);
-      border-bottom: 3px solid rgb(0, 157, 220);
     }
     article p a:link::after, article p a:visited::after, article p a:hover::after, article p a:focus::after, article p a:active::after {
       background: transparent !important;
     }
 article footer p {
-  font-size: 75%;
+  font-size: 75% !important;
   color: rgb(148, 156, 168);
   margin-top: 1.5rem;
 }
@@ -371,6 +383,27 @@ footer {
 
 
 
+/* QUOTES */
+blockquote {
+  background: rgba(148, 156, 168, 0.1);
+  border-left: 10px solid rgba(148, 156, 168, 0.25);
+  margin: 1.5em 0;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: rgba(148, 156, 168, 0.5);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+
+
 /* FORMS */
 input[type="email"],
 input[type="number"],
@@ -437,10 +470,10 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal; }
-::-webkit-input-placeholder { color: rgba(148, 156, 168, 0.25); }
-:-moz-placeholder { color: rgba(148, 156, 168, 0.25); }
-::-moz-placeholder { color: rgba(148, 156, 168, 0.25); }
-:-ms-input-placeholder { color: rgba(148, 156, 168, 0.25); }
+::-webkit-input-placeholder { color: rgba(148, 156, 168, 0.25); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+:-moz-placeholder { color: rgba(148, 156, 168, 0.25); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+::-moz-placeholder { color: rgba(148, 156, 168, 0.25); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+:-ms-input-placeholder { color: rgba(148, 156, 168, 0.25); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
 
 
 

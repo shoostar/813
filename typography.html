@@ -52,7 +52,7 @@
       <div class="w--1of2 o--1of4 pinned">
         <h6 class="section-title">typography</h6>
         <p><a href="#">This is a regular link</a></p>
-        <article><p><a href="#">This is an inline link inside an article</a></p></article>
+        <article><p><!-- LEAVE BLANK! (removes 1st-paragraph enlargement inside <article>)--></p><p><a href="#">This is an inline link inside an article</a></p></article>
         <p><strong>Strong is used to indicate strong importance</strong></p>
         <p><em>This text has added emphasis</em></p>
         <p>The <b>b element</b> is stylistically different text from normal text, without any special importance</p>
@@ -130,35 +130,6 @@
   <section>
     <div class="row">
       <div class="w--1of2 o--1of4 pinned">
-        <h6 class="section-title">forms</h6>
-        <form method="post" action="#" class="cd-form floating-labels comment-form">
-          <fieldset>
-            <div class="field-container half">
-              <label for="comment-name">Name</label>
-              <input class="half" id="comment-name" type="text" placeholder="Enter Your Name" />
-            </div>
-            <div class="field-container half">
-              <label for="comment-email">Email</label>
-              <input class="half" id="comment-email" type="email" placeholder="Your email address" />
-            </div>
-            <div class="field-container">
-              <label for="comment-url">URL</label>
-              <input id="comment-url" type="url" placeholder="Website if you got one" />
-            </div>
-            <div class="field-container">
-              <label for="comment-field">Comment</label>
-              <textarea id="comment-field" rows="5" placeholder="Write you comment here"></textarea>
-            </div>
-          </fieldset>
-          <input class="button" type="submit" value="Submit">
-        </form>
-      </div>
-    </div>
-  </section>
-  <hr>
-  <section>
-    <div class="row">
-      <div class="w--1of2 o--1of4 pinned">
         <h6 class="section-title">tables</h6>
         <figure>
           <table class="u-full-width">
@@ -207,6 +178,34 @@
     </div>
   </section>
   <hr>
+  <section>
+    <div class="row">
+      <div class="w--1of2 o--1of4 pinned">
+        <h6 class="section-title">forms</h6>
+        <form method="post" action="#" class="cd-form floating-labels comment-form">
+          <fieldset>
+            <div class="field-container half">
+              <label for="comment-name">Name</label>
+              <input class="half" id="comment-name" type="text" placeholder="Enter Your Name" />
+            </div>
+            <div class="field-container half">
+              <label for="comment-email">Email</label>
+              <input class="half" id="comment-email" type="email" placeholder="Your email address" />
+            </div>
+            <div class="field-container">
+              <label for="comment-url">URL</label>
+              <input id="comment-url" type="url" placeholder="Website if you got one" />
+            </div>
+            <div class="field-container">
+              <label for="comment-field">Comment</label>
+              <textarea id="comment-field" rows="5" placeholder="Write you comment here"></textarea>
+            </div>
+          </fieldset>
+          <input class="button" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
