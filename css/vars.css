@@ -1,0 +1,29 @@
+/* IMPORT THESE FILES */
+@import url('/myth/sanitize.css');
+@import url('/myth/sections.css');
+@import url('/myth/typography.css');
+@import url('/myth/articles.css');
+@import url('/myth/buttons.css');
+@import url('/myth/forms.css');
+@import url('/myth/grid.css');
+
+
+
+/* VARIABLES */
+:root {
+  --color-red-base: rgb(192, 29, 43);
+  --color-red-light: rgb(211, 96, 106);
+  --color-red-dark: rgb(160, 14, 21);
+  --color-slate-base: rgb(48, 48, 64);
+  --color-slate-light: rgb(109, 109, 121);
+  --color-slate-dark: rgb(24, 24, 32);
+  --color-grey-base: rgb(103, 115, 132);
+  --color-grey-light: rgb(148, 156, 168);
+  --color-grey-dark: rgb(51, 57, 70);
+  --color-blue-base: rgb(0, 157, 220);
+  --color-blue-light: rgb(76, 186, 230);
+  --color-blue-dark: rgb(0, 108, 202);
+  --color-midnight-base: rgb(36, 22, 35);
+  --color-midnight-light: rgb(101, 91, 100);
+  --color-midnight-dark: rgb(18, 11, 17);
+}

@@ -1,0 +1,545 @@
+/* COLORS *//*
+
+NAME         BASE               |   LIGHT               |   DARK
+Red -------- rgb(192, 29, 43)   |   rgb(211, 96, 106)   |   rgb(160, 14, 21)
+Slate ------ rgb(48, 48, 64)    |   rgb(109, 109, 121)  |   rgb(24, 24, 32)
+Grey ------- rgb(103, 115, 132) |   rgb(148, 156, 168)  |   rgb(51, 57, 70)
+Blue ------- rgb(0, 157, 220)   |   rgb(76, 186, 230)   |   rgb(0, 108, 202)
+Midnight --- rgb(36, 22, 35)    |   rgb(101, 91, 100)   |   rgb(18, 11, 17)
+
+*//* END COLORS */
+
+
+@import url('myth/sanitize.css');
+@import url('myth/grid.css');
+
+/* Add some basic typography.
+======================================= */
+:root {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  :root {
+    font-size: calc(14px + 8 * ((100vw - 320px) / 960));
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  :root {
+    font-size: 22px;
+  }
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html, body {
+  background: white;
+  font-family: 'neuzeit-grotesk', sans-serif;
+  color: rgb(48, 48, 64);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'neuzeit-grotesk', sans-serif;
+  color: rgb(109, 109, 121);
+  margin-bottom: 1rem;
+}
+  .section-title::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 30px;
+    margin-top: 1.5em;
+    background: rgb(0, 157, 220);
+  }
+h1 {
+  font-size: 300%;
+}
+h2 {
+  font-size: 250%;
+}
+h3 {
+  font-size: 225%;
+}
+h4 {
+  font-size: 175%;
+}
+h5 {
+  font-size: 125%;
+}
+h6 {
+  font-size: 75%;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+p, ul, ol, dl, blockquote {
+  font-weight: 400;
+}
+p, ul, ol, dl, blockquote, strong, pre, code {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+}
+pre, code {
+  font-family: "source-code-pro", sans-serif;
+  background: rgba(148, 156, 168, 0.25);
+  border-radius: 0.125rem;
+}
+  pre {
+    padding: 1em 0.5rem;
+    margin: 1.5rem 0 !important;
+    display: block;
+    text-align: left;
+  }
+  code {
+    padding: 0 0.5rem !important;
+    margin-bottom: 0 !important;
+  }
+    pre > code {
+      background: none;
+    }
+em { font-style: italic; }
+strong { font-weight: 700; }
+a:link, a:visited {
+  color: rgb(0, 157, 220);
+  font-weight: bold;
+  position: relative;
+  z-index: 100;
+}
+  a:hover, a:focus, a:active {
+    color: rgb(0, 157, 220);
+  }
+  a:not(.button)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -0.25em;
+    top: -15%;
+    width: 10%;
+    height: 10%;
+    background: rgba(36, 22, 35, 0);
+    transition: all ease-in-out 0.2s;
+  }
+    a:not(.button):hover::after {
+      width: 90%;
+      height: 75%;
+      background: rgba(36, 22, 35, 0.1);
+    }
+hr {
+  border: 0;
+  height: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 2em 0em;
+  width: 100%;
+}
+  hr.fin {
+    height: 4px;
+    width: 100px;
+    margin: 10em auto !important;
+    display: block;
+    background: rgb(76, 186, 230);
+    border: 0;
+    text-align: center;
+  }
+    hr.fin::after {
+      content: 'fin.';
+      position: relative;
+      top: -0.825em;
+      font-size: 200%;
+      font-style: italic;
+      font-weight: 300;
+    }
+img {
+  width: 100%;
+}
+kbd {
+  padding: 0.125rem 0.5rem 0.25rem 0.5rem;
+  border: 1px solid rgb(148, 156, 168);
+  border-radius: 0.25rem;
+  box-shadow: inset 0 -2px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+main {
+  overflow: hidden;
+}
+
+
+
+/* HEADER */
+header .w--1of2 {
+  flex: 1 1 100% !important;
+}
+  @media screen and (min-width: 1200px) {
+    header .w--1of2 {
+      flex: 0 0 50% !important;
+    }
+  }
+.logo {
+  margin: 0 auto 2em auto;
+  display: block;
+  font-weight: 700;
+  line-height: 1.5;
+  width: 7em;
+  max-width: 15%;
+}
+
+
+
+/* NAVIGATION */
+nav {
+  position: fixed;
+  bottom: 5vw;
+  left: 5vw;
+}
+nav a {
+  font-size: 3vw;
+  letter-spacing: 0.25vw;
+  text-transform: uppercase;
+  color: rgb(242, 36, 23) !important;
+}
+  nav a:hover {
+    color: rgb(255, 255, 255) !important;
+  }
+nav a:not(:last-of-type) {
+  margin-right: 2em;
+}
+
+
+
+/* ARTICLES */
+article header {
+
+}
+article p:first-of-type:not(small) {
+  font-size: 125%;
+  color: rgb(0, 108, 202);
+}
+  article p a:link, article p a:visited {
+    color: rgb(0, 157, 220);
+    font-weight: bold;
+  }
+    article p a:link::before, article p a:visited::before {
+      content: '';
+      height: 2px;
+      width: 0%;
+      display: inline-block;
+      background: rgba(0, 157, 220, 1);
+      position: absolute;
+      top: 1.25em;
+      transition: all ease-in-out 0.2s;
+      opacity: 0;
+      white-space: nowrap;
+    } 
+      article p a:hover::before, article p a:focus::before, article p a:active::before {
+        width: 100%;
+        opacity: 1;
+      }
+    article p a:hover, article p a:focus, article p a:active {
+      color: rgb(0, 157, 220);
+    }
+    article p a:link::after, article p a:visited::after, article p a:hover::after, article p a:focus::after, article p a:active::after {
+      background: transparent !important;
+    }
+article footer p {
+  font-size: 75% !important;
+  color: rgba(48, 48, 64, 0.5) !important;
+  margin-top: 1.5rem;
+}
+aside {
+  margin-left: 8.33333334% !important;
+  display: block;
+  position: absolute;
+  left: -0%;
+  width: 16.666%;
+  float: left !important;
+}
+  aside p {
+    font-size: 75%;
+    padding-top: 0.5em;
+    text-align: right;
+  }
+
+
+
+/* BUTTONS */
+button, a.button, input[type="submit"] {
+  display: inline-block;
+  padding: 0.75em 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 75%;
+  letter-spacing: 0.0625em;
+  background: rgb(0, 157, 220);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  transition: all ease-in-out 0.2s;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.125rem;
+}
+  button:hover, a.button:hover, input[type="submit"]:hover {
+    background: rgb(76, 186, 230);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  button:focus, a.button:focus, input[type="submit"]:focus {
+    background: rgb(0, 108, 202);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+    button.small, a.button.small, input[type="submit"].small {
+      padding: 0.5em 1.5em;
+      font-size: 62.5%;
+    }
+    button.large, a.button.large, input[type="submit"].large {
+      padding: 0.75em 2em;
+      font-size: 100%;
+    }
+
+
+
+button.red, a.button.red, input[type="submit"].red {
+  background: rgb(192, 29, 43);
+}
+  button.red:hover, a.button.red:hover, input[type="submit"].red:hover {
+    background: rgb(211, 96, 106);
+  }
+  button.red:focus, a.button.red:focus, input[type="submit"].red:focus {
+    background: rgb(160, 14, 21);
+  }
+
+button.slate, a.button.slate, input[type="submit"].slate {
+  background: rgb(48, 48, 64);
+}
+  button.slate:hover, a.button.slate:hover, input[type="submit"].slate:hover {
+    background: rgb(109, 109, 121);
+  }
+  button.slate:focus, a.button.slate:focus, input[type="submit"].slate:focus {
+    background: rgb(24, 24, 32);
+  }
+
+button.grey, a.button.grey, input[type="submit"].grey {
+  background: rgb(103, 115, 132);
+}
+  button.grey:hover, a.button.grey:hover, input[type="submit"].grey:hover {
+    background: rgb(148, 156, 168);
+  }
+  button.grey:focus, a.button.grey:focus, input[type="submit"].grey:focus {
+    background: rgb(51, 57, 70);
+  }
+
+button.midnight, a.button.midnight, input[type="submit"].midnight {
+  background: rgb(36, 22, 35);
+}
+  button.midnight:hover, a.button.midnight:hover, input[type="submit"].midnight:hover {
+    background: rgb(101, 91, 100);
+  }
+  button.midnight:focus, a.button.midnight:focus, input[type="submit"].midnight:focus {
+    background: rgb(18, 11, 17);
+  }
+
+
+
+/* SECTIONS */
+section {
+  
+}
+.portfolio-item img {
+  max-height: 5em;
+  margin-bottom: 1.5rem;
+  width: 10%;
+}
+.featured-portfolio-item {
+  background: url('../img/paint.jpg') center center no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+  color: white;
+}
+  .featured-portfolio-item p {
+    max-width: 66.666%;
+  }
+
+
+/* FOOTER */
+footer {
+  padding-bottom: 1rem;
+}
+  footer h6 {
+    padding-bottom: 0.5em;
+    margin-bottom: 2.5em;
+    display: inline-block;
+    border-bottom: 2px solid rgba(109, 109, 121, 0.25);
+  }
+    footer h6 span {
+      padding-right: 3.75em;
+      margin-right: 3.75em;
+      border-right: 2px solid rgba(109, 109, 121, 0.25);
+      padding-bottom: 0.875em;
+    }
+  footer small {
+    font-variant: small-caps;
+    letter-spacing: 0.135rem;
+    color: rgb(148, 156, 168);
+  }
+
+
+
+/* QUOTES */
+blockquote {
+  background: rgba(148, 156, 168, 0.1);
+  border-left: 10px solid rgba(148, 156, 168, 0.25);
+  margin: 1.5em 0;
+  padding: 1em;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: rgba(255, 255, 255, 1);
+  content: open-quote;
+  font-size: 16em;
+  float: left;
+  line-height: 0.1em;
+  margin-top: 0.1875em;
+  font-family: Georgia;
+  position: absolute;
+  z-index: 1;
+}
+blockquote p, blockquote cite {
+  display: inline;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* FORMS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border-bottom: 2px solid rgba(148, 156, 168, 0.25);
+  transition: border-bottom ease-in-out 0.2s;
+  box-shadow: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+  .field-container.half {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+  }
+    @media screen and (min-width: 800px) {
+      .field-container.half {
+        width: calc(50% - 1vw);
+        float: left;
+      }
+      .field-container.half:nth-of-type(even) {
+        margin-left: 2vw;
+      }
+    }
+
+textarea {
+  min-height: 10rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border-bottom: 2px solid rgb(0, 157, 220);
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+::-webkit-input-placeholder { color: rgba(148, 156, 168, 0.5); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+:-moz-placeholder { color: rgba(148, 156, 168, 0.5); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+::-moz-placeholder { color: rgba(148, 156, 168, 0.5); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+:-ms-input-placeholder { color: rgba(148, 156, 168, 0.5); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+
+
+
+/* LISTS */
+ul {
+  list-style: circle inside;
+   }
+ol {
+  list-style: none;
+  list-style-type: upper-roman;
+  color: rgb(101, 91, 100); }
+  ol li span {
+    color: rgb(48, 48, 64); }
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+li {
+  margin-bottom: 1rem; }
+
+
+
+
+
+
+/* TABLES */
+table {
+  width: 100%; }
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+figcaption {
+  margin-top: 0.75rem;
+  font-size: 65%;
+  font-style: italic;
+  color: rgb(109, 109, 121);
+}
