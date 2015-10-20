@@ -377,6 +377,7 @@ footer {
 }
   footer h6 {
     padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
     display: inline-block;
     border-bottom: 2px solid rgba(109, 109, 121, 0.25);
   }
@@ -384,11 +385,11 @@ footer {
       padding-right: 3.75em;
       margin-right: 3.75em;
       border-right: 2px solid rgba(109, 109, 121, 0.25);
-      padding-bottom: 0.65em;
+      padding-bottom: 0.7em;
     }
   footer small {
     font-variant: small-caps;
-    letter-spacing: 0.12rem;
+    letter-spacing: 0.125rem;
     color: rgb(148, 156, 168);
   }
 
@@ -413,7 +414,7 @@ blockquote:before {
   position: absolute;
   z-index: 1;
 }
-blockquote p {
+blockquote p, blockquote cite {
   display: inline;
   position: relative;
   z-index: 2;
