@@ -372,22 +372,25 @@ section {
 
 
 /* FOOTER */
-footer h6 {
-  padding-bottom: 0.5em;
-  display: inline-block;
-  border-bottom: 2px solid rgba(109, 109, 121, 0.25);
+footer {
+  padding-bottom: 1rem;
 }
-  footer h6 span {
-    padding-right: 3.75em;
-    margin-right: 3.75em;
-    border-right: 2px solid rgba(109, 109, 121, 0.25);
-    padding-bottom: 0.75em;
+  footer h6 {
+    padding-bottom: 0.5em;
+    display: inline-block;
+    border-bottom: 2px solid rgba(109, 109, 121, 0.25);
   }
-footer small {
-  font-variant: small-caps;
-  letter-spacing: 0.125rem;
-  color: rgb(148, 156, 168);
-}
+    footer h6 span {
+      padding-right: 3.75em;
+      margin-right: 3.75em;
+      border-right: 2px solid rgba(109, 109, 121, 0.25);
+      padding-bottom: 0.65em;
+    }
+  footer small {
+    font-variant: small-caps;
+    letter-spacing: 0.12rem;
+    color: rgb(148, 156, 168);
+  }
 
 
 
@@ -396,21 +399,24 @@ blockquote {
   background: rgba(148, 156, 168, 0.1);
   border-left: 10px solid rgba(148, 156, 168, 0.25);
   margin: 1.5em 0;
-  padding: 0.5em 1em 0.5em;
+  padding: 1em;
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
-  color: rgba(148, 156, 168, 0.25);
+  color: rgba(255, 255, 255, 1);
   content: open-quote;
-  font-size: 12em;
+  font-size: 16em;
   float: left;
   line-height: 0.1em;
   margin-top: 0.25em;
   font-family: Georgia;
   position: absolute;
+  z-index: 1;
 }
 blockquote p {
   display: inline;
+  position: relative;
+  z-index: 2;
 }
 
 
