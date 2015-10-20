@@ -1,10 +1,12 @@
 /* COLORS *//*
-NAME              BASE               |   LIGHT               |   DARK
-Red ------------- rgb(192, 29, 43)   |   rgb(211, 96, 106)   |   rgb(160, 14, 21)
-Slate ----------- rgb(48, 48, 64)    |   rgb(109, 109, 121)  |   rgb(24, 24, 32)
-Grey ------------ rgb(103, 115, 132) |   rgb(148, 156, 168)  |   rgb(51, 57, 70)
-Blue ------------ rgb(0, 157, 220)   |   rgb(76, 186, 230)   |   rgb(0, 108, 202)
-Midnight Blue --- rgb(36, 22, 35)    |   rgb(101, 91, 100)   |   rgb(18, 11, 17)
+
+NAME         BASE               |   LIGHT               |   DARK
+Red -------- rgb(192, 29, 43)   |   rgb(211, 96, 106)   |   rgb(160, 14, 21)
+Slate ------ rgb(48, 48, 64)    |   rgb(109, 109, 121)  |   rgb(24, 24, 32)
+Grey ------- rgb(103, 115, 132) |   rgb(148, 156, 168)  |   rgb(51, 57, 70)
+Blue ------- rgb(0, 157, 220)   |   rgb(76, 186, 230)   |   rgb(0, 108, 202)
+Midnight --- rgb(36, 22, 35)    |   rgb(101, 91, 100)   |   rgb(18, 11, 17)
+
 *//* END COLORS */
 
 
@@ -33,6 +35,8 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -156,20 +160,6 @@ hr {
       font-style: italic;
       font-family: serif;
     }
-ul {
-  list-style: none;
-  list-style-position: inside;
-}
-  ul li > ul {
-    list-style: square;
-    list-style-position: inside;
-  }
-  ul.checked {
-    list-style-type: none;
-  }
-    ul.checked li {
-      font-weight: 700;
-    }
 img {
   width: 100%;
 }
@@ -201,8 +191,8 @@ header .w--1of2 {
   display: block;
   font-weight: 700;
   line-height: 1.5;
-  width: 8em;
-  max-width: 25%;
+  width: 7em;
+  max-width: 15%;
 }
 
 
@@ -232,8 +222,9 @@ nav a:not(:last-of-type) {
 article header {
 
 }
-article p:first-of-type {
-  font-size: 150%;
+article p:first-of-type:not(small) {
+  font-size: 125%;
+  color: rgb(0, 108, 202);
 }
   article p a:link, article p a:visited {
     color: rgb(0, 157, 220);
@@ -242,14 +233,18 @@ article p:first-of-type {
     article p a:link::before, article p a:visited::before {
       content: '';
       height: 2px;
-      width: 10%;
+      width: 0%;
       display: inline-block;
       background: rgba(0, 157, 220, 1);
       position: absolute;
       top: 1.25em;
+      transition: all ease-in-out 0.2s;
+      opacity: 0;
+      white-space: nowrap;
     } 
       article p a:hover::before, article p a:focus::before, article p a:active::before {
         width: 100%;
+        opacity: 1;
       }
     article p a:hover, article p a:focus, article p a:active {
       color: rgb(0, 157, 220);
@@ -259,7 +254,7 @@ article p:first-of-type {
     }
 article footer p {
   font-size: 75% !important;
-  color: rgb(148, 156, 168);
+  color: rgba(48, 48, 64, 0.5) !important;
   margin-top: 1.5rem;
 }
 aside {
@@ -388,15 +383,18 @@ blockquote {
   background: rgba(148, 156, 168, 0.1);
   border-left: 10px solid rgba(148, 156, 168, 0.25);
   margin: 1.5em 0;
-  padding: 0.5em 10px;
+  padding: 0.5em 1em 0.5em;
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
-  color: rgba(148, 156, 168, 0.5);
+  color: rgba(148, 156, 168, 0.25);
   content: open-quote;
-  font-size: 4em;
+  font-size: 12em;
+  float: left;
   line-height: 0.1em;
-  vertical-align: -0.4em;
+  margin-top: 0.25em;
+  font-family: Georgia;
+  position: absolute;
 }
 blockquote p {
   display: inline;
@@ -420,6 +418,7 @@ select {
   padding: 1rem 0; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
   border-bottom: 2px solid rgba(148, 156, 168, 0.25);
+  transition: border-bottom ease-in-out 0.2s;
   box-shadow: none;
   box-sizing: border-box;
   -webkit-appearance: none;
@@ -470,18 +469,23 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal; }
-::-webkit-input-placeholder { color: rgba(148, 156, 168, 0.25); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
-:-moz-placeholder { color: rgba(148, 156, 168, 0.25); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
-::-moz-placeholder { color: rgba(148, 156, 168, 0.25); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
-:-ms-input-placeholder { color: rgba(148, 156, 168, 0.25); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+::-webkit-input-placeholder { color: rgba(148, 156, 168, 0.5); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+:-moz-placeholder { color: rgba(148, 156, 168, 0.5); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+::-moz-placeholder { color: rgba(148, 156, 168, 0.5); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+:-ms-input-placeholder { color: rgba(148, 156, 168, 0.5); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
 
 
 
 /* LISTS */
 ul {
-  list-style: circle inside; }
+  list-style: circle inside;
+   }
 ol {
-  list-style: decimal inside; }
+  list-style: none;
+  list-style-type: upper-roman;
+  color: rgb(101, 91, 100); }
+  ol li span {
+    color: rgb(48, 48, 64); }
 ol, ul {
   padding-left: 0;
   margin-top: 0; }
@@ -493,6 +497,9 @@ ol ul {
   font-size: 90%; }
 li {
   margin-bottom: 1rem; }
+
+
+
 
 
 

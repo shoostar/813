@@ -19,11 +19,9 @@
     <div class="row">
       <div class="w--1of2 o--1of4 pinned">
         <img class="logo" src="img/js-logo.svg" alt="" />
-        <p>I've mocked up an example article on this page, to showcase a number of different styles and scenarios that you might commonly find in a well-formatted article. I generally don't write like that, so don't expect to see much of this on the website...</p>
       </div>
     </div>
   </header>
-  <hr>
   <section>
     <div class="row">
       <article class="w--1of2 o--1of4 pinned">
@@ -43,12 +41,12 @@
 <li>A final item</li>
 </ul>
 
-<p>or with numbers!</p>
+<p><strong><em>or with numbers!</em></strong></p>
 
 <ol>
-<li>Remember to buy some milk  </li>
-<li>Drink the milk  </li>
-<li>Tweet that I remembered to buy the milk, and drank it</li>
+<li><span>Remember to buy some milk</span></li>
+<li><span>Drink the milk</span></li>
+<li><span>Tweet that I remembered to buy the milk, and drank it</span></li>
 </ol>
 
 <h4>Links</h4>
@@ -68,7 +66,8 @@
 <p>Sometimes a link isn't enough, you want to quote someone on what they've said. It was probably very wisdomous. Is wisdomous a word? Find out in a future release when we introduce spellcheck! For now - it's definitely a word.</p>
 
 <blockquote>
-  <p>Wisdomous - it's definitely a word.</p>
+  <p>Wisdomous; it's definitely a word.</p>
+  <cite>&mdash;A. Guy</cite>
 </blockquote>
 
 <h4>Working with Code</h4>
@@ -93,6 +92,11 @@
 
 <p><input type="text" placeholder="I'm an input field!" /></p>
 
+<div class="field-container">
+  <label for="article-url">HTML FIELD</label>
+  <input id="article-url" type="url" placeholder="This is an HTML field with an accompanying label" />
+</div>
+
 <p>That should be enough to get you started. Have fun - and let us know what you think :)</p>
 <hr class="fin">
         <footer>
@@ -108,7 +112,28 @@
   <section>
     <div class="row">
       <div class="w--1of2 o--1of4 pinned">
-        <p>Not sure what I'm going to put here just yet...</p>
+        <h6 class="section-title">comments</h6>
+        <form method="post" action="#" class="cd-form floating-labels comment-form">
+          <fieldset>
+            <div class="field-container half">
+              <label for="comment-name">Name</label>
+              <input class="half" id="comment-name" type="text" placeholder="Enter Your Name" />
+            </div>
+            <div class="field-container half">
+              <label for="comment-email">Email</label>
+              <input class="half" id="comment-email" type="email" placeholder="Your email address" />
+            </div>
+            <div class="field-container">
+              <label for="comment-url">URL</label>
+              <input id="comment-url" type="url" placeholder="Website if you got one" />
+            </div>
+            <div class="field-container">
+              <label for="comment-field">Comment</label>
+              <textarea id="comment-field" rows="5" placeholder="Write you comment here"></textarea>
+            </div>
+          </fieldset>
+          <input class="button" type="submit" value="Submit">
+        </form>
       </div>
     </div>
   </section>
