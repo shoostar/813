@@ -409,7 +409,7 @@ blockquote:before {
   font-size: 16em;
   float: left;
   line-height: 0.1em;
-  margin-top: 0.125em;
+  margin-top: 0.1875em;
   font-family: Georgia;
   position: absolute;
   z-index: 1;
