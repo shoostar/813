@@ -385,11 +385,11 @@ footer {
       padding-right: 3.75em;
       margin-right: 3.75em;
       border-right: 2px solid rgba(109, 109, 121, 0.25);
-      padding-bottom: 0.7em;
+      padding-bottom: 0.75em;
     }
   footer small {
     font-variant: small-caps;
-    letter-spacing: 0.125rem;
+    letter-spacing: 0.13rem;
     color: rgb(148, 156, 168);
   }
 
