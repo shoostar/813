@@ -45,12 +45,12 @@ html {
 }
 html, body {
   background: white;
-  font-family: 'aktiv-grotesk', sans-serif;
+  font-family: 'neuzeit-grotesk', sans-serif;
   color: rgb(48, 48, 64);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'aktiv-grotesk', sans-serif;
+  font-family: 'neuzeit-grotesk', sans-serif;
   color: rgb(109, 109, 121);
   margin-bottom: 1rem;
 }
