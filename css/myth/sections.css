@@ -11,16 +11,16 @@ header {
 }
 .main-logo {
   display: block;
-  width: 15em;
+  width: 10em;
   position: absolute;
-  bottom: -4em;
-  right: -1em;
+  bottom: 8vw;
+  right: 8vw;
 }
   @media screen and (min-width: 1200px) {
     .main-logo {
-      width: 15em;
-      top: calc(50% - 7.5em) !important;
-      left: calc(50% - 7.5em) !important;
+      width: 10em;
+      bottom: 4vw;
+      right: 2vw;
     }
   }
 
