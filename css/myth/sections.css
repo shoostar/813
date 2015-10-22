@@ -1,7 +1,15 @@
 /* HEADER */
 header {
-  height: 100vh !important;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 .logo {
   margin: 0 auto 2em auto;
   display: block;
@@ -30,18 +38,22 @@ header {
 main {
   display: block;
 }
-
+.portfolio .w--1of3 {
+  height: 25vh;
+  background: grey;
+}
 
 /* NAVIGATION */
 nav {
-
+  display: block;
+  width: 100%;
 }
   nav a {
     font-family: 'calluna', serif;
     font-weight: 300 !important;
     font-style: italic;
     color: black !important;
-    display: block;
+    display: inline-block !important;
   }
     nav a:hover {
       color: black !important;
