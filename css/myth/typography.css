@@ -1,0 +1,225 @@
+/* TYPOGRAPHY */
+:root { font-size: 14px; }
+@media (min-width: 400px) and (max-width: 1200px){
+  :root { 
+    font-size: calc( 14px + (24 - 14) * ( (100vw - 400px) / ( 1200 - 400) ));
+  }
+}
+@media (min-width: 1200px){
+   :root { 
+     font-size: 24px;
+   }
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html, body {
+  background: white;
+  font-family: 'neuzeit-grotesk', sans-serif;
+  color: rgb(48, 48, 64);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'neuzeit-grotesk', sans-serif;
+  color: rgb(109, 109, 121);
+  margin-bottom: 1rem;
+}
+  .section-title::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 30px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5rem;
+    background: rgb(0, 157, 220);
+  }
+h1 {
+  font-size: 300%;
+}
+h2 {
+  font-size: 250%;
+}
+h3 {
+  font-size: 225%;
+}
+h4 {
+  font-size: 175%;
+}
+h5 {
+  font-size: 125%;
+}
+h6 {
+  font-size: 75%;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+p, ul, ol, dl, blockquote {
+  font-weight: 400;
+}
+p, ul, ol, dl, blockquote, strong, pre, code {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+pre, code {
+  font-family: "source-code-pro", sans-serif;
+  background: rgba(148, 156, 168, 0.25);
+  border-radius: 0.125rem;
+}
+  pre {
+    padding: 1em 0.5rem;
+    margin: 1.5rem 0 !important;
+    display: block;
+    text-align: left;
+  }
+  code {
+    padding: 0 0.5rem !important;
+    margin-bottom: 0 !important;
+  }
+    pre > code {
+      background: none;
+    }
+em { font-style: italic; }
+strong { font-weight: 700; }
+a:link, a:visited {
+  color: rgb(0, 157, 220);
+  font-weight: bold;
+  position: relative;
+  z-index: 100;
+}
+  a:hover, a:focus, a:active {
+    color: rgb(0, 157, 220);
+  }
+  a:link::before, a:visited::before {
+    content: '';
+    height: 2px;
+    width: 0%;
+    display: inline-block;
+    background: #ED1D24;
+    position: absolute;
+    top: 1.25em;
+    transition: all ease-in-out 0.2s;
+    opacity: 0;
+    white-space: nowrap;
+  } 
+    a:not(.button):hover::before, a:not(.button):focus::before, a:not(.button):active::before {
+      width: 100%;
+      opacity: 1;
+    }
+hr {
+  border: 0;
+  height: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 2em 0em;
+  width: 100%;
+}
+  hr.fin {
+    height: 4px;
+    width: 100px;
+    margin: 2.5em auto !important;
+    display: block;
+    border: 0;
+    text-align: center;
+  }
+img {
+  width: 100%;
+}
+kbd {
+  padding: 0.125rem 0.5rem 0.25rem 0.5rem;
+  border: 1px solid rgb(148, 156, 168);
+  border-radius: 0.25rem;
+  box-shadow: inset 0 -2px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* QUOTES */
+blockquote {
+  background: rgba(148, 156, 168, 0.1);
+  border-left: 10px solid rgba(148, 156, 168, 0.25);
+  margin: 1.5em 0;
+  padding: 1em;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: rgba(255, 255, 255, 1);
+  content: open-quote;
+  font-size: 16em;
+  float: left;
+  line-height: 0.1em;
+  margin-top: 0.1875em;
+  font-family: Georgia;
+  position: absolute;
+  z-index: 1;
+}
+blockquote p, blockquote cite {
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+
+
+/* LISTS */
+ul {
+  list-style: circle inside;
+}
+ol {
+  list-style: none;
+  list-style-type: upper-roman;
+  color: rgb(101, 91, 100);
+}
+  ol li span {
+    color: rgb(48, 48, 64);
+  }
+ol, ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+li {
+  margin-bottom: 1rem;
+}
+
+
+
+/* TABLES */
+table {
+  width: 100%;
+}
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1;
+}
+th:first-child, td:first-child {
+  padding-left: 0;
+}
+th:last-child, td:last-child {
+  padding-right: 0;
+}
+
+
+
+/* FIGURES */
+figcaption {
+  margin-top: 0.75rem;
+  font-size: 65%;
+  font-style: italic;
+  color: rgb(109, 109, 121);
+}

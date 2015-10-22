@@ -38,7 +38,7 @@ Thumbs.db
 
 # My files #
 ############
-css/myth/*
-myth/*.css
-css/vars.css
-css/old-stylesheet.css
+# css/myth/* #
+# myth/*.css #
+# css/vars.css #
+# css/old-stylesheet.css #

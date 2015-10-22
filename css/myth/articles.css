@@ -1,0 +1,27 @@
+/* ARTICLES */
+article header {
+
+}
+article p:first-of-type:not(small) {
+  font-size: 125%;
+  font-weight: 400;
+  color: rgb(0, 108, 202);
+}
+article footer p {
+  font-size: 75% !important;
+  color: rgba(48, 48, 64, 0.5) !important;
+  margin-top: 1.5rem;
+}
+aside {
+  margin-left: 8.33333334% !important;
+  display: block;
+  position: absolute;
+  left: -0%;
+  width: 16.666%;
+  float: left !important;
+}
+  aside p {
+    font-size: 75%;
+    padding-top: 0.5em;
+    text-align: right;
+  }
