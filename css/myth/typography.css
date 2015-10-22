@@ -30,15 +30,14 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'neuzeit-grotesk', sans-serif;
-  color: rgb(109, 109, 121);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
   .section-title::after {
     content: '';
     display: block;
     height: 5px;
     width: 30px;
-    margin-top: 1.5em;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     background: rgb(0, 157, 220);
   }
@@ -62,6 +61,9 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
+  header h6 {
+    opacity: 0.5;
+  }
 p, ul, ol, dl, blockquote {
   font-weight: 400;
 }
