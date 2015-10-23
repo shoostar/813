@@ -23,7 +23,7 @@ html {
   box-sizing: inherit;
 }
 html, body {
-  background: white;
+  background: rgb(250, 250, 250);
   font-family: 'neuzeit-grotesk', sans-serif;
   color: rgb(48, 48, 64);
 }
