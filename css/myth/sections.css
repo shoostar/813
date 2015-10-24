@@ -1,8 +1,7 @@
 /* HEADER */
-header {
-  height: 56.25vw;
-  background: rgba(237, 29, 36, 0.5) url('../img/js-bg.svg') center center no-repeat;
-  background-size: 100%;
+main > header {
+  height: 45vw;
+  background-image: linear-gradient( to top, rgba(250, 250, 250, 0.25), rgba(250, 250, 250, 0.1) 75%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10,7 +9,9 @@ header {
   z-index: 99;
 }
   header .row {
-    background: rgba(0, 0, 0, 0.5);
+    background: url('../img/js-bg.svg') center center no-repeat;
+    background-size: 100%;
+    background-blend-mode: overlay;
   }
 .logo {
   margin: 0 auto 2em auto;
@@ -21,8 +22,8 @@ header {
 }
 .main-logo {
   display: block;
-  width: 10vw;
-  max-width: 10em;
+  width: 15vw;
+  max-width: 7.5rem;
 }
 #video {
   background: transparent url(img/pattern.png) repeat top left;
@@ -37,10 +38,18 @@ header {
 main {
   display: block;
 }
+  .intro {
+    background: white;
+  }
+    .intro h1 {
+      font-family: 'calluna', serif;
+    }
 .portfolio .w--1of2 {
   height: 50vh;
-  background: white;
+  background: rgb(250, 250, 250);
 }
+
+
 
 /* NAVIGATION */
 nav {
