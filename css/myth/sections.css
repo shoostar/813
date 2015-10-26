@@ -1,6 +1,6 @@
 /* HEADER */
 main > header {
-  height: 25vw;
+  min-height: 25vw;
   background: url('../img/js-bg.svg') center top no-repeat;
   background-size: 100%;
   background-attachment: fixed;
@@ -11,8 +11,13 @@ main > header {
 }
   header .row {
     background-image: linear-gradient( to top, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0.1) 75%);
-    padding: 4vw;
+    padding: 8vw 4vw 2vw;
   }
+    @media screen and (min-width: 1200px) {
+      header .row {
+        padding: 8vw 4vw 4vw;
+      }
+    }
     header .w--1of2 {
       display: flex;
       flex-direction: column;
@@ -45,15 +50,23 @@ section {
 nav {
   display: flex;
   flex-direction: row !important;
-  justify-content: space-between !important;
-  align-content: flex-start;
-  align-items: center;
+  justify-content: flex-start !important;
+  align-content: flex-start !important;
+  align-items: center !important;
 }
+  @media screen and (min-width: 1200px) {
+    nav {
+      justify-content: flex-end !important;
+    }
+  }
   nav a {
     font-style: italic;
     color: black !important;
     display: inline;
   }
+    nav a:not(:first-of-type) {
+      margin-left: 2.5rem;
+    }
     nav a:hover {
       color: black !important;
     }
