@@ -3,7 +3,6 @@ $().ready(function() {
     videoId: 'rEk0AdJx9gw',
     mute: true,
     ratio: 16/9,
-    wrapperZIndex: 99,
-    playButtonClass: 'tubular-play'
+    wrapperZIndex: 99
   });
 });

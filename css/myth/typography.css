@@ -23,7 +23,7 @@ html {
   box-sizing: inherit;
 }
 html, body {
-  background: rgb(250, 250, 250);
+  background: rgb(255, 255, 255);
   font-family: 'neuzeit-grotesk', sans-serif;
   color: rgb(48, 48, 64);
 }
@@ -31,6 +31,7 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'neuzeit-grotesk', sans-serif;
   margin-bottom: 1.5rem;
+  font-weight: 400;
 }
   .section-title::after {
     content: '';
@@ -65,7 +66,7 @@ h6 {
     opacity: 0.5;
   }
 p, ul, ol, dl, blockquote {
-  font-weight: 400;
+  font-weight: 300;
 }
 p, ul, ol, dl, blockquote, strong, pre, code {
   margin-bottom: 1.5rem;
