@@ -1,15 +1,13 @@
 /* HEADER */
 main > header {
   height: 25vw;
-  background: url('../img/js-bg.svg') center center no-repeat;
+  background: url('../img/js-bg.svg') center top no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   background-blend-mode: overlay;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
-  z-index: 99;
 }
   header .row {
     background-image: linear-gradient( to top, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0.1) 75%);
@@ -20,11 +18,6 @@ main > header {
       flex-direction: column;
       justify-content: center;
     }
-#video {
-  position: relative;
-  z-index: -1;
-  width: 100vw;
-}
 
 
 
@@ -80,7 +73,7 @@ footer {
   color: white;
 }
   @media screen and (max-width: 1199px) {
-    footer .w--1of4 {
+    footer .w--1of2 {
       flex: 1 0 calc(50%);
     }
   }
