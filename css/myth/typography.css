@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 h1 {
   font-size: 300%;
+  font-weight: 300;
 }
 h2 {
   font-size: 250%;
@@ -76,6 +77,9 @@ p, ul, ol, dl, blockquote, strong, pre, code {
   margin-bottom: 1.5rem;
   line-height: 1.5;
 }
+  .large {
+    font-size: 150%;
+  }
 pre, code {
   font-family: "source-code-pro", sans-serif;
   background: rgba(148, 156, 168, 0.25);
