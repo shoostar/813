@@ -27,15 +27,15 @@ html, body {
   background-size: 100%;
   background-attachment: fixed;
   font-family: 'neuzeit-grotesk', sans-serif;
-  color: rgb(100, 100, 100);
+  color: rgb(150, 150, 150);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'neuzeit-grotesk', sans-serif;
   margin-bottom: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
-  color: rgb(225, 225, 225);
+  color: rgb(100, 100, 100);
 }
   .section-title::after {
     content: '';
@@ -97,13 +97,14 @@ pre, code {
 em { font-style: italic; }
 strong { font-weight: 700; }
 a:link, a:visited {
-  color: rgb(0, 157, 220);
+  color: rgb(100, 100, 100);
   font-weight: bold;
   position: relative;
   z-index: 100;
+  transition: color ease-in-out 0.15s;
 }
   a:hover, a:focus, a:active {
-    color: rgb(0, 157, 220);
+    color: rgb(237, 29, 36);
   }
   a:link::before, a:visited::before {
     content: '';
@@ -113,7 +114,7 @@ a:link, a:visited {
     background: #ED1D24;
     position: absolute;
     top: 1.25em;
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.15s;
     opacity: 0;
     white-space: nowrap;
   } 

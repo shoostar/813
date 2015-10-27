@@ -58,7 +58,7 @@ section {
     justify-content: space-between;
     align-content: center;
     align-items: flex-start;
-    transition: all ease-in-out 0.2s;
+    transition: background ease-in-out 0.15s;
     padding: 4vw;
     border: 0.5vw solid white;
   }
@@ -68,7 +68,7 @@ section {
     }
     .portfolio [class*='w--'] a span.overlay h3, .portfolio [class*='w--'] a span.overlay h5, .portfolio [class*='w--'] a span.overlay p {
       color: rgba(255, 255, 255, 1);
-      transition: all ease-in-out 0.2s;
+      transition: color ease-in-out 0.15s;
     }
     @media screen and (min-width: 1200px) {
       .portfolio [class*='w--'] a span.overlay {
@@ -104,7 +104,7 @@ nav {
   nav a {
     color: rgb(100, 100, 100) !important;
     display: inline;
-    transition: color ease-in-out 0.2s;
+    transition: color ease-in-out 0.15s;
   }
     nav a:not(:first-of-type) {
       margin-left: 2.5rem;
@@ -143,6 +143,14 @@ main > footer {
 .main-logo {
   display: block;
 }
+  a.logo-container::before {
+    content: '' !important;
+    height: 0 !important;
+    width: 0 !important;
+    display: none !important;
+    background: none !important;
+    opacity: 0 !important;
+  }
   header svg.main-logo {
     width: 15vw;
     max-width: 7.5rem;
