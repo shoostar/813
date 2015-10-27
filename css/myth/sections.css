@@ -12,7 +12,7 @@ main > header {
     @media screen and (min-width: 1200px) {
       main > header .row {
         background: rgba(255, 255, 255, 0);
-        background-image: linear-gradient( to top, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0.1) 75%);
+        background-image: linear-gradient( to top, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0.1) 95%);
         padding: 8vw 4vw 4vw;
       }
     }
@@ -30,10 +30,8 @@ main {
 }
 section {
   padding: 4vw 0;
+  background: white;
 }
-  .intro, .portfolio {
-    background: white;
-  }
 .portfolio [class*='w--'] {
   overflow: hidden;
   margin-bottom: 4vw;
@@ -52,7 +50,7 @@ section {
     max-height: 33.333vh;
   }
   .portfolio [class*='w--'] a span.overlay {
-    background: rgba(237, 29, 36, 0.9);
+    background: rgba(0, 0, 0, 0.75);
     color: rgba(255, 255, 255, 1);
     height: 100%;
     display: flex;
@@ -72,14 +70,14 @@ section {
       color: rgba(255, 255, 255, 1);
       transition: all ease-in-out 0.2s;
     }
-    .portfolio [class*='w--'] a span.overlay:hover {
-      background: rgba(237, 29, 36, 0.9);
-      color: rgba(255, 255, 255, 1);
-    }
     @media screen and (min-width: 1200px) {
       .portfolio [class*='w--'] a span.overlay {
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.75);
       }
+        .portfolio [class*='w--'] a span.overlay:hover {
+          background: rgba(237, 29, 36, 0.9);
+          color: rgba(255, 255, 255, 1);
+        }
         .portfolio [class*='w--'] a span.overlay p {
           color: rgba(255, 255, 255, 0);
         }
@@ -104,7 +102,7 @@ nav {
     }
   }
   nav a {
-    color: rgb(0, 0, 0) !important;
+    color: rgb(100, 100, 100) !important;
     display: inline;
     transition: color ease-in-out 0.2s;
   }
@@ -119,7 +117,7 @@ nav {
 
 /* FOOTER */
 main > footer {
-  color: black;
+  color: rgb(100, 100, 100);
 }
   main > footer .row {
     background: rgba(255, 255, 255, 1);
@@ -156,7 +154,7 @@ header use {
   fill: rgb(237, 29, 36);
 }
 footer use {
-  fill: black;
+  fill: rgb(100, 100, 100);
 }
 svg path {
   fill: inherit;
