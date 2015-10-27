@@ -35,13 +35,18 @@ section {
 .portfolio [class*='w--'] {
   overflow: hidden;
   margin-bottom: 4vw;
+  border: 0.5vw solid white;
 }
+  .portfolio [class*='w--'] img {
+    width: 100%;
+    height: 100%;
+  }
   @media screen and (min-width: 1200px) {
     .portfolio [class*='w--'] {
       margin-bottom: 0;
     }
   }
-  .portfolio .w--1of2 {
+  .portfolio .w--1of1, .portfolio .w--1of2 {
     height: 50vw;
     max-height: 66.666vh;
   }
@@ -49,7 +54,7 @@ section {
     height: 25vw;
     max-height: 33.333vh;
   }
-  .portfolio [class*='w--'] a span.overlay {
+  .portfolio [class*='w--'] a span.overlay, .exposed {
     background: rgba(0, 0, 0, 0.75);
     color: rgba(255, 255, 255, 1);
     height: 100%;
@@ -59,14 +64,13 @@ section {
     align-content: center;
     align-items: flex-start;
     transition: background ease-in-out 0.15s;
-    padding: 4vw;
-    border: 0.5vw solid white;
+    padding: 3.5vw;
   }
     .portfolio .w--1of4 a span.overlay {
       justify-content: center;
       align-items: center;
     }
-    .portfolio [class*='w--'] a span.overlay h3, .portfolio [class*='w--'] a span.overlay h5, .portfolio [class*='w--'] a span.overlay p {
+    .portfolio [class*='w--'] a span.overlay h3, .portfolio [class*='w--'] a span.overlay h5, .portfolio [class*='w--'] a span.overlay p, .exposed h3, .exposed h5, .exposed p {
       color: rgba(255, 255, 255, 1);
       transition: color ease-in-out 0.15s;
     }
@@ -74,14 +78,14 @@ section {
       .portfolio [class*='w--'] a span.overlay {
         background: rgba(0, 0, 0, 0.75);
       }
-        .portfolio [class*='w--'] a span.overlay:hover {
+        .portfolio [class*='w--'] a span.overlay:hover, .exposed.overlay {
           background: rgba(237, 29, 36, 0.9);
           color: rgba(255, 255, 255, 1);
         }
         .portfolio [class*='w--'] a span.overlay p {
           color: rgba(255, 255, 255, 0);
         }
-          .portfolio [class*='w--'] a span.overlay:hover p {
+          .portfolio [class*='w--'] a span.overlay:hover p, .exposed p {
             color: rgba(255, 255, 255, 1);
           }
     }
