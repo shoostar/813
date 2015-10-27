@@ -1,24 +1,22 @@
 /* HEADER */
 main > header {
   min-height: 25vw;
-  background: url('../img/js-bg.svg') center top no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-  background-blend-mode: overlay;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-  header .row {
-    background-image: linear-gradient( to top, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0.1) 75%);
+  main > header .row {
+    background: rgba(255, 255, 255, 1);
     padding: 8vw 4vw 2vw;
   }
     @media screen and (min-width: 1200px) {
-      header .row {
+      main > header .row {
+        background: rgba(255, 255, 255, 0);
+        background-image: linear-gradient( to top, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0.1) 75%);
         padding: 8vw 4vw 4vw;
       }
     }
-    header .w--1of2 {
+    main > header .w--1of2 {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -33,16 +31,62 @@ main {
 section {
   padding: 4vw 0;
 }
-  .intro {
+  .intro, .portfolio {
     background: white;
   }
 .portfolio [class*='w--'] {
-  height: 50vh;
   overflow: hidden;
+  margin-bottom: 4vw;
 }
-  .portfolio [class*='w--'] img {
-    height: 100%;
+  @media screen and (min-width: 1200px) {
+    .portfolio [class*='w--'] {
+      margin-bottom: 0;
+    }
   }
+  .portfolio .w--1of2 {
+    height: 50vw;
+    max-height: 66.666vh;
+  }
+  .portfolio .w--1of4 {
+    height: 25vw;
+    max-height: 33.333vh;
+  }
+  .portfolio [class*='w--'] a span.overlay {
+    background: rgba(237, 29, 36, 0.9);
+    color: rgba(255, 255, 255, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+    transition: all ease-in-out 0.2s;
+    padding: 4vw;
+    border: 0.5vw solid white;
+  }
+    .portfolio .w--1of4 a span.overlay {
+      justify-content: center;
+      align-items: center;
+    }
+    .portfolio [class*='w--'] a span.overlay h3, .portfolio [class*='w--'] a span.overlay h5, .portfolio [class*='w--'] a span.overlay p {
+      color: rgba(255, 255, 255, 1);
+      transition: all ease-in-out 0.2s;
+    }
+    .portfolio [class*='w--'] a span.overlay:hover {
+      background: rgba(237, 29, 36, 0.9);
+      color: rgba(255, 255, 255, 1);
+    }
+    @media screen and (min-width: 1200px) {
+      .portfolio [class*='w--'] a span.overlay {
+        background: rgba(0, 0, 0, 0.5);
+      }
+        .portfolio [class*='w--'] a span.overlay p {
+          color: rgba(255, 255, 255, 0);
+        }
+          .portfolio [class*='w--'] a span.overlay:hover p {
+            color: rgba(255, 255, 255, 1);
+          }
+    }
 
 
 
@@ -60,36 +104,41 @@ nav {
     }
   }
   nav a {
-    font-style: italic;
-    color: black !important;
+    color: rgb(0, 0, 0) !important;
     display: inline;
+    transition: color ease-in-out 0.2s;
   }
     nav a:not(:first-of-type) {
       margin-left: 2.5rem;
     }
     nav a:hover {
-      color: black !important;
+      color: rgb(237, 29, 36) !important;
     }
-      nav a::before, nav a:hover::before {
-        height: 0 !important;
-        opacity: 0 !important;
-        background: none !important;
-      }
 
 
 
 /* FOOTER */
-footer {
-  padding: 8vw 0;
-  background: url('../img/map.jpg') center center no-repeat;
-  background-size: cover;
-  color: white;
+main > footer {
+  color: black;
 }
-  @media screen and (max-width: 1199px) {
-    footer .w--1of2 {
-      flex: 1 0 calc(50%);
-    }
+  main > footer .row {
+    background: rgba(255, 255, 255, 1);
+    padding: 0 4vw 10vw;
   }
+    @media screen and (min-width: 1200px) {
+      main > footer .row {
+        background: rgba(255, 255, 255, 0);
+        background-image: linear-gradient( to bottom, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0.1) 75%);
+        padding: 4vw 4vw 10vw;
+      }
+    }
+  main > footer .w--1of2 {
+    flex: 1 0 calc(50%);
+  }
+    main > footer p {
+      font-size: 1rem;
+      font-weight: 900 !important;
+    }
 
 
 
@@ -101,14 +150,13 @@ footer {
     max-width: 7.5rem;
   }
   footer svg.main-logo {
-    width: 10vw;
-    max-width: 5rem;
+    height: 1rem;
   }
 header use {
-  fill: #ED1C24;
+  fill: rgb(237, 29, 36);
 }
 footer use {
-  fill: white;
+  fill: black;
 }
 svg path {
   fill: inherit;
