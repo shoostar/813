@@ -18,18 +18,13 @@ html {
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
 }
-  @media screen and (min-width: 800px) {
-    html {
-      padding: 0 4vw;
-    }
-  }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 html, body {
-  background: rgb(20, 20, 23);
+  background: rgb(70, 70, 76);
   font-family: 'neuzeit-grotesk', sans-serif;
   color: rgb(150, 150, 160);
   letter-spacing: 0.015rem;
@@ -40,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  color: rgb(50, 50, 54);
+  color: rgb(50, 20, 160);
 }
   .section-title::after {
     content: '';
@@ -114,14 +109,14 @@ a:link, a:visited {
   transition: color ease-in-out 0.15s;
 }
   a:hover, a:focus, a:active {
-    color: rgb(0, 108, 202);
+    color: rgb(39, 31, 48);
   }
   a:link::before, a:visited::before {
     content: '';
     height: 2px;
     width: 0%;
     display: inline-block;
-    background: rgb(0, 108, 202);
+    background: rgb(39, 31, 48);
     position: absolute;
     top: 1.25em;
     transition: all ease-in-out 0.15s;

@@ -6,21 +6,22 @@ main > header {
   justify-content: space-between;
 }
   main > header .row {
-    background: -webkit-linear-gradient(top left, rgb(39, 70, 144), rgb(27, 38, 79));
-    padding: 12vw 4vw 6vw;
+    /* background: -webkit-linear-gradient(top left, rgb(39, 70, 144), rgb(27, 38, 79)); */
+    background: rgb(50, 20, 160);
+    padding: 4vw;
   }
   main > header h3 {
     color: rgb(243, 243, 245);
   }
-    @media screen and (min-width: 1200px) {
-      main > header .row {
-        padding: 12vw 4vw 8vw;
-      }
-    }
     main > header .w--1of2 {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+    }
+    main > header .w--1of1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
 
 .logo {
@@ -41,7 +42,7 @@ nav {
     }
   }
   nav a {
-    color: rgb(87, 108, 168) !important;
+    color: rgb(243, 243, 245) !important;
     display: inline;
     transition: color ease-in-out 0.15s;
   }
@@ -52,16 +53,24 @@ nav {
       color: rgb(243, 243, 245) !important;
     }
     nav a::before, nav a:hover::before {
-      height: 0 !important;
-      background: transparent;
+      background: rgb(243, 243, 245);
     }
 
 
 
 /* MAIN and SECTION */
+main {
+  background: rgb(243, 243, 245);
+  margin: 0;
+}
+  @media screen and (min-width: 800px) {
+    main {
+      margin-right: 4%;
+    }
+  }
 section {
-  padding: 4vw 0;
-  background: rgb(30, 30, 32);
+  padding: 8vw 0;
+  background: rgb(243, 243, 245);
 }
   .intro .row {
     height: 100vh;
@@ -72,8 +81,12 @@ section {
   .portfolio [class*='w--'] {
     overflow: hidden;
     height: 100%;
-    background: rgba(30, 30, 32, 0.75);
+    background: rgba(70, 70, 76, 0.75);
+    transition: background ease-in-out 0.15s;
   }
+    .portfolio [class*='w--']:hover {
+      background: rgba(70, 70, 76, 0.5);
+    }
     .portfolio [class*='w--'] img {
       width: 100%;
       height: 100%;
@@ -84,7 +97,7 @@ section {
       }
     }
     .portfolio .w--1of1, .portfolio .w--1of2 {
-      height: 50vw;
+      height: 66.666vw;
       max-height: 66.666vh;
     }
     .portfolio [class*='w--'] a span.overlay, .exposed {
@@ -102,8 +115,7 @@ section {
 
 /* FOOTER */
 main > footer {
-  background: -webkit-linear-gradient(top left, rgb(39, 70, 144), rgb(27, 38, 79));
-  color: rgb(87, 108, 168);
+  color: rgb(230, 230, 233);
 }
   main > footer .row {
     padding: 2vw 4vw;
@@ -142,10 +154,10 @@ main > footer {
     height: 1rem;
   }
 header use {
-  fill: rgb(27, 38, 79);
+  fill: rgb(243, 243, 245);
 }
 footer use {
-  fill: rgb(87, 108, 168);
+  fill: rgb(230, 230, 233);
 }
 svg path {
   fill: inherit;
