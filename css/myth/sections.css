@@ -7,7 +7,7 @@ main > header {
 }
   main > header .row {
     /* background: -webkit-linear-gradient(top left, rgb(39, 70, 144), rgb(27, 38, 79)); */
-    background: rgb(50, 20, 160);
+    background: -webkit-linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
     padding: 4vw;
   }
   main > header h3 {
@@ -62,15 +62,16 @@ nav {
 main {
   background: rgb(243, 243, 245);
   margin: 0;
+  width: 100%;
 }
   @media screen and (min-width: 800px) {
     main {
-      margin-right: 4%;
+      width: 94%;
+      margin-right: 6%;
     }
   }
 section {
   padding: 8vw 0;
-  background: rgb(243, 243, 245);
 }
   .intro .row {
     height: 100vh;
@@ -81,11 +82,11 @@ section {
   .portfolio [class*='w--'] {
     overflow: hidden;
     height: 100%;
-    background: rgba(70, 70, 76, 0.75);
+    background: rgba(72, 64, 65, 0.75);
     transition: background ease-in-out 0.15s;
   }
     .portfolio [class*='w--']:hover {
-      background: rgba(70, 70, 76, 0.5);
+      background: rgba(72, 64, 65, 0.5);
     }
     .portfolio [class*='w--'] img {
       width: 100%;
@@ -115,7 +116,7 @@ section {
 
 /* FOOTER */
 main > footer {
-  color: rgb(230, 230, 233);
+  color: rgba(70, 70, 76, 0.25);
 }
   main > footer .row {
     padding: 2vw 4vw;
@@ -157,7 +158,7 @@ header use {
   fill: rgb(243, 243, 245);
 }
 footer use {
-  fill: rgb(230, 230, 233);
+  fill: rgba(70, 70, 76, 0.25);
 }
 svg path {
   fill: inherit;

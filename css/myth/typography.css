@@ -16,7 +16,6 @@ html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 0;
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -24,7 +23,7 @@ html {
   box-sizing: inherit;
 }
 html, body {
-  background: rgb(70, 70, 76);
+  background: rgb(72, 64, 65);
   font-family: 'neuzeit-grotesk', sans-serif;
   color: rgb(150, 150, 160);
   letter-spacing: 0.015rem;
@@ -35,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  color: rgb(50, 20, 160);
+  color: rgb(72, 64, 65);
 }
   .section-title::after {
     content: '';
@@ -102,21 +101,21 @@ em { font-style: italic; }
 strong { font-weight: 700; }
 small { font-weight: 300; letter-spacing: 0.025rem; }
 a:link, a:visited {
-  color: rgb(100, 100, 108);
+  color: rgb(70, 70, 76);
   font-weight: bold;
   position: relative;
   z-index: 100;
   transition: color ease-in-out 0.15s;
 }
   a:hover, a:focus, a:active {
-    color: rgb(39, 31, 48);
+    color: rgb(144, 68, 189);
   }
   a:link::before, a:visited::before {
     content: '';
     height: 2px;
     width: 0%;
     display: inline-block;
-    background: rgb(39, 31, 48);
+    background: rgb(144, 68, 189);
     position: absolute;
     top: 1.25em;
     transition: all ease-in-out 0.15s;
