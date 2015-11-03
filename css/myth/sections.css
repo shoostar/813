@@ -116,24 +116,23 @@ section {
 
 /* FOOTER */
 main > footer {
-  color: rgb(243, 243, 245);
+  color: rgb(70, 70, 76);
 }
   main > footer .row {
-    padding: 2vw 4vw;
+    padding: 2.5vw 4vw;
   }
     @media screen and (min-width: 1200px) {
       main > footer {
+        color: rgb(243, 243, 245);
         position: fixed;
         transform: rotate(-90deg);
         top: calc(50vh - 3vw);
-        left: 50vw;
+        right: calc(3vw - 50vh);
         height: 6vw;
         width: 100vh;
-        background: rgba(255, 0, 0, 0.25);
-        vertical-align: bottom;
       }
       main > footer .row {
-        padding: 0;
+        padding: 0.25vw 0;
       }
     }
   main > footer .w--1of2 {
@@ -168,8 +167,13 @@ header use {
   fill: rgb(243, 243, 245);
 }
 footer use {
-  fill: rgb(243, 243, 245);
+  fill: rgb(70, 70, 76);
 }
+  @media screen and (min-width: 1200px) {
+    footer use {
+      fill: rgb(243, 243, 245);
+    }
+  }
 svg path {
   fill: inherit;
 }
