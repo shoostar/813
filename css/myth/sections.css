@@ -1,20 +1,20 @@
 /* HEADER */
 main > header {
-  height: 100vh;
+  height: calc(100vh - 8vw);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
   main > header .row {
-    background: rgba(250, 250, 250, 1);
-    padding: 0 4vw;
-    /* padding: 12vw 4vw 6vw; original padding */
+    background: -webkit-linear-gradient(top left, rgb(39, 70, 144), rgb(27, 38, 79));
+    padding: 12vw 4vw 6vw;
+  }
+  main > header h3 {
+    color: rgb(243, 243, 245);
   }
     @media screen and (min-width: 1200px) {
       main > header .row {
-        background: rgba(250, 250, 250, 0);
-        background-image: linear-gradient( to top, rgba(250, 250, 250, 1) 5%, rgba(250, 250, 250, 0.1) 95%);
-        /* padding: 12vw 4vw 8vw; original padding */
+        padding: 12vw 4vw 8vw;
       }
     }
     main > header .w--1of2 {
@@ -23,7 +23,9 @@ main > header {
       justify-content: flex-end;
     }
 
-
+.logo {
+  max-width: 5rem;
+}
 
 /* NAVIGATION */
 nav {
@@ -39,7 +41,7 @@ nav {
     }
   }
   nav a {
-    color: rgb(100, 100, 100) !important;
+    color: rgb(87, 108, 168) !important;
     display: inline;
     transition: color ease-in-out 0.15s;
   }
@@ -47,18 +49,19 @@ nav {
       margin-left: 2.5rem;
     }
     nav a:hover {
-      color: rgb(237, 29, 36) !important;
+      color: rgb(243, 243, 245) !important;
+    }
+    nav a::before, nav a:hover::before {
+      height: 0 !important;
+      background: transparent;
     }
 
 
 
 /* MAIN and SECTION */
-main {
-  display: block;
-}
 section {
   padding: 4vw 0;
-  background: rgba(250, 250, 250, 1);
+  background: rgb(30, 30, 32);
 }
   .intro .row {
     height: 100vh;
@@ -71,8 +74,8 @@ section {
     }
   .portfolio [class*='w--'] {
     overflow: hidden;
-    margin-bottom: 4vw;
-    border: 0.5vw solid rgb(250, 250, 250);
+    height: 100%;
+    background: -webkit-linear-gradient(bottom, rgba(30, 30, 32, 1), rgba(30, 30, 32, 0));
   }
     .portfolio [class*='w--'] img {
       width: 100%;
@@ -92,56 +95,36 @@ section {
       max-height: 33.333vh;
     }
     .portfolio [class*='w--'] a span.overlay, .exposed {
-      background: rgba(0, 0, 0, 0.75);
-      color: rgba(250, 250, 250, 1);
+      color: rgba(30, 30, 32, 1);
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-content: center;
       align-items: flex-start;
-      transition: background ease-in-out 0.15s;
-      padding: 3.5vw;
+      padding: 12vw 8vw 8vw;
     }
       .portfolio .w--1of4 a span.overlay {
         justify-content: center;
         align-items: center;
       }
       .portfolio [class*='w--'] a span.overlay h3, .portfolio [class*='w--'] a span.overlay h5, .portfolio [class*='w--'] a span.overlay p, .exposed h3, .exposed h5, .exposed p {
-        color: rgba(250, 250, 250, 1);
-        transition: color ease-in-out 0.15s;
-      }
-      @media screen and (min-width: 1200px) {
-        .portfolio [class*='w--'] a span.overlay {
-          background: rgba(0, 0, 0, 0.9);
-        }
-          .portfolio [class*='w--'] a span.overlay:hover, .exposed.overlay {
-            background: rgba(237, 29, 36, 0.9);
-            color: rgba(250, 250, 250, 1);
-          }
-          .portfolio [class*='w--'] a span.overlay p {
-            color: rgba(250, 250, 250, 0);
-          }
-            .portfolio [class*='w--'] a span.overlay:hover p, .exposed p {
-              color: rgba(250, 250, 250, 1);
-            }
+        color: rgba(243, 243, 245, 1);
       }
 
 
 
 /* FOOTER */
 main > footer {
-  color: rgb(100, 100, 100);
+  color: rgb(87, 108, 168);
 }
   main > footer .row {
-    background: rgba(250, 250, 250, 1);
-    padding: 0 4vw 10vw;
+    background: -webkit-linear-gradient(top left, rgb(39, 70, 144), rgb(27, 38, 79));
+    padding: 2vw 4vw;
   }
     @media screen and (min-width: 1200px) {
       main > footer .row {
-        background: rgba(250, 250, 250, 0);
-        background-image: linear-gradient( to bottom, rgba(250, 250, 250, 1) 5%, rgba(250, 250, 250, 0.1) 75%);
-        padding: 4vw 4vw 10vw;
+        padding: 4vw 4vw;
       }
     }
   main > footer .w--1of2 {
@@ -173,10 +156,10 @@ main > footer {
     height: 1rem;
   }
 header use {
-  fill: rgb(237, 29, 36);
+  fill: rgb(27, 38, 79);
 }
 footer use {
-  fill: rgb(100, 100, 100);
+  fill: rgb(27, 38, 79);
 }
 svg path {
   fill: inherit;

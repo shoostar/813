@@ -16,18 +16,25 @@ html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
+  @media screen and (min-width: 800px) {
+    html {
+      padding: 0 4vw;
+    }
+  }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 html, body {
-  background: rgb(255, 255, 255) url('../img/js-bg.svg') center center no-repeat;
+  background: rgb(25, 25, 28) url('../img/js-bg.svg') center center no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   font-family: 'neuzeit-grotesk', sans-serif;
-  color: rgb(150, 150, 150);
+  color: rgb(150, 150, 160);
+  letter-spacing: 0.015rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  color: rgb(100, 100, 100);
+  color: rgb(50, 50, 54);
 }
   .section-title::after {
     content: '';
@@ -44,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 30px;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    background: rgb(0, 157, 220);
+    background: rgb(0, 108, 202);
   }
 h1 {
   font-size: 300%;
@@ -71,7 +78,7 @@ h6 {
     opacity: 0.5;
   }
 p, ul, ol, dl, blockquote {
-  font-weight: 300;
+  font-weight: 400;
 }
 p, ul, ol, dl, blockquote, strong, pre, code {
   margin-bottom: 1.5rem;
@@ -82,7 +89,7 @@ p, ul, ol, dl, blockquote, strong, pre, code {
   }
 pre, code {
   font-family: "source-code-pro", sans-serif;
-  background: rgba(148, 156, 168, 0.25);
+  background: rgba(50, 50, 54, 0.25);
   border-radius: 0.125rem;
 }
   pre {
@@ -100,22 +107,23 @@ pre, code {
     }
 em { font-style: italic; }
 strong { font-weight: 700; }
+small { font-weight: 300; letter-spacing: 0.025rem; }
 a:link, a:visited {
-  color: rgb(100, 100, 100);
+  color: rgb(100, 100, 108);
   font-weight: bold;
   position: relative;
   z-index: 100;
   transition: color ease-in-out 0.15s;
 }
   a:hover, a:focus, a:active {
-    color: rgb(237, 29, 36);
+    color: rgb(0, 108, 202);
   }
   a:link::before, a:visited::before {
     content: '';
     height: 2px;
     width: 0%;
     display: inline-block;
-    background: #ED1D24;
+    background: rgb(0, 108, 202);
     position: absolute;
     top: 1.25em;
     transition: all ease-in-out 0.15s;
@@ -129,18 +137,24 @@ a:link, a:visited {
 hr {
   border: 0;
   height: 1px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 2em 0em;
+  background: -webkit-linear-gradient(left, rgb(39, 70, 144), rgb(27, 38, 79));
+  margin: 6em 0;
   width: 100%;
 }
-  hr.fin {
-    height: 4px;
-    width: 100px;
-    margin: 2.5em auto !important;
-    display: block;
+  section > hr {
     border: 0;
-    text-align: center;
+    height: 10px;
+    background: -webkit-linear-gradient(left, rgb(39, 70, 144), rgb(27, 38, 79));
+    margin: 6em 0 0;
+    width: 100%;
   }
+    section.portfolio > hr {
+      border: 0;
+      height: 20px;
+      background: -webkit-linear-gradient(left, rgb(39, 70, 144), rgb(27, 38, 79));
+      margin: 0;
+      width: 100%;
+    }
 img {
   width: 100%;
 }
@@ -155,14 +169,14 @@ kbd {
 
 /* QUOTES */
 blockquote {
-  background: rgba(148, 156, 168, 0.1);
-  border-left: 10px solid rgba(148, 156, 168, 0.25);
+  background: rgba(50, 50, 54, 0.25);
+  border-left: 10px solid rgba(50, 50, 54, 0.5);
   margin: 1.5em 0;
   padding: 1em;
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
-  color: rgb(250, 250, 250);
+  color: rgb(30, 30, 32);
   content: open-quote;
   font-size: 16em;
   float: left;
@@ -188,11 +202,7 @@ ul {
 ol {
   list-style: none;
   list-style-type: upper-roman;
-  color: rgb(101, 91, 100);
 }
-  ol li span {
-    color: rgb(48, 48, 64);
-  }
 ol, ul {
   padding-left: 0;
   margin-top: 0;
@@ -217,7 +227,7 @@ table {
 th, td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid rgba(50, 50, 54, 0.5);
 }
 th:first-child, td:first-child {
   padding-left: 0;

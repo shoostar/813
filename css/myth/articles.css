@@ -4,12 +4,10 @@ article header {
 }
 article p:first-of-type:not(small) {
   font-size: 125%;
-  font-weight: 400;
-  color: rgb(0, 108, 202);
 }
 article footer p {
   font-size: 75% !important;
-  color: rgba(48, 48, 64, 0.5) !important;
+  color: rgba(150, 150, 160, 0.25) !important;
   margin-top: 1.5rem;
 }
 aside {

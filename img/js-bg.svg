@@ -5,10 +5,10 @@
 <style type="text/css">
 	.st0{opacity:1;}
 	.st1{clip-path:url(#SVGID_2_);}
-	.st2{fill:rgba(255, 255, 255, 0);stroke:rgba(0, 0, 0, 0.5);stroke-width:0.25;stroke-miterlimit:10;}
-	.st4{fill:rgba(255, 255, 255, 0);stroke:rgba(237, 29, 36, 1);stroke-width:0.25;stroke-miterlimit:10;}
-	.st5{fill:rgba(255, 255, 255, 0);stroke:rgba(0, 0, 0, 0.125);stroke-width:0.25;stroke-miterlimit:10;}
-	.st6{fill:rgba(255, 255, 255, 0);stroke:rgba(0, 0, 0, 0.25);stroke-width:0.25;stroke-miterlimit:10;}
+	.st2{fill:rgba(255, 255, 255, 0);stroke:rgba(255, 255, 255, 0.025);stroke-width:0.25;stroke-miterlimit:10;}
+	.st4{fill:rgba(255, 255, 255, 0);stroke:rgba(0, 108, 202, 0.75);stroke-width:0.25;stroke-miterlimit:10;}
+	.st5{fill:rgba(255, 255, 255, 0);stroke:rgba(255, 255, 255, 0.1);stroke-width:0.25;stroke-miterlimit:10;}
+	.st6{fill:rgba(255, 255, 255, 0);stroke:rgba(255, 255, 255, 0.2);stroke-width:0.25;stroke-miterlimit:10;}
 	.st3{opacity:1;enable-background:new;}
 </style>
 <g class="st0">

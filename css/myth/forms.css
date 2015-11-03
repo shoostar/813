@@ -12,7 +12,7 @@ select {
   height: 2.5rem;
   margin-bottom: 2rem;
   padding: 1rem 0; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(30, 30, 32);
   border-bottom: 2px solid rgba(148, 156, 168, 0.25);
   transition: border-bottom ease-in-out 0.2s;
   box-shadow: none;
@@ -48,7 +48,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border-bottom: 2px solid rgb(0, 157, 220);
+  border-bottom: 2px solid rgb(0, 108, 202);
   outline: 0; }
 label,
 legend {
@@ -65,7 +65,7 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal; }
-::-webkit-input-placeholder { color: rgba(148, 156, 168, 0.5); font-style: italic; font-size: 75%; font-weight: 300; letter-spacing: 0.05em; padding-top: 0.25rem; }
-:-moz-placeholder { color: rgba(148, 156, 168, 0.5); font-style: italic; font-size: 75%; font-weight: 300; letter-spacing: 0.05em; padding-top: 0.25rem; }
-::-moz-placeholder { color: rgba(148, 156, 168, 0.5); font-style: italic; font-size: 75%; font-weight: 300; letter-spacing: 0.05em; padding-top: 0.25rem; }
-:-ms-input-placeholder { color: rgba(148, 156, 168, 0.5); font-style: italic; font-size: 75%; font-weight: 300; letter-spacing: 0.05em; padding-top: 0.25rem; }
+::-webkit-input-placeholder { color: rgba(148, 156, 168, 0.125); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+:-moz-placeholder { color: rgba(148, 156, 168, 0.125); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+::-moz-placeholder { color: rgba(148, 156, 168, 0.125); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
+:-ms-input-placeholder { color: rgba(148, 156, 168, 0.125); font-style: italic; font-size: 75%; padding-top: 0.25rem; }
