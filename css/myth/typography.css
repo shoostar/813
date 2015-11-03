@@ -29,9 +29,7 @@ html {
   box-sizing: inherit;
 }
 html, body {
-  background: rgb(25, 25, 28) url('../img/js-bg.svg') center center no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+  background: rgb(20, 20, 23);
   font-family: 'neuzeit-grotesk', sans-serif;
   color: rgb(150, 150, 160);
   letter-spacing: 0.015rem;
