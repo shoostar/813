@@ -1,6 +1,6 @@
 /* HEADER */
 main > header {
-  height: calc(100vh - 8vw);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -116,14 +116,24 @@ section {
 
 /* FOOTER */
 main > footer {
-  color: rgba(70, 70, 76, 0.25);
+  color: rgb(243, 243, 245);
 }
   main > footer .row {
     padding: 2vw 4vw;
   }
     @media screen and (min-width: 1200px) {
+      main > footer {
+        position: fixed;
+        transform: rotate(-90deg);
+        top: calc(50vh - 3vw);
+        left: 50vw;
+        height: 6vw;
+        width: 100vh;
+        background: rgba(255, 0, 0, 0.25);
+        vertical-align: bottom;
+      }
       main > footer .row {
-        padding: 4vw;
+        padding: 0;
       }
     }
   main > footer .w--1of2 {
@@ -158,7 +168,7 @@ header use {
   fill: rgb(243, 243, 245);
 }
 footer use {
-  fill: rgba(70, 70, 76, 0.25);
+  fill: rgb(243, 243, 245);
 }
 svg path {
   fill: inherit;
