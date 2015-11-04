@@ -1,6 +1,6 @@
 /* HEADER */
 main > header {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,8 +98,7 @@ section {
       }
     }
     .portfolio .w--1of1, .portfolio .w--1of2 {
-      height: 66.666vw;
-      max-height: 66.666vh;
+      min-height: 66.666vh;
     }
     .portfolio [class*='w--'] a span.overlay, .exposed {
       color: rgba(243, 243, 245, 1);
