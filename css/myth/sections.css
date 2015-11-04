@@ -24,9 +24,7 @@ main > header {
       justify-content: flex-start;
     }
 
-.logo {
-  max-width: 7.5rem;
-}
+
 
 /* NAVIGATION */
 nav {
@@ -78,38 +76,38 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
+    align-items: center;
   }
   .portfolio [class*='w--'] {
-    overflow: hidden;
-    height: 100%;
-    background: rgba(72, 64, 65, 0.75);
+    background: rgba(72, 64, 65, 0.85);
     transition: background ease-in-out 0.15s;
+    height: 50vw;
   }
     .portfolio [class*='w--']:hover {
       background: rgba(72, 64, 65, 0.5);
     }
-    .portfolio [class*='w--'] img {
-      width: 100%;
-      height: 100%;
-    }
-    @media screen and (min-width: 1200px) {
-      .portfolio [class*='w--'] {
-        margin-bottom: 0;
-      }
-    }
     .portfolio .w--1of1, .portfolio .w--1of2 {
       min-height: 66.666vh;
     }
-    .portfolio [class*='w--'] a span.overlay, .exposed {
+    a.overlay {
       color: rgba(243, 243, 245, 1);
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      align-content: center;
-      align-items: flex-start;
+      justify-content: space-between;
       padding: 6vw 8vw;
     }
+      a.overlay::before {
+        display: none;
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        background: transparent;
+      }
+      .logo {
+        max-width: 10rem;
+      }
 
 
 
