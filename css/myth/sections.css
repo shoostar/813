@@ -82,13 +82,13 @@ section {
   .portfolio [class*='w--'] {
     background: rgba(72, 64, 65, 0.85);
     transition: background ease-in-out 0.15s;
-    height: 55vw;
+    height: 100vh;
   }
     .portfolio [class*='w--']:hover {
       background: rgba(72, 64, 65, 0.5);
     }
     .portfolio .w--1of1, .portfolio .w--1of2 {
-      min-height: 66.666vh;
+      min-height: 55vw;
     }
     a.overlay {
       color: rgba(243, 243, 245, 1);
@@ -117,7 +117,25 @@ section {
         max-width: 10rem;
         margin-bottom: 8rem;
       }
-
+  .journal {
+    background: rgb(72, 64, 65);
+  }
+    .journal [class*='w--'] {
+      background: -webkit-linear-gradient(left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
+      transition: all ease-in-out 0.15s;
+      padding: 8vw;
+    }
+    @media screen and (min-width: 1200px) {
+      .journal [class*='w--'] {
+        background: -webkit-linear-gradient(left, rgba(143, 8, 41, 0), rgba(217, 4, 41, 0));
+        transition: all ease-in-out 0.15s;
+        padding: 8vw;
+      }
+        .journal [class*='w--']:hover {
+          background: -webkit-linear-gradient(left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
+        }
+    }
+    
 
 
 /* FOOTER */
