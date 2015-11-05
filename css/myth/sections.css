@@ -82,7 +82,7 @@ section {
   .portfolio [class*='w--'] {
     background: rgba(72, 64, 65, 0.85);
     transition: background ease-in-out 0.15s;
-    height: 50vw;
+    height: 55vw;
   }
     .portfolio [class*='w--']:hover {
       background: rgba(72, 64, 65, 0.5);
@@ -96,8 +96,16 @@ section {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 6vw 8vw;
+      padding: 10vw 8vw;
     }
+      @media screen and (min-width: 1200px) {
+        a.overlay {
+          padding: 6vw 8vw;
+        }
+      }
+      a.overlay h3 {
+        color: rgba(243, 243, 245, 1);
+      }
       a.overlay::before {
         display: none;
         visibility: hidden;
@@ -107,6 +115,7 @@ section {
       }
       .logo {
         max-width: 10rem;
+        margin-bottom: 8rem;
       }
 
 
