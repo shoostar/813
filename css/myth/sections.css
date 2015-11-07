@@ -23,6 +23,11 @@ main > header {
       flex-direction: column;
       justify-content: flex-start;
     }
+    .smile {
+      display: inline-block;
+      transform: rotate(-90deg);
+      letter-spacing: 0.25rem
+    }
 
 
 
@@ -170,19 +175,18 @@ main > footer {
 
 
 .main-logo {
-  display: block;
+  display: inline-block;
 }
   a.logo-container::before {
     content: '' !important;
     height: 0 !important;
     width: 0 !important;
-    display: none !important;
+    display: inline-block !important;
     background: none !important;
     opacity: 0 !important;
   }
   header svg.main-logo {
-    width: 25vw;
-    max-width: 10rem;
+    height: 3rem;
   }
   footer svg.main-logo {
     height: 1rem;

@@ -108,14 +108,14 @@ a:link, a:visited {
   transition: color ease-in-out 0.15s;
 }
   a:hover, a:focus, a:active {
-    color: rgb(144, 68, 189);
+    color: rgb(217, 4, 41);
   }
   a:link::before, a:visited::before {
     content: '';
     height: 2px;
     width: 0%;
     display: inline-block;
-    background: rgb(144, 68, 189);
+    background: rgb(217, 4, 41);
     position: absolute;
     top: 1.25em;
     transition: all ease-in-out 0.15s;
