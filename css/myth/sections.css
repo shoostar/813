@@ -6,8 +6,9 @@ main > header {
   justify-content: space-between;
 }
   main > header .row {
-    /* background: -webkit-linear-gradient(top left, rgb(39, 70, 144), rgb(27, 38, 79)); */
-    background: -webkit-linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
+    background: rgba(143, 8, 41, 1);
+    background-image: linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
+    background-image: -webkit-linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
     padding: 4vw;
   }
   main > header h3 {
