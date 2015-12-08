@@ -1,14 +1,17 @@
 /* HEADER */
 main > header {
   min-height: 100vh;
+  background: url('../img/me.jpg') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
   main > header .row {
-    background: rgba(143, 8, 41, 1);
     background-image: linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
     background-image: -webkit-linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
+    mix-blend-mode: multiply;
     padding: 4vw;
   }
   main > header h3 {
@@ -77,6 +80,9 @@ main {
 section {
   padding: 8vw 0;
 }
+  .lister {
+    background: rgba(72, 64, 65, 1);
+  }
   .intro .row {
     height: 100vh;
     display: flex;
