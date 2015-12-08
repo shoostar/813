@@ -2,9 +2,6 @@
       position: relative;
       margin: 0 auto;
     }
-.c h2 {
-   font-size: 1.6em; 
-}
     .c-list-container {
       overflow: hidden;
       position: relative;
@@ -13,7 +10,7 @@
     .c-list {
       width: 99999em;
       position: relative;
-      left: 0;
+      opacity: 1;
     }
     .c-list.animating {
       -webkit-transition: left 0.25s ease-out; 
@@ -31,80 +28,56 @@
     .c li a {
       display: block;
     }
+      .c li a::before, .c-nav a::before {
+        display: none;
+      }
     .c img {
       display: block;
     }
     .c h2 {
       margin-top: 0;
     }
-    .summary {
-      padding: 2em 8vw;
-    }
     .c-nav {
       clear: both;
       overflow: hidden;
     }
     .c-nav a {
-      float: left;
-      width: 50%;
-      padding: 1em;
+      position: absolute;
+      top: 50%;
+      left: 8vw;
+      width: 4em;
+      height: 2em;
+      padding: 0;
+      color: rgb(243, 243, 245);
       -webkit-transition: opacity 0.5s ease-out; 
         -moz-transition: opacity 0.5s ease-out;  
           -o-transition: opacity 0.5s ease-out; 
           transition: opacity 0.5s ease-out;
     }
     .c-nav a.next {
-      text-align: right;
+      left: auto;
+        right: 8vw;
+        border: 0;
     }
     .c-nav a.inactive {
       opacity: 0.2;
       
     }
     
-    /* Medium */
-    @media screen and (min-width: 35em) {
-      body:after { /* Conditional CSS http://adactio.com/journal/5429/ */
-            content: 'medium';
-            display: none;
-        }
-    }
-
-    
-    /* Large */
-    @media screen and (min-width: 56.25em) {
-      body:after { /* Conditional CSS http://adactio.com/journal/5429/ */
-            content: 'large';
-            display: none;
-        }
-    }
-    
     /*Large with room to spare on either side */
     @media screen and (min-width: 56em) {
-      .summary {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 2;
-        width: 100%;
-        color: #fff;
-        background: rgba(0,0,0,0.2);
-      }
-      .c h2 {
-         font-size: 2.6em; 
-      }
       .c-nav a {
         position: absolute;
-        top: 40%;
-        left: 1em;
+        top: 50%;
+        left: 8vw;
         width: 4em;
         height: 2em;
         padding: 0;
-        margin-top: -1em;
-        color: #fff;
+        color: rgb(243, 243, 245);
       }
       .c-nav a.next {
         left: auto;
-        right: 1em;
+        right: 8vw;
         border: 0;
       }
     }

@@ -86,17 +86,14 @@ section {
     align-items: center;
   }
   .portfolio [class*='w--'] {
-    background: rgba(72, 64, 65, 0.85);
-    transition: background ease-in-out 0.15s;
     height: 100vh;
   }
-    .portfolio [class*='w--']:hover {
-      background: rgba(72, 64, 65, 0.5);
-    }
     .portfolio .w--1of1, .portfolio .w--1of2 {
       min-height: 55vw;
     }
     .overlay {
+      background-image: linear-gradient(bottom, rgba(72, 64, 65, 1), rgba(72, 64, 65, 0));
+      background-image: -webkit-linear-gradient(bottom, rgba(72, 64, 65, 1), rgba(72, 64, 65, 0));
       color: rgba(243, 243, 245, 1);
       height: 100%;
       display: flex;
@@ -104,6 +101,16 @@ section {
       justify-content: space-between;
       padding: 10vw 8vw;
     }
+      .overlay-color {
+        background: rgba(72, 64, 65, 1);
+        mix-blend-mode: lighten;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
       @media screen and (min-width: 1200px) {
         .overlay {
           padding: 6vw 8vw;
@@ -122,6 +129,7 @@ section {
       .logo {
         max-width: 10rem;
         margin-bottom: 8rem;
+        max-height: 8rem;
       }
   .journal {
     background: rgb(72, 64, 65);
