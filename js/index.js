@@ -1,96 +1,123 @@
-$('a[href^="#"]').on('click',function(e) {
-  e.preventDefault();
-});
-
-// Image Slider
-  // http://codepen.io/dubrod/pen/xkGpq
-  var slider = $('.image-slider'),
-      slide = slider.children(),
-      slideImg = $(slide).find('img'),
-      slideCount = slide.length,
-      num = 1,
-      overCount = slideCount+1,
-      currentSlide = slide.first(),
-      infoIcon = $('#info-icon'),
-      currentH,
-      hPercent;
-
-  // Add slide id numbers
-  slide.each(function(i) {
-    i = i+1;
-    $(this).attr('id', 'slide'+i);
+(function(w){
+  var sw = document.body.clientWidth,
+    current = 0,
+    breakpointSize = window.getComputedStyle(document.body,':after').getPropertyValue('content'),
+    multiplier = 1, /*Determines the number of panels*/
+    $carousel = $('.c'),
+    $cList = $('.c-list'),
+    $cContainer = $('.c-list-container'),
+    $cWidth = $cContainer.outerWidth(),
+    cLeft = $cList.css("left").replace("px",""),
+    $li = $cList.find('li'),
+    $liLength = $li.size(),
+    numPages = $liLength/multiplier,
+    $prev = $('.c-nav .prev'),
+    $next = $('.c-nav .next');
+  
+  $(document).ready(function() {
+    buildCarousel();
   });
-    // Show the first slide
-  currentSlide.addClass('current-slide');
-  // Add data-height="<height>"
-  /*
-  slideImg.each(function(){
-    $(this).data('height');
-    $(this).attr('data-height',($(this).height()));
+  
+  
+  $(window).resize(function(){ //On Window Resize
+    sw = document.body.clientWidth;
+    $cWidth = $cContainer.width();
+    breakpointSize = window.getComputedStyle(document.body,':after').getPropertyValue('content');  /* Conditional CSS http://adactio.com/journal/5429/ */
+    sizeCarousel();
+    posCarousel();
   });
-  // Slider height
-  var currentH = currentSlide.find('img').data('height'),
-      hPercent = ((currentH) / (slider.width()) * 100);
-  slider.css({
-    'padding-bottom': (hPercent + '%') // TODO - tidy this up - the % function is repeated below
-  });
-
-  // Adjust height of slider to image height
-  function adjustH() {
-    var currentH = currentSlide.find('img').data('height'),
-        hPercent = ((currentH) / (slider.width()) * 100);
-    slider.animate({
-      'padding-bottom':(hPercent + '%')
-    },250);
+  
+  function sizeCarousel() { //Determine the size and number of panels to reveal
+    current = 0;
+    
+    animLimit = $liLength/multiplier-1;
+    
+    $li.outerWidth($cWidth/multiplier); //Set panel widths
+    
   }
-  */
-  // Next / Prev slide
-  function slideOutput(num){
-    slide.find('.info').removeClass('show');
-    infoIcon.removeClass('no-strap');
-    if(num === 0){
-      reverse_resetSlider();
-      return;
+  
+  
+  function buildCarousel() { //Build the Carousel
+    sizeCarousel();
+
+    if(Modernizr.touch) {
+       buildSwipe(); 
     }
-    if(num == overCount){
-      resetSlider();
-      return;
-    }
-    $('.slide').removeClass('current-slide');
-    currentSlide = $('#slide'+num);
-    currentSlide.addClass('current-slide');
-    if(currentSlide.find('.info').hasClass('no-strap')) {
-      infoIcon.addClass('no-strap');
-    }
-
   }
-  // Reset to first slide
-  function resetSlider(){
-    $('.slide').removeClass('current-slide');
-    currentSlide = $('#slide1');
-    currentSlide.addClass('current-slide');
-    num = 1;
+  
+  function posCarousel() { //Animate Carousel. CSS transitions used for the actual animation.
+    var pos = -current * $cWidth;
+    $cList.addClass('animating').css("left",pos);
+    
+    setTimeout(function() {
+      $cList.removeClass('animating');
+      cLeft = $cList.css("left").replace("px","");
+    }, 500);  // will work with every browser
   }
-  // Reset to last slide
-  function reverse_resetSlider(){
-    currentSlide = $('#slide'+slideCount);
-    currentSlide.addClass('current-slide');
-
-    $('#slide1').removeClass('current-slide');
-    num = slideCount;
-  }
-
-
-  // On click - next
-  $("#next").click(function(){
-    num = num+1;
-    slideOutput(num);
-    //adjustH();
+  
+  $prev.click(function(e){ //Previous Button Click
+    e.preventDefault();
+    moveRight();
   });
-  // On click - prev
-  $("#prev").click(function(){
-    num = num-1;
-    slideOutput(num);
-    //adjustH();
+  
+  $next.click(function(e){ //Next Button Click
+    e.preventDefault();
+    moveLeft();
   });
-  // End of Image Slider
+
+  function moveRight() {
+    if(current>0) {
+      current--;
+    }
+    posCarousel();
+  }
+  
+  function moveLeft() {
+      if(current<animLimit) {
+        current++;
+      }
+      posCarousel();
+  }
+  
+  function buildSwipe() {
+    var threshold = 80,
+        origX = 0,
+        finalX = 0,
+        changeX = 0,
+        changeY = 0,
+        curPos;
+        
+    //Touch Start
+    $cContainer.get(0).addEventListener("touchstart", function (event) {
+         origX = event.targetTouches[0].pageX;
+        curPos = origX;
+    });
+    
+    //Touch Move
+    $cContainer.get(0).addEventListener("touchmove", function (event) {
+        finalX = event.touches[0].pageX,
+        diffX = origX - finalX,
+        leftPos = cLeft-diffX;
+        
+        event.preventDefault();
+        $cList.css("left",leftPos);
+    });
+    
+    //Touch Move
+    $cContainer.get(0).addEventListener("touchend", function (event) {
+      var diffX = origX - finalX,
+          diffXAbs = Math.abs(diffX);
+      
+      if (diffX > 0 && diffXAbs > threshold) {
+        moveLeft();
+      } else if (diffX < 0 && diffXAbs > threshold) {
+        moveRight();
+      } else {
+        posCarousel();
+      }
+      
+      origX = finalX = diffX = 0;
+    });
+}
+  
+})(this);

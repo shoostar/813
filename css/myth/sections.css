@@ -96,7 +96,7 @@ section {
     .portfolio .w--1of1, .portfolio .w--1of2 {
       min-height: 55vw;
     }
-    a.overlay {
+    .overlay {
       color: rgba(243, 243, 245, 1);
       height: 100%;
       display: flex;
@@ -105,14 +105,14 @@ section {
       padding: 10vw 8vw;
     }
       @media screen and (min-width: 1200px) {
-        a.overlay {
+        .overlay {
           padding: 6vw 8vw;
         }
       }
-      a.overlay h3 {
+      .overlay h3 {
         color: rgba(243, 243, 245, 1);
       }
-      a.overlay::before {
+      .overlay::before {
         display: none;
         visibility: hidden;
         height: 0;
