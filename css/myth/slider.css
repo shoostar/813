@@ -21,7 +21,9 @@
           -o-transition: left 0.25s ease-out; 
           transition: left 0.25s ease-out;
     }
-    
+    .c ul {
+      list-style: none;
+    }
     .c li {
       float: left;
       position: relative;
