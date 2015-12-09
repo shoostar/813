@@ -1,32 +1,32 @@
+/* background-image: linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1)); */
+
 /* HEADER */
 main > header {
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid #DDD;
 }
-  main > header .row {
-    background-image: linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
-    background-image: -webkit-linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
-    padding: 4vw;
-  }
-  main > header h3 {
-    color: rgb(243, 243, 245);
+
+  main > .intro h3 {
+    color: rgb(243, 243, 245) !important;
   }
     main > header .w--1of2 {
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: flex-start;
     }
     main > header .w--1of1 {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: flex-start;
     }
     .smile {
       display: inline-block;
       transform: rotate(-90deg);
-      letter-spacing: 0.25rem
+      letter-spacing: 0.125rem;
+      position: relative;
+      bottom: 0.1em !important;
     }
 
 
@@ -37,26 +37,19 @@ nav {
   flex-direction: row !important;
   justify-content: flex-start !important;
   align-content: flex-start !important;
-  align-items: flex-end !important;
+  align-items: flex-start !important;
 }
   @media screen and (min-width: 1200px) {
     nav {
-      justify-content: flex-end !important;
+      justify-content: flex-start !important;
     }
   }
   nav a {
-    color: rgb(243, 243, 245) !important;
     display: inline;
     transition: color ease-in-out 0.15s;
   }
     nav a:not(:first-of-type) {
       margin-left: 2.5rem;
-    }
-    nav a:hover {
-      color: rgb(243, 243, 245) !important;
-    }
-    nav a::before, nav a:hover::before {
-      background: rgb(243, 243, 245);
     }
 
 
@@ -67,25 +60,11 @@ main {
   margin: 0;
   width: 100%;
 }
-  @media screen and (min-width: 800px) {
-    main {
-      width: 94%;
-      margin-right: 6%;
-    }
-  }
 section {
   padding: 8vw 0;
 }
   .lister {
     background: rgba(72, 64, 65, 1);
-  }
-  .intro .row {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
   }
   .portfolio [class*='w--'] {
     height: 100vh;
@@ -157,24 +136,9 @@ section {
 /* FOOTER */
 main > footer {
   color: rgb(70, 70, 76);
+  border-top: 1px solid #DDD;
+  align-self: flex-end;
 }
-  main > footer .row {
-    padding: 2.5vw 4vw;
-  }
-    @media screen and (min-width: 1200px) {
-      main > footer {
-        color: rgb(243, 243, 245);
-        position: fixed;
-        transform: rotate(-90deg);
-        top: calc(50vh - 3vw);
-        right: calc(3vw - 50vh);
-        height: 6vw;
-        width: 100vh;
-      }
-      main > footer .row {
-        padding: 0.25vw 0;
-      }
-    }
   main > footer .w--1of2 {
     flex: 1 0 calc(50%);
   }
@@ -197,22 +161,17 @@ main > footer {
     opacity: 0 !important;
   }
   header svg.main-logo {
-    height: 3rem;
+    height: 1rem;
   }
   footer svg.main-logo {
     height: 1rem;
   }
 header use {
-  fill: rgb(243, 243, 245);
+  fill: rgb(217, 4, 41);
 }
 footer use {
   fill: rgb(70, 70, 76);
 }
-  @media screen and (min-width: 1200px) {
-    footer use {
-      fill: rgb(243, 243, 245);
-    }
-  }
 svg path {
   fill: inherit;
 }
