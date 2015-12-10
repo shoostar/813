@@ -1,5 +1,5 @@
-.slides{
-  position:relative;
+.slides {
+  position: relative;
   background-image: linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
   background-image: -webkit-linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
 }
@@ -10,15 +10,71 @@
   margin: 0 auto;
   padding: 10em 0;
 }
-.slide{position:absolute;top:0;left:0;right:0;bottom:0;display:block;width:100%;height:auto;transition:opacity 400ms;opacity:0}
-.slide.active{opacity:1;position:static}
-.slides-info{background:#EEEEEE;}
-a.next,a.prev{position:absolute;z-index:10000;background:0 0;top:0;bottom:0;width:50%;text-indent:-99999px}
-a.next{right:0;cursor:e-resize}
-a.prev{left:0;cursor:w-resize}
-.bullets{padding:0.5em 0 1em;}
-.bullet{display:inline-block;text-indent:-9999px;width:0.5em;height:0.5em;border-radius:50%;background-color:#bdbfc9;transition:background 300ms;margin:0 0.25em}
-.bullet.active{background-color:#1d1d1b}
-.descriptions{position:relative;}
-.description{position:absolute;top:0;left:0;right:0;transition:opacity 300ms;opacity:0}
-.description.active{transition:opacity 300ms 250ms;position:static;opacity:1}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 400ms;
+  opacity: 0;
+}
+.slide.active {
+  opacity: 1;
+  position: static
+}
+.slides-info {
+  background:#EEEEEE;
+}
+a.next, a.prev {
+  position: absolute;
+  z-index: 10000;
+  background: 0 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  text-indent: -99999px;
+}
+a.next {
+  right: 0;
+  cursor: e-resize;
+}
+a.prev {
+  left: 0;
+  cursor: w-resize;
+}
+.bullets {
+  padding: 0.5em 0 1em;
+}
+.bullet {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #bdbfc9;
+  transition: background 300ms;
+  margin: 0 0.25em;
+}
+.bullet.active {
+  background-color: #1d1d1b;
+}
+.descriptions {
+  position: relative;
+}
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 300ms;
+  opacity: 0;
+}
+.description.active {
+  transition: opacity 300ms 250ms;
+  position: static;
+  opacity: 1;
+}
