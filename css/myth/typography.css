@@ -23,8 +23,6 @@ html {
   box-sizing: inherit;
 }
 html, body {
-  background-image: linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
-  background-image: -webkit-linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
   font-family: 'neuzeit-grotesk', sans-serif;
   color: rgb(150, 150, 160);
   letter-spacing: 0.015rem;

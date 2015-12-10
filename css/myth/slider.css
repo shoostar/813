@@ -1,10 +1,11 @@
 .slides{position:relative}
 .slide{position:absolute;top:0;left:0;right:0;bottom:0;display:block;width:100%;height:auto;transition:opacity 400ms;opacity:0}
 .slide.active{opacity:1;position:static}
+.slides-info{background:#EEEEEE;}
 a.next,a.prev{position:absolute;z-index:10000;background:0 0;top:0;bottom:0;width:50%;text-indent:-99999px}
 a.next{right:0;cursor:e-resize}
 a.prev{left:0;cursor:w-resize}
-.bullets{padding:11px 0 39px;line-height:12px}@media (max-width:700px){.bullets{padding:0 0 32px}}
+.bullets{padding:0.5em 0 1em;}
 .bullet{display:inline-block;text-indent:-9999px;width:0.5em;height:0.5em;border-radius:50%;background-color:#bdbfc9;transition:background 300ms;margin:0 0.25em}
 .bullet.active{background-color:#1d1d1b}
 .descriptions{position:relative;}
