@@ -65,12 +65,12 @@ a.prev {
   width: 0.5em;
   height: 0.5em;
   border-radius: 50%;
-  background-color: #bdbfc9;
+  background-color: rgb(150, 150, 160);
   transition: background 300ms;
   margin: 0 0.25em;
 }
 .bullet.active {
-  background-color: #1d1d1b;
+  background-color: rgb(72, 64, 65);
 }
 .descriptions {
   position: relative;
