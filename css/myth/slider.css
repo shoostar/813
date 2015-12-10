@@ -2,23 +2,18 @@
   position: relative;
   background-image: linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
   background-image: -webkit-linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
+  padding: 10em 0 !important;
 }
 .slide-logo {
-  max-width: 10rem;
-  margin-bottom: 8rem;
-  max-height: 8rem;
+  height: 10rem;
   margin: 0 auto;
-  padding: 10em 0;
 }
 .slide {
   position: absolute;
-  top: 0;
+  top: calc(50% - 5em);
   left: 0;
   right: 0;
   bottom: 0;
-  display: block;
-  width: 100%;
-  height: auto;
   transition: opacity 400ms;
   opacity: 0;
 }
