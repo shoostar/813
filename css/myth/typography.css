@@ -23,7 +23,7 @@ html {
   box-sizing: inherit;
 }
 html, body {
-  font-family: 'neuzeit-grotesk', sans-serif;
+  font-family: 'utopia-std', serif;
   color: rgb(150, 150, 160);
   letter-spacing: 0.015rem;
 }
@@ -35,6 +35,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   color: rgb(72, 64, 65);
 }
+  .lightened {
+    color: rgb(150, 150, 160) !important;
+    font-weight: normal;
+  }
   .section-title::after {
     content: '';
     display: block;
@@ -46,7 +50,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 h1 {
   font-size: 300%;
-  font-weight: 300;
 }
 h2 {
   font-size: 250%;
