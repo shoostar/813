@@ -218,10 +218,14 @@ li {
 table {
   width: 100%;
 }
+th {
+  font-family: 'neuzeit-grotesk', sans-serif;
+  color: rgb(72, 64, 65);
+}
 th, td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid rgba(50, 50, 54, 0.5);
+  border-bottom: 1px solid #DDDDDD;
 }
 th:first-child, td:first-child {
   padding-left: 0;
