@@ -140,6 +140,9 @@ section.about .w--1of4 {
 .main-logo {
   display: inline-block;
 }
+a.logo-container {
+  margin-bottom: 1em;
+}
   a.logo-container::before {
     content: '' !important;
     height: 0 !important;
@@ -150,7 +153,7 @@ section.about .w--1of4 {
   }
   header svg.main-logo {
     height: 2rem;
-    margin-bottom: 1em;
+    
   }
   footer svg.main-logo {
     height: 1rem;
