@@ -1,5 +1,25 @@
 .menu-icon-wrapper {
   width: 1em;
   height: 1em;
-  float: right;
 }
+.menu-icon {
+  width: 1em;
+  height: 2px;
+  background: black;
+  display: block;
+}
+  .menu-icon::before, .menu-icon::after {
+    width: 1em;
+    height: 2px;
+    background: black;
+    display: block;
+    content: '';
+    position: relative;
+
+  }
+  .menu-icon::before {
+    top: -0.25em;
+  }
+  .menu-icon::after {
+    top: calc(0.25em - 2px);
+  }
