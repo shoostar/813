@@ -48,9 +48,7 @@ section {
   padding: 4em 0 1em;
 }
   .about {
-    background-color: rgb(40, 40, 40);
     background-image: url('../img/me.png');
-    background-blend-mode: multiply;
     background-position: left bottom;
     background-repeat: no-repeat;
   }
