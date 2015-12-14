@@ -49,12 +49,12 @@ section {
 }
   .about {
     background-image: url('../img/me.png');
-    background-position: 25% top;
+    background-position: 20% top;
     background-repeat: no-repeat;
   }
     @media screen and (min-width: 800px) {
       .about {
-        background-position: calc(right - 25%) top;
+        background-position: 100% top;
       }
     }
     @media screen and (min-width: 1200px) {
