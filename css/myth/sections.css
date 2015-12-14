@@ -4,7 +4,7 @@
 main > header {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 100% !important;
   justify-content: space-between;
 }
   main > header .w--3of4 {
@@ -20,6 +20,13 @@ main > header {
     justify-content: center;
     align-items: flex-end;
     flex: 0 0 25% !important;
+  }
+  main > header .w--1of1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 0 0 100% !important;
   }
   .smile {
     display: inline-block;
@@ -40,6 +47,36 @@ main {
 section {
   padding: 4em 0 1em;
 }
+  .about {
+    background-color: rgb(40, 40, 40);
+    background-image: url('../img/me.png');
+    background-blend-mode: multiply;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+    @media screen and (min-width: 800px) {
+      .about {
+        background-position: right top;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      .about {
+        background-position: right center;
+      }
+    }
+    section.about .w--1of4 {
+      flex: 0 0 100% !important;
+    }
+      @media screen and (min-width: 800px) {
+        section.about .w--1of4 {
+          flex: 0 0 33.3333% !important;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        section.about .w--1of4 {
+          flex: 0 0 25% !important;
+        }
+      }
   .lister {
     background: rgba(72, 64, 65, 1);
   }
@@ -113,7 +150,7 @@ section {
 /* FOOTER */
 main > footer {
   color: rgb(70, 70, 76);
-  align-self: flex-end;
+  border-top: 1px solid #DDDDDD;
 }
   main > footer .w--1of2 {
     display: flex;
