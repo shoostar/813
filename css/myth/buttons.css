@@ -13,7 +13,7 @@ button, a.button, input[type="submit"] {
   border: none;
   outline: none;
   cursor: pointer;
-  border-radius: 0.125rem;
+  border-radius: 0.15rem;
 }
   button::before, a.button::before, input[type="submit"]::before {
     height: 0;
