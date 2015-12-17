@@ -35,6 +35,41 @@ button, a.button, input[type="submit"] {
       padding: 0.75em 2em;
       font-size: 100%;
     }
+.button-group * {
+  float: left;
+  border-radius: 0 !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.25) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.25) !important;
+  transition: all ease-in-out 0.2s;
+}
+.button-group > :first-of-type {
+  border-top-left-radius: 0.15rem !important;
+  border-bottom-left-radius: 0.15rem !important;
+  border-left: 1px solid rgba(0, 0, 0, 0) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+.button-group > :last-of-type {
+  border-top-right-radius: 0.15rem !important;
+  border-bottom-right-radius: 0.15rem !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0) !important;
+}
+  .button-group *:hover {
+    border-left: 1px solid rgba(0, 0, 0, 0.25) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.25) !important;
+  }
+    .button-group > :first-of-type:hover {
+      border-left: 1px solid rgba(0, 0, 0, 0) !important;
+      border-right: 1px solid rgba(255, 255, 255, 0.25) !important;
+    }
+  .button-group *:focus, .button-group *:active {
+    border-left: 1px solid rgba(0, 0, 0, 0) !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.25) !important;
+  }
+    .button-group > :first-of-type:focus, .button-group > :first-of-type:active {
+      border-left: 1px solid rgba(0, 0, 0, 0) !important;
+      border-right: 1px solid rgba(0, 0, 0, 0.25) !important;
+    }
 
 
 
