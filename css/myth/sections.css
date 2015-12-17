@@ -40,18 +40,28 @@ main > header {
 
 /* MAIN and SECTION */
 main {
-  background: rgb(243, 243, 245);
+  background: white;
   margin: 0;
   width: 100%;
 }
+  main.profile {
+    background: rgb(34, 34, 34) url('../img/bridge.jpg') bottom center no-repeat;
+    background-size: cover;
+  }
+    main.profile * {
+      color: white !important;
+    }
 section {
-  padding: 4em 0 1em;
+  padding: 4em 0;
 }
   .about {
     background-image: url('../img/me.png');
     background-position: 20% top;
     background-repeat: no-repeat;
   }
+    main.profile .about {
+      background-image: none;
+    }
     @media screen and (min-width: 800px) {
       .about {
         background-position: 100% top;
@@ -62,102 +72,21 @@ section {
         background-position: right center;
       }
     }
-    section.about .w--1of4 {
-      flex: 0 0 100% !important;
-    }
-      @media screen and (min-width: 800px) {
-        section.about .w--1of4 {
-          flex: 0 0 33.3333% !important;
-        }
-      }
-      @media screen and (min-width: 1200px) {
-        section.about .w--1of4 {
-          flex: 0 0 25% !important;
-        }
-      }
-  .lister {
-    background: rgba(72, 64, 65, 1);
-  }
-  .portfolio [class*='w--'] {
-    height: 100vh;
-  }
-    .portfolio .w--1of1, .portfolio .w--1of2 {
-      min-height: 55vw;
-    }
-    .overlay {
-      background-image: linear-gradient(bottom, rgba(72, 64, 65, 1), rgba(72, 64, 65, 0));
-      background-image: -webkit-linear-gradient(bottom, rgba(72, 64, 65, 1), rgba(72, 64, 65, 0));
-      color: rgba(243, 243, 245, 1);
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 10vw 8vw;
-    }
-      .overlay-color {
-        background: rgba(72, 64, 65, 1);
-        mix-blend-mode: lighten;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-      }
-      @media screen and (min-width: 1200px) {
-        .overlay {
-          padding: 6vw 8vw;
-        }
-      }
-      .overlay h3 {
-        color: rgba(243, 243, 245, 1);
-      }
-      .overlay::before {
-        display: none;
-        visibility: hidden;
-        height: 0;
-        width: 0;
-        background: transparent;
-      }
-      .logo {
-        max-width: 10rem;
-        margin-bottom: 8rem;
-        max-height: 8rem;
-      }
-  .journal {
-    background: rgb(72, 64, 65);
-  }
-    .journal [class*='w--'] {
-      background: -webkit-linear-gradient(left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
-      transition: all ease-in-out 0.15s;
-      padding: 8vw;
-    }
-    @media screen and (min-width: 1200px) {
-      .journal [class*='w--'] {
-        background: -webkit-linear-gradient(left, rgba(143, 8, 41, 0), rgba(217, 4, 41, 0));
-        transition: all ease-in-out 0.15s;
-        padding: 8vw;
-      }
-        .journal [class*='w--']:hover {
-          background: -webkit-linear-gradient(left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1));
-        }
-    }
     
 
 
 /* FOOTER */
-main > footer {
-  color: rgb(70, 70, 76);
-  border-top: 1px solid #DDDDDD;
+main > footer .w--1of2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 calc(50%);
 }
-  main > footer .w--1of2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1 0 calc(50%);
+  main > footer h6 {
+    letter-spacing: 0;
   }
-    main > footer h5 {
-      font-size: 1rem;
+    main.profile > footer h6 {
+      color: white;
     }
 
 
@@ -175,7 +104,7 @@ section.about .w--1of4 {
 .main-logo {
   display: inline-block;
 }
-a.logo-container {
+header a.logo-container {
   margin-bottom: 1em;
 }
   a.logo-container::before {
@@ -188,7 +117,6 @@ a.logo-container {
   }
   header svg.main-logo {
     height: 2rem;
-    
   }
   footer svg.main-logo {
     height: 1rem;
@@ -196,9 +124,15 @@ a.logo-container {
 header use {
   fill: rgb(217, 4, 41);
 }
+  main.profile header use {
+    fill: white;
+  }
 footer use {
-  fill: rgb(70, 70, 76);
+  fill: rgb(34, 34, 34);
 }
+  main.profile footer use {
+    fill: white;
+  }
 svg path {
   fill: inherit;
 }
