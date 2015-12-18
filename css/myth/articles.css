@@ -33,6 +33,9 @@ article.hero {
   article.hero * {
     color: white;
   }
+    article.hero p:first-of-type {
+      font-size: 100%;
+    }
     article.hero .row {
       display: flex;
       align-self: flex-end;
