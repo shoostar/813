@@ -10,19 +10,6 @@ article footer p {
   color: rgba(150, 150, 160, 0.25) !important;
   margin-top: 1.5rem;
 }
-aside {
-  margin-left: 8.33333334% !important;
-  display: block;
-  position: absolute;
-  left: -0%;
-  width: 16.666%;
-  float: left !important;
-}
-  aside p {
-    font-size: 75%;
-    padding-top: 0.5em;
-    text-align: right;
-  }
 article.hero {
   min-height: 75vh;
   width: 100%;
