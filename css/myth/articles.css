@@ -23,3 +23,23 @@ aside {
     padding-top: 0.5em;
     text-align: right;
   }
+article.hero {
+  min-height: 75vh;
+  width: 100%;
+  padding: 4em 0;
+  display: flex;
+  background-size: cover !important;
+}
+  article.hero * {
+    color: white;
+  }
+    article.hero .row {
+      display: flex;
+      align-self: flex-end;
+    }
+      article.hero.dominant {
+        min-height: 100vh;
+      }
+      article.hero.dominant .row {
+        align-self: center;
+      }

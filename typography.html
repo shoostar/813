@@ -55,7 +55,42 @@
     </div>
   </header>
 
-  <hr>
+  <article class="hero" style="background: url(img/bvdt-bg.jpg) center center no-repeat;">
+    <div class="row">
+      <div class="w--1of2 pinned">
+        <h2>Any hero can...</h2>
+        <p>use this standard single-image setup. This text block can be styled the same way as any other standard content block.</p>
+        <a class="button red" href="#bigger">Make it bigger!</a>
+      </div>
+    </div>
+  </article>
+
+  <section>
+    <div class="row">
+      <article class="w--2of3 o--1of6 pinned">
+        <h6 class="section-title">article</h6>
+        <header>
+          <h2>This is an article</h2>
+        </header>
+        <p>When writing within an article context, the first paragraph will always be larger, so as to indicate itself as an introduction.</p>
+        <p>The second paragraph (and every paragraph thereafter) will remain the base font size. This makes things a bit easier to read once you get past the main intro. There's no reason to make this any bigger, as we don't want the visual impact to disctract readers. Oh by the way, here's a <a href="#">link</a>.</p>
+        <p>Just for good measure, let's go ahead and cap off this event with another basic paragraph. It's not really that long of one, but at least it gets the point across. I'm also going to use this opportunity to showcase some inline paragraph styling as well.</p>
+        <footer>
+          <a href="article.html">Read Story</a>
+        </footer>
+      </article>
+    </div>
+  </section>
+
+  <article id="bigger" class="hero dominant" style="background: url(img/sault.jpg) center center no-repeat;">
+    <div class="row">
+      <div class="w--2of3 o--1of6 pinned text-center">
+        <h1>But only a true hero...</h1>
+        <p>looks this badass. Full viewport height, vertically-centered content, and still stylable like any other block. Need to add portfolio content?</p>
+        <a class="button large red" href="#slider">Slide on down &darr;</a>
+      </div>
+    </div>
+  </article>
 
   <section>
     <div class="row">
@@ -167,26 +202,45 @@
     </div>
   </section>
 
-  <hr>
-
-  <section>
+  <section id="slider" class="slides no-pad">
+    <img data-index="1" class="slide active slide-logo" src="img/koffee-logo.svg" alt="Koffee House">
+    <img data-index="2" class="slide slide-logo" src="img/bvdt-logo.svg" alt="Brad Van Dorn Taxidermy">
+    <img data-index="3" class="slide slide-logo" src="img/sif-logo.svg" alt="Sugar Island Fest">
+    <img data-index="4" class="slide slide-logo" src="img/c4-logo.svg" alt="C4 Sauce">
+    <a class="prev" href="#">Prev</a>
+    <a class="next" href="#">Next</a>
+  </section>
+  
+  <section class="content no-pad slides-info">
     <div class="row">
-      <article class="w--2of3 o--1of6 pinned">
-        <h6 class="section-title">article</h6>
-        <header>
-          <h2>This is an article</h2>
-        </header>
-        <p>When writing within an article context, the first paragraph will always be larger, so as to indicate itself as an introduction.</p>
-        <p>The second paragraph (and every paragraph thereafter) will remain the base font size. This makes things a bit easier to read once you get past the main intro. There's no reason to make this any bigger, as we don't want the visual impact to disctract readers. Oh by the way, here's a <a href="#">link</a>.</p>
-        <p>Just for good measure, let's go ahead and cap off this event with another basic paragraph. It's not really that long of one, but at least it gets the point across. I'm also going to use this opportunity to showcase some inline paragraph styling as well.</p>
-        <footer>
-          <a href="article.html">Read Story</a>
-        </footer>
-      </article>
+      <div class="w--1of2 pinned">
+        <div class="bullets">
+          <a data-index="1" class="bullet active" href="#">1</a>
+          <a data-index="2" class="bullet" href="#">2</a>
+          <a data-index="3" class="bullet" href="#">3</a>
+          <a data-index="4" class="bullet" href="#">4</a>
+        </div>
+        <div class="descriptions">
+          <span data-index="1" class="description active">
+            <h5 class="bottomless">Koffee House</h5>
+            <p class="bottomless">branding, print</p>
+          </span>
+          <span data-index="2" class="description">
+            <h5 class="bottomless">BVD Taxidermy</h5>
+            <p class="bottomless">branding, print, tooling</p>
+          </span>
+          <span data-index="3" class="description">
+            <h5 class="bottomless">Sugar Island Fest</h5>
+            <p class="bottomless">branding</p>
+          </span>
+          <span data-index="4" class="description">
+            <h5 class="bottomless">C4 Sauce</h5>
+            <p class="bottomless">branding, print</p>
+          </span>
+        </div>
+      </div>
     </div>
   </section>
-
-  <hr>
 
   <section>
     <div class="row">
@@ -271,7 +325,8 @@
   </section>
 </main>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
 </body>
 </html>

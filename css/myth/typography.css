@@ -74,13 +74,12 @@ p, ul, ol, dl, blockquote, strong, pre, code {
   margin-bottom: 1.75rem;
   line-height: 1.75;
 }
-  .large {
-    font-size: 150%;
-  }
 pre, code {
   font-family: "source-code-pro", sans-serif;
   background: rgba(170, 170, 170, 0.125);
   border-radius: 0.125rem;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
 }
   pre {
     padding: 1em 0.5rem;
