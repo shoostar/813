@@ -42,8 +42,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.25 !important;
   }
   .lightened {
-    color: rgb(170, 170, 170) !important;
-    font-weight: 600 !important;
+    color: rgb(170, 170, 170);
   }
   .section-title::after {
     content: '';

@@ -72,6 +72,15 @@ section {
         background-position: right center;
       }
     }
+  .highlight {
+    background: rgb(34, 34, 34);
+  }
+    .highlight h1, .highlight h2, .highlight h3, .highlight h4, .highlight h5, .highlight h6 {
+      color: rgb(210, 210, 210);
+    }
+    .highlight .lightened {
+      color: rgb(68, 68, 68);
+    }
     
 
 
