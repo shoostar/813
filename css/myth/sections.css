@@ -101,6 +101,13 @@ section.about .w--1of4 {
   }
 
 
+
+.colored {
+  background: rgba(170, 170, 170, 0.1);
+}
+
+
+
 .main-logo {
   display: inline-block;
 }
