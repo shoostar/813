@@ -4,6 +4,7 @@ article header {
 }
 article p:first-of-type:not(small) {
   font-size: 125%;
+  margin-bottom: 0.8125rem;
 }
 article footer p {
   font-size: 75% !important;
