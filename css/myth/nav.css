@@ -1,15 +1,15 @@
 .menu-icon-wrapper {
-  width: 1em;
+  width: 24px;
   height: 1em;
 }
 .menu-icon {
-  width: 1em;
+  width: 24px;
   height: 2px;
   background: black;
   display: block;
 }
   .menu-icon::before, .menu-icon::after {
-    width: 1em;
+    width: 24px;
     height: 2px;
     background: black;
     display: block;
@@ -17,10 +17,10 @@
     position: relative;
   }
   .menu-icon::before {
-    top: -0.25em;
+    top: -7px;
   }
   .menu-icon::after {
-    top: calc(0.25em - 2px);
+    top: 5px;
   }
   main.work .menu-icon, main.work .menu-icon::before, main.work .menu-icon::after {
     background: white !important;
