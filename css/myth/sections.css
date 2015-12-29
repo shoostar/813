@@ -1,39 +1,35 @@
-/* background-image: linear-gradient(top left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1)); */
+/* background-image: linear-gradient(left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1)); */
 
 /* HEADER */
-main > header {
+main > header, article.hero header {
   display: flex;
   flex-direction: row;
   width: 100% !important;
   justify-content: space-between;
 }
-  main > header .w--3of4 {
+  article.hero header {
+    background-image: linear-gradient(left, rgba(143, 8, 41, 0.75), rgba(217, 4, 41, 0.75));
+  }
+  main > header .w--3of4, article.hero header .w--3of4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     flex: 0 0 75% !important;
   }
-  main > header .w--1of4 {
+  main > header .w--1of4, article.hero header .w--1of4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     flex: 0 0 25% !important;
   }
-  main > header .w--1of1 {
+  main > header .w--1of1, article.hero header .w--1of1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     flex: 0 0 100% !important;
-  }
-  .smile {
-    display: inline-block;
-    transform: rotate(-90deg);
-    letter-spacing: 0.125rem;
-    position: relative;
-    bottom: 0.05em !important;
   }
 
 
@@ -92,12 +88,18 @@ section {
   section.portfolio [class*='w--'] {
     background-size: cover !important;
   }
-    section.portfolio .w--1of1 {
-      height: 75vh;
-    }
-    section.portfolio .w--1of2 {
+    section.portfolio .w--1of1, section.portfolio .w--1of2 {
       height: 37.5vh;
+      min-height: 20em;
     }
+      @media screen and (min-width: 1200px) {
+        section.portfolio .w--1of1 {
+          height: 75vh;
+        }
+        section.portfolio .w--1of2 {
+          height: 37.5vh;
+        }
+      }
     
 
 
@@ -147,6 +149,9 @@ header use {
   fill: rgb(217, 4, 41);
 }
   main.profile header use {
+    fill: white;
+  }
+  main.work header use {
     fill: white;
   }
 footer use {

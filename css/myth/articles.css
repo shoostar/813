@@ -28,11 +28,12 @@ article.hero {
         align-self: center;
       }
     article.hero .color-overlay {
-      background-image: linear-gradient(top left, rgba(143, 8, 41, 0.75), rgba(217, 4, 41, 0.75));
+      background-image: linear-gradient(left, rgba(143, 8, 41, 0.75), rgba(217, 4, 41, 0.75));
       min-height: 75vh;
       width: 100%;
-      padding: 4em 0;
+      padding: 0;
       display: flex;
+      flex-direction: row;
       background-size: cover !important;
     }
       article.hero.dominant .color-overlay {

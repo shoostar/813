@@ -15,11 +15,13 @@
     display: block;
     content: '';
     position: relative;
-
   }
   .menu-icon::before {
     top: -0.25em;
   }
   .menu-icon::after {
     top: calc(0.25em - 2px);
+  }
+  main.work .menu-icon-wrapper > .menu-icon, .menu-icon::before, .menu-icon::after {
+    background: white !important;
   }
