@@ -242,3 +242,9 @@ figcaption {
   font-size: 65%;
   font-style: italic;
 }
+
+
+
+.text-small > * {
+  font-size: 0.6666em;
+}

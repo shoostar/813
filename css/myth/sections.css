@@ -72,14 +72,31 @@ section {
         background-position: right center;
       }
     }
-  .highlight {
+  section.highlight {
     background: rgb(34, 34, 34);
   }
-    .highlight h1, .highlight h2, .highlight h3, .highlight h4, .highlight h5, .highlight h6 {
+    section.highlight h1, section.highlight h2, section.highlight h3, section.highlight h4, section.highlight h5, section.highlight h6 {
       color: rgb(210, 210, 210);
     }
-    .highlight .lightened {
+    section.highlight .lightened {
       color: rgb(68, 68, 68);
+    }
+  section.about .w--1of4 {
+    flex: 1 0 calc(50%);
+  }
+    @media screen and (min-width: 1200px) {
+      section.about .w--1of4 {
+        flex: 1 0 calc(25%);
+      }
+    }
+  section.portfolio [class*='w--'] {
+    background-size: cover !important;
+  }
+    section.portfolio .w--1of1 {
+      height: 75vh;
+    }
+    section.portfolio .w--1of2 {
+      height: 37.5vh;
     }
     
 
@@ -97,17 +114,6 @@ main > footer .w--1of2 {
     main.profile > footer h6 {
       color: white;
     }
-
-
-
-section.about .w--1of4 {
-  flex: 1 0 calc(50%);
-}
-  @media screen and (min-width: 1200px) {
-    section.about .w--1of4 {
-      flex: 1 0 calc(25%);
-    }
-  }
 
 
 
