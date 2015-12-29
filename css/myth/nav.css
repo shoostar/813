@@ -22,6 +22,6 @@
   .menu-icon::after {
     top: calc(0.25em - 2px);
   }
-  main.work .menu-icon-wrapper > .menu-icon, .menu-icon::before, .menu-icon::after {
+  main.work .menu-icon, main.work .menu-icon::before, main.work .menu-icon::after {
     background: white !important;
   }
