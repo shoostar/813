@@ -244,11 +244,19 @@ figcaption {
   section.portfolio figcaption {
     background: rgba(217, 4, 41, 0.9);
     color: white;
-    padding: 2em;
+    padding: 1rem 2rem;
+    opacity: 0;
+    transition: all 0.15s ease-in-out;
+    transform: translate(0px, -10px);
+    transform: scale(0.75);
   }
+    section.portfolio [class*='w--']:hover figcaption {
+      opacity: 1;
+      transform: translate(0px, 0px);
+    }
 
 
 
 .text-small > * {
-  font-size: 0.75em;
+  font-size: 0.6666em;
 }
