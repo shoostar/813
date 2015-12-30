@@ -28,7 +28,7 @@ article.hero {
         align-self: center;
       }
     article.hero .color-overlay {
-      background-image: linear-gradient(left, rgba(143, 8, 41, 0.75), rgba(217, 4, 41, 0.75));
+      background: rgba(217, 4, 41, 0.9);
       min-height: 75vh;
       width: 100%;
       padding: 0;

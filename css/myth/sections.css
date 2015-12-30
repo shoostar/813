@@ -8,7 +8,7 @@ main > header, article.hero header {
   justify-content: space-between;
 }
   article.hero header {
-    background-image: linear-gradient(left, rgba(143, 8, 41, 0.75), rgba(217, 4, 41, 0.75));
+    background: rgba(217, 4, 41, 0.9);
   }
   main > header .w--3of4, article.hero header .w--3of4 {
     display: flex;
@@ -110,6 +110,11 @@ section {
       section.portfolio .w--1of1 {
         height: 75vh;
       }
+    }
+    section.portfolio figure {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
     
 
