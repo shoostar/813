@@ -103,19 +103,14 @@ section {
     }
   section.portfolio [class*='w--'] {
     background-size: cover !important;
+    height: 37.5vh;
+    min-height: 15em;
   }
-    section.portfolio .w--1of1, section.portfolio .w--1of2 {
-      height: 37.5vh;
-      min-height: 20em;
-    }
-      @media screen and (min-width: 1200px) {
-        section.portfolio .w--1of1 {
-          height: 75vh;
-        }
-        section.portfolio .w--1of2 {
-          height: 37.5vh;
-        }
+    @media screen and (min-width: 1200px) {
+      section.portfolio .w--1of1 {
+        height: 75vh;
       }
+    }
     
 
 
