@@ -250,15 +250,18 @@ figcaption {
 }
 .lightened {
     color: rgb(217, 4, 41);
-    letter-spacing: 10px !important;
+    letter-spacing: 0.5em !important;
     text-transform: uppercase;
   }
 .section-title::after {
   content: '';
   display: block;
-  height: 0.25em;
-  width: 2em;
+  height: 0.125em;
+  width: 4em;
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
-  background: rgb(0, 108, 202);
+  background: rgb(217, 4, 41);
 }
+  .highlight .section-title::after {
+    background: rgb(217, 4, 41);
+  }
