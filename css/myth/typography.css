@@ -41,18 +41,6 @@ h1, h2, h3, h4, h5, h6 {
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     line-height: 1.25 !important;
   }
-  .lightened {
-    color: rgb(170, 170, 170);
-  }
-  .section-title::after {
-    content: '';
-    display: block;
-    height: 0.25em;
-    width: 2em;
-    margin-top: 1.75rem;
-    margin-bottom: 1.75rem;
-    background: rgb(0, 108, 202);
-  }
 h1 {
   font-size: 300%;
 }
@@ -103,7 +91,7 @@ pre, code {
     }
 em { font-style: italic; }
 strong { font-weight: 700; }
-small { font-weight: 300; letter-spacing: 0.025rem; }
+small { font-weight: 300; }
 a:link, a:visited {
   color: rgb(34, 34, 34);
   font-weight: bold;
@@ -259,4 +247,18 @@ figcaption {
 
 .text-small > * {
   font-size: 0.6666em;
+}
+.lightened {
+    color: rgb(217, 4, 41);
+    letter-spacing: 10px !important;
+    text-transform: uppercase;
+  }
+.section-title::after {
+  content: '';
+  display: block;
+  height: 0.25em;
+  width: 2em;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  background: rgb(0, 108, 202);
 }
