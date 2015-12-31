@@ -71,7 +71,7 @@ section {
   section.highlight {
     background: rgb(34, 34, 34);
   }
-    section.highlight h1, section.highlight h2, section.highlight h3, section.highlight h4, section.highlight h5, section.highlight h6 {
+    section.highlight h1, section.highlight h2, section.highlight h3, section.highlight h4, section.highlight h5, section.highlight h6, label {
       color: rgb(210, 210, 210);
     }
     section.highlight .lightened {
