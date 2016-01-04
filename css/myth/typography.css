@@ -236,11 +236,31 @@ figcaption {
     opacity: 0;
     transition: all 0.15s ease-in-out;
     transform: translate(0px, -10px);
-    transform: scale(0.75);
+    transform: scale(0.9);
   }
     section.portfolio [class*='w--']:hover figcaption {
       opacity: 1;
       transform: translate(0px, 0px);
+    }
+  figure .info {
+    font-size: 0.75rem;
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    background: rgba(217, 4, 41, 0.75);
+    border-radius: 0.5rem;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 0.125rem;
+    opacity: 1;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+    bottom: -1.875rem !important;
+    left: 1rem !important;
+  }
+    section.portfolio [class*='w--']:hover .info {
+      opacity: 0;
     }
 
 
@@ -250,7 +270,7 @@ figcaption {
 }
 .lightened {
     color: rgb(217, 4, 41);
-    letter-spacing: 0.5em !important;
+    letter-spacing: 0.375em !important;
     text-transform: uppercase;
   }
 .section-title::after {
