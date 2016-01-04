@@ -288,7 +288,7 @@ figcaption {
 .section-title::after {
   content: '';
   display: block;
-  height: 0.125em;
+  height: 0.1875em;
   width: 4em;
   margin-top: 0.875rem;
   margin-bottom: 0.875rem;
