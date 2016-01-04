@@ -233,32 +233,44 @@ figcaption {
     background: rgba(217, 4, 41, 0.9);
     color: white;
     padding: 1rem 2rem;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.15s ease-in-out;
-    transform: translate(0px, -10px);
-    transform: scale(0.9);
+    transform: translate(0px, 0px);
+    transform: scale(1);
   }
+    @media screen and (min-width: 1200px) {
+      section.portfolio figcaption {
+        opacity: 0;
+        transform: translate(0px, -10px);
+        transform: scale(0.9);
+      }
+    }
     section.portfolio [class*='w--']:hover figcaption {
       opacity: 1;
       transform: translate(0px, 0px);
     }
   figure .info {
-    font-size: 0.75rem;
-    width: 1rem;
-    height: 1rem;
-    display: inline-block;
-    background: rgba(217, 4, 41, 0.75);
-    border-radius: 0.5rem;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    padding-top: 0.125em;
-    opacity: 1;
-    transition: all 0.15s ease-in-out;
-    position: relative;
-    bottom: -1.875rem !important;
-    left: 1rem !important;
+    opacity: 0;
   }
+    @media screen and (min-width: 1200px) {
+      figure .info {
+        display: inline-block;
+        font-size: 0.75rem;
+        width: 1.25em;
+        height: 1.25em;
+        border-radius: 0.625em;
+        padding-top: 0.125em;
+        opacity: 1;
+        background: rgba(217, 4, 41, 0.75);
+        color: white;
+        text-align: center;
+        font-weight: 700;
+        transition: all 0.15s ease-in-out;
+        position: relative;
+        bottom: -1.875rem !important;
+        left: 1rem !important;
+      }
+    }
     section.portfolio [class*='w--']:hover .info {
       opacity: 0;
     }
