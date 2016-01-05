@@ -226,50 +226,55 @@ th:last-child, td:last-child {
 
 
 /* FIGURES */
+figure {
+  position: relative;
+}
 figcaption {
   font-size: 0.6666em;
   font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
   section.portfolio figcaption {
     background: rgba(217, 4, 41, 0.9);
     color: white;
-    padding: 1rem 2rem;
-    opacity: 1;
-    transition: all 0.15s ease-in-out;
-    transform: scale(1);
-  }
-    @media screen and (min-width: 1200px) {
-      section.portfolio [class*='w--'] figcaption {
-        opacity: 0;
-        transform: scale(0.95);
-      }
-      section.portfolio [class*='w--']:hover figcaption {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-  figure .info {
+    padding: 2rem;
+    height: 100%;
     opacity: 0;
+    transition: all 0.15s ease-in-out;
+    transform: scale(0.95);
+    position: relative;
+    top: 0;
   }
-    @media screen and (min-width: 1200px) {
-      figure .info {
-        display: inline-block;
-        font-size: 0.75rem;
-        width: 2em;
-        height: 2em;
-        border-radius: 1em;
-        padding-top: 0.375em;
-        opacity: 1;
-        background: rgba(217, 4, 41, 0.9);
-        color: white;
-        text-align: center;
-        font-weight: 700;
-        transition: all 0.15s ease-in-out;
-        position: relative;
-        bottom: -1.875rem !important;
-        left: 1rem !important;
-      }
+    section.portfolio [class*='w--']:hover figcaption {
+      opacity: 1;
+      transform: scale(1);
     }
+    figure .info {
+      font-size: 24px;
+      opacity: 1;
+      color: white;
+      text-align: center;
+      font-weight: 700;
+      transition: all 0.15s ease-in-out;
+      position: absolute;
+      top: 2em;
+      left: 2.125em;
+      z-index: 1;
+    }
+      figure .info::before {
+        content: '';
+        display: block;
+        background: rgba(217, 4, 41, 0.9);
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        position: absolute;
+        top: -0.5em;
+        left: -0.625em;
+        z-index: -1;
+      }
     section.portfolio [class*='w--']:hover .info {
       opacity: 0;
     }
