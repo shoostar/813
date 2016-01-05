@@ -102,7 +102,7 @@ section {
       background: black;
     }
   section.portfolio [class*='w--'] {
-    background-size: cover !important;
+    background-size: 100% !important;
     height: 37.5vh;
     min-height: 15em;
   }
