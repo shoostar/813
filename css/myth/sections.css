@@ -36,7 +36,6 @@ main > header, article.hero header {
 
 /* MAIN and SECTION */
 main {
-  background: white;
   margin: 0;
   width: 100%;
 }
@@ -87,7 +86,7 @@ section {
       }
     }
   .swatches [class*='w--'] {
-    height: 1em !important;
+    height: 0.5em !important;
     flex: 0 0 25% !important;
   }
     .swatches [class*='w--']:nth-child(1) {
@@ -111,6 +110,11 @@ section {
       section.portfolio .w--1of1 {
         height: 75vh;
       }
+    }
+    section.portfolio .w--1of1 {
+      display: flex;
+      flex-direction: column !important;
+      justify-content: center !important;
     }
     section.portfolio figure {
       display: flex;

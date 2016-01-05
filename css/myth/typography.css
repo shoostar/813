@@ -31,6 +31,7 @@ html, body {
   font-family: 'aktiv-grotesk', sans-serif;
   color: rgb(119, 119, 119);
   letter-spacing: 0.025rem;
+  background: #FCFCFE;
 }
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.8125rem;
@@ -235,19 +236,17 @@ figcaption {
     padding: 1rem 2rem;
     opacity: 1;
     transition: all 0.15s ease-in-out;
-    transform: translate(0px, 0px);
     transform: scale(1);
   }
     @media screen and (min-width: 1200px) {
-      section.portfolio figcaption {
+      section.portfolio [class*='w--'] figcaption {
         opacity: 0;
-        transform: translate(0px, -10px);
-        transform: scale(0.9);
+        transform: scale(0.95);
       }
-    }
-    section.portfolio [class*='w--']:hover figcaption {
-      opacity: 1;
-      transform: translate(0px, 0px);
+      section.portfolio [class*='w--']:hover figcaption {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
   figure .info {
     opacity: 0;
@@ -256,12 +255,12 @@ figcaption {
       figure .info {
         display: inline-block;
         font-size: 0.75rem;
-        width: 1.25em;
-        height: 1.25em;
-        border-radius: 0.625em;
-        padding-top: 0.125em;
+        width: 2em;
+        height: 2em;
+        border-radius: 1em;
+        padding-top: 0.375em;
         opacity: 1;
-        background: rgba(217, 4, 41, 0.75);
+        background: rgba(217, 4, 41, 0.9);
         color: white;
         text-align: center;
         font-weight: 700;
