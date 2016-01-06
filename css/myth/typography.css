@@ -259,8 +259,8 @@ figcaption {
       font-weight: 700;
       transition: all 0.15s ease-in-out;
       position: absolute;
-      top: calc(50%);
-      left: calc(50%);
+      top: calc(50% - 12px);
+      left: calc(50% - 6px);
       z-index: 1;
     }
       figure .info::before {
