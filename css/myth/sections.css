@@ -35,38 +35,9 @@ main > header, article.hero header {
 
 
 /* MAIN and SECTION */
-main {
-  margin: 0;
-  width: 100%;
-}
-  main.profile {
-    background: rgb(34, 34, 34) url('../img/bridge.jpg') bottom center no-repeat;
-    background-size: cover;
-  }
-    main.profile * {
-      color: white !important;
-    }
 section {
   padding: 4em 0;
 }
-  .about {
-    background-image: url('../img/me.png');
-    background-position: 20% top;
-    background-repeat: no-repeat;
-  }
-    main.profile .about {
-      background-image: none;
-    }
-    @media screen and (min-width: 800px) {
-      .about {
-        background-position: 100% top;
-      }
-    }
-    @media screen and (min-width: 1200px) {
-      .about {
-        background-position: right center;
-      }
-    }
   section.highlight {
     background: rgb(34, 34, 34);
     color: rgb(170, 170, 170);
