@@ -1,11 +1,83 @@
 /* Let's add some color variables here, something for each individual project to use. */
 /* We should also move any other portfolio-related styles to this file. Check 'sections.css', 'articles.css', and 'typography.css' for any references. */
-/*
+:root {
+  --koffee-light: rgb(169, 124, 80);
+  --koffee-dark: rgb(96, 57, 19);
+}
+.swatches [class*='w--'] {
+  height: 0.5em !important;
+  flex: 0 0 25% !important;
+}
+
+
+
+/* KOFFEE HOUSE */
+main.koffee .swatches [class*='w--']:nth-child(1) {
+  background: var(--koffee-dark);
+}
+main.koffee .swatches [class*='w--']:nth-child(2) {
+  background: color(var(--koffee-dark) tint(50%));
+}
+main.koffee .swatches [class*='w--']:nth-child(3) {
+  background: var(--koffee-light);
+}
+main.koffee .swatches [class*='w--']:nth-child(4) {
+  background: color(var(--koffee-light) tint(50%));
+}
+
+
+
+main.koffee header use {
+  fill: color(var(--koffee-light) tint(50%));
+}
+main.koffee .menu-icon,
+main.koffee .menu-icon::before,
+main.koffee .menu-icon::after {
+  background: color(var(--koffee-light) tint(50%));
+}
+
+
+
+main.koffee hr {
+  background: var(--koffee-dark);
+}
+
+
+
+main.koffee article.hero .color-overlay {
+  background: color(var(--koffee-dark) shade(50%) alpha(95%));
+}
+  main.koffee article.hero .color-overlay * {
+    color: color(var(--koffee-light) tint(50%));
+  }
+
+
+
 main.koffee {
-	background: rgb(169, 124, 80);
+	background: color(var(--koffee-light) tint(50%));
 }
   main.koffee * {
-    color: rgb(96, 57, 19);
+    color: var(--koffee-dark);
+  }
+    main.koffee h1,
+    main.koffee h2,
+    main.koffee h3,
+    main.koffee h4,
+    main.koffee h5,
+    main.koffee h6 {
+      color: color(var(--koffee-dark) shade(50%));
+    }
+    main.koffee .section-title::after {
+      background: var(--koffee-light);
+    }
+
+
+
+main.koffee .highlight {
+  background: color(var(--koffee-dark) shade(50%));
+}
+  main.koffee .highlight * {
+    color: var(--koffee-light);
   }
     main.koffee .highlight h1,
     main.koffee .highlight h2,
@@ -13,6 +85,8 @@ main.koffee {
     main.koffee .highlight h4,
     main.koffee .highlight h5,
     main.koffee .highlight h6 {
-      color: green;
+      color: color(var(--koffee-light) tint(50%));
     }
-    */
+    main.koffee .highlight .section-title::after {
+      background: var(--koffee-dark);
+    }

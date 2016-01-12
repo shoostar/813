@@ -8,7 +8,8 @@ main > header, article.hero header {
   justify-content: space-between;
 }
   article.hero header {
-    background: rgba(217, 4, 41, 0.9);
+    position: fixed;
+    z-index: 1000;
   }
   main > header .w--3of4, article.hero header .w--3of4 {
     display: flex;
@@ -55,22 +56,6 @@ section {
       section.about .w--1of4 {
         flex: 1 0 calc(25%);
       }
-    }
-  .swatches [class*='w--'] {
-    height: 0.5em !important;
-    flex: 0 0 25% !important;
-  }
-    .swatches [class*='w--']:nth-child(1) {
-      background: red;
-    }
-    .swatches [class*='w--']:nth-child(2) {
-      background: green;
-    }
-    .swatches [class*='w--']:nth-child(3) {
-      background: blue;
-    }
-    .swatches [class*='w--']:nth-child(4) {
-      background: black;
     }
   section.portfolio [class*='w--'] {
     background-size: cover !important;

@@ -306,6 +306,3 @@ figcaption {
   margin-bottom: 0.875rem;
   background: rgb(217, 4, 41);
 }
-  .highlight .section-title::after {
-    background: rgb(217, 4, 41);
-  }

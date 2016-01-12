@@ -22,6 +22,3 @@
   .menu-icon::after {
     top: 5px;
   }
-  main.work .menu-icon, main.work .menu-icon::before, main.work .menu-icon::after {
-    background: white !important;
-  }
