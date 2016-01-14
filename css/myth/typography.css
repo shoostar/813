@@ -197,9 +197,12 @@ ol ol,
 ol ul {
   margin: 1.75rem 0 1.75rem 3rem;
   font-size: 90%;
-}
+} 
 li {
-  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
 }
 
 

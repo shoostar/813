@@ -4,10 +4,30 @@
   --koffee-light: rgb(169, 124, 80);
   --koffee-dark: rgb(96, 57, 19);
 }
+
+
+
 .swatches [class*='w--'] {
   height: 0.5em !important;
   flex: 0 0 25% !important;
 }
+.w--2of3 ul {
+  -webkit-columns: 1;
+     -moz-columns: 1;
+          columns: 1;
+  -moz-column-fill: balance;
+       column-fill: balance;
+  -webkit-column-gap: 4em;
+     -moz-column-gap: 4em;
+          column-gap: 4em;
+}
+  @media screen and (min-width: 800px) {
+    .w--2of3 ul {
+      -webkit-columns: 2;
+         -moz-columns: 2;
+              columns: 2;
+    }
+  }
 
 
 
@@ -30,6 +50,12 @@ main.koffee .swatches [class*='w--']:nth-child(4) {
 main.koffee header use {
   fill: color(var(--koffee-light) tint(50%));
 }
+main.koffee footer use, main.koffee > footer h6 {
+  fill: var(--koffee-dark);
+}
+main.koffee > footer h6 {
+  color: var(--koffee-dark);
+}
 main.koffee .menu-icon,
 main.koffee .menu-icon::before,
 main.koffee .menu-icon::after {
@@ -39,7 +65,7 @@ main.koffee .menu-icon::after {
 
 
 main.koffee hr {
-  background: var(--koffee-dark);
+  background: color(var(--koffee-light) tint(25%));
 }
 
 
@@ -89,4 +115,24 @@ main.koffee .highlight {
     }
     main.koffee .highlight .section-title::after {
       background: var(--koffee-dark);
+    }
+
+
+
+main.koffee section.portfolio [class*='w--'] * {
+  color: color(var(--koffee-light) tint(75%)) !important;
+}
+main.koffee section.portfolio figcaption {
+  background: color(var(--koffee-light) alpha(90%));
+  color: color(var(--koffee-light) tint(75%)) !important;
+}
+  figure .info {
+    font-size: 24px;
+    opacity: 1;
+    color: var(--koffee-dark) !important;
+  }
+    figure .info::before {
+      content: '';
+      display: block;
+      background: var(--koffee-light);
     }
