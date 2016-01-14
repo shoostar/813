@@ -33,10 +33,10 @@
 
 /* KOFFEE HOUSE */
 main.koffee .swatches [class*='w--']:nth-child(1) {
-  background: var(--koffee-dark);
+  background: color(var(--koffee-dark) shade(50%));
 }
 main.koffee .swatches [class*='w--']:nth-child(2) {
-  background: color(var(--koffee-dark) tint(50%));
+  background: var(--koffee-dark);
 }
 main.koffee .swatches [class*='w--']:nth-child(3) {
   background: var(--koffee-light);
@@ -124,7 +124,6 @@ main.koffee section.portfolio [class*='w--'] * {
 }
 main.koffee section.portfolio figcaption {
   background: color(var(--koffee-light) alpha(90%));
-  color: color(var(--koffee-light) tint(75%)) !important;
 }
   figure .info {
     font-size: 24px;

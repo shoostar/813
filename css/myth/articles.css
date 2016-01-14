@@ -13,6 +13,7 @@ article footer p {
 }
 article.hero {
   padding: 0;
+  background-size: cover !important;
 }
   article.hero * {
     color: white;
@@ -34,7 +35,6 @@ article.hero {
       padding: 0;
       display: flex;
       flex-direction: row;
-      background-size: cover !important;
     }
       article.hero.dominant .color-overlay {
         min-height: 100vh;
