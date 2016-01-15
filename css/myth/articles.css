@@ -30,7 +30,7 @@ article.hero {
       }
     article.hero .color-overlay {
       background: rgba(217, 4, 41, 0.9);
-      min-height: 75vh;
+      min-height: 90vh;
       width: 100%;
       padding: 0;
       display: flex;

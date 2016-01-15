@@ -153,22 +153,26 @@ kbd {
 
 /* QUOTES */
 blockquote {
-  background: rgba(50, 50, 54, 0.25);
-  border-left: 10px solid rgba(50, 50, 54, 0.5);
   margin: 1.75em 0;
   padding: 1em;
   quotes: "\201C""\201D""\2018""\2019";
+  font-family: 'utopia-std-caption', serif !important;
+  font-size: 1.25em;
+  font-weight: 600;
+  font-style: italic;
 }
 blockquote:before {
   color: rgb(34, 34, 34);
   content: open-quote;
-  font-size: 16em;
+  font-size: 36em;
   float: left;
   line-height: 0.1em;
-  margin-top: 0.1875em;
-  font-family: Georgia;
+  margin-top: 0.0625em;
+  font-family: Georgia, serif;
+  font-style: italic;
   position: absolute;
-  z-index: 1;
+  right: 50%;
+  z-index: -1;
 }
 blockquote p, blockquote cite {
   display: block;
@@ -309,3 +313,6 @@ figcaption {
   margin-bottom: 0.875rem;
   background: rgb(217, 4, 41);
 }
+  [class*='w--'].text-center .section-title::after {
+    margin: 0.875rem auto;
+  }

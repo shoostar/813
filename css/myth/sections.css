@@ -67,6 +67,16 @@ section {
       flex-direction: column;
       justify-content: center;
     }
+    section.portfolio .w--1of4 {
+      flex: 1 0 calc(50%);
+      height: 50vw;
+    }
+    @media screen and (min-width: 800px) {
+      section.portfolio .w--1of4 {
+        flex: 1 0 calc(25%);
+        height: 20vh;
+      }
+    }
     @media screen and (min-width: 1200px) {
       section.portfolio .w--1of1 {
         height: 75vh;
