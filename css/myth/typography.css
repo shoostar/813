@@ -153,8 +153,6 @@ kbd {
 
 /* QUOTES */
 blockquote {
-  margin: 1.75em 0;
-  padding: 1em;
   quotes: "\201C""\201D""\2018""\2019";
   font-family: 'utopia-std-caption', serif !important;
   font-size: 1.25em;
@@ -167,7 +165,7 @@ blockquote:before {
   font-size: 36em;
   float: left;
   line-height: 0.1em;
-  margin-top: 0.0625em;
+  margin-top: 0.125em;
   font-family: Georgia, serif;
   font-style: italic;
   position: absolute;
