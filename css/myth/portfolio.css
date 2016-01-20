@@ -10,6 +10,7 @@
 .swatches [class*='w--'] {
   height: 0.5em !important;
   flex: 0 0 25% !important;
+  background: rgb(217, 4, 41);
 }
 .w--2of3 ul {
   -webkit-columns: 1;

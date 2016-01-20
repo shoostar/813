@@ -36,6 +36,9 @@ main > header, article.hero header {
 
 
 /* MAIN and SECTION */
+main.home {
+  background: rgb(34, 34, 34);
+}
 section {
   padding: 4em 0;
 }
@@ -98,7 +101,22 @@ section {
       flex-direction: column;
       justify-content: flex-end;
     }
-    
+  section.profile {
+    height: 100vh;
+    background: rgb(34, 34, 34) url('../img/me.png') right bottom no-repeat;
+    background-blend-mode: color-dodge;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+    section.profile h1, section.profile h2, section.profile h3, section.profile h4, section.profile h5, section.profile h6 {
+      color: rgb(217, 4, 41);
+    }
+      section.profile [class*='w--'] {
+        margin-bottom: 5vh;
+      }
 
 
 /* FOOTER */
@@ -111,8 +129,8 @@ main > footer .w--1of2 {
   main > footer h6 {
     letter-spacing: 0;
   }
-    main.profile > footer h6 {
-      color: white;
+    main.home > footer h6 {
+      color: rgb(217, 4, 41);
     }
 
 
@@ -126,9 +144,6 @@ main > footer .w--1of2 {
 .main-logo {
   display: inline-block;
 }
-header a.logo-container {
-  margin-bottom: 1em;
-}
   a.logo-container::before {
     content: '' !important;
     height: 0 !important;
@@ -137,26 +152,23 @@ header a.logo-container {
     background: none !important;
     opacity: 0 !important;
   }
-  header svg.main-logo {
+  svg.main-logo {
     height: 2rem;
   }
   footer svg.main-logo {
     height: 1rem;
   }
-header use {
+svg.main-logo use {
   fill: rgb(217, 4, 41);
 }
-  main.profile header use {
-    fill: white;
-  }
-  main.work header use {
+  main.work svg.main-logo use {
     fill: white;
   }
 footer use {
   fill: rgb(34, 34, 34);
 }
-  main.profile footer use {
-    fill: white;
+  main.home footer use {
+    fill: rgb(217, 4, 41);
   }
 svg path {
   fill: inherit;

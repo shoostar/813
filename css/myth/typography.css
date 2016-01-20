@@ -160,7 +160,7 @@ blockquote {
   font-style: italic;
 }
 blockquote:before {
-  color: rgb(34, 34, 34);
+  color: rgba(34, 34, 34, 0.05);
   content: open-quote;
   font-size: 36em;
   float: left;
@@ -298,9 +298,7 @@ figcaption {
   font-size: 0.6666em;
 }
 .lightened {
-    color: rgb(217, 4, 41);
-    letter-spacing: 0.375em !important;
-    text-transform: uppercase;
+    color: rgb(170, 170, 170);
   }
 .section-title::after {
   content: '';
