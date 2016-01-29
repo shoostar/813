@@ -28,7 +28,7 @@ html {
   box-sizing: inherit;
 }
 html, body {
-  font-family: 'aktiv-grotesk', sans-serif;
+  font-family: 'neuzeit-grotesk', sans-serif;
   color: rgb(119, 119, 119);
   letter-spacing: 0.025rem;
   background: rgb(243, 243, 245);
@@ -61,10 +61,10 @@ h6, h6 > a {
   font-size: 100%;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
-  font-weight: 800 !important;
+  font-weight: 700 !important;
 }
 p, ul, ol, dl, blockquote {
-  font-weight: 400;
+  font-weight: 300;
 }
 p, ul, ol, dl, blockquote, strong, pre, code {
   margin-bottom: 0.8125em;

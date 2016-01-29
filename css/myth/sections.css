@@ -38,6 +38,7 @@ main > header, article.hero header {
 /* MAIN and SECTION */
 main.home {
   background: rgb(34, 34, 34);
+  border-top: 10px solid rgb(220, 4, 43);
 }
 section {
   padding: 4em 0;
@@ -101,22 +102,23 @@ section {
       flex-direction: column;
       justify-content: flex-end;
     }
-  section.profile {
-    height: 100vh;
-    background: rgb(34, 34, 34) url('../img/me.png') right bottom no-repeat;
-    background-blend-mode: color-dodge;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
+    section.profile .row {
+      display: flex;
+      flex-direction: row;
+    }
     section.profile h1, section.profile h2, section.profile h3, section.profile h4, section.profile h5, section.profile h6 {
       color: rgb(217, 4, 41);
     }
       section.profile [class*='w--'] {
-        margin-bottom: 5vh;
+        flex-direction: column;
       }
+      section.profile h4 {
+        color: rgb(117, 117, 117);
+      }
+        section.profile h4 .lightened {
+          color: rgb(170, 170, 170);
+        }
+
 
 
 /* FOOTER */
@@ -159,7 +161,7 @@ main > footer .w--1of2 {
     height: 1rem;
   }
 svg.main-logo use {
-  fill: rgb(217, 4, 41);
+  fill: rgb(220, 4, 43);
 }
   main.work svg.main-logo use {
     fill: white;
