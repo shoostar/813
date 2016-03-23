@@ -37,7 +37,7 @@ main > header, article.hero header {
 
 /* MAIN and SECTION */
 main.home {
-  background: rgb(34, 34, 34);
+
   border-top: 10px solid rgb(220, 4, 43);
 }
 section {
