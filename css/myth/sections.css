@@ -1,4 +1,5 @@
 /* background-image: linear-gradient(left, rgba(143, 8, 41, 1), rgba(217, 4, 41, 1)); */
+/* rgb(220, 4, 43) RED */
 
 /* HEADER */
 main > header, article.hero header {
@@ -7,6 +8,14 @@ main > header, article.hero header {
   width: 100% !important;
   justify-content: space-between;
 }
+  main > header {
+    background: url('../img/header-bg.jpg') center center no-repeat;
+    background-size: cover;
+  }
+    main > header h4 {
+      font-weight: 300;
+      color: white;
+    }
   article.hero header {
     position: fixed;
     z-index: 1000;
@@ -36,35 +45,14 @@ main > header, article.hero header {
 
 
 /* MAIN and SECTION */
-main.home {
-
-  border-top: 10px solid rgb(220, 4, 43);
-}
 section {
   padding: 4em 0;
 }
-  section.highlight {
-    background: rgb(34, 34, 34);
-    color: rgb(170, 170, 170);
-  }
-    section.highlight h1, section.highlight h2, section.highlight h3, section.highlight h4, section.highlight h5, section.highlight h6, label {
-      color: rgb(210, 210, 210);
-    }
-    section.highlight .lightened {
-      color: rgb(217, 4, 41);
-    }
-  section.about .w--1of4 {
-    flex: 1 0 calc(50%);
-  }
-    @media screen and (min-width: 1200px) {
-      section.about .w--1of4 {
-        flex: 1 0 calc(25%);
-      }
-    }
   section.portfolio [class*='w--'] {
     background-size: cover !important;
-    height: 37.5vh;
+    height: 20vw;
     min-height: 15em;
+    background: black;
   }
     section.portfolio .w--1of1 {
       display: flex;
@@ -121,19 +109,31 @@ section {
 
 
 
-/* FOOTER */
-main > footer .w--1of2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1 0 calc(50%);
-}
-  main > footer h6 {
-    letter-spacing: 0;
+  section.clients {
+    background: black;
+    color: white;
   }
-    main.home > footer h6 {
-      color: rgb(217, 4, 41);
+
+
+/* FOOTER */
+main > footer {
+  background: black;
+  color: white;
+  letter-spacing: 0.125em;
+  font-variant: small-caps;
+}
+  main > footer .w--1of2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 calc(50%);
+  }
+    main > footer h6 {
+      letter-spacing: 0;
     }
+      main.home > footer h6 {
+        color: rgb(217, 4, 41);
+      }
 
 
 
@@ -161,7 +161,7 @@ main > footer .w--1of2 {
     height: 1rem;
   }
 svg.main-logo use {
-  fill: rgb(220, 4, 43);
+  fill: white;
 }
   main.work svg.main-logo use {
     fill: white;
