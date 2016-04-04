@@ -61,7 +61,7 @@ main > footer {
   letter-spacing: 0.125em;
   font-variant: small-caps;
   font-size: 75%;
-  padding-bottom: 1em;
+  padding: 1em 1em 1em;
 }
   main > footer hr {
     margin-bottom: 1em;
