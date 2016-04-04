@@ -29,15 +29,14 @@ html {
 }
 html, body {
   font-family: 'neuzeit-grotesk', sans-serif;
-  color: rgb(119, 119, 119);
+  color: rgb(0, 0, 0);
   letter-spacing: 0.025rem;
-  background: rgb(243, 243, 245);
+  background: black;
 }
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.8125rem;
   font-weight: 700;
   line-height: 1.25;
-  color: rgb(34, 34, 34);
 }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     line-height: 1.25 !important;
@@ -134,8 +133,8 @@ h1 > a::after, h2 > a::after, h3 > a::after, h4 > a::after, h5 > a::after, h6 > 
 }
 hr {
   border: 0;
-  height: 1px;
-  background: #DDD;
+  height: 2px;
+  background: white;
   margin: 0;
   width: 100%;
 }
