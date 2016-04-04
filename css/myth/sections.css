@@ -60,8 +60,12 @@ main > footer {
   color: white;
   letter-spacing: 0.125em;
   font-variant: small-caps;
-  padding: 1rem 0;
+  font-size: 75%;
+  padding-bottom: 1em;
 }
+  main > footer hr {
+    margin-bottom: 1em;
+  }
 
 
 
