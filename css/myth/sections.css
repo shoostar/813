@@ -24,7 +24,7 @@ main > header {
 
 /* MAIN and SECTION */
 section {
-  padding: 4em 0;
+  padding: 3em 0;
 }
   section.portfolio {
     background: black;
@@ -93,4 +93,12 @@ footer use {
   }
 svg path {
   fill: inherit;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .list {
+    flex: 1 0 50%;
+  }
 }
