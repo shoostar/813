@@ -100,7 +100,7 @@ main { width: 100%; margin: 0 auto; padding: 0; position: relative; z-index: 1; 
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
   .no-pad-top    { padding-top: 0 !important;     }
   .no-pad-left   { padding-left: 0 !important;    }
   .no-pad-bottom { padding-bottom: 0 !important;  }
