@@ -102,3 +102,10 @@ svg path {
     flex: 1 0 50%;
   }
 }
+
+
+
+.slidey {
+  height: auto;
+  overflow: hidden;
+}
