@@ -6,10 +6,7 @@ main > header {
   height: 75vh;
   background: black;
   color: white !important;
-}
-main > header {
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
   main > header h1 {
