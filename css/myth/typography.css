@@ -35,7 +35,7 @@ html, body {
 }
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.8125rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.25;
 }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -59,7 +59,6 @@ h5 {
 h6, h6 > a {
   font-size: 100%;
   text-transform: uppercase;
-  letter-spacing: 0.25rem;
   font-weight: 700 !important;
 }
 p, ul, ol, dl, blockquote {
@@ -180,11 +179,10 @@ blockquote p, blockquote cite {
 /* LISTS */
 ul {
   list-style: none inside;
-  list-style-type: decimal-leading-zero;
 }
 ol {
-  list-style: none;
-  list-style-type: upper-roman;
+  list-style: none inside;
+  list-style-type: decimal-leading-zero;
 }
 ol, ul {
   padding-left: 0;
@@ -198,12 +196,14 @@ ol ul {
   font-size: 90%;
 } 
 li {
-  padding-bottom: 0.5rem;
   -webkit-column-break-inside: avoid;
           page-break-inside: avoid;
                break-inside: avoid;
-  text-decoration: underline;
 }
+  ol li {
+    text-decoration: underline;
+      padding-bottom: 0.5rem;
+  }
 
 
 

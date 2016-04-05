@@ -3,20 +3,20 @@
 
 /* HEADER */
 main > header {
-  height: 65vh;
-  background: black;
   color: white !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 2em 0;
 }
   main > header .row {
     display: flex;
+    flex: 1 0 100%;
     flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: flex-end;
     width: 100%;
-    flex: 0 0 25%;
+    height: 50vh;
   }
-  main > header h1 {
+  main > header h2 {
     font-weight: 300;
   }
 
@@ -60,7 +60,6 @@ section {
 
 /* FOOTER */
 main > footer {
-  background: black;
   color: white;
   letter-spacing: 0.125em;
   font-variant: small-caps;
@@ -73,19 +72,9 @@ main > footer {
 
 
 
-.main-logo {
-  display: inline-block;
-}
-  a.logo-container::before {
-    content: '' !important;
-    height: 0 !important;
-    width: 0 !important;
-    display: inline-block !important;
-    background: none !important;
-    opacity: 0 !important;
-  }
   svg.main-logo {
-    height: 2rem;
+    height: 1.5rem;
+    margin-bottom: 1em;
   }
   footer svg.main-logo {
     height: 1rem;
