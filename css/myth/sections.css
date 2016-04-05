@@ -4,7 +4,7 @@
 /* HEADER */
 main > header {
   color: white !important;
-  padding: 2em 0;
+  padding: 0;
 }
   main > header .row {
     display: flex;
