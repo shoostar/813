@@ -296,7 +296,7 @@ figcaption {
   font-size: 0.6666em;
 }
 .lightened {
-    color: rgb(70, 70, 70) !important;
+    color: rgb(100, 100, 100) !important;
   }
 .section-title::after {
   content: '';
