@@ -280,7 +280,7 @@ figcaption {
         transition: all 0.2s ease-in-out;
       }
       section.portfolio [class*='w--'] * {
-        color: rgb(210, 210, 210);
+        color: white;
       }
     section.portfolio [class*='w--']:hover .info {
       opacity: 0;

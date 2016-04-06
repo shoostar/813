@@ -52,12 +52,29 @@
     </div>
   </header>
 
-  <section class="slidey no-pad" data-fluffy-container data-fluffy-options='{"showScrollbars": false}'>
+  <!--<section class="slidey no-pad" data-fluffy-container data-fluffy-options='{"showScrollbars": false}'>
     <div class="row-full" data-fluffy-content>
       <div class="w--1of1 no-pad" style="display: inline; float: left;">
         <img src="img/header-bg.jpg" height="100%" alt="" />
       </div>
     </div>
+  </section>-->
+
+  <section class="no-pad">
+    <svg id="filters">
+      <defs xmlns="http://www.w3.org/2000/svg">
+        <filter id="ground">
+          <feTurbulence result="TURBULENCE" baseFrequency="0.005" numOctaves="2" seed="0"/>
+          <feDisplacementMap in="SourceGraphic" in2="TURBULENCE" scale="25"/>
+        </filter>
+        <filter id="tree">
+          <feTurbulence result="TURBULENCE" baseFrequency="0.005" numOctaves="2" seed="0"/>
+          <feDisplacementMap in="SourceGraphic" in2="TURBULENCE" scale="4"/>
+        </filter>
+      </defs>
+    </svg>
+    <svg id="scene" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    </svg>
   </section>
 
   <section class="portfolio">
@@ -116,6 +133,7 @@
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/fluffy.min.js"></script>
+<script src="js/scene.js"></script>
 
 </body>
 </html>
