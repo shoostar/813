@@ -10,10 +10,6 @@
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="https://use.typekit.net/huh6mpu.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script>
-    window.console = window.console || function(t) {};
-  </script>
 </head>
 
 <body>
@@ -55,29 +51,12 @@
     </div>
   </header>
 
-  <!--<section class="slidey no-pad" data-fluffy-container data-fluffy-options='{"showScrollbars": false}'>
+  <section class="slidey no-pad" data-fluffy-container data-fluffy-options='{"showScrollbars": false}'>
     <div class="row-full" data-fluffy-content>
       <div class="w--1of1 no-pad" style="display: inline; float: left;">
         <img src="img/header-bg.jpg" height="100%" alt="" />
       </div>
     </div>
-  </section>-->
-
-  <section class="treesnshit no-pad">
-    <svg id="filters">
-      <defs xmlns="http://www.w3.org/2000/svg">
-        <filter id="ground">
-          <feTurbulence result="TURBULENCE" baseFrequency="0.0025" numOctaves="1" seed="0"/>
-          <feDisplacementMap in="SourceGraphic" in2="TURBULENCE" scale="25"/>
-        </filter>
-        <filter id="tree">
-          <feTurbulence result="TURBULENCE" baseFrequency="0.05" numOctaves="1" seed="0"/>
-          <feDisplacementMap in="SourceGraphic" in2="TURBULENCE" scale="15"/>
-        </filter>
-      </defs>
-    </svg>
-    <svg id="scene" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
-    </svg>
   </section>
 
   <section class="portfolio">
@@ -97,15 +76,12 @@
       <div class="w--1of5 pinned no-pad-top list">
         <h6>Agency</h6>
         <ul>
-          <li>Scion</li>
-          <li>Vans</li>
-          <li>Petsmart</li>
-          <li>Invisible Children</li>
-          <li>Dell</li>
-          <li>Otterbox/Lifeproof</li>
-          <li>Pro-tec Helmets</li>
-          <li>Stussy</li>
-          <li>Sony Music</li>
+          <li>HON</li>
+          <li>Trendway</li>
+          <li>Konica Minolta</li>
+          <li>War Memorial Hospital</li>
+          <li>Capstone</li>
+          <li>United Way</li>
         </ul>
       </div>
       <div class="w--1of5 pinned no-pad-top list">
@@ -127,7 +103,7 @@
     <div class="row">
       <div class="w--3of5 pinned">
         <hr>
-        <h6>mmxvi</h6>
+        <small><strong>mmxvi</strong></small>
       </div>
     </div>
   </footer>
@@ -136,13 +112,6 @@
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/fluffy.min.js"></script>
-<script src="js/scene.js"></script>
-<script src="js/pen.js"></script>
-<script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
 
 </body>
 </html>

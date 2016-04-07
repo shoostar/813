@@ -105,9 +105,13 @@ svg path {
 
 
 .slidey {
-  height: auto;
+  min-height: 20em;
   overflow: hidden;
+  max-height: 50vh;
 }
+  .slidey img {
+    height: 50vh;
+  }
 
 
 .treesnshit {
