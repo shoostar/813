@@ -1,6 +1,6 @@
 var colorScheme = Math.round(Math.random()); 
 
-var fgColor = "#26233b";
+var fgColor = "#000000";
 if (colorScheme) {
   var bgColor1 = "#FF1C83";
   var bgColor2 = "#FF6934";
