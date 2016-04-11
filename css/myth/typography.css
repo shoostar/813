@@ -29,7 +29,7 @@ html {
 }
 html, body {
   font-family: 'neuzeit-grotesk', sans-serif;
-  color: rgb(0, 0, 0);
+  color: white;
   letter-spacing: 0.025rem;
   background: black;
 }
