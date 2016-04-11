@@ -3,10 +3,15 @@
 
 /* HEADER */
 main > header {
-  background: url('../img/header-bg.jpg') center center no-repeat;
-  color: white !important;
+  background: white url('../img/profile.jpg') right top no-repeat;
+  color: black !important;
   padding: 3em 0;
 }
+  @media screen and (max-width: 800px) {
+    main > header {
+      background-size: cover;
+    }
+  }
   main > header .row {
     display: flex;
     flex: 1 0 100%;
@@ -14,8 +19,11 @@ main > header {
     justify-content: flex-start;
     align-content: flex-end;
     align-items: flex-end;
-    min-height: 25em;
+    min-height: 20em;
     max-height: 75vw;
+  }
+  main > header hr {
+    background: black;
   }
   main > header h2 {
     font-weight: 300;
@@ -89,7 +97,7 @@ main > footer {
     height: 1rem;
   }
 svg.main-logo use {
-  fill: white;
+  fill: black;
 }
   main.work svg.main-logo use {
     fill: white;
