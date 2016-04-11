@@ -3,13 +3,13 @@
 
 /* HEADER */
 main > header {
-  background: white url('../img/profile.jpg') right top no-repeat;
+  background: white url('../img/header-bg.jpg') right center no-repeat;
   color: black !important;
   padding: 3em 0;
+  background-size: cover;
 }
   @media screen and (max-width: 800px) {
     main > header {
-      background-size: cover;
       padding: 0;
     }
   }
