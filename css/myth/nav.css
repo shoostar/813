@@ -6,9 +6,6 @@
   left: 0;
   height: 35em;
   min-height: 5.5em;
-  background-image: url('../img/header-bg.jpg');
-  background-size: cover;
-  background-position: center;
   overflow: hidden;
 }
 .hero-nav .hero-nav__inner {

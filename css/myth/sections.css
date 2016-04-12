@@ -5,7 +5,7 @@
 main > header {
   background: white url('../img/header-bg.jpg') right center no-repeat;
   color: black !important;
-
+  background-position: center;
   background-size: cover;
 }
   @media screen and (max-width: 800px) {
