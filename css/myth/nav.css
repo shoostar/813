@@ -36,3 +36,16 @@
   transform: translateY(-6rem);
   transform: translate3d(0,-6rem,0);
 }
+
+
+
+
+nav {
+  display: inline-block;
+  text-align: right !important;
+  float: right;
+}
+  nav a {
+    margin-left: 1em;
+    color: black !important;
+  }

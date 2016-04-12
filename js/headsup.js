@@ -67,8 +67,8 @@
   // Overridable defaults
   headsUp.prototype = {
     defaults : {
-      delay       : 720,
-      sensitivity : 20
+      delay       : 0,
+      sensitivity : 0
     },
 
     // Init function
@@ -128,4 +128,4 @@
 })( window, document );
 
 // Instantiate HeadsUp
-new headsUp( '.hero-nav' );
+new headsUp( '.fixme' );
