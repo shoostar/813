@@ -8,6 +8,10 @@
   max-height: 75vw;
   min-height: 5.5em;
   overflow: hidden;
+  transform: translateY(0);
+  transform: translate3d(0,0,0);
+  transition: .25s transform;
+  backface-visibility: hidden;
 }
 .hero-nav .hero-nav__inner {
   z-index: 1;
