@@ -5,6 +5,7 @@
   bottom: 0;
   left: 0;
   height: 35em;
+  max-height: 75vw;
   min-height: 5.5em;
   overflow: hidden;
 }
