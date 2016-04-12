@@ -7,14 +7,14 @@
   height: 35em;
   max-height: 75vw;
   min-height: 5.5em;
-  overflow: hidden;
   transform: translateY(0);
   transform: translate3d(0,0,0);
   transition: .25s transform;
   backface-visibility: hidden;
+  z-index: 1000;
 }
 .hero-nav .hero-nav__inner {
-  z-index: 1;
+  z-index: 1000;
 }
 .hero-nav:before {
   content: "";
@@ -29,4 +29,10 @@
 }
 .hero-nav.fixme:before {
   background: rgba(255, 255, 255, 1);
+}
+
+
+.heads-up {
+  transform: translateY(-6rem);
+  transform: translate3d(0,-6rem,0);
 }
