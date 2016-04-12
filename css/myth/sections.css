@@ -3,9 +3,8 @@
 
 /* HEADER */
 main > header {
-  background: white url('../img/header-bg.jpg') right center no-repeat;
+  background: white url('../img/header-bg.jpg') center center no-repeat;
   color: black !important;
-  background-position: center;
   background-size: 125%;
 }
   @media screen and (max-width: 800px) {
@@ -37,7 +36,7 @@ section {
   section.portfolio [class*='w--'] {
     background-size: cover !important;
     min-height: 25em;
-    max-height: 75vw;
+    max-height: 25vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -51,7 +50,7 @@ section {
     }
     @media screen and (min-width: 1200px) {
       section.portfolio [class*='w--'] {
-        height: 50vh;
+        height: 35vh;
       }
     }
     section.profile .row {
@@ -71,13 +70,13 @@ section {
 
 
 /* FOOTER */
-main > footer {
+footer {
   color: white;
   letter-spacing: 0.125em;
   font-variant: small-caps;
 }
-  main > footer hr {
-    margin-bottom: 1em;
+  footer hr {
+    margin-bottom: 0.75em;
   }
 
 

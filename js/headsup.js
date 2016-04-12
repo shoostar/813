@@ -68,7 +68,7 @@
   headsUp.prototype = {
     defaults : {
       delay       : 0,
-      sensitivity : 0
+      sensitivity : 20
     },
 
     // Init function
@@ -128,4 +128,4 @@
 })( window, document );
 
 // Instantiate HeadsUp
-new headsUp( '.fixme' );
+new headsUp( '.hero-nav fixme' );

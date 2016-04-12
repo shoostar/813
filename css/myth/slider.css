@@ -28,7 +28,7 @@
 }
 a.next, a.prev {
   position: absolute;
-  z-index: 10000;
+  z-index: 999;
   background: 0 0;
   top: 0;
   bottom: 0;

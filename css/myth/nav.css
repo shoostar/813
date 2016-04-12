@@ -1,5 +1,6 @@
 .hero-nav {
   position: fixed;
+  overflow: hidden;
   top: 0;
   right: 0;
   bottom: 0;
@@ -24,19 +25,18 @@
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-transition: background 400ms;
-  transition: background 400ms;
+  transition: background 0.4s ease-in-out;
 }
 .hero-nav.fixme:before {
-  background: rgba(255, 255, 255, 1);
+  background: rgb(255, 255, 255);
 }
+
 
 
 .heads-up {
   transform: translateY(-6rem);
-  transform: translate3d(0,-6rem,0);
+  transform: translate3d(0, -6rem, 0);
 }
-
 
 
 
