@@ -5,7 +5,7 @@
 main > header {
   background: white url('../img/header-bg.jpg') right center no-repeat;
   color: black !important;
-  padding: 3em 0;
+
   background-size: cover;
 }
   @media screen and (max-width: 800px) {
@@ -20,14 +20,9 @@ main > header {
     justify-content: flex-start;
     align-content: flex-end;
     align-items: flex-end;
-    min-height: 22em;
-    max-height: 75vw;
   }
   main > header hr {
     background: black;
-  }
-  main > header h2 {
-    font-weight: 300;
   }
 
 
