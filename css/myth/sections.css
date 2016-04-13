@@ -20,9 +20,6 @@ main > header {
     align-content: flex-end;
     align-items: flex-end;
   }
-  main > header hr {
-    background: black;
-  }
 
 
 
@@ -30,13 +27,12 @@ main > header {
 section {
   padding: 3em 0;
 }
-  section.portfolio {
-    background: black;
-  }
   section.portfolio [class*='w--'] {
     background-size: cover !important;
     min-height: 25em;
     max-height: 25vw;
+    background: var(--grey_l);
+    padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -53,27 +49,14 @@ section {
         height: 35vh;
       }
     }
-    section.profile .row {
-      display: flex;
-      flex-direction: row;
-    }
-      section.profile [class*='w--'] {
-        flex-direction: column;
-      }
 
-
-
-  section.clients {
-    background: black;
-    color: white;
-  }
 
 
 /* FOOTER */
 footer {
-  color: white;
   letter-spacing: 0.125em;
   font-variant: small-caps;
+  color: var(--black);
 }
   footer hr {
     margin-bottom: 0.75em;
@@ -81,33 +64,14 @@ footer {
 
 
 
-  svg.main-logo {
-    height: 1.5rem;
-    margin-bottom: 1em;
-  }
-  footer svg.main-logo {
-    height: 1rem;
-  }
-svg.main-logo use {
-  fill: black;
+/* LOGO */
+svg.main-logo {
+  height: 1.5rem;
+  margin-bottom: 1em;
 }
-  main.work svg.main-logo use {
-    fill: white;
-  }
-footer use {
-  fill: rgb(34, 34, 34);
-}
-  main.home footer use {
-    fill: rgb(217, 4, 41);
+  svg.main-logo use {
+    fill: var(--black);
   }
 svg path {
   fill: inherit;
-}
-
-
-
-@media screen and (max-width: 800px) {
-  .list {
-    flex: 1 0 50%;
-  }
 }

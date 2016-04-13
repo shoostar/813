@@ -47,5 +47,5 @@ nav {
 }
   nav a {
     margin-left: 1em;
-    color: black !important;
+    color: var(--black) !important;
   }
