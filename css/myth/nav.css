@@ -1,6 +1,5 @@
 .hero-nav {
   position: fixed;
-
   top: 0;
   right: 0;
   bottom: 0;
@@ -17,6 +16,14 @@
 }
 .hero-nav .hero-nav__inner {
   z-index: 1000;
+  padding-bottom: 1em;
+  border-bottom: 3px solid var(--black);
+  display: flex;
+  flex: 1 0 calc(100% - 1em);
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-end;
+  align-items: flex-end;
 }
 .hero-nav:before {
   content: "";
@@ -43,8 +50,6 @@
 
 nav {
   display: inline-block;
-  text-align: right !important;
-  float: right;
 }
   nav a {
     margin-left: 1em;

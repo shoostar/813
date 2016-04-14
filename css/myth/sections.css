@@ -12,14 +12,6 @@ main > header {
       padding: 0;
     }
   }
-  main > header .row {
-    display: flex;
-    flex: 1 0 100%;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: flex-end;
-    align-items: flex-end;
-  }
 
 
 
@@ -82,7 +74,7 @@ footer {
 /* LOGO */
 svg.main-logo {
   height: 1.5rem;
-  margin-bottom: 1em;
+  display: inline-block;
 }
   svg.main-logo use {
     fill: var(--black);

@@ -43,7 +43,7 @@ html, body {
   color: color(var(--black) tint(25%));
   letter-spacing: 0.025rem;
   background: var(--white);
-  font-weight: 400;
+  font-weight: 200;
 }
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.8125rem;
@@ -72,10 +72,6 @@ h5 {
 h6, h6 > a {
   font-size: 100%;
   text-transform: uppercase;
-  font-weight: 700 !important;
-}
-p, ul, ol, dl, blockquote {
-  font-weight: 300;
 }
 p, ul, ol, dl, blockquote, strong, pre, code {
   margin-bottom: 0.8125em;
@@ -102,18 +98,18 @@ pre, code {
       background: none;
     }
 em { font-style: italic; }
-strong { font-weight: 700; }
+strong {
+  font-weight: 400;
+  color: var(--black);
+}
 small { font-weight: 300; }
 a:link, a:visited {
   color: var(--grey);
   font-weight: bold;
-  position: relative;
-  z-index: 100;
-  line-height: 1.75;
   transition: color ease-in-out 0.15s;
 }
   a:hover, a:focus, a:active {
-    color: var(--grey);
+    color: color(var(--grey) tint(50%));
   }
 hr {
   border: 0;
@@ -136,7 +132,7 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
   font-family: 'utopia-std-caption', serif !important;
   font-size: 1.25em;
-  font-weight: 600;
+
   font-style: italic;
 }
 blockquote:before {
@@ -244,7 +240,7 @@ figcaption {
       opacity: 1;
       color: white;
       text-align: center;
-      font-weight: 700;
+      font-weight: 400;
       transition: all 0.15s ease-in-out;
       position: absolute;
       top: calc(50% - 12px);
@@ -277,9 +273,7 @@ figcaption {
       }
 
 
-.text-small > * {
-  font-size: 0.6666em;
-}
+
 .lightened {
-    color: color(var(--grey) tint(50%));
-  }
+  color: color(var(--grey) tint(66.6666%));
+}
