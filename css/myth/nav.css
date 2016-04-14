@@ -1,19 +1,26 @@
 .hero-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   height: 35em;
   max-height: 75vw;
-  min-height: 3.25em;
+  min-height: 75vw;
   padding-top: 0.75em;
-  transform: translateY(0);
-  transform: translate3d(0,0,0);
-  transition: .25s transform;
-  backface-visibility: hidden;
   z-index: 1000;
 }
+  @media screen and (min-width: 800px) {
+    .hero-nav {
+      position: fixed;
+      min-height: 3.25em;
+      transition: 0.25s transform ease-out;
+      transform: translateY(0);
+      transform: translate3d(0, 0, 0);
+      transform-style: preserve-3d;
+      backface-visibility: visible;
+    }
+  }
 .hero-nav .hero-nav__inner {
   z-index: 1000;
   padding-bottom: 1em;
@@ -35,9 +42,11 @@
   bottom: 0;
   transition: background 0.4s ease-in-out;
 }
-.hero-nav.fixme:before {
-  background: rgb(255, 255, 255);
-}
+  @media screen and (min-width: 800px) {
+    .hero-nav.fixme:before {
+      background: rgb(255, 255, 255);
+    }
+  }
 
 
 
@@ -53,5 +62,6 @@ nav {
 }
   nav a {
     margin-left: 1em;
+    font-weight: 500;
     color: var(--black) !important;
   }

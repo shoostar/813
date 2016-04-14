@@ -13,7 +13,7 @@
 :root { font-size: 12px; line-height: 18px; }
 @media (min-width: 400px) and (max-width: 1199px){
   :root {
-    font-size: calc( 12px + (20 - 12) * ( (100vw - 400px) / ( 1600 - 400) ));
+    font-size: calc( 12px + (20 - 12) * ( (100vw - 400px) / ( 1200 - 400) ));
   }
 }
 @media (min-width: 1200px){
@@ -43,11 +43,11 @@ html, body {
   color: color(var(--black) tint(25%));
   letter-spacing: 0.025rem;
   background: var(--white);
-  font-weight: 200;
+  font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.8125rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.25;
   color: var(--black);
 }
@@ -99,13 +99,12 @@ pre, code {
     }
 em { font-style: italic; }
 strong {
-  font-weight: 400;
+  font-weight: 500;
   color: var(--black);
 }
-small { font-weight: 300; }
+small {  }
 a:link, a:visited {
   color: var(--grey);
-  font-weight: bold;
   transition: color ease-in-out 0.15s;
 }
   a:hover, a:focus, a:active {
@@ -113,7 +112,7 @@ a:link, a:visited {
   }
 hr {
   border: 0;
-  height: 2px;
+  height: 3px;
   background: var(--black);
   margin: 0;
   width: 100%;
@@ -130,9 +129,8 @@ kbd {
 /* QUOTES */
 blockquote {
   quotes: "\201C""\201D""\2018""\2019";
-  font-family: 'utopia-std-caption', serif !important;
+  font-family: Georgia, serif;
   font-size: 1.25em;
-
   font-style: italic;
 }
 blockquote:before {
@@ -240,7 +238,7 @@ figcaption {
       opacity: 1;
       color: white;
       text-align: center;
-      font-weight: 400;
+      font-weight: 300;
       transition: all 0.15s ease-in-out;
       position: absolute;
       top: calc(50% - 12px);
