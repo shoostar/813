@@ -44,7 +44,7 @@
 }
   @media screen and (min-width: 800px) {
     .hero-nav.fixme:before {
-      background: rgb(255, 255, 255);
+      background: var(--white);
     }
   }
 
@@ -63,5 +63,5 @@ nav {
   nav a {
     margin-left: 1em;
     font-weight: 500;
-    color: var(--black) !important;
+    border-bottom: none !important;
   }
