@@ -1,6 +1,6 @@
 /* STRUCTURE layout containers and blocks */
 main { width: 100%; margin: 0 auto; padding: 0; position: relative; z-index: 1; min-height: 100vh; }
-.row, .row-full { flex: 1 0 100%; padding: 0 0.5em; display: flex; flex-wrap: wrap; flex-direction: row; margin: 0 auto; }
+.row, .row-full { flex: 1 0 100%; padding: 0 1.5em; display: flex; flex-wrap: wrap; flex-direction: row; margin: 0 auto; }
 @media screen and (min-width: 800px) {
   .row { max-width: 90%; }
 }
@@ -23,7 +23,7 @@ main { width: 100%; margin: 0 auto; padding: 0; position: relative; z-index: 1; 
   .w--1of3 { flex: 1 0 calc(50% - 1em);          }
   .w--2of5 { flex: 1 0 calc(50% - 1em);          }
   .w--1of2 { flex: 1 0 calc(50% - 1em);          }
-  .w--3of5 { flex: 1 0 calc(100% - 1em);         }
+  .w--3of5 { flex: 1 0 calc(66.6666% - 1em);         }
   .w--2of3 { flex: 1 0 calc(100% - 1em);         }
   .w--3of4 { flex: 1 0 calc(100% - 1em);         }
   .w--4of5 { flex: 1 0 calc(100% - 1em);         }
