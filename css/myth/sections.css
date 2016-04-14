@@ -25,13 +25,18 @@ main > header {
 
 /* MAIN and SECTION */
 section {
-  padding: 3em 0;
+  padding: 4em 0;
 }
+  @media screen and (min-width: 800px) {
+    section {
+      padding: 20vw 0;
+    }
+  }
   section.portfolio [class*='w--'] {
     background-size: cover !important;
     min-height: 25em;
     max-height: 25vw;
-    background: var(--grey_l);
+    background: color(var(--grey) tint(50%));
     padding: 2em;
     display: flex;
     flex-direction: column;
@@ -46,9 +51,19 @@ section {
     }
     @media screen and (min-width: 1200px) {
       section.portfolio [class*='w--'] {
-        height: 35vh;
+        min-height: calc(40vw - 5em);
+        max-height: calc(40vw - 5em);
+        height: calc(40vw - 5em);
       }
     }
+
+
+
+@media screen and (max-width: 799px) {
+  .list {
+    flex: 1 0 calc(50% - 1em) !important;
+  }
+}
 
 
 

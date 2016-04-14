@@ -1,13 +1,14 @@
 .hero-nav {
   position: fixed;
-  overflow: hidden;
+
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   height: 35em;
   max-height: 75vw;
-  min-height: 5.5em;
+  min-height: 3.25em;
+  padding-top: 0.75em;
   transform: translateY(0);
   transform: translate3d(0,0,0);
   transition: .25s transform;

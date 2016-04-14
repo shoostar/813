@@ -3,10 +3,8 @@
   --red: rgb(202, 40 , 27);
   --brown: rgb(66, 47 , 45);
   --black: rgb(51, 48 , 48);
+  --grey: rgb(167, 165 , 166);
   --white: rgb(255, 255, 255);
-  --grey_l: rgb(225, 223 , 224);
-  --grey_m: rgb(167, 165 , 166);
-  --grey_d: rgb(138, 136 , 137);
 }
 
 
@@ -14,12 +12,12 @@
 /* TYPOGRAPHY */
 :root { font-size: 12px; line-height: 18px; }
 @media (min-width: 400px) and (max-width: 1199px){
-  :root { 
+  :root {
     font-size: calc( 12px + (20 - 12) * ( (100vw - 400px) / ( 1600 - 400) ));
   }
 }
 @media (min-width: 1200px){
-  :root { 
+  :root {
     font-size: 20px;
   }
 }
@@ -42,7 +40,7 @@ html {
 }
 html, body {
   font-family: 'acumin-pro', sans-serif;
-  color: var(--black);
+  color: color(var(--black) tint(25%));
   letter-spacing: 0.025rem;
   background: var(--white);
   font-weight: 400;
@@ -107,7 +105,7 @@ em { font-style: italic; }
 strong { font-weight: 700; }
 small { font-weight: 300; }
 a:link, a:visited {
-  color: var(--grey_d);
+  color: var(--grey);
   font-weight: bold;
   position: relative;
   z-index: 100;
@@ -115,7 +113,7 @@ a:link, a:visited {
   transition: color ease-in-out 0.15s;
 }
   a:hover, a:focus, a:active {
-    color: var(--grey_m);
+    color: var(--grey);
   }
 hr {
   border: 0;
@@ -181,7 +179,7 @@ ol ol,
 ol ul {
   margin: 1.75rem 0 1.75rem 3rem;
   font-size: 90%;
-} 
+}
 li {
   -webkit-column-break-inside: avoid;
           page-break-inside: avoid;
@@ -283,5 +281,5 @@ figcaption {
   font-size: 0.6666em;
 }
 .lightened {
-    color: var(--grey_l);
+    color: color(var(--grey) tint(50%));
   }
