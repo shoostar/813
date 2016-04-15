@@ -1,14 +1,37 @@
 /* HEADER */
-main > header {
-  background: white url('../img/header-bg.jpg') center center no-repeat;
-  color: black !important;
-  background-size: 125%;
+main {
+  position: relative;
+  z-index: 2;
+  background: var(--white);
 }
-  @media screen and (max-width: 800px) {
-    main > header {
-      padding: 0;
-    }
+  header {
+    position: relative;
+    -webkit-transform-style: inherit;
+    transform-style: inherit;
+    height: 100vh;
+    z-index: 0;
   }
+    header, header:before {
+      background: 50% 50% / cover;
+    }
+    header::before {
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    	display: block;
+    	background-color: var(--red);
+      background-image: url('../img/header-bg.jpg');
+      background-size: cover;
+      -webkit-transform-origin: center center 0;
+      -webkit-transform: translateZ(-1px) scale(2);
+      transform-origin: center center 0;
+      transform: translateZ(-1px) scale(2);
+      z-index: -1;
+      min-height: 100vh;
+    }
 
 
 
