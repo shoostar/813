@@ -8,7 +8,6 @@ main {
   min-height: 100vh;
 }
 .row, .row-full {
-  flex: 1 0 100%;
   padding: 0 1.5em;
   display: flex;
   flex-wrap: wrap;

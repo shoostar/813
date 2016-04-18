@@ -1,10 +1,4 @@
-nav {
-
-}
-  header .row {
-    width: 100%;
-  }
-  header .w--1of1 {
+  nav .w--1of1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,8 +6,9 @@ nav {
     padding: 0.875em 0 1em;
     margin-bottom: 0;
     border-bottom: 3px solid var(--black);
+    background: var(--white);
   }
-    header .navav {
+    nav {
       position: -webkit-sticky;
       position: sticky;
       top: 0;
@@ -21,7 +16,6 @@ nav {
     header .introro {
       display: flex;
       align-self: flex-end;
-      height: 100vh !important;
     }
 nav {
 
