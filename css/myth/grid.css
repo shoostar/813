@@ -77,14 +77,14 @@ main {
 /* OFFSETS */
 [class*='o--'] { margin-left: 0; }
   @media (min-width: 1200px) {
-    .o--2of3 { margin-left: 66.6666% !important; }
-    .o--3of4 { margin-left: 75% !important;      }
-    .o--1of2 { margin-left: 50% !important;      }
-    .o--2of5 { margin-left: 40% !important;      }
-    .o--1of3 { margin-left: 33.3333% !important; }
-    .o--1of4 { margin-left: 25% !important;      }
-    .o--1of5 { margin-left: 20% !important;      }
-    .o--1of6 { margin-left: 16.6666% !important; }
+    .o--2of3 { margin-left: calc(66.6666% + 0.5em) !important; }
+    .o--3of4 { margin-left: calc(75% + 0.5em) !important;      }
+    .o--1of2 { margin-left: calc(50% + 0.5em) !important;      }
+    .o--2of5 { margin-left: calc(40% + 0.5em) !important;      }
+    .o--1of3 { margin-left: calc(33.3333% + 0.5em) !important; }
+    .o--1of4 { margin-left: calc(25% + 0.5em) !important;      }
+    .o--1of5 { margin-left: calc(20% + 0.5em) !important;      }
+    .o--1of6 { margin-left: calc(16.6666% + 0.5em) !important; }
   }
 
 
