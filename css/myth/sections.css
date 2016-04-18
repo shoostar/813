@@ -11,23 +11,20 @@ main {
     background: url('../img/header-bg.jpg') center center no-repeat;
     background-size: cover;
     padding: 5vw 0;
-
   }
   header * {
     color: var(--white);
+  }
+  header h4 {
+    margin-top: 0;
   }
 
 
 
 /* MAIN and SECTION */
 section {
-  padding: 4em 0;
+  padding: 0 0 20vw;
 }
-  @media screen and (min-width: 800px) {
-    section {
-      padding: 20vw 0;
-    }
-  }
   .portfolio-item {
     background-size: cover !important;
     min-height: 20em;
