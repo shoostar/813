@@ -23,7 +23,7 @@ main {
   overflow-y: hidden;
 }
 
-.w--1of3 { flex: 1 0 calc(50% - 1em);          }
+
 
 @media screen and (min-width: 800px) {
   .w--1of6 { flex: 1 0 calc(33.3333% - 1em);     }
