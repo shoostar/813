@@ -12,7 +12,7 @@
 :root { font-size: 14px; line-height: 22px; }
 @media (min-width: 400px) and (max-width: 1199px){
   :root {
-    font-size: calc( 14px + (20 - 14) * ( (100vw - 400px) / ( 1200 - 400) ));
+    font-size: calc( 14px + (22 - 14) * ( (100vw - 400px) / ( 1200 - 400) ));
   }
 }
 @media (min-width: 1200px){
@@ -43,7 +43,7 @@ html, body {
   font-family: 'acumin-pro', sans-serif;
   color: color(var(--black) tint(25%));
   letter-spacing: 0.025rem;
-  background: var(--white);
+  background: color(var(--black) tint(95%));
   font-weight: 300;
 }
 body {
