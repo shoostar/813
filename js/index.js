@@ -35,12 +35,3 @@
     return document.querySelector(".slide[data-index='" + i.length + "']").classList.add("active"), document.querySelector(".description[data-index='" + i.length + "']").classList.add("active"), document.querySelector(".bullet[data-index='" + i.length + "']").classList.add("active")
   })
 }).call(this);
-
-$(document).ready(function() {
-  $(document).on("click", ".info", function() {
-    $("figcaption").addClass("active");
-    setTimeout(function() {
-      $(".main *").css("z-index", "1");
-    }, 3000);
-  });
-});
