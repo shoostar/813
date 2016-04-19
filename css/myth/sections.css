@@ -46,6 +46,7 @@ section {
 
 
 
+
 @media screen and (max-width: 799px) {
   .list {
     flex: 1 0 calc(50% - 1em) !important;
@@ -78,6 +79,10 @@ footer {
 /* LOGO */
 svg.main-logo {
   height: 1.5em;
+  display: inline-block;
+}
+svg.portfolio-logo {
+  height: 10em;
   display: inline-block;
 }
   svg.main-logo use {
