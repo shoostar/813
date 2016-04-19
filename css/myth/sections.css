@@ -3,10 +3,6 @@ main {
   background: var(--white);
 }
   header {
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     height: calc(100vh - 3.375em);
     background: url('../img/header-bg.jpg') center center no-repeat;
     background-size: cover;
@@ -23,7 +19,7 @@ main {
 
 /* MAIN and SECTION */
 section {
-  padding: 0 0 20vw;
+  padding: 0 0 10vw;
 }
   .portfolio-item {
     background-size: cover !important;
@@ -51,9 +47,7 @@ section {
       background: color(var(--black) tint(95%));
       padding: 2em;
     }
-      .portfolio-item * {
-        color: var(--white);
-      }
+
     @media screen and (min-width: 800px) and (max-width: 1199px) {
       .portfolio-nav {
         flex: 1 0 calc(100% - 1em);
@@ -88,24 +82,7 @@ footer {
       align-self: center;
       margin-bottom: 0;
     }
-    .to-top {
-      color: var(--white) !important;
-      position: relative;
-      z-index: 1;
-      margin-left: 1.5em;
-      padding-right: 0.125em;
-    }
-      .to-top::before {
-        width: 1em;
-        height: 3em;
-        top: -1em;
-        right: 0;
-        background: var(--black);
-        display: inline-block;
-        content: '';
-        position: absolute;
-        z-index: -1;
-      }
+
 
 
 /* LOGO */

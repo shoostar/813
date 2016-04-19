@@ -9,20 +9,20 @@
 
 
 /* TYPOGRAPHY */
-:root { font-size: 12px; line-height: 18px; }
+:root { font-size: 16px; line-height: 24px; }
 @media (min-width: 400px) and (max-width: 1199px){
   :root {
-    font-size: calc( 12px + (20 - 12) * ( (100vw - 400px) / ( 1200 - 400) ));
+    font-size: calc( 16px + (20 - 16) * ( (100vw - 400px) / ( 1200 - 400) ));
   }
 }
 @media (min-width: 1200px){
   :root {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media (min-width: 1600px) {
   :root {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 html {
