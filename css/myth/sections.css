@@ -3,13 +3,16 @@ main {
 
 }
   header {
-    height: calc(100vh);
-    background: url('../img/header-bg.jpg') center center no-repeat;
-    background-size: cover;
-    padding: 5vw 0;
+    background: var(--white);
+    padding: 3em 0 7em;
+    height: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  header * {
-    color: var(--white);
+  header .row {
+    display: block;
+    width: 100%;
   }
   header h4 {
     margin-top: 0;
@@ -19,15 +22,18 @@ main {
 
 /* MAIN and SECTION */
 section {
-  padding: 0 0 12.5vw;
+  padding: 0;
+}
+.portfolio {
+  margin-top: -4em;
 }
   .portfolio-item {
-    margin-bottom: 2em !important;
+    margin-bottom: 4em !important;
   }
   .portfolio-item span {
     background-size: cover !important;
-    min-height: 20em;
-    max-height: 25vw;
+    min-height: 15em;
+    max-height: 20vw;
     display: block;
   }
     @media screen and (min-width: 800px) {
@@ -38,7 +44,8 @@ section {
 figure .overlay {
   background: color(var(--red) alpha(95%));
   display: block !important;
-  height: 100% !important;
+  min-height: 15em;
+  max-height: 20vw;
   padding: 1em;
   color: var(--white);
   opacity: 0;
