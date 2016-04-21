@@ -1,12 +1,12 @@
 $(document).on("scroll", function(){
   if
-    ($(document).scrollTop() >700){
-    $("header").addClass("fade");
+    ($(document).scrollTop() > 700){
+    $("svg").addClass("fade");
     updateSliderMargin();
   }
   else
   {
-    $("header").removeClass("fade");
+    $("svg").removeClass("fade");
     updateSliderMargin();
   }
 });
