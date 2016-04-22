@@ -7,9 +7,25 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/jquery.lazyloadxt.fadein.css">
+  <script src="//code.jquery.com/jquery.min.js"></script>
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="https://use.typekit.net/huh6mpu.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="js/jquery.lazyloadxt.js"></script>
+  <script>
+    $(window).lazyLoadXT();
+  </script>
+  <script>
+    $.lazyLoadXT.onload = function() {
+         var $el = $(this);
+         $el
+             .removeClass('lazy-hidden')
+             .addClass('animated ' + $el.attr('data-effect'));
+           };
+  </script>
+  <script src="js/jquery.lazyloadxt.bg.js"></script>
 </head>
 
 <body>
@@ -26,7 +42,7 @@
   </symbol>
 </svg>
 
-<header>
+<header class="lazy-hidden" data-effect="fadeIn" data-bg="img/header-bg.jpg">
   <div class="row">
     <div class="w--1of1">
       <svg class="main-logo" viewBox="0 0 28.6225 9.5034" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -52,7 +68,7 @@
       </div>
       <figure class="w--2of3 portfolio-item">
         <a class="portfolio-link" href="#">
-          <span style="background: url(img/projects/koffee/koffee-bg.jpg)">
+          <span class="lazy-hidden" data-effect="fadeInUp" data-bg="img/projects/koffee/koffee-bg.jpg">
             <ul class="overlay">
               <li>&mdash;branding</li>
               <li>&mdash;stationery</li>
@@ -64,7 +80,7 @@
       </figure>
       <figure class="w--1of2 portfolio-item">
         <a class="portfolio-link" href="#">
-          <span style="background: url(img/projects/logos/ktpqg-bg.jpg)">
+          <span class="lazy-hidden" data-effect="fadeInUp" data-bg="img/projects/logos/ktpqg-bg.jpg">
             <ul class="overlay">
               <li>&mdash;branding</li>
             </ul>
@@ -74,7 +90,7 @@
       </figure>
       <figure class="w--1of2 portfolio-item">
         <a class="portfolio-link" href="#">
-          <span style="background: url(img/projects/logos/c4-bg.jpg)">
+          <span class="lazy-hidden" data-effect="fadeInUp" data-bg="img/projects/logos/c4-bg.jpg">
             <ul class="overlay">
               <li>&mdash;branding</li>
               <li>&mdash;collateral</li>
@@ -85,7 +101,7 @@
       </figure>
       <figure class="w--2of3 portfolio-item">
         <a class="portfolio-link" href="#">
-          <span style="background: url(img/projects/bvdt/bvdt-bg.jpg)">
+          <span class="lazy-hidden" data-effect="fadeInUp" data-bg="img/projects/bvdt/bvdt-bg.jpg">
             <ul class="overlay">
               <li>&mdash;branding</li>
               <li>&mdash;web</li>
@@ -116,7 +132,6 @@
   </footer>
 </main>
 
-<script src="http://code.jquery.com/jquery.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/stickyfill.js"></script>
 <script>
