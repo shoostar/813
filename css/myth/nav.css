@@ -1,8 +1,5 @@
 nav {
-  /* position: -webkit-sticky;
-  position: sticky;
-  top: 0; */
-  
+  position: relative;
 }
   nav a {
     display: inline-block;

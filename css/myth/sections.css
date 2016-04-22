@@ -4,16 +4,24 @@ main {
 }
   header {
     background: var(--white);
-    padding: 3em 0 7em;
-    height: 35em;
+    padding-top: 3em;
+    padding-bottom: 5em;
+    min-height: 20em;
+    height: 90%;
+    max-height: 65vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
   }
-  header .row {
-    display: block;
-    width: 100%;
-  }
+    @media screen and (max-width: 1200px) {
+      header {
+        padding-top: 1em;
+        padding-bottom: 3.5em;
+      }
+    }
+
   header h4 {
     margin-top: 0;
   }
@@ -25,16 +33,21 @@ section {
   padding: 0;
 }
 .portfolio {
-  margin-top: -4em;
+  margin-top: -5em;
 }
   .portfolio-item {
     margin-bottom: 4em !important;
+
+  }
+  .portfolio-item:hover span {
+    transform: scale(1.01);
   }
   .portfolio-item span {
     background-size: cover !important;
     min-height: 15em;
     max-height: 20vw;
     display: block;
+    transition: all 0.1s ease-in-out;
   }
     @media screen and (min-width: 800px) {
       .portfolio .w--1of2 { flex: 1 0 calc(50% - 1em);         }
@@ -49,10 +62,12 @@ figure .overlay {
   padding: 1em;
   color: var(--white);
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  box-shadow: 0 0em 0.25em color(var(--black) alpha(75%));
+  transition: all 0.1s ease-in-out;
 }
   figure:hover .overlay {
     opacity: 1;
+    box-shadow: 0 0.5em 1em color(var(--black) alpha(35%));
   }
 
 
@@ -71,6 +86,7 @@ footer {
   letter-spacing: 0.125em;
   font-variant: small-caps;
   color: var(--black);
+  font-weight: 500;
 }
   footer [class*='w--'] {
     border-top: 2px solid var(--black);
@@ -89,12 +105,12 @@ footer {
 
 /* LOGO */
 svg.main-logo {
-  height: 1em;
+  height: 2em;
   display: inline-block;
   margin: 0.25em 0;
 }
   svg.main-logo use {
-    fill: var(--red);
+    fill: var(--black);
   }
   #ml {
     padding: 1em;

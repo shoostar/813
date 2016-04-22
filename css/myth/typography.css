@@ -110,17 +110,17 @@ pre, code {
 em { font-style: italic; }
 strong {
   font-weight: 500;
-  color: var(--black);
 }
 small {  }
 a:link, a:visited {
   color: var(--black);
-  transition: color ease-in-out 0.15s;
+  transition: all ease-in-out 0.15s;
   text-decoration: none;
   border-bottom: 1px solid var(--black);
 }
   a:hover, a:focus, a:active {
     color: color(var(--black) tint(50%));
+    border-bottom: 1px solid color(var(--black) alpha(0%));
   }
 hr {
   border: 0;
@@ -235,5 +235,6 @@ figure {
 
 /* UTILITIES */
 .lightened { color: color(var(--black) tint(66.6666%)); }
-.text-center   { text-align: center !important; }
-.text-right    { text-align: right !important;  }
+.text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
+.topless { margin-top: 0; }

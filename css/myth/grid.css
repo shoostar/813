@@ -10,12 +10,13 @@ main {
 .row, .row-full {
   padding: 0 0.5em;
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0 auto;
 }
   @media screen and (min-width: 800px) {
-    .row { max-width: 80%; }
+    .row { width: 80%; }
   }
 [class*='w--'] {
   flex: 1 0 calc(100% - 1em);
