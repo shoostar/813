@@ -4,8 +4,8 @@ main {
 }
   header {
     background: var(--white);
-    padding-top: 3em;
-    padding-bottom: 5em;
+    padding-top: 1em;
+    padding-bottom: 3.5em;
     min-height: 20em;
     height: 90%;
     max-height: 65vw;
@@ -15,16 +15,12 @@ main {
     align-content: flex-start;
     align-items: flex-start;
   }
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       header {
-        padding-top: 1em;
-        padding-bottom: 3.5em;
+        padding-top: 3em;
+        padding-bottom: 5em;
       }
     }
-
-  header h4 {
-    margin-top: 0;
-  }
 
 
 
@@ -39,9 +35,6 @@ section {
     margin-bottom: 4em !important;
 
   }
-  .portfolio-item:hover span {
-    transform: scale(1.01);
-  }
   .portfolio-item span {
     background-size: cover !important;
     min-height: 15em;
@@ -49,12 +42,17 @@ section {
     display: block;
     transition: all 0.1s ease-in-out;
   }
+    .portfolio-item span:hover {
+      transform: scale(1.01);
+    }
     @media screen and (min-width: 800px) {
       .portfolio .w--1of2 { flex: 1 0 calc(50% - 1em);         }
     }
+    .portfolio-link {
+      border-bottom: none !important;
+    }
 
-
-figure .overlay {
+figure span .overlay {
   background: color(var(--red) alpha(95%));
   display: block !important;
   min-height: 15em;
@@ -64,8 +62,9 @@ figure .overlay {
   opacity: 0;
   box-shadow: 0 0em 0.25em color(var(--black) alpha(75%));
   transition: all 0.1s ease-in-out;
+  cursor: help;
 }
-  figure:hover .overlay {
+  figure span:hover .overlay {
     opacity: 1;
     box-shadow: 0 0.5em 1em color(var(--black) alpha(35%));
   }
@@ -83,23 +82,18 @@ figure .overlay {
 
 /* FOOTER */
 footer {
+  background: var(--white);
   letter-spacing: 0.125em;
   font-variant: small-caps;
   color: var(--black);
   font-weight: 500;
+  padding: 1em 0 0;
 }
-  footer [class*='w--'] {
-    border-top: 2px solid var(--black);
-    padding-top: 0.5em;
-    display: flex;
-    flex: 1 0 calc(100% - 1em);
-    flex-direction: row;
-    justify-content: space-between;
-  }
-    footer [class*='w--'] * {
-      align-self: center;
-      margin-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    footer {
+      padding: 2em 0 1.25em;
     }
+  }
 
 
 
@@ -110,7 +104,7 @@ svg.main-logo {
   margin: 0.25em 0;
 }
   svg.main-logo use {
-    fill: var(--black);
+    fill: var(--red);
   }
   #ml {
     padding: 1em;
@@ -119,4 +113,53 @@ svg.main-logo {
   }
 svg path {
   fill: inherit;
+}
+
+
+
+
+
+
+[class*="icono"] {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--red);
+  box-sizing: border-box;
+}
+[class*="icono"]:after,
+[class*="icono"]:before {
+  content: "";
+  box-sizing: border-box;
+}
+[class*="icono-arrow1"] {
+  width: 0.5em;
+  height: 0.5em;
+  border-width: 0.125em 0.125em 0 0;
+  border-style: solid;
+  margin-left: 2em;
+  transition: all 0.1s ease-in-out;
+}
+  .portfolio-link:hover [class*="icono-arrow1"] {
+    margin-left: 3em;
+  }
+  .portfolio-link:hover [class*="icono-arrow1"]:before {
+    width: 2.5em;
+  }
+[class*="icono-arrow1"]:before {
+  right: 0;
+  top: -0.1em;
+  position: absolute;
+  height: 0.1em;
+  box-shadow: inset 0 0 0 1em;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 2em;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+          transition: all 0.1s ease-in-out;
+}
+[class*="icono-arrow1"][class*="-left"] {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }

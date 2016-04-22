@@ -237,4 +237,4 @@ figure {
 .lightened { color: color(var(--black) tint(66.6666%)); }
 .text-center { text-align: center !important; }
 .text-right { text-align: right !important; }
-.topless { margin-top: 0; }
+.topless { margin-top: 0 !important; }
