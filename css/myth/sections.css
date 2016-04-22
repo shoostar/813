@@ -145,12 +145,14 @@ svg path {
   margin-left: 2em;
   transition: all 0.1s ease-in-out;
 }
+@media screen and (min-width: 1200px) {
   .portfolio-link:hover [class*="icono-arrow1"] {
     margin-left: 3em;
   }
   .portfolio-link:hover [class*="icono-arrow1"]:before {
     width: 2.5em;
   }
+}
 [class*="icono-arrow1"]:before {
   right: 0;
   top: -0.1em;
