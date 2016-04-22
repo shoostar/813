@@ -43,11 +43,12 @@ section {
     min-height: 15em;
     max-height: 20vw;
     display: block;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.15s ease-in-out;
   }
     @media screen and (min-width: 1200px) {
       .portfolio-item:hover span {
-        transform: scale(1.01);
+        transform: perspective(1px) scale(1.01);
+        -webkit-backface-visibility: hidden;
       }
     }
     @media screen and (min-width: 800px) {
@@ -69,7 +70,7 @@ section {
   color: var(--white);
   opacity: 0;
   box-shadow: 0 0em 0.25em color(var(--black) alpha(75%));
-  transition: all 0.1s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
   @media screen and (min-width: 1200px) {
     .portfolio-item:hover span .overlay {
@@ -90,7 +91,7 @@ section {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 
@@ -147,7 +148,7 @@ svg path {
   border-width: 0.125em 0.125em 0 0;
   border-style: solid;
   margin-left: 2em;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 @media screen and (min-width: 1200px) {
   .portfolio-link:hover [class*="icono-arrow1"] {
@@ -161,14 +162,14 @@ svg path {
   right: 0;
   top: -0.1em;
   position: absolute;
-  height: 0.1em;
+  height: 0.11em;
   box-shadow: inset 0 0 0 1em;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   width: 2em;
   -webkit-transform-origin: right top;
           transform-origin: right top;
-          transition: all 0.1s ease-in-out;
+          transition: all 0.15s ease-in-out;
 }
 [class*="icono-arrow1"][class*="-left"] {
   -webkit-transform: rotate(45deg);
