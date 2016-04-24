@@ -3,12 +3,13 @@ main {
 
 }
   header {
-    background: var(--black);
+    background: var(--white);
     background-size: cover !important;
+    background-position: center center;
     padding-top: 1em;
     padding-bottom: 3.5em;
     min-height: 20em;
-    height: 90%;
+    height: 86%;
     max-height: 65vw;
     display: flex;
     flex-direction: column;
@@ -16,6 +17,9 @@ main {
     align-content: flex-start;
     align-items: flex-start;
   }
+    .global-header {
+      transition: all 1s;
+    }
 
 
 
