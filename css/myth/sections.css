@@ -17,6 +17,12 @@ main {
     align-content: flex-start;
     align-items: flex-start;
   }
+  body.error header {
+    height: 100%;
+    max-height: 100vh;
+    color: var(--white);
+    padding-bottom: 0em;
+  }
     .global-header {
       transition: all 1s;
     }
