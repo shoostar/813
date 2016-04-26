@@ -20,8 +20,20 @@ main {
   body.error header {
     height: 100%;
     max-height: 100vh;
+    background: url('../img/profile-bg.jpg') center center no-repeat;
+    background-size: cover;
+    color: var(--white);
     padding-bottom: 0em;
   }
+    body.error header svg.main-logo use {
+      fill: var(--white) !important;
+    }
+    body.error header a {
+      color: color(var(--black) tint(75%));
+    }
+      body.error header a:hover {
+        color: var(--red);
+      }
     .global-header {
       transition: all 1s;
     }
