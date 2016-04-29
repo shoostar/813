@@ -135,6 +135,9 @@ footer {
       padding: 2em 0 1.25em;
     }
   }
+  footer p {
+    margin-bottom: 0;
+  }
 
 
 
