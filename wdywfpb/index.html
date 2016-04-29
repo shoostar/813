@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Random Thing Picker</title>
+		<meta name="keywords" content="randomly pick one, pick one, randome pick, pick random, generate random, enter a number, get random, random number, number picker, number generator, random picker, random generator, random, number, picker, generator, selector, integer, truly random, entropy">
+		<link rel="stylesheet" href="./Random Thing Picker_files/styles.css">
+		<style type="text/css">
+		fieldset input {
+			display: block;
+		}
+		#result {
+			border: solid 1px black;
+			background: #e0e0e0;
+			padding: 1em;
+			margin: 1em 0;
+		}
+		#ajax-loader {
+			display: none;
+			margin-bottom: -4px;
+		}
+		.container {
+			width: 50vw;
+			margin: 0 auto;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		<h1>WHADDAYAWANNAFUCKNPLAY?!?!?!11/</h1>
+		<script src="./Random Thing Picker_files/ca-pub-9669866525793418.js"></script>
+		<p>Directions:</p>
+		<ol>
+			<li>Stop staring at Steam Library.</li>
+			<li>Click "PLAY SOMETHING ALREADY!"</li>
+			<li>Play the chosen game.</li>
+		</ol>
+		<form method="get" action="/" onsubmit="return false;">
+			<fieldset>
+				<label>
+					Things to pick from…<br>
+					<div style="font: 12px/1.5 helvetica, sans-serif;">Comma-separated list</div>
+					<textarea style="width: 400px;height: 100px;" name="things" id="things">Borderlands 2, The Crew, F.E.A.R. 3, Garry's Mod, Left 4 Dead 2, PAYDAY 2, Portal 2, Resident Evil 5, Rocket League, The Division, Trine 2</textarea>
+				</label>
+			</fieldset>
+			<p>
+				<input type="button" value="Pick one!" onclick="rnd();">
+				<img id="ajax-loader" src="./Random Thing Picker_files/ajax-loader.gif" alt="Picking..." style="display: none;">
+			</p>
+		</form>
+		<script type="text/javascript">
+
+		var rnd = function () {
+			var loader, things;
+			loader = document.getElementById('ajax-loader');
+			loader.style.display = 'inline';
+			things = document.getElementById('things').value;
+			things = things.replace(', ', ',');
+			things = things.split(',');
+			setTimeout(function () {
+				var thing;
+				loader.style.display = 'none';
+				thing = Math.floor(Math.random() * things.length);
+				document.getElementById('result').innerHTML = things[thing];
+			}, 500);
+		};
+
+		</script>
+		<h2>Result:</h2>
+		<div id="result"></div>
+		<p><small>Random number code based on <a href="https://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Global_Objects/Math/random">JavaScript documentation</a> on the Mozilla Developer Center.</small></p>
+
+</body></html>
