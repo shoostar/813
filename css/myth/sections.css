@@ -1,13 +1,15 @@
 /* HEADER */
-main {
-
+header {
+  background: var(--white);
+  padding-top: 1em;
+  padding-bottom: 0;
+  min-height: 13em;
+  height: 43%;
+  max-height: 32.5vw;
 }
-  header {
-    background: var(--white);
+  header.home {
     background-size: cover !important;
     background-position: center center;
-    padding-top: 1em;
-    padding-bottom: 0;
     min-height: 20em;
     height: 86%;
     max-height: 65vw;
@@ -34,9 +36,6 @@ main {
       body.error header a:hover {
         color: var(--red);
       }
-    .global-header {
-      transition: all 1s;
-    }
 
 
 
