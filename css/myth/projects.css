@@ -1,0 +1,61 @@
+.project {
+  height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.project__list {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 36px;
+  color: white;
+}
+.project__link {
+  will-change: opacity;
+  display: block;
+  margin: 24px 0;
+}
+.project__bg-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.project__bg-item {
+  will-change: transform, opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  -webkit-transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.project__bg-item--active {
+  opacity: 1;
+}
+.project__bg-item:nth-child(1) {
+  background: url("//unsplash.it/1960/1080") center/cover;
+}
+.project__bg-item:nth-child(2) {
+  background: url("//unsplash.it/1930/1080") center/cover;
+}
+.project__bg-item:nth-child(3) {
+  background: url("//unsplash.it/1940/1080") center/cover;
+}
+.project__bg-item:nth-child(4) {
+  background: url("//unsplash.it/1950/1080") center/cover;
+}
