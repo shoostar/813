@@ -1,7 +1,10 @@
+.projects {
+  height: 100vh;
+}
 .project {
   height: 100vh;
   min-width: 100vw;
-  overflow: hidden;
+  
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -41,14 +44,14 @@
   opacity: 1;
 }
 .project__bg-item:nth-child(1) {
-  background: url("//unsplash.it/1960/1080") center/cover;
+  background: url("//unsplash.it/1960/1080");
 }
 .project__bg-item:nth-child(2) {
-  background: url("//unsplash.it/1930/1080") center/cover;
+  background: url("//unsplash.it/1930/1080");
 }
 .project__bg-item:nth-child(3) {
-  background: url("//unsplash.it/1940/1080") center/cover;
+  background: url("//unsplash.it/1940/1080");
 }
 .project__bg-item:nth-child(4) {
-  background: url("//unsplash.it/1950/1080") center/cover;
+  background: url("//unsplash.it/1950/1080");
 }
