@@ -21,12 +21,12 @@ nav {
 
 
 .slider-navbar {
-  width: 100px;
-  height: 2px;
+  width: 50px;
+  height: 1px;
   background: var(--white);
   display: block;
   content: '';
-  margin-bottom: 0.5em;
+  margin-top: 0.5em;
   position: relative;
-  right: 0;
+  left: calc(100% - 50px) !important;
 }
