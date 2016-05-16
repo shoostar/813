@@ -6,11 +6,27 @@ nav {
     font-weight: 500;
     border-bottom: none !important;
     margin-right: 1em;
+    color: color(var(--black) alpha(85%)) !important;
   }
+    nav a:hover {
+      color: color(var(--black) alpha(15%)) !important;
+    }
+    header.home nav a {
+      color: color(var(--white) alpha(15%)) !important;
+    }
+      header.home nav a:hover {
+        color: color(var(--white) alpha(85%)) !important;
+      }
 
 
 
-.fade {
-  background: var(--red) !important;
-  transition: background 0.4s ease-in-out;
+.slider-navbar {
+  width: 100px;
+  height: 2px;
+  background: var(--white);
+  display: block;
+  content: '';
+  margin-bottom: 0.5em;
+  position: relative;
+  right: 0;
 }

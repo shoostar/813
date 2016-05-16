@@ -7,6 +7,13 @@ header {
   height: 43%;
   max-height: 32.5vw;
 }
+  header .w--1of1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+  }
   header.home {
     background-size: cover !important;
     background-position: center center;
@@ -18,6 +25,7 @@ header {
     justify-content: space-between;
     align-content: flex-start;
     align-items: flex-start;
+    color: var(--white);
   }
   body.error header {
     height: 100%;
@@ -142,7 +150,7 @@ footer {
 
 /* LOGO */
 svg.main-logo {
-  height: 2em;
+  height: 1em;
   display: block;
 }
   svg.main-logo use {
