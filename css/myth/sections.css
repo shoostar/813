@@ -87,9 +87,15 @@ section {
   display: flex !important;
   flex-direction: column !important;
   justify-content: flex-end !important;
-  align-content: flex-end !important;
-  align-items: flex-end !important;
+
 }
+  @media screen and (min-width: 800px) {
+    .outro {
+      text-align: right;
+      align-content: flex-end !important;
+      align-items: flex-end !important;
+    }
+  }
 .portfolio-item .overlay {
   background: color(var(--red) alpha(100%));
   display: flex !important;
