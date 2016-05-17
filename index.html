@@ -26,7 +26,14 @@
   <script src="js/jquery.lazyloadxt.bg.js"></script>
 </head>
 
-<body>
+<body class="project">
+
+<ul class="project__bg-list animated lazy-hidden" data-effect="fadeIn">
+  <li class="project__bg-item" data-bg="img/projects/koffee/koffee-bg.jpg"></li>
+  <li class="project__bg-item" data-bg="img/projects/logos/ktpqg-bg.jpg"></li>
+  <li class="project__bg-item" data-bg="img/projects/logos/c4-bg.jpg"></li>
+  <li class="project__bg-item" data-bg="img/projects/bvdt/bvdt-bg.jpg"></li>
+</ul>
 
 <svg style="display: none;">
   <symbol id="ml">
@@ -40,7 +47,8 @@
   </symbol>
 </svg>
 
-<header class="home lazy-hidden" data-effect="fadeIn" data-bg="img/header-bg.jpg">
+<header class="home projects">
+
   <div class="row sticky">
     <div class="w--1of1">
       <nav>
@@ -54,87 +62,69 @@
     </div>
   </div>
   <div class="row">
-    <div class="w--1of2 pinned">
-      <p>bvd taxidermy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ktpqg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;something</p>
+    <div class="w--1of1">
+      <ul class="project__list">
+        <li class="project__item"><a class="project__link">koffee house</a></li>
+        <li class="project__item"><a class="project__link">ktpqg</a></li>
+        <li class="project__item"><a class="project__link">c4 sauce</a></li>
+        <li class="project__item"><a class="project__link">bvd taxidermy</a></li>
+      </ul>
     </div>
   </div>
 </header>
 
 <main>
-  <section id="projects">
-    <div class="project">
-      <ul class="project__list">
-        <li class="project__item"><a class="project__link">Retro</a></li>
-        <li class="project__item"><a class="project__link">Tofu</a></li>
-        <li class="project__item"><a class="project__link">Banjo</a></li>
-        <li class="project__item"><a class="project__link">Pitchfork</a></li>
-      </ul>
 
-      <ul class="project__bg-list">
-        <li class="project__bg-item"></li>
-        <li class="project__bg-item"></li>
-        <li class="project__bg-item"></li>
-        <li class="project__bg-item"></li>
-      </ul>
-    </div>
-  </section>
 
   <section class="portfolio">
     <div class="row">
-      <div class="w--1of3 pinned portfolio-intro">
-        <h5 class="topless">I build unique brands that distinguish themselves</h5>
+      <div class="w--1of3 pinned">
+        <h5 class="topless">I build unique brands that distinguish themselves from their competition.</h5>
       </div>
       <figure class="w--1of2 portfolio-item animated fadeIn">
         <a class="portfolio-link" href="#">
-          <span class="lazy-hidden" data-effect="fadeIn" data-bg="img/projects/koffee/koffee-bg.jpg">
-            <ul class="overlay">
-              <li>&mdash;branding</li>
-              <li>&mdash;stationery</li>
-              <li>&mdash;collateral</li>
-            </ul>
+          <span class="port-cont lazy-hidden" data-effect="fadeIn" data-bg="img/projects/koffee/koffee-bg.jpg">
+            <span class="overlay">
+              <img class="brand-logo" src="img/projects/koffee/koffee-logo.svg" alt="" />
+            </span>
           </span>
         </a>
       </figure>
       <figure class="w--1of2 portfolio-item animated fadeIn">
         <a class="portfolio-link" href="#">
-          <span class="lazy-hidden" data-effect="fadeIn" data-bg="img/projects/logos/ktpqg-bg.jpg">
-            <ul class="overlay">
-              <li>&mdash;branding</li>
-              <li>&mdash;apparel</li>
-            </ul>
+          <span class="port-cont lazy-hidden" data-effect="fadeIn" data-bg="img/projects/logos/ktpqg-bg.jpg">
+            <span class="overlay">
+              <img class="brand-logo" src="img/projects/logos/ktpqg-logo.svg" alt="" />
+            </span>
           </span>
         </a>
       </figure>
       <figure class="w--1of2 portfolio-item animated fadeIn">
         <a class="portfolio-link" href="#">
-          <span class="lazy-hidden" data-effect="fadeIn" data-bg="img/projects/logos/c4-bg.jpg">
-            <ul class="overlay">
-              <li>&mdash;branding</li>
-              <li>&mdash;collateral</li>
-            </ul>
+          <span class="port-cont lazy-hidden" data-effect="fadeIn" data-bg="img/projects/logos/c4-bg.jpg">
+            <span class="overlay">
+              <img class="brand-logo" src="img/projects/logos/c4-logo.svg" alt="" />
+            </span>
           </span>
         </a>
       </figure>
       <figure class="w--1of2 portfolio-item animated fadeIn">
         <a class="portfolio-link" href="#">
-          <span class="lazy-hidden" data-effect="fadeIn" data-bg="img/projects/bvdt/bvdt-bg.jpg">
-            <ul class="overlay">
-              <li>&mdash;branding</li>
-              <li>&mdash;web</li>
-              <li>&mdash;apparel</li>
-              <li>&mdash;collateral</li>
-            </ul>
+          <span class="port-cont lazy-hidden" data-effect="fadeIn" data-bg="img/projects/bvdt/bvdt-bg.jpg">
+            <span class="overlay">
+              <img class="brand-logo" src="img/projects/bvdt/bvdt-logo.svg" alt="" />
+            </span>
           </span>
         </a>
       </figure>
-      <div class="w--1of3 pinned text-right">
+      <div class="w--1of3 outro pinned text-right">
         <h6 class="topless">I also</h6>
-        <ul>
-          <li>brand strategize&mdash;</li>
-          <li>develop packaging&mdash;</li>
-          <li>customize web layouts&mdash;</li>
-          <li>rebranded the north&mdash;</li>
-          <li>built this site&mdash;</li>
+        <ul class="bottomless">
+          <li>brand strategize</li>
+          <li>develop packaging</li>
+          <li>customize web layouts</li>
+          <li>rebranded the north</li>
+          <li>built this site</li>
         </ul>
       </div>
     </div>

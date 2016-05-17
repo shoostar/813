@@ -1,9 +1,9 @@
 nav {
   position: relative;
+  z-index: 100;
 }
   nav a {
     display: inline-block;
-    font-weight: 500;
     border-bottom: none !important;
     margin-right: 1em;
     color: color(var(--black) alpha(85%)) !important;
@@ -12,21 +12,8 @@ nav {
       color: color(var(--black) alpha(15%)) !important;
     }
     header.home nav a {
-      color: color(var(--white) alpha(15%)) !important;
+      color: color(var(--white) alpha(100%)) !important;
     }
       header.home nav a:hover {
-        color: color(var(--white) alpha(85%)) !important;
+        color: color(var(--white) alpha(35%)) !important;
       }
-
-
-
-.slider-navbar {
-  width: 50px;
-  height: 1px;
-  background: var(--white);
-  display: block;
-  content: '';
-  margin-top: 0.5em;
-  position: relative;
-  left: calc(100% - 50px) !important;
-}

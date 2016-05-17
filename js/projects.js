@@ -9,7 +9,7 @@ var changeBg = function() {
 
   // hide all backgrounds and fade out project names
   pBg.removeClass('project__bg-item--active');
-  pLink.css('opacity', '0.4');
+  pLink.css('opacity', '0.25');
 
   // reveal the project bg you hovered over and increase opacity for that name
   thisProject.css('opacity', '1');
@@ -18,7 +18,7 @@ var changeBg = function() {
 
 var showFirst = function() {
   // when the page loads reveal the first project
-  pLink.css('opacity', '0.4');
+  pLink.css('opacity', '0.25');
   pLink.parent().first().children().css('opacity', '1');
   pBg.first().addClass('project__bg-item--active');
 }

@@ -1,6 +1,6 @@
 /* HEADER */
 header {
-  background: var(--white);
+  background: color(var(--black) alpha(50%));
   padding-top: 1em;
   padding-bottom: 0;
   min-height: 13em;
@@ -27,6 +27,8 @@ header {
     align-content: flex-start;
     align-items: flex-start;
     color: var(--white);
+    position: relative;
+    z-index: 1;
   }
   body.error header {
     height: 100%;
@@ -52,20 +54,12 @@ header {
 section {
   padding: 0;
 }
-.intro {
-  background: var(--white);
-  padding-bottom: 3.5em;
-}
-  @media screen and (min-width: 800px) {
-    .intro {
-      padding-bottom: 5em;
-    }
-  }
+
 .portfolio {
-  margin-top: 2em;
+  padding: 6em 0;
 }
 
-  .portfolio-item span {
+  .portfolio-item span.port-cont {
     background-position: 50% 50%;
     background-size: cover !important;
     min-height: 15em;
@@ -75,7 +69,7 @@ section {
     transition: transform 0.15s ease-in-out !important;
   }
     @media screen and (min-width: 1200px) {
-      .portfolio-item:hover span {
+      .portfolio-item:hover span.port-cont {
         transform: perspective(1px) scale(1.01);
         -webkit-backface-visibility: hidden;
       }
@@ -89,10 +83,20 @@ section {
       height: 100%;
       display: block;
     }
-
-.portfolio-item span .overlay {
-  background: color(var(--red) alpha(95%));
-  display: block !important;
+.outro {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  align-content: flex-end !important;
+  align-items: flex-end !important;
+}
+.portfolio-item .overlay {
+  background: color(var(--red) alpha(100%));
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   min-height: 15em;
   max-height: 20vw;
   padding: 1em;
@@ -102,12 +106,22 @@ section {
   transition: all 0.15s ease-in-out;
 }
   @media screen and (min-width: 1200px) {
-    .portfolio-item:hover span .overlay {
+    .portfolio-item:hover .overlay {
       opacity: 1;
       box-shadow: 0 0.5em 1em color(var(--black) alpha(35%));
     }
   }
 
+
+
+.brand-logo {
+  max-width: 10em;
+  max-height: 7.5em;
+  width: 100%;
+}
+  .overlay * {
+    fill: white !important;
+  }
 
 
 
@@ -121,8 +135,7 @@ section {
     position: -webkit-sticky;
     position: sticky;
     top: 1em;
-    transition: all 0.15s ease-in-out;
-    margin-bottom: 8em;
+    margin-bottom: 9em;
   }
 }
 
