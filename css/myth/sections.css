@@ -131,11 +131,6 @@ section {
 
 
 
-@media screen and (max-width: 799px) {
-  .list {
-    flex: 1 0 calc(50% - 1em) !important;
-  }
-}
 @media screen and (min-width: 1200px) {
   .sticky {
     position: -webkit-sticky;
