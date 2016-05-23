@@ -1,11 +1,7 @@
 /* HEADER */
 header {
-  background: color(var(--black) alpha(50%));
   padding-top: 1em;
   padding-bottom: 0;
-  min-height: 13em;
-  height: 43%;
-  max-height: 32.5vw;
 }
   header .w--1of1 {
     display: flex;
@@ -15,6 +11,7 @@ header {
     align-items: center;
   }
   header.home {
+    background: color(var(--black) alpha(50%));
     background-size: cover !important;
     background-position: center center;
     min-height: 20em;
@@ -131,14 +128,35 @@ section {
 
 
 
-@media screen and (min-width: 1200px) {
-  .sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1em;
-    margin-bottom: 9em;
-  }
+article {
+  padding-top: 1em !important;
+  padding-bottom: 0em !important;
+  margin-bottom: 2em !important;
+  background-position: 15vw 2em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
+  article .w--2of3 {
+    background: color(var(--black) tint(95%));
+    padding: 2em 2em 2em 0;
+  }
+  @media screen and (min-width: 800px) {
+    article {
+      padding-top: 2em !important;
+      padding-bottom: 3em !important;
+    }
+    article:nth-child(even) {
+      background-position: -15vw 2em;
+    }
+      article:nth-child(even) .w--2of3 {
+        margin-left: calc(33.3333% + 0.5em) !important;
+        padding: 2em 0 2em 2em;
+      }
+  }
 
 
 
@@ -163,6 +181,9 @@ footer {
 
 
 /* LOGO */
+.home-link {
+  border-bottom: none !important;
+}
 svg.main-logo {
   height: 1em;
   display: block;
@@ -176,6 +197,14 @@ svg path {
 
 
 
+@media screen and (min-width: 1200px) {
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1em;
+    margin-bottom: 9em;
+  }
+}
 
 
 
