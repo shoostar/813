@@ -22,7 +22,6 @@
   display: block;
   min-height: 20em;
   height: 100%;
-  max-height: 65vw;
   width: 100%;
 }
 .project__bg-item {
