@@ -1,123 +1,78 @@
-function Carousel(element) {
-  this._autoDuration = 0;
-  this._container = element.querySelector('.container');
-  this._interval = null;
-  this._nav = element.querySelector('nav');
-  this._slide = 0;
-  this._touchAnchorX = 0;
-  this._touchTime = 0;
-  this._touchX1 = 0;
-  this._touchX2 = 0;
-  element.addEventListener('click', this);
-  element.addEventListener('touchstart', this);
-  element.addEventListener('touchmove', this);
-  element.addEventListener('touchend', this);
-  element.addEventListener('transitionend', this);
-  window.addEventListener('blur', this);
-  window.addEventListener('focus', this);
-  this.set(0);
-}
+$(function() {
+	var cdSlider = $(".cd-slider"),
+		slides = cdSlider.find('li'),
+		nav = cdSlider.children('nav'),
+		count = nav.children('.count');
 
-Carousel.prototype.auto = function (ms) {
-  if (this._interval) {
-    clearInterval(this._interval);
-    this._interval = null;
-  }
-  if (ms) {
-    this._autoDuration = ms;
-    var self = this;
-    this._interval = setInterval(function () { self.next(); }, ms);
-  }
-}
+	if ( slides.length <= 1 ) {
+		nav.css('display', 'none');
+	}
 
-Carousel.prototype.handleEvent = function (event) {
-  if (event.touches && event.touches.length > 0) {
-    this._touchTime = +new Date;
-    this._touchX1 = this._touchX2;
-    this._touchX2 = event.touches[0].screenX;
-  }
+	slides.eq(0).addClass('current');
+  slides.last().addClass('prev_slide');
 
-  var screen = document.documentElement.clientWidth;
-  var position = this._slide + (this._touchAnchorX - this._touchX2) / screen;
-  var velocity = (new Date - this._touchTime) <= 200 ? (this._touchX1 - this._touchX2) / screen : 0;
+	count.append('<span class="current_number">1</span><span class="total">'+ slides.length +'</span>');
 
-  switch (event.type) {
-    case 'blur':
-      this.auto(0);
-      break;
-    case 'click':
-      if (event.target.parentNode != this._nav) break;
-      var i = parseInt(event.target.dataset.slide);
-      if (!isNaN(i)) {
-        event.preventDefault();
-        this.auto(0);
-        this.set(i);
-      }
-      break;
-    case 'focus':
-      this.auto(this._autoDuration);
-      break;
-    case 'touchstart':
-      event.preventDefault();
-      this.auto(0);
-      this._container.style.transition = 'none';
-      this._touchAnchorX = this._touchX1 = this._touchX2;
-      break;
-    case 'touchmove':
-      this._container.style.transform = 'translate3d(' + (-position * 100) + 'vw, 0, 0)';
-      break;
-    case 'touchend':
-      this._container.style.transition = '';
-      var offset = Math.min(Math.max(velocity * 4, -0.5), 0.5);
-      this.set(Math.round(position + offset));
-      break;
-    case 'transitionend':
-      var i = this._slide, count = this._countSlides();
-      if (i >= 0 && i < count) break;
-      // The slides should wrap around. Instantly move to just outside screen on the other end.
-      this._container.style.transition = 'none';
-      this._container.style.transform = 'translate3d(' + (i < 0 ? -count * 100 : 100) + 'vw, 0, 0)';
-      // Force changes to be applied sequentially by reflowing the element.
-      this._container.offsetHeight;
-      this._container.style.transition = '';
-      this._container.offsetHeight;
-      // Animate the first/last slide in.
-      this.set(i < 0 ? count - 1 : 0);
-      break;
-  }
-};
+	var updateCount = function (nextIndex, prevIndex) {
+		$(".current_number").text(nextIndex + 1, prevIndex + 1);
+	}
 
-Carousel.prototype.next = function () {
-  this.set(this._slide + 1);
-};
+	function nextSlider() {
+		var current = cdSlider.find('li.current'),
+			nextSlide = ( current.next().length > 0 ) ? current.next() : slides.eq(0);
 
-Carousel.prototype.previous = function () {
-  this.set(this._slide - 1);
-};
+		nextSlide.addClass('current').removeClass('prev_slide').siblings().removeClass('current');
+		nextSlide.prevAll().addClass('prev_slide');
+		nextSlide.nextAll().removeClass('prev_slide');
 
-Carousel.prototype.set = function (i) {
-  var count = this._countSlides();
-  if (i < 0) { i = -1; } else if (i >= count) { i = count; }
-  this._slide = i;
-  this._container.style.transform = 'translate3d(' + (-i * 100) + 'vw, 0, 0)';
-  this._updateNav();
-};
+		if ( nextSlide.index() == slides.last().index() ) {
+			slides.eq(0).removeClass('prev_slide');
+		}
 
-Carousel.prototype._countSlides = function () {
-  return this._container.querySelectorAll('.slide').length;
-};
+		if ( nextSlide.index() == 0 ) {
+			slides.last().addClass('prev_slide');
+		}
 
-Carousel.prototype._updateNav = function () {
-  var html = '', count = this._countSlides();
-  for (var i = 0; i < count; i++) {
-    if (i > 0) html += '&nbsp;';
-    html += '<a' +  (i == this._slide ? ' class="current"' : '') + ' data-slide="' + i + '" href="#">●</a>';
-  }
-  this._nav.innerHTML = html;
-}
+		updateCount(nextSlide.index());
 
-var carousels = Array.prototype.map.call(document.querySelectorAll('.carousel'), function (element) {
-  var carousel = new Carousel(element);
-  carousel.auto(5000);
-  return carousel;
+	}
+
+	function prevSlider() {
+		var current = cdSlider.find('li.current'),
+			prevSlide = ( current.prev().length > 0 ) ? current.prev() : slides.last();
+
+		prevSlide.addClass('current').removeClass('prev_slide').siblings().removeClass('current');
+		prevSlide.prevAll().addClass('prev_slide');
+
+		if ( prevSlide.index() == 0 ) {
+			slides.last().addClass('prev_slide');
+		}
+
+		if ( prevSlide.index() == slides.last().index() ) {
+			prevSlide.prevAll().addClass('prev_slide');
+			slides.eq(0).removeClass('prev_slide');
+		}
+
+		updateCount(prevSlide.index());
+
+	}
+
+	$(".next").on('click', function(event) {
+		event.preventDefault();
+		nextSlider();
+	});
+
+	$(".prev").on('click', function(event) {
+		event.preventDefault();
+		prevSlider();
+	});
+
+	$(document).keyup(function(event) {
+		if (event.which=='37') {
+			prevSlider();
+		} else if (event.which=='39') {
+			nextSlider();
+		}
+	});
+
 });

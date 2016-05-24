@@ -1,105 +1,145 @@
-.carousel {
-	justify-content: flex-start;
-	overflow: hidden;
-  padding: 1em 0;
+/* Slider Style
+--------------------------------------*/
+.cd-slider {
 	position: relative;
-	width: 100vw;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
 }
-
-.carousel > .container {
-	display: flex;
-	flex-direction: row;
-	height: 100%;
-	transform: translate3d(0, 0, 0);
-	transition: transform 600ms;
-}
-
-.carousel > nav {
-	bottom: 0;
-	left: 0;
+.cd-slider li {
 	position: absolute;
-	text-align: center;
-	width: 100vw;
-	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	-webkit-transition: visibility 0s 1s;
+	transition: visibility 0s 1s;
 }
-
-.carousel > nav a {
-	opacity: .2;
-	text-decoration: none;
+.image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+	clip: rect(0, 80em, 50em, 80em);
+	-webkit-transition: clip .5s cubic-bezier(0.99, 0.01, 0.45, 0.9) .5s;
+	transition: clip .5s cubic-bezier(0.99, 0.01, 0.45, 0.9) .5s;
 }
-
-.carousel > nav a:hover {
-	opacity: .5;
+.content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	padding: 2em 0 0 2em;
+	text-align: right;
 }
-
-.carousel > nav a.current {
+.content h2 {
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.content a {
+	display: inline-block;
+}
+/* Current Slide
+-------------------------------------*/
+li.current {
+	visibility: visible;
+	-webkit-transition-delay: 0s;
+	        transition-delay: 0s;
+}
+li.current .image {
+	clip: rect(0, 100em, 50em, 0);
+}
+li.current .content h2 {
+	-webkit-transform: translateY(0);
+	        transform: translateY(0);
 	opacity: 1;
+	-webkit-transition-delay: 1s;
+	        transition-delay: 1s;
 }
-
-.carousel .slide {
-	flex-shrink: 0;
-	text-align: center;
-	width: 100vw;
+li.current .content a {
+	-webkit-transform: translateY(0);
+	        transform: translateY(0);
+	opacity: 1;
+	-webkit-transition-delay: 1.1s;
+	        transition-delay: 1.1s;
 }
-
-
-
-
-#cursor {
-  z-index: 1;
-  display: none;
-  pointer-events: none;
-  position: absolute;
-  width: 50px;
-  height: 50px;
+/* Prev Slide
+------------------------------------*/
+li.prev_slide .image {
+	clip: rect(0, 0, 50em, 0);
 }
-#cursor .arrow-line {
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  overflow: hidden;
-  -moz-transition: all 150ms ease-in-out;
-  -o-transition: all 150ms ease-in-out;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
+.cd-slider nav {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 1.3em 3em;
+	z-index: 2;
 }
-#cursor .arrow-line.top {
-  top: 0px;
+.prev, .next, .count {
+	vertical-align: middle;
 }
-#cursor .arrow-line.bottom {
-  bottom: 0px;
+.prev, .next {
+	position: relative;
+	display: inline-block;
+	height: 5em;
+	width: 5em;
 }
-#cursor.no-more .arrow-line.top {
-  top: 25%;
+.prev::before, .next::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	border: .8em solid transparent;
+	border-right-width: 1em;
+	border-right-color: #000;
+	border-left-width: 0;
+	width: 0;
+	height: 0;
 }
-#cursor.no-more .arrow-line.bottom {
-  bottom: 25%;
+.prev::after, .next::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%) translateZ(0);
+	        transform: translateY(-50%) translateZ(0);
+	left: .5em;
+	background: #000;
+	height: .1em;
+	min-height: 1px;
+	width: 2.5em;
+	-webkit-transition: width .3s;
+	transition: width .3s;
 }
-#cursor .arrow-line:after {
-  content: " ";
-  height: 2px;
-  /*CHANGES THE THICKNESS OF THE ARROWLINES*/
-  width: 120%;
-  background: white;
-  position: absolute;
-  -moz-transition: all 150ms ease-in-out;
-  -o-transition: all 150ms ease-in-out;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
+.next::before {
+	right: 0;
+	border-left-width: 1rem;
+	border-left-color: #000;
+	border-right-width: 0;
 }
-#cursor.right .arrow-line.top:after {
-  transform: rotate(-135deg);
-  top: 20%;
+.next::after {
+	right: .5rem;
+	left: auto;
 }
-#cursor.right .arrow-line.bottom:after {
-  transform: rotate(135deg);
-  bottom: 20%;
+.count {
+	display: inline-block;
+	font-family: serif;
+	font-style: italic;
 }
-#cursor.left .arrow-line.top:after {
-  transform: rotate(-45deg);
-  top: 20%;
+.total::before {
+	content: '/';
+	margin: 0 1rem;
 }
-#cursor.left .arrow-line.bottom:after {
-  transform: rotate(45deg);
-  bottom: 20%;
+.prev:hover::after, .next:hover::after {
+	width: 3.5rem;
+}
+@media screen and ( max-width: 550px ) {
+	.image { width: 100%; }
+	.content { padding-right: 2rem; }
+	nav { left: 0; right: auto; }
 }
