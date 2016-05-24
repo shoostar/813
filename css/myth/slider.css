@@ -1,0 +1,105 @@
+.carousel {
+	justify-content: flex-start;
+	overflow: hidden;
+  padding: 1em 0;
+	position: relative;
+	width: 100vw;
+}
+
+.carousel > .container {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	transform: translate3d(0, 0, 0);
+	transition: transform 600ms;
+}
+
+.carousel > nav {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+	z-index: 1;
+}
+
+.carousel > nav a {
+	opacity: .2;
+	text-decoration: none;
+}
+
+.carousel > nav a:hover {
+	opacity: .5;
+}
+
+.carousel > nav a.current {
+	opacity: 1;
+}
+
+.carousel .slide {
+	flex-shrink: 0;
+	text-align: center;
+	width: 100vw;
+}
+
+
+
+
+#cursor {
+  z-index: 1;
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+#cursor .arrow-line {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+#cursor .arrow-line.top {
+  top: 0px;
+}
+#cursor .arrow-line.bottom {
+  bottom: 0px;
+}
+#cursor.no-more .arrow-line.top {
+  top: 25%;
+}
+#cursor.no-more .arrow-line.bottom {
+  bottom: 25%;
+}
+#cursor .arrow-line:after {
+  content: " ";
+  height: 2px;
+  /*CHANGES THE THICKNESS OF THE ARROWLINES*/
+  width: 120%;
+  background: white;
+  position: absolute;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+#cursor.right .arrow-line.top:after {
+  transform: rotate(-135deg);
+  top: 20%;
+}
+#cursor.right .arrow-line.bottom:after {
+  transform: rotate(135deg);
+  bottom: 20%;
+}
+#cursor.left .arrow-line.top:after {
+  transform: rotate(-45deg);
+  top: 20%;
+}
+#cursor.left .arrow-line.bottom:after {
+  transform: rotate(45deg);
+  bottom: 20%;
+}

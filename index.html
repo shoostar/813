@@ -7,6 +7,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/unslider.css">
+  <link rel="stylesheet" href="css/unslider-dots.css">
   <script src="//code.jquery.com/jquery.min.js"></script>
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="https://use.typekit.net/huh6mpu.js"></script>
@@ -74,8 +76,104 @@
   </div>
 </header>
 
+<main>
+  <section class="portfolio">
+    <div class="row">
+      <div class="w--1of3 portfolio-item pinned">
+        <h5 class="topless">I build unique brands that distinguish themselves from their competition.</h5>
+      </div>
+      <figure class="w--1of2 portfolio-item animated fadeIn">
+        <a class="portfolio-link" href="#">
+          <span class="port-cont lazy-hidden" data-effect="fadeIn" data-bg="img/projects/koffee/koffee-bg.jpg">
+            <span class="overlay">
+              <img class="brand-logo" src="img/projects/koffee/koffee-logo.svg" alt="" />
+            </span>
+          </span>
+        </a>
+      </figure>
+      <figure class="w--1of2 portfolio-item animated fadeIn">
+        <a class="portfolio-link" href="#">
+          <span class="port-cont lazy-hidden" data-effect="fadeIn" data-bg="img/projects/logos/ktpqg-bg.jpg">
+            <span class="overlay">
+              <img class="brand-logo" src="img/projects/logos/ktpqg-logo.svg" alt="" />
+            </span>
+          </span>
+        </a>
+      </figure>
+      <figure class="w--1of2 portfolio-item animated fadeIn">
+        <a class="portfolio-link" href="#">
+          <span class="port-cont lazy-hidden" data-effect="fadeIn" data-bg="img/projects/logos/c4-bg.jpg">
+            <span class="overlay">
+              <img class="brand-logo" src="img/projects/logos/c4-logo.svg" alt="" />
+            </span>
+          </span>
+        </a>
+      </figure>
+      <figure class="w--1of2 portfolio-item animated fadeIn">
+        <a class="portfolio-link" href="#">
+          <span class="port-cont lazy-hidden" data-effect="fadeIn" data-bg="img/projects/bvdt/bvdt-bg.jpg">
+            <span class="overlay">
+              <img class="brand-logo" src="img/projects/bvdt/bvdt-logo.svg" alt="" />
+            </span>
+          </span>
+        </a>
+      </figure>
+      <div class="w--1of3 outro pinned">
+        <h6>I also</h6>
+        <ul class="list bottomless">
+          <li>brand strategize</li>
+          <li>develop packaging</li>
+          <li>customize web layouts</li>
+          <li>rebranded the north</li>
+          <li>built this site</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="carousel" id="images">
+    <div id="cursor" class="left">
+      <div class="arrow-line top"></div>
+      <div class="arrow-line bottom"></div>
+    </div>
+    <nav></nav>
+    <div class="container">
+      <div class="slide">
+        <h1>Talking. Reimagined.</h1>
+        <p>We’ve made it easy to stay connected<br>with the people you care about most.</p>
+      </div>
+      <div class="slide">
+        <h1>Tap to talk, tap to listen</h1>
+        <p>Talk with anyone in your phone,<br>anytime, no matter where they are.</p>
+      </div>
+      <div class="slide">
+        <h1>Feel closer</h1>
+        <p>From weather to time of day, get Glimpses<br>into someone’s life at the moment.</p>
+      </div>
+      <div class="slide">
+        <h1>Thoughtfully simple</h1>
+        <p>All you need is someone’s<br>phone number to get started.</p>
+      </div>
+      <div class="slide">
+        <h1>And it’s totally free</h1>
+        <p>Worldwide, high-quality, crystal<br>clear conversations for everyone.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="row">
+    <div class="w--1of1 pinned">
+      <p><strong>mmxvi</strong></p>
+    </div>
+  </div>
+</footer>
+
 <script src="js/index.js"></script>
 <script src="js/projects.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/cursor.js"></script>
 <script src="js/stickyfill.js"></script>
 <script>
   $('.sticky').Stickyfill();

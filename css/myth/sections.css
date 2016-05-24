@@ -12,8 +12,6 @@ header {
   }
   header.home {
     background: color(var(--black) alpha(50%));
-    background-size: cover !important;
-    background-position: center center;
     min-height: 20em;
     height: 100%;
     padding-bottom: 0em;
