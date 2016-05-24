@@ -3,7 +3,7 @@
 .cd-slider {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: 75vh;
 	overflow: hidden;
 }
 .cd-slider li {
@@ -13,22 +13,20 @@
 	width: 100%;
 	height: 100%;
 	visibility: hidden;
-	-webkit-transition: visibility 0s 1s;
 	transition: visibility 0s 1s;
 }
-.image {
+.cd-slider .image {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 70%;
+	width: 100%;
 	height: 100%;
 	background-size: cover;
 	background-position: 50% 50%;
 	clip: rect(0, 80em, 50em, 80em);
-	-webkit-transition: clip .5s cubic-bezier(0.99, 0.01, 0.45, 0.9) .5s;
 	transition: clip .5s cubic-bezier(0.99, 0.01, 0.45, 0.9) .5s;
 }
-.content {
+.cd-slider .content {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -37,40 +35,42 @@
 	padding: 2em 0 0 2em;
 	text-align: right;
 }
-.content h2 {
+.cd-slider .content h2 {
 	text-overflow: ellipsis;
 	overflow: hidden;
+	transform: translateY(-30%);
+	opacity: 0;
+	transition: transform .5s, opacity .5s;
 }
-.content a {
+.cd-slider .content a {
 	display: inline-block;
+	text-transform: lowercase;
+	opacity: 0;
+	transform: translateY(-100%);
+	transition: transform .5s .1s, opacity .5s .1s;
 }
 /* Current Slide
 -------------------------------------*/
-li.current {
+.cd-slider li.current {
 	visibility: visible;
-	-webkit-transition-delay: 0s;
-	        transition-delay: 0s;
+	transition-delay: 0s;
 }
-li.current .image {
-	clip: rect(0, 100em, 50em, 0);
+.cd-slider li.current .image {
+	clip: rect(0, 80em, 50em, 0);
 }
-li.current .content h2 {
-	-webkit-transform: translateY(0);
-	        transform: translateY(0);
+.cd-slider li.current .content h2 {
+	transform: translateY(0);
 	opacity: 1;
-	-webkit-transition-delay: 1s;
-	        transition-delay: 1s;
+	transition-delay: 1s;
 }
-li.current .content a {
-	-webkit-transform: translateY(0);
-	        transform: translateY(0);
+.cd-slider li.current .content a {
+	transform: translateY(0);
 	opacity: 1;
-	-webkit-transition-delay: 1.1s;
-	        transition-delay: 1.1s;
+	transition-delay: 1.1s;
 }
 /* Prev Slide
 ------------------------------------*/
-li.prev_slide .image {
+.cd-slider li.prev_slide .image {
 	clip: rect(0, 0, 50em, 0);
 }
 .cd-slider nav {
@@ -80,21 +80,20 @@ li.prev_slide .image {
 	padding: 1.3em 3em;
 	z-index: 2;
 }
-.prev, .next, .count {
+.cd-slider .prev, .cd-slider .next, .cd-slider .count {
 	vertical-align: middle;
 }
-.prev, .next {
+.cd-slider .prev, .cd-slider .next {
 	position: relative;
 	display: inline-block;
 	height: 5em;
 	width: 5em;
 }
-.prev::before, .next::before {
+.cd-slider .prev::before, .cd-slider .next::before {
 	content: '';
 	position: absolute;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	transform: translateY(-50%);
 	border: .8em solid transparent;
 	border-right-width: 1em;
 	border-right-color: #000;
@@ -102,44 +101,42 @@ li.prev_slide .image {
 	width: 0;
 	height: 0;
 }
-.prev::after, .next::after {
+.cd-slider .prev::after, .cd-slider .next::after {
 	content: '';
 	position: absolute;
 	top: 50%;
-	-webkit-transform: translateY(-50%) translateZ(0);
-	        transform: translateY(-50%) translateZ(0);
+	transform: translateY(-50%) translateZ(0);
 	left: .5em;
 	background: #000;
 	height: .1em;
 	min-height: 1px;
 	width: 2.5em;
-	-webkit-transition: width .3s;
 	transition: width .3s;
 }
-.next::before {
+.cd-slider .next::before {
 	right: 0;
-	border-left-width: 1rem;
+	border-left-width: 1em;
 	border-left-color: #000;
 	border-right-width: 0;
 }
-.next::after {
-	right: .5rem;
+.cd-slider .next::after {
+	right: .5em;
 	left: auto;
 }
-.count {
+.cd-slider .count {
 	display: inline-block;
 	font-family: serif;
 	font-style: italic;
 }
-.total::before {
+.cd-slider .total::before {
 	content: '/';
-	margin: 0 1rem;
+	margin: 0 1em;
 }
-.prev:hover::after, .next:hover::after {
-	width: 3.5rem;
+.cd-slider .prev:hover::after, .next:hover::after {
+	width: 3.5em;
 }
 @media screen and ( max-width: 550px ) {
-	.image { width: 100%; }
-	.content { padding-right: 2rem; }
-	nav { left: 0; right: auto; }
+	.cd-slider .image { width: 100%; }
+	.cd-slider .content { padding-right: 2em; }
+	.cd-slider nav { left: 0; right: auto; }
 }
