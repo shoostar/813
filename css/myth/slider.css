@@ -27,13 +27,7 @@
 	transition: opacity .5s cubic-bezier(0.99, 0.01, 0.45, 0.9) .5s;
 }
 .cd-slider .content {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	padding: 2em 0 0 2em;
-	text-align: right;
+
 }
 .cd-slider .content h2 {
 	text-overflow: ellipsis !important;
@@ -133,5 +127,5 @@
 @media screen and ( max-width: 550px ) {
 	.cd-slider .image { width: 100%; }
 	.cd-slider .content { padding-right: 2em; }
-	.cd-slider nav { left: 0; right: auto; }
+	.cd-slider nav {  }
 }
