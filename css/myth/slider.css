@@ -41,6 +41,7 @@
 	transform: translateY(-30%) !important;
 	opacity: 0 !important;
 	transition: transform .5s, opacity .5s !important;
+	color: var(--white);
 }
 .cd-slider .content a {
 	display: inline-block;
@@ -74,11 +75,7 @@
 	clip: rect(0, 0, 50em, 0);
 }
 .cd-slider nav {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	padding: 1.3em 3em;
-	z-index: 2;
+
 }
 .cd-slider .prev, .cd-slider .next, .cd-slider .count {
 	vertical-align: middle;
@@ -125,8 +122,6 @@
 }
 .cd-slider .count {
 	display: inline-block;
-	font-family: serif;
-	font-style: italic;
 }
 .cd-slider .total::before {
 	content: '/';
