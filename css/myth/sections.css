@@ -10,10 +10,10 @@ header {
     align-content: flex-start;
     align-items: center;
   }
-  header.home {
+  header.projects {
     background: color(var(--black) alpha(50%));
     min-height: 20em;
-    height: 100%;
+    height: 81.3%;
     padding-bottom: 0em;
     display: flex;
     flex-direction: column;
@@ -24,6 +24,14 @@ header {
     position: relative;
     z-index: 1;
   }
+    header.projects .w--1of1 {
+      align-items: flex-end;
+    }
+    header.projects h2 {
+      color: var(--white);
+      display: inline-block;
+      margin-top: 0;
+    }
   body.error header {
     height: 100%;
     max-height: 100vh;
@@ -45,14 +53,17 @@ header {
 
 
 /* MAIN and SECTION */
+main {
+  padding: 10vw 0;
+}
 section {
-  padding: 0;
+  padding: 0 0 10vw;
 }
 
-.portfolio {
-  padding: 6em 0;
-}
 
+.projects * {
+  fill: var(--red) !important;
+}
   .portfolio-item span.port-cont {
     background-position: 50% 50%;
     background-size: cover !important;

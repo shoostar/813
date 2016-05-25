@@ -11,9 +11,9 @@ nav {
     nav a:hover {
       color: color(var(--black) alpha(35%)) !important;
     }
-    header.home nav a {
+    header.projects nav a {
       color: color(var(--white) alpha(100%)) !important;
     }
-      header.home nav a:hover {
+      header.projects nav a:hover {
         color: color(var(--white) alpha(35%)) !important;
       }
