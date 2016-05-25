@@ -161,10 +161,11 @@ section {
 
 
 
+/*ARTICLE stuff, probably not needed for now.*/
 article {
   padding-top: 1em !important;
   padding-bottom: 0em !important;
-  margin-bottom: 2em !important;
+  margin-bottom: 8vw !important;
   background-position: 15vw 2em;
   background-size: cover;
   background-repeat: no-repeat;
@@ -173,6 +174,7 @@ article {
   align-content: center;
   align-items: center;
 }
+/*
   article .w--2of3 {
     background: color(var(--black) tint(95%));
     padding: 2em 2em 2em 0;
@@ -190,6 +192,7 @@ article {
         padding: 2em 0 2em 2em;
       }
   }
+*/
 
 
 
