@@ -98,6 +98,9 @@ h1, h2, h3, h4, h5, h6 {
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     line-height: 1.25 !important;
   }
+  .section-title {
+    color: var(--red);
+  }
 h1 {
   font-size: 300%;
   margin-top: 5.4em;
@@ -129,7 +132,7 @@ p, ul, ol, dl, blockquote, strong, pre, code {
 }
 pre, code {
   font-family: "source-code-pro", sans-serif;
-  background: color(var(--red) shade(20%));
+  background: color(var(--black) tint(90%));
   border-radius: 0.125rem;
   overflow-wrap: break-word !important;
   word-wrap: break-word !important;
