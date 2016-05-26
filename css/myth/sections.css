@@ -168,7 +168,6 @@ span.divider {
 }
 .pro {
   color: var(--red);
-  font-variant: small-caps;
   font-weight: 800;
   display: inline-block;
   margin-bottom: 0;
@@ -176,7 +175,7 @@ span.divider {
   /*summadat pro soup*/
   .pro sup {
     position: relative;
-    top: 0;
+    top: 0.15em;
     left: 0;
   }
 .resume {
@@ -221,14 +220,15 @@ article {
 
 /* FOOTER */
 footer {
-  letter-spacing: 0.125em;
-  text-transform: uppercase;
-  color: var(--black);
-  font-weight: 500;
   padding: 0 0 2em;
 }
   footer p {
     margin-bottom: 0;
+  }
+  footer .year {
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+    font-weight: 500;
   }
 
 
@@ -294,4 +294,37 @@ svg path {
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
           right: 1em;
+}
+
+
+
+/* GLITCHY LOGO!!! */
+@-webkit-keyframes wiggle {
+    0% { -webkit-transform: skewX(24deg); }
+    10% { -webkit-transform: skewX(-8deg); }
+    20% { -webkit-transform: skewX(55deg); }
+    30% { -webkit-transform: skewX(-90deg); }
+    40% { -webkit-transform: skewX(29deg); }
+    50% { -webkit-transform: skewX(-90deg); }
+    60% { -webkit-transform: skewX(3deg); }
+    70% { -webkit-transform: skewX(-2deg); }
+    80% { -webkit-transform: skewX(1deg); }
+    90% { -webkit-transform: skewX(10deg); }
+    100% { -webkit-transform: skewX(0deg); }
+}
+
+
+.main-logo:hover {
+  -webkit-animation: wiggle 0.4s;
+  overflow:hidden;
+  position: relative;
+}
+.glitch-btn {
+  position: relative;
+
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.glitch-btn:hover {
+  -webkit-animation: wiggle 0.2s 2;
 }
