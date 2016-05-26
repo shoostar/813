@@ -299,18 +299,18 @@ svg path {
 
 
 /* GLITCHY LOGO!!! */
-@-webkit-keyframes wiggle {
-    0% { transform: skewX(24deg); }
-    10% { transform: skewX(-8deg); }
-    20% { transform: skewX(55deg); }
-    30% { transform: skewX(-80deg); }
-    40% { transform: skewX(29deg); }
-    50% { transform: skewX(-80deg); }
-    60% { transform: skewX(3deg); }
-    70% { transform: skewX(-2deg); }
-    80% { transform: skewX(1deg); }
-    90% { transform: skewX(10deg); }
-    100% { transform: skewX(0deg); }
+@keyframes wiggle {
+  0% { transform: skewX(24deg); }
+  10% { transform: skewX(-8deg); }
+  20% { transform: skewX(55deg); }
+  30% { transform: skewX(-80deg); }
+  40% { transform: skewX(29deg); }
+  50% { transform: skewX(-80deg); }
+  60% { transform: skewX(3deg); }
+  70% { transform: skewX(-2deg); }
+  80% { transform: skewX(1deg); }
+  90% { transform: skewX(10deg); }
+  100% { transform: skewX(0deg); }
 }
 
 
