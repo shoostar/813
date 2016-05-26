@@ -175,7 +175,7 @@ span.divider {
   /*summadat pro soup*/
   .pro sup {
     position: relative;
-    top: 0.15em;
+    top: 0.1em;
     left: 0;
   }
 .resume {
@@ -300,17 +300,17 @@ svg path {
 
 /* GLITCHY LOGO!!! */
 @-webkit-keyframes wiggle {
-    0% { -webkit-transform: skewX(24deg); }
-    10% { -webkit-transform: skewX(-8deg); }
-    20% { -webkit-transform: skewX(55deg); }
-    30% { -webkit-transform: skewX(-90deg); }
-    40% { -webkit-transform: skewX(29deg); }
-    50% { -webkit-transform: skewX(-90deg); }
-    60% { -webkit-transform: skewX(3deg); }
-    70% { -webkit-transform: skewX(-2deg); }
-    80% { -webkit-transform: skewX(1deg); }
-    90% { -webkit-transform: skewX(10deg); }
-    100% { -webkit-transform: skewX(0deg); }
+    0% { transform: skewX(24deg); }
+    10% { transform: skewX(-8deg); }
+    20% { transform: skewX(55deg); }
+    30% { transform: skewX(-80deg); }
+    40% { transform: skewX(29deg); }
+    50% { transform: skewX(-80deg); }
+    60% { transform: skewX(3deg); }
+    70% { transform: skewX(-2deg); }
+    80% { transform: skewX(1deg); }
+    90% { transform: skewX(10deg); }
+    100% { transform: skewX(0deg); }
 }
 
 
