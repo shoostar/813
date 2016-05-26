@@ -308,8 +308,8 @@ svg path {
   50% { transform: skewX(-80deg); }
   60% { transform: skewX(3deg); }
   70% { transform: skewX(-2deg); }
-  80% { transform: skewX(1deg); }
-  90% { transform: skewX(10deg); }
+  80% { transform: skewX(25deg); }
+  90% { transform: skewX(15deg); }
   100% { transform: skewX(0deg); }
 }
 
