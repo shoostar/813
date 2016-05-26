@@ -20,11 +20,12 @@
 .wf-loading em,
 .wf-loading a,
 .wf-loading nav,
+.wf-loading use,
 .wf-loading .project__item,
 .wf-loading .list {
   visibility: hidden !important;
   opacity: 0 !important;
-  transition: all ease-in-out 0.125s !important;
+  transition: all ease-in-out 1s !important;
 }
 .wf-active h1,
 .wf-active h2,
@@ -38,6 +39,7 @@
 .wf-active em,
 .wf-active a,
 .wf-active nav,
+.wf-active use,
 .wf-active .project__item,
 .wf-active .list,
 .wf-inactive h1,
@@ -52,10 +54,11 @@
 .wf-inactive em,
 .wf-inactive a,
 .wf-inactive nav,
+.wf-inactive use,
 .wf-inactive .project__item,
 .wf-inactive .list {
   opacity: 1 !important;
-  transition: all ease-in-out 0.125s !important;
+  transition: all ease-in-out 1s !important;
 }
 
 
@@ -167,9 +170,13 @@ strong {
   font-weight: 500;
 }
 small {  }
+sup, sub {
+  font-size: 66.6666%;
+  letter-spacing: 0.05rem;
+}
 a:link, a:visited {
   color: var(--black);
-  transition: all ease-in-out 0.15s;
+  transition: all ease-in-out 0.15s !important;
   text-decoration: none;
   border-bottom: 1px solid var(--black);
 }
