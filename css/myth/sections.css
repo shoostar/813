@@ -76,10 +76,15 @@ header {
 
 /* MAIN and SECTION */
 main {
-  padding: 6vw 0;
+  padding: 5em 0;
 }
   body.home main {
     padding: 8vw 0 6vw;
+  }
+  @media screen and (min-width: 1200px;) {
+    main {
+      padding: 6vw 0;
+    }
   }
 section {
   padding: 0 0 6vw;
