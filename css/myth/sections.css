@@ -344,7 +344,7 @@ footer {
 
 .glitch-btn:hover .glitch::before {
   left: -2px;
-  text-shadow: -1px 0 var(--black);
+  text-shadow: -1px 0 var(--red);
   background: color(var(--black) tint(95%));
   clip: rect(44px, 50px, 56px, 0);
   animation: glitch-anim-1 0.86s infinite linear alternate-reverse;
