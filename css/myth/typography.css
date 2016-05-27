@@ -25,7 +25,7 @@
 .wf-loading .list {
   visibility: hidden !important;
   opacity: 0 !important;
-  transition: all ease-in-out 1s !important;
+  transition: opacity ease-in-out 1s !important;
 }
 .wf-active h1,
 .wf-active h2,
@@ -58,7 +58,7 @@
 .wf-inactive .project__item,
 .wf-inactive .list {
   opacity: 1 !important;
-  transition: all ease-in-out 1s !important;
+  transition: opacity ease-in-out 1s !important;
 }
 
 
