@@ -237,15 +237,9 @@ footer {
 .home-link {
   border-bottom: none !important;
 }
-svg.main-logo {
+.main-logo {
   height: 1em;
   display: block;
-}
-  svg.main-logo use {
-    fill: var(--red);
-  }
-svg path {
-  fill: inherit;
 }
 
 
@@ -300,31 +294,93 @@ svg path {
 
 /* GLITCHY LOGO!!! */
 @keyframes wiggle {
-  0% { transform: skewX(24deg); }
-  10% { transform: skewX(-8deg); }
-  20% { transform: skewX(55deg); }
-  30% { transform: skewX(-80deg); }
-  40% { transform: skewX(29deg); }
-  50% { transform: skewX(-80deg); }
-  60% { transform: skewX(3deg); }
-  70% { transform: skewX(-2deg); }
-  80% { transform: skewX(25deg); }
-  90% { transform: skewX(15deg); }
-  100% { transform: skewX(0deg); }
-}
-
-
-.main-logo:hover {
-  -webkit-animation: wiggle 0.4s;
-  overflow:hidden;
-  position: relative;
+  0% { transform: skewX(24deg); opacity: 1; }
+  10% { transform: skewX(-8deg); opacity: 0; }
+  20% { transform: skewX(55deg); opacity: 0.75; }
+  30% { transform: skewX(-80deg); opacity: 1; }
+  40% { transform: skewX(29deg); opacity: 0.5; }
+  50% { transform: skewX(-80deg); opacity: 0.75; }
+  60% { transform: skewX(3deg); opacity: 0.75; }
+  70% { transform: skewX(-2deg); opacity: 1; }
+  80% { transform: skewX(25deg); opacity: 1; }
+  90% { transform: skewX(15deg); opacity: 1; }
+  100% { transform: skewX(0deg); opacity: 1; }
 }
 .glitch-btn {
   position: relative;
-
-  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .glitch-btn:hover {
-  -webkit-animation: wiggle 0.2s 2;
+  animation: wiggle 0.357s infinite linear alternate-reverse;
+}
+.glitch-btn:hover:after {
+  content: ':̪̺̠̺͗ͨ̋ͩ͗:̛͇̱̥̥̙̎͆̑ͮ̐͢:̷̲ͮ̃́̅ͦ̔͐̆:̴͈͖̮̪̗̈́̆̀:̨̙̗̺̞̥͗̐ͫ:̗̰̜̟̮̦̉̂' !important;
+  z-index: -100;
+  position: absolute;
+  left: 0.5em;
+  top: -0.5em;
+  color: color(var(--red) alpha(50%));
+  opacity: 1;
+  animation: glitch-anim-1 0.357s infinite linear alternate-reverse;
+}
+
+
+
+.glitch-btn:hover .glitch {
+  color: var(--red);
+  position: relative;
+  margin: 0 auto;
+}
+
+.glitch-btn:hover .glitch:before,
+.glitch-btn:hover .glitch:after {
+  content: attr(data-text);
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch-btn:hover .glitch::before {
+  left: -2px;
+  text-shadow: -1px 0 var(--black);
+  background: color(var(--black) tint(95%));
+  clip: rect(44px, 50px, 56px, 0);
+  animation: glitch-anim-1 0.86s infinite linear alternate-reverse;
+}
+
+.glitch-btn:hover .glitch::after {
+  left: -2px;
+  text-shadow: 1px 0 var(--red);
+  background: color(var(--black) tint(95%));
+  clip: rect(44px, 50px, 56px, 0);
+  animation: glitch-anim-2 1.12s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+  0% { clip: rect(48px, 9999px, 36px, 0); }
+  10% { clip: rect(9px, 9999px, 32px, 0); }
+  20% { clip: rect(40px, 9999px, 43px, 0); }
+  30% { clip: rect(19px, 9999px, 11px, 0); }
+  40% { clip: rect(70px, 9999px, 52px, 0); }
+  50% { clip: rect(22px, 9999px, 2px, 0); }
+  60% { clip: rect(39px, 9999px, 30px, 0); }
+  70% { clip: rect(32px, 9999px, 96px, 0); }
+  80% { clip: rect(15px, 9999px, 94px, 0); }
+  90% { clip: rect(83px, 9999px, 68px, 0); }
+  100% { clip: rect(59px, 9999px, 21px, 0); }
+}
+@keyframes glitch-anim-2 {
+  0% { clip: rect(82px, 9999px, 71px, 0); }
+  10% { clip: rect(10px, 9999px, 31px, 0); }
+  20% { clip: rect(25px, 9999px, 31px, 0); }
+  30% { clip: rect(9px, 9999px, 43px, 0); }
+  40% { clip: rect(65px, 9999px, 85px, 0); }
+  50% { clip: rect(78px, 9999px, 43px, 0); }
+  60% { clip: rect(18px, 9999px, 99px, 0); }
+  70% { clip: rect(88px, 9999px, 90px, 0); }
+  80% { clip: rect(54px, 9999px, 16px, 0); }
+  90% { clip: rect(44px, 9999px, 91px, 0); }
+  100% { clip: rect(24px, 9999px, 90px, 0); }
 }
