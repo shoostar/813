@@ -97,18 +97,6 @@ section {
 .projects * {
   fill: var(--red) !important;
 }
-  .portfolio-item span.port-cont {
-    min-height: 15em;
-    max-height: 20vw;
-    display: block;
-  }
-
-    .portfolio-link {
-      border-bottom: none !important;
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
 .outro {
   display: flex !important;
   flex-direction: column !important;
