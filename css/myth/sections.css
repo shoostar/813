@@ -22,7 +22,7 @@ header {
     justify-content: center !important;
     align-content: center !important;
     align-items: center !important;
-    transition: all 0.25s ease-in-out;
+    transition: height 0.25s ease-in-out;
   }
     @media screen and (min-width: 800px) {
       .shrink {
@@ -127,7 +127,6 @@ section {
     }
   }
 .portfolio-item .overlay {
-  background: color(var(--black) alpha(50%));
   display: flex !important;
   flex-direction: row;
   justify-content: center;
@@ -136,19 +135,9 @@ section {
   min-height: 15em;
   max-height: 20vw;
   padding: 1em;
-  color: var(--white);
-  border: 5px solid var(--black);
+  background: var(--black);
   transition: all 0.15s ease-in-out;
 }
-  @media screen and (min-width: 1200px) {
-    .portfolio-item .overlay {
-      background: var(--white);
-    }
-    .portfolio-item:hover .overlay {
-      background: color(var(--red) alpha(100%));
-      border: 5px solid color(var(--black) alpha(0%));
-    }
-  }
 .loose-logo {
   padding: 8vw 0 0;
   display: flex;

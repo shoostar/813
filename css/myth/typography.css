@@ -8,6 +8,58 @@
 
 
 
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading h3,
+.wf-loading h4,
+.wf-loading h5,
+.wf-loading h6,
+.wf-loading p,
+.wf-loading small,
+.wf-loading strong,
+.wf-loading em,
+.wf-loading a,
+.wf-loading nav,
+.wf-loading use,
+.wf-loading .project__item,
+.wf-loading .list {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  transition: opacity ease-in-out 1s !important;
+}
+.wf-active h1,
+.wf-active h2,
+.wf-active h3,
+.wf-active h4,
+.wf-active h5,
+.wf-active h6,
+.wf-active p,
+.wf-active small,
+.wf-active strong,
+.wf-active em,
+.wf-active a,
+.wf-active nav,
+.wf-active use,
+.wf-active .project__item,
+.wf-active .list,
+.wf-inactive h1,
+.wf-inactive h2,
+.wf-inactive h3,
+.wf-inactive h4,
+.wf-inactive h5,
+.wf-inactive h6,
+.wf-inactive p,
+.wf-inactive small,
+.wf-inactive strong,
+.wf-inactive em,
+.wf-inactive a,
+.wf-inactive nav,
+.wf-inactive use,
+.wf-inactive .project__item,
+.wf-inactive .list {
+  opacity: 1 !important;
+  transition: opacity ease-in-out 1s !important;
+}
 
 
 
