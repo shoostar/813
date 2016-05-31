@@ -294,20 +294,6 @@ table {
 
 
 
-/* FIGURES */
-figure {
-  position: relative;
-}
-  figcaption {
-    font-size: 66.6666%;
-    font-style: italic;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-
-
 /* UTILITIES */
 .lightened { color: color(var(--black) tint(66.6666%)); }
 .text-center { text-align: center !important; }

@@ -118,26 +118,39 @@ section {
   align-items: center !important;
   min-height: 15em;
   max-height: 20vw;
-  padding: 1em;
   background: color(var(--black) tint(98%));
   transition: all 0.15s ease-in-out;
-  text-align: center;
 }
-
-.st0 {
-  fill: var(--black) !important;
-}
-
-
-
-.brand-logo {
-  max-width: 10em;
-  max-height: 7.5em;
-  width: 100%;
-}
-  .overlay * {
-    fill: white !important;
+  .portfolio-item a {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+    height: 100% !important;
+    width: 100%;
+    background-image: url('../img/header-bg.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
   }
+    .brand-logo {
+      max-width: 10em !important;
+      max-height: 7.5em !important;
+      width: 100%;
+    }
+    .portfolio-item figcaption * {
+      color: var(--white);
+    }
+    .portfolio-item a:hover {
+      opacity: 1;
+    }
+
+
+
 span.divider {
   margin: 0 1em;
 }
