@@ -98,15 +98,11 @@ section {
   fill: var(--red) !important;
 }
   .portfolio-item span.port-cont {
-    background-position: 50% 50%;
-    background-size: cover !important;
     min-height: 15em;
     max-height: 20vw;
     display: block;
   }
-    @media screen and (min-width: 800px) {
-      .portfolio-item { flex: 1 0 calc(50% - 1.5em) !important;         }
-    }
+
     .portfolio-link {
       border-bottom: none !important;
       width: 100%;
@@ -126,26 +122,20 @@ section {
       align-items: flex-end !important;
     }
   }
-.portfolio-item .overlay {
+.portfolio-item {
   display: flex !important;
   flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  justify-content: center !important;
+  align-content: center !important;
+  align-items: center !important;
   min-height: 15em;
   max-height: 20vw;
   padding: 1em;
   background: color(var(--black) tint(98%));
   transition: all 0.15s ease-in-out;
+  text-align: center;
 }
-.loose-logo {
-  padding: 8vw 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center !important;
-  align-content: center !important;
-  align-items: center !important;
-}
+
 .st0 {
   fill: var(--black) !important;
 }
