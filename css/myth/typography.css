@@ -6,8 +6,20 @@
   --white: rgb(255, 255, 255);
 }
 
+body{
+  animation: fadein 0.25s ease-out;
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
 
 
+
+/*
 .wf-loading h1,
 .wf-loading h2,
 .wf-loading h3,
@@ -60,6 +72,7 @@
   opacity: 1 !important;
   transition: opacity ease-in-out 1s !important;
 }
+*/
 
 
 
