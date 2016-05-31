@@ -137,17 +137,16 @@ section {
   max-height: 20vw;
   padding: 1em;
   color: var(--white);
-  opacity: 1;
+  border: 5px solid var(--black);
   transition: all 0.15s ease-in-out;
 }
   @media screen and (min-width: 1200px) {
     .portfolio-item .overlay {
-      background: color(var(--red) alpha(100%));
-      opacity: 0;
+      background: var(--white);
     }
     .portfolio-item:hover .overlay {
       background: color(var(--red) alpha(100%));
-      opacity: 1;
+      border: 5px solid color(var(--black) alpha(0%));
     }
   }
 .loose-logo {
