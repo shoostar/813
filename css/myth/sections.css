@@ -76,12 +76,17 @@ header {
 
 /* MAIN and SECTION */
 main {
-  padding: 5em 0;
+  padding: 4em 0;
 }
-
-  @media screen and (min-width: 1200px;) {
+  body.home main {
+    padding: 4em 0 6vw;
+  }
+  @media screen and (min-width: 1200px) {
     main {
       padding: 6vw 0;
+    }
+    body.home main {
+      padding: 8vw 0 !important;
     }
   }
 section {
@@ -98,15 +103,7 @@ section {
     min-height: 15em;
     max-height: 20vw;
     display: block;
-    transform: perspective(1px) scale(1.00);
-    transition: transform 0.15s ease-in-out !important;
   }
-    @media screen and (min-width: 1200px) {
-      .portfolio-item:hover span.port-cont {
-        transform: perspective(1px) scale(1.01);
-        -webkit-backface-visibility: hidden;
-      }
-    }
     @media screen and (min-width: 800px) {
       .portfolio-item { flex: 1 0 calc(50% - 1.5em) !important;         }
     }
@@ -141,7 +138,6 @@ section {
   padding: 1em;
   color: var(--white);
   opacity: 1;
-  box-shadow: 0 0em 0.25em color(var(--black) alpha(0%));
   transition: all 0.15s ease-in-out;
 }
   @media screen and (min-width: 1200px) {
@@ -152,7 +148,6 @@ section {
     .portfolio-item:hover .overlay {
       background: color(var(--red) alpha(100%));
       opacity: 1;
-      box-shadow: 0 0.5em 1em color(var(--black) alpha(35%));
     }
   }
 .loose-logo {
