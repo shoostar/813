@@ -135,7 +135,7 @@ section {
   min-height: 15em;
   max-height: 20vw;
   padding: 1em;
-  background: var(--black);
+  background: color(var(--black) tint(98%));
   transition: all 0.15s ease-in-out;
 }
 .loose-logo {
@@ -145,6 +145,9 @@ section {
   justify-content: center !important;
   align-content: center !important;
   align-items: center !important;
+}
+.st0 {
+  fill: var(--black) !important;
 }
 
 
