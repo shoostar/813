@@ -92,62 +92,100 @@ main {
 section {
   padding: 0 0 6vw;
 }
-
-
-.projects * {
-  fill: var(--red) !important;
+.intro {
+  padding-bottom: 6vw;
 }
 .outro {
   display: flex !important;
   flex-direction: column !important;
-  justify-content: flex-end !important;
-
+  justify-content: flex-start !important;
+  text-align: right;
 }
   @media screen and (min-width: 800px) {
     .outro {
-      text-align: right;
-      align-content: flex-end !important;
-      align-items: flex-end !important;
+
+      justify-content: flex-start !important;
+      align-content: flex-end;
+      align-items: flex-end;
     }
   }
-.portfolio-item {
-  display: flex !important;
-  flex-direction: row;
-  justify-content: center !important;
-  align-content: center !important;
-  align-items: center !important;
-  min-height: 15em;
-  max-height: 20vw;
-  background: color(var(--black) tint(98%));
-  transition: all 0.15s ease-in-out;
-}
-  .portfolio-item a {
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: flex-start;
-    align-items: flex-start;
-    height: 100% !important;
-    width: 100%;
-    background-image: url('../img/header-bg.jpg');
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0;
-    transition: opacity 0.15s ease-in-out;
+  figure.portfolio-item {
+    background: color(var(--black) tint(98%));
+    margin-bottom: 1.5em;
+    position: relative;
   }
-    .brand-logo {
-      max-width: 10em !important;
-      max-height: 7.5em !important;
+    figure.portfolio-item .title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 0;
+      color: var(--white);
+      background: color(var(--black) alpha(50%));
+      height: 100%;
       width: 100%;
+      padding: 0.75em;
     }
-    .portfolio-item figcaption * {
+    figure.portfolio-item figcaption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1.5em;
+      background-image: linear-gradient(rgb(174, 131, 90), rgb(96, 57, 19));
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.15s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       color: var(--white);
     }
-    .portfolio-item a:hover {
-      opacity: 1;
+    figure.portfolio-item figcaption.koffee {
+      background-image: linear-gradient(rgb(174, 131, 90), rgb(96, 57, 19));
     }
+    figure.portfolio-item figcaption.aggam {
+      background-image: linear-gradient(rgb(161, 155, 132), rgb(66, 56, 40));
+    }
+    figure.portfolio-item figcaption.c4sauce {
+      background-image: linear-gradient(var(--red), color(var(--red) shade(25%)));
+    }
+    figure.portfolio-item figcaption.ktpqg {
+      background-image: linear-gradient(rgb(159, 34, 20), rgb(110, 36, 5));
+    }
+    figure.portfolio-item figcaption.iceberg {
+      background-image: linear-gradient(rgb(143, 147, 156), rgb(31, 32, 37));
+    }
+      figure.portfolio-item:hover figcaption {
+        opacity: 1;
+      }
+    .brand-logo {
+      max-width: 6.6666em !important;
+      max-height: 5em !important;
+      width: 100%;
+      margin: auto;
+    }
+    .brand-image {
+      max-width: 100% !important;
+    }
+    .loose-logo {
+      max-width: 6.6666em !important;
+      max-height: 5em !important;
+      width: 100%;
+      margin: auto;
+    }
+    .logo-item {
+      padding: 1.5em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+
+
+
+section.north {
+  background: var(--white);
+}
 
 
 
