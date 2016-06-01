@@ -79,7 +79,7 @@ main {
   padding: 4em 0;
 }
   body.home main {
-    padding: 4em 0 6vw;
+    padding: 4em 0 4em;
   }
   @media screen and (min-width: 1200px) {
     main {
@@ -90,10 +90,10 @@ main {
     }
   }
 section {
-  padding: 0 0 6vw;
+  padding: 0 0 4vw;
 }
 .intro {
-  padding-bottom: 6vw;
+  padding-bottom: 4em;
 }
 .outro {
   display: flex !important;
@@ -103,8 +103,6 @@ section {
 }
   @media screen and (min-width: 800px) {
     .outro {
-
-      justify-content: flex-start !important;
       align-content: flex-end;
       align-items: flex-end;
     }
