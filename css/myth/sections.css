@@ -138,6 +138,7 @@ section {
       padding: 1.5em;
       background-image: linear-gradient(rgb(174, 131, 90), rgb(96, 57, 19));
       height: 100%;
+      width: 100%;
       opacity: 0;
       transition: opacity 0.15s ease-in-out;
       display: flex;
@@ -152,7 +153,7 @@ section {
       background-image: linear-gradient(rgb(66, 56, 40), rgb(161, 155, 132));
     }
     figure.portfolio-item figcaption.c4sauce {
-      background-image: linear-gradient(color(var(--red) shade(25%)), var(--red));
+      background-image: linear-gradient(color(rgb(239, 65, 54) shade(25%)), rgb(239, 65, 54));
     }
     figure.portfolio-item figcaption.ktpqg {
       background-image: linear-gradient(rgb(10, 53, 66), rgb(51, 92, 100));
@@ -162,6 +163,12 @@ section {
     }
     figure.portfolio-item figcaption.sss {
       background-image: linear-gradient(color(rgb(132, 177, 196) shade(25%)), rgb(132, 177, 196));
+    }
+    figure.portfolio-item figcaption.jrs86 {
+      background-image: linear-gradient(color(var(--red) shade(25%)), var(--red));
+    }
+    figure.portfolio-item figcaption.north {
+      background-image: linear-gradient(rgb(38, 34, 98), rgb(28, 117, 188));
     }
       figure.portfolio-item:hover figcaption {
         opacity: 1;
@@ -176,6 +183,9 @@ section {
       left: calc(50% - 5em);
       content: '';
     }
+      .brand-logo * {
+        color: var(--white) !important;
+      }
     .brand-image {
       width: 100%;
     }
