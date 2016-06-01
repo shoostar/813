@@ -112,6 +112,12 @@ section {
     margin-bottom: 1.5em;
     position: relative;
   }
+    @media screen and (max-width: 800px) {
+      figure.portfolio-item {
+        height: 15em;
+        overflow: hidden;
+      }
+    }
     figure.portfolio-item figcaption {
       background-color: rgba(0, 0, 0, 1);
       color: var(--white);
