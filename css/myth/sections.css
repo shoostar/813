@@ -162,6 +162,7 @@ section {
       position: absolute;
       top: calc(50% - 3.75em);
       left: calc(50% - 5em);
+      content: '';
     }
     .brand-image {
       width: 100% !important;
