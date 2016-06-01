@@ -160,6 +160,9 @@ section {
     figure.portfolio-item figcaption.iceberg {
       background-image: linear-gradient(rgb(31, 32, 37), rgb(143, 147, 156));
     }
+    figure.portfolio-item figcaption.sss {
+      background-image: linear-gradient(color(rgb(132, 177, 196) shade(25%)), rgb(132, 177, 196));
+    }
       figure.portfolio-item:hover figcaption {
         opacity: 1;
       }
