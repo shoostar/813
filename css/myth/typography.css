@@ -19,7 +19,6 @@ body{
 
 
 
-/*
 .wf-loading h1,
 .wf-loading h2,
 .wf-loading h3,
@@ -32,9 +31,7 @@ body{
 .wf-loading em,
 .wf-loading a,
 .wf-loading nav,
-.wf-loading use,
-.wf-loading .project__item,
-.wf-loading .list {
+.wf-loading use {
   visibility: hidden !important;
   opacity: 0 !important;
   transition: opacity ease-in-out 1s !important;
@@ -51,9 +48,7 @@ body{
 .wf-active em,
 .wf-active a,
 .wf-active nav,
-.wf-active use,
-.wf-active .project__item,
-.wf-active .list,
+.wf-active use
 .wf-inactive h1,
 .wf-inactive h2,
 .wf-inactive h3,
@@ -66,13 +61,10 @@ body{
 .wf-inactive em,
 .wf-inactive a,
 .wf-inactive nav,
-.wf-inactive use,
-.wf-inactive .project__item,
-.wf-inactive .list {
+.wf-inactive use {
   opacity: 1 !important;
   transition: opacity ease-in-out 1s !important;
 }
-*/
 
 
 
