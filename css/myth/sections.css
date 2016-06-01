@@ -125,6 +125,9 @@ section {
     figure.portfolio-item figcaption h6 {
       color: var(--white);
     }
+    figure.portfolio-item figcaption p {
+      color: color(var(--white) alpha(75%));
+    }
       figure.portfolio-item:hover figcaption {
         background-color: rgba(0, 0, 0, 0.5);
       }
@@ -171,7 +174,7 @@ section {
       content: '';
     }
     .brand-image {
-      width: 100% !important;
+      width: 100%;
     }
       .slide-hide {
         content: '';
