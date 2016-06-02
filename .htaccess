@@ -40,7 +40,7 @@ mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
     ExpiresByType application/schema+json               "access plus 0 seconds"
     ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
     ExpiresByType application/xml                       "access plus 0 seconds"
-    ExpiresByType text/xml                              "access plus 0 seconds"
+    ExpiresByType text/xml                              "access plus 1 month"
 
   # Favicon (cannot be renamed!) and cursor images
     ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
@@ -54,6 +54,7 @@ mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
     ExpiresByType application/javascript                "access plus 1 month”
     ExpiresByType application/x-javascript              "access plus 1 year"
     ExpiresByType text/javascript                       "access plus 1 year"
+    ExpiresByType text/js                               "access plus 1 year"
 
   # Manifest files
     ExpiresByType application/manifest+json             "access plus 1 year"
@@ -65,6 +66,7 @@ mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
     ExpiresByType audio/ogg                             "access plus 1 month"
     ExpiresByType image/bmp                             "access plus 1 month"
     ExpiresByType image/gif                             "access plus 1 month"
+    ExpiresByType image/jpg                             "access plus 1 month"
     ExpiresByType image/jpeg                            "access plus 1 month"
     ExpiresByType image/png                             "access plus 1 month"
     ExpiresByType image/svg                             "access plus 1 month"
