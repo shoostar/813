@@ -1,7 +1,7 @@
 # JRS86 .htaccess
 
 # One month for most static assets
-<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico|svg)$">
 Header set Cache-Control "max-age=2628000, public"
 </filesMatch>
 
