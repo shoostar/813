@@ -50,7 +50,7 @@
           <h5>I build unique brands that distinguish themselves from their competition.</h5>
         </div>
         <figure class="portfolio-item">
-          <img class="brand-image lazy-hidden" data-src="img/projects/koffee/koffee-bg.jpg" data-effect="fadeIn" alt="Koffee House" />
+          <div class="brand-image lazy-hidden" data-bg="../img/projects/koffee/koffee-bg.jpg" data-effect="fadeIn">dang</div>
           <span class="slide-hide"><img class="brand-logo" src="img/projects/koffee/koffee-logo.svg" alt="Koffee House" /></span>
           <button class="tap hide-large">tap</button>
           <figcaption class="koffee">
@@ -163,17 +163,22 @@
 </main>
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js" defer></script>
-<script type="text/javascript">
-function downloadJSAtOnload() {
-var element = document.createElement("script");
-element.src = "js/index.js";
-document.body.appendChild(element);
-}
-if (window.addEventListener)
-window.addEventListener("load", downloadJSAtOnload, false);
-else if (window.attachEvent)
-window.attachEvent("onload", downloadJSAtOnload);
-else window.onload = downloadJSAtOnload;
+<script>
+  $.extend($.lazyLoadXT, {
+    srcAttr: 'data-bg'
+  });
+</script>
+<script>
+  function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "js/index.js";
+    document.body.appendChild(element);
+  }
+  if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+  else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+  else window.onload = downloadJSAtOnload;
 </script>
 <script>
   (function(d) {
