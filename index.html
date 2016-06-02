@@ -164,7 +164,18 @@
 </main>
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js" defer></script>
-<script src="js/index.js" defer></script>
+<script type="text/javascript">
+function downloadJSAtOnload() {
+var element = document.createElement("script");
+element.src = "js/index.js";
+document.body.appendChild(element);
+}
+if (window.addEventListener)
+window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
+</script>
 <script async="async">
   (function(d) {
     var config = {
