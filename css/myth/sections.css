@@ -292,9 +292,6 @@ footer {
 
 
 /* LOGO */
-.home-link {
-  border-bottom: none !important;
-}
 .main-logo {
   height: 1em;
   display: block;
@@ -312,40 +309,22 @@ footer {
 
 
 
-[class*="icono"] {
-  position: relative;
+.view-project {
   display: inline-block;
-  color: var(--white);
-  box-sizing: border-box;
+  color: var(--white) !important;
+  border-bottom-color: var(--white) !important;
 }
-[class*="icono"]:after,
-[class*="icono"]:before {
-  content: "";
-  box-sizing: border-box;
-}
-[class*="icono-arrow1"] {
-  width: 0.5em;
-  height: 0.5em;
-  border-width: 0.15em 0.15em 0 0;
-  border-style: solid;
-  margin-left: 2em;
-  transition: margin-left 0.15s ease-in-out;
-}
-@media screen and (min-width: 1200px) {
-  .portfolio-link:hover [class*="icono-arrow1"] {
-    margin-left: 3em;
+  @media screen and (min-width: 1200px) {
+    .view-project {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-indent: -9999px;
+    }
   }
-}
-
-[class*="icono-arrow1"][class*="-left"] {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-[class*="icono-arrow1"][class*="-right"] {
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-          right: 1em;
-}
 
 
 
@@ -365,6 +344,7 @@ footer {
 }
 .glitch-btn {
   position: relative;
+  border-bottom: none !important;
 }
 .glitch-btn:hover {
   animation: wiggle 0.357s infinite linear alternate-reverse;
