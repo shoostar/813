@@ -153,7 +153,7 @@ section {
       background-image: linear-gradient(rgb(66, 56, 40), rgb(161, 155, 132));
     }
     figure.portfolio-item figcaption.c4sauce {
-      background-image: linear-gradient(color(rgb(239, 65, 54) shade(25%)), rgb(239, 65, 54));
+      background-image: linear-gradient(color(rgb(239, 65, 54) shade(50%)), rgb(239, 65, 54));
     }
     figure.portfolio-item figcaption.ktpqg {
       background-image: linear-gradient(rgb(10, 53, 66), rgb(51, 92, 100));
@@ -162,10 +162,10 @@ section {
       background-image: linear-gradient(rgb(31, 32, 37), rgb(143, 147, 156));
     }
     figure.portfolio-item figcaption.sss {
-      background-image: linear-gradient(color(rgb(132, 177, 196) shade(25%)), rgb(132, 177, 196));
+      background-image: linear-gradient(color(rgb(132, 177, 196) shade(50%)), rgb(132, 177, 196));
     }
     figure.portfolio-item figcaption.jrs86 {
-      background-image: linear-gradient(color(var(--red) shade(25%)), var(--red));
+      background-image: linear-gradient(color(var(--red) shade(50%)), var(--red));
     }
     figure.portfolio-item figcaption.north {
       background-image: linear-gradient(rgb(38, 34, 98), rgb(28, 117, 188));
