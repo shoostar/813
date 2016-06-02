@@ -163,30 +163,9 @@
   </section>
 </main>
 
-<script>
-  function downloadJSAtOnload() {
-    var element = document.createElement("script");
-    element.src = "//code.jquery.com/jquery.min.js";
-    document.body.appendChild(element);
-  }
-  if (window.addEventListener)
-    window.addEventListener("load", downloadJSAtOnload, false);
-  else if (window.attachEvent)
-    window.attachEvent("onload", downloadJSAtOnload);
-  else window.onload = downloadJSAtOnload;
-</script>
-<script async="async">
-  function downloadJSAtOnload() {
-    var element = document.createElement("script");
-    element.src = "index.js";
-    document.body.appendChild(element);
-  }
-  if (window.addEventListener)
-    window.addEventListener("load", downloadJSAtOnload, false);
-  else if (window.attachEvent)
-    window.attachEvent("onload", downloadJSAtOnload);
-  else window.onload = downloadJSAtOnload;
-</script>
+<script src="//code.jquery.com/jquery.min.js"></script>
+
+<script async="async" src="js/index.js"></script>
 <script async="async">
   (function(d) {
     var config = {
