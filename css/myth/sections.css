@@ -15,7 +15,7 @@ header {
     position: fixed;
     z-index: 2000;
     min-height: 4em;
-    height: 8vw;
+    height: 12vw;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -76,17 +76,14 @@ header {
 
 /* MAIN and SECTION */
 main {
-  padding: 4em 0;
+  padding: 8em 0 4em;
 }
-  body.home main {
-    padding: 4em 0 4em;
-  }
   @media screen and (min-width: 1200px) {
     main {
       padding: 6vw 0;
     }
     body.home main {
-      padding: 8vw 0 !important;
+      padding: 12vw 0 8vw !important;
     }
   }
 section {
