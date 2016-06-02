@@ -441,3 +441,23 @@ footer {
   90% { clip: rect(44px, 9999px, 91px, 0); }
   100% { clip: rect(24px, 9999px, 90px, 0); }
 }
+
+
+
+
+.view-project {
+  display: inline-block;
+  color: var(--white) !important;
+  border-bottom-color: var(--white) !important;
+}
+  @media screen and (min-width: 1200px) {
+    .view-project {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-indent: -9999px;
+    }
+  }
