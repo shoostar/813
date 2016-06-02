@@ -174,8 +174,8 @@ section {
       position: relative;
       top: 0;
       left: 0;
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      min-height: 100%;
     }
       .slide-hide {
         background: color(var(--black) shade(25%) alpha(65%));

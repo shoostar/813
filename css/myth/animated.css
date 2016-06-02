@@ -9,23 +9,22 @@
  */
 
 .animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-delay:20s;
+  animation-duration: 1s !important;
+  animation-fill-mode: both !important;
 }
 
 
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  0% { opacity: 0 !important; }
+  100% { opacity: 1 !important; }
 }
-.fadeIn { animation-name: fadeIn; }
+.fadeIn { animation-name: fadeIn !important; }
 
 
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translate3d(0, 12.5%, 0); }
-  to { opacity: 1; transform: none; }
+  0% { opacity: 0; transform: translate3d(0, 12.5%, 0) !important; }
+  100% { opacity: 1; transform: none !important; }
 }
-.fadeInUp { animation-name: fadeInUp; }
+.fadeInUp { animation-name: fadeInUp !important; }

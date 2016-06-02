@@ -15,6 +15,11 @@
       opacity: 0;
     }
     .lazy-loaded {
+      -webkit-transition: opacity 1s;
+      -moz-transition: opacity 1s;
+      -ms-transition: opacity 1s;
+      -o-transition: opacity 1s;
+      transition: opacity 1s;
       opacity: 1;
     }
   </style>
@@ -23,7 +28,7 @@
       var $el = $(this);
       $el
         .removeClass('lazy-hidden')
-        .addClass('animated'));
+        .addClass(' animated ') + (' fadeIn '));
     };
   </script>
 </head>
@@ -55,7 +60,7 @@
           <h5>I build unique brands that distinguish themselves from their competition.</h5>
         </div>
         <figure class="portfolio-item">
-          <img class="brand-image lazy-hidden fadeIn" data-src="img/projects/koffee/koffee-bg.jpg" alt="Koffee House" />
+          <img class=" animated brand-image lazy-hidden" data-src="img/projects/koffee/koffee-bg.jpg" data-effect="fadeIn" alt="Koffee House" />
           <span class="slide-hide"><img class="brand-logo" src="img/projects/koffee/koffee-logo.svg" alt="Koffee House" /></span>
           <button class="tap hide-large">tap</button>
           <figcaption class="koffee">
