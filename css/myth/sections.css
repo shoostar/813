@@ -114,7 +114,7 @@ section {
   }
     @media screen and (max-width: 800px) {
       figure.portfolio-item {
-        height: 15em;
+        height: 56.25vw;
         overflow: hidden;
       }
     }
@@ -173,31 +173,31 @@ section {
       figure.portfolio-item:hover figcaption {
         opacity: 1;
       }
-    .brand-logo {
-      max-width: 10em !important;
-      max-height: 7.5em !important;
-      width: 100%;
-      margin: auto;
-      position: absolute;
-      top: calc(50% - 3.75em);
-      left: calc(50% - 5em);
-      content: '';
-    }
-      .brand-logo * {
-        color: var(--white) !important;
-      }
     .brand-image {
+      position: relative;
+      top: 0;
+      left: 0;
       width: 100%;
+      min-height: 100%;
+      overflow: hidden;
     }
       .slide-hide {
-        content: '';
-        display: block !important;
-        background: color(var(--black) alpha(50%));
+        background: color(var(--black) shade(25%) alpha(65%));
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      .brand-logo {
+        max-width: 10em !important;
+        max-height: 7.5em !important;
+        width: 100%;
+        margin: auto;
       }
     .loose-logo {
       max-width: 6.6666em !important;
