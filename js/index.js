@@ -19,58 +19,29 @@ $('h1,h2,h3,h4,h5,h6,li,p').each(function() {
 
 
 
-// Lazy loading
-function isElementInViewport (el) {
-
-    //special bonus for those using jQuery
-    if (typeof jQuery === "function" && el instanceof jQuery) {
-        el = el[0];
-    }
-
-    var rect = el.getBoundingClientRect();
-
-    return (
-        rect.top >= 0 &&
-        //rect.left >= 0 &&
-        rect.top <= ((window.innerHeight || document.documentElement.clientHeight) + preloadMargin) //&& /*or $(window).height() */
-        //rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
-    );
+// Lazy load backgrounds
+function isElementInViewport(e) {
+  "function" == typeof jQuery && e instanceof jQuery && (e = e[0]);
+  var t = e.getBoundingClientRect();
+  return t.top >= 0 && t.top <= (window.innerHeight || document.documentElement.clientHeight) + preloadMargin;
 }
-
-var toLoad = document.querySelectorAll('[data-src]')
-var toLoadLength = toLoad.length;
-var nextI = 0;
-var preloadMargin = 200; // <- decides how far ahed we want to load images
-
-//console.log('setting up', toLoad);
 function checkImages(e) {
-  var currEl;
-  for(;nextI<toLoadLength;nextI++) {
-    currEl = toLoad[nextI];
-    //console.log(nextI, currEl);
-    if(isElementInViewport(currEl)) {
-      (function(el) {
-        //setTimeout(function() {
-          var img = document.createElement('img');
-          img.onload = function(loadEvent) {
-            //console.log('load img',loadEvent, this);
-            el.style.backgroundImage = 'url('+this.src+')';
-            el.className += " loaded";
-            img = undefined;
-            el = undefined;
-          };
-          img.src = el.getAttribute('data-src');
-         //console.log(img); //document.documentElement.body.appendChild(img);
-        //}, 0);
-      })(currEl);
-    } else {
-      //nextI--;
-      break;
-    }
-  }
+  for (var t; toLoadLength > nextI && (t = toLoad[nextI], isElementInViewport(t)); nextI++) ! function(e) {
+    var t = document.createElement("img");
+    t.onload = function(n) {
+      e.style.backgroundImage = "url(" + this.src + ")", e.className += " loaded", t = void 0, e = void 0
+    }, t.src = e.getAttribute("data-src")
+  }(t)
 }
-checkImages();
-$(window).on('scroll', checkImages);
+var toLoad = document.querySelectorAll("[data-src]"),
+  toLoadLength = toLoad.length,
+  nextI = 0,
+  preloadMargin = 469;
+checkImages(), $(window).on("scroll", checkImages);
+
+$("img").onload({
+    failure_limit : 10
+});
 
 
 
