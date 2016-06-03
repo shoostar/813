@@ -9,16 +9,7 @@
   <link rel="stylesheet" href="css/stylesheet.css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <style>
-    /* to prevent flickering */
-    .lazy-hidden {
-      opacity: 0;
-    }
-    .lazy-loaded {
-      -webkit-transition: opacity 1s;
-      -moz-transition: opacity 1s;
-      -ms-transition: opacity 1s;
-      -o-transition: opacity 1s;
-      transition: opacity 1s;
+    .loaded {
       opacity: 1;
     }
   </style>
@@ -50,7 +41,7 @@
           <h5>I build unique brands that distinguish themselves from their competition.</h5>
         </div>
         <figure class="portfolio-item">
-          <div class="brand-image lazy-hidden" data-bg="../img/projects/koffee/koffee-bg.jpg" data-effect="fadeIn">dang</div>
+          <div class="brand-image lazy" data-src="img/projects/koffee/koffee-bg.jpg"></div>
           <span class="slide-hide"><img class="brand-logo" src="img/projects/koffee/koffee-logo.svg" alt="Koffee House" /></span>
           <button class="tap hide-large">tap</button>
           <figcaption class="koffee">
@@ -62,7 +53,7 @@
           </figcaption>
         </figure>
         <figure class="portfolio-item">
-          <img class="brand-image lazy-hidden" data-src="img/projects/logos/aggam-bg.jpg" alt="Mountain Stone" />
+          <div class="brand-image lazy" data-src="img/projects/logos/aggam-bg.jpg"></div>
           <span class="slide-hide"><img class="brand-logo" src="img/projects/logos/aggam-logo.svg" alt="Mountain Stone" /></span>
           <button class="tap hide-large">tap</button>
           <figcaption class="aggam">
@@ -74,7 +65,7 @@
           </figcaption>
         </figure>
         <figure class="portfolio-item">
-          <img class="brand-image lazy-hidden" data-src="img/projects/logos/c4-bg.jpg" alt="C4 Sauce" />
+          <div class="brand-image lazy" data-src="img/projects/logos/c4-bg.jpg"></div>
           <span class="slide-hide"><img class="brand-logo" src="img/projects/logos/c4-logo.svg" alt="C4 Sauce" /></span>
           <button class="tap hide-large">tap</button>
           <figcaption class="c4sauce">
@@ -86,7 +77,7 @@
           </figcaption>
         </figure>
         <figure class="portfolio-item">
-          <img class="brand-image lazy-hidden" data-src="img/projects/north/north-bg.jpg" alt="north75" />
+          <div class="brand-image lazy" data-src="img/projects/north/north-bg.jpg"></div>
           <span class="slide-hide"><img class="brand-logo" src="img/projects/north/north-logo.svg" alt="north75" /></span>
           <button class="tap hide-large">tap</button>
           <figcaption class="north">
@@ -100,7 +91,7 @@
       </div>
       <div class="w--1of2 column">
         <figure class="portfolio-item">
-          <img class="brand-image lazy-hidden" data-src="img/projects/logos/ktpqg-bg.jpg" alt="Keeping The Piece Quilter's Guild" />
+          <div class="brand-image lazy" data-src="img/projects/logos/ktpqg-bg.jpg"></div>
           <span class="slide-hide"><img class="brand-logo" src="img/projects/logos/ktpqg-logo.svg" alt="Keeping The Piece Quilter's Guild" /></span>
           <button class="tap hide-large">tap</button>
           <figcaption class="ktpqg">
@@ -112,7 +103,7 @@
           </figcaption>
         </figure>
         <figure class="portfolio-item">
-          <img class="brand-image lazy-hidden" data-src="img/projects/logos/iceberg-bg.jpg" alt="Iceberg Computers" />
+          <div class="brand-image lazy" data-src="img/projects/logos/iceberg-bg.jpg"></div>
           <span class="slide-hide"><img class="brand-logo" src="img/projects/logos/iceberg.svg" alt="Iceberg Computers" /></span>
           <button class="tap hide-large">tap</button>
           <figcaption class="iceberg">
@@ -124,7 +115,7 @@
           </figcaption>
         </figure>
         <figure class="portfolio-item">
-          <img class="brand-image lazy-hidden" data-src="img/projects/logos/sss-bg.jpg" alt="Superior Styling Salon" />
+          <div class="brand-image lazy" data-src="img/projects/logos/sss-bg.jpg"></div>
           <span class="slide-hide"><img class="brand-logo" src="img/projects/logos/sss-logo.svg" alt="Superior Styling Salon" /></span>
           <button class="tap hide-large">tap</button>
           <figcaption class="sss">
@@ -136,7 +127,7 @@
           </figcaption>
         </figure>
         <figure class="portfolio-item">
-          <img class="brand-image lazy-hidden" data-src="img/header-bg.jpg" alt="JRS86" />
+          <div class="brand-image lazy" data-src="img/header-bg.jpg"></div>
           <span class="slide-hide"><img class="brand-logo" src="img/jrs86-logo.svg" alt="JRS86" /></span>
           <button class="tap hide-large">tap</button>
           <figcaption class="jrs86">
@@ -163,11 +154,6 @@
 </main>
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js" defer></script>
-<script>
-  $.extend($.lazyLoadXT, {
-    srcAttr: 'data-bg'
-  });
-</script>
 <script>
   function downloadJSAtOnload() {
     var element = document.createElement("script");

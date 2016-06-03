@@ -105,7 +105,6 @@ section {
     }
   }
   figure.portfolio-item {
-    background: color(var(--black) tint(98%));
     margin-bottom: 1.5em;
     position: relative;
     display: block;
@@ -182,7 +181,8 @@ section {
       top: 0;
       left: 0;
       display: block;
-      content: '';
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
     }
       .slide-hide {
         background: color(var(--black) shade(25%) alpha(65%));
