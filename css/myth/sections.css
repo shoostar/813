@@ -220,6 +220,25 @@ section {
 
 
 
+    /* TAP!!! */
+    button.tap {
+      width: 3em;
+      height: 3em;
+      border-radius: 1.5em;
+      background: none;
+      border: 0.25em dashed var(--white);
+      color: var(--white);
+      position: absolute;
+      top: 1.5em;
+      right: 1.5em;
+      display: block;
+      text-align: center !important;
+      padding: 0;
+      opacity: 0.5;
+    }
+
+
+
     /* LOGO */
     .main-logo {
       height: 1em;
