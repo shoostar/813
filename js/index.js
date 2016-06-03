@@ -19,12 +19,13 @@ $('h1,h2,h3,h4,h5,h6,li,p').each(function() {
 
 
 
-// Lazy load backgrounds
+// Lazy load background images
 function isElementInViewport(e) {
   "function" == typeof jQuery && e instanceof jQuery && (e = e[0]);
   var t = e.getBoundingClientRect();
   return t.top >= 0 && t.top <= (window.innerHeight || document.documentElement.clientHeight) + preloadMargin;
 }
+
 function checkImages(e) {
   for (var t; toLoadLength > nextI && (t = toLoad[nextI], isElementInViewport(t)); nextI++) ! function(e) {
     var t = document.createElement("img");
@@ -33,6 +34,7 @@ function checkImages(e) {
     }, t.src = e.getAttribute("data-src")
   }(t)
 }
+
 var toLoad = document.querySelectorAll("[data-src]"),
   toLoadLength = toLoad.length,
   nextI = 0,

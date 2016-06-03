@@ -284,6 +284,13 @@ span.divider {
 
 
 
+/* Articles */
+article header {
+  margin-bottom: 5.3125em;
+}
+
+
+
 /* FOOTER */
 footer {
   padding: 0 0 2em;
