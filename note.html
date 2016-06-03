@@ -9,16 +9,7 @@
   <link rel="stylesheet" href="css/stylesheet.css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <style>
-    /* to prevent flickering */
-    .lazy-hidden {
-      opacity: 0;
-    }
-    .lazy-loaded {
-      -webkit-transition: opacity 1s;
-      -moz-transition: opacity 1s;
-      -ms-transition: opacity 1s;
-      -o-transition: opacity 1s;
-      transition: opacity 1s;
+    .loaded {
       opacity: 1;
     }
   </style>
@@ -30,8 +21,7 @@
   <div class="row">
     <div class="w--1of1">
       <nav>
-        <a href="index.html">projects</a>
-        <a href="about.html">about</a>
+        <a href="notes.html">&larr; back to notes</a>
       </nav>
       <a class="home-link glitch-btn" href="index.html">
         <div class="glitch" data-text="JRS86">
@@ -48,15 +38,14 @@
       <div class="w--2of3 pinned">
         <header>
           <h2>On finishing my own site</h2>
-          <p>2 years and countless iterations later</p>
           <small>May 23, 2016 &bull; Thoughts</small>
         </header>
         <p>I'm kind of a 'Jack of all trades' when it comes to creative work, but there are a few things that I'm really good at. Besides the obvious (designing logos, packaging, printed collateral), I'm also a solid UI designer, aspiring typographist, and I'm great at helping business owners brainstorm new ideas.</p>
         <p>You can download my shit <a href="jons-shit.pdf">right here</a> <span class="resume">.PDF</span></p>
-        <h4>colophon</h4>
+        <h4>building the structure</h4>
         <p>This website is powered by some very simple, yet beautifully-constructed tools. <a href="#">Kirby CMS</a> keeps the content flowing in the right places, and <strong class="pro">ACUMIN<sup>PRO</sup></strong> from <a href="#">Adobe TypeKit</a> makes it readable.</p>
         <p>If you'd like to dig a little bit deeper into the code, feel free to check out how I've set up the <a href="grid.html">grid</a>, look at all the <a href="elements.html">elements</a>, or just fork the whole project from my <a href="#">Github</a> repo.</p>
-        <h4>copyright</h4>
+        <h4>controlling content</h4>
         <p>All of my work is either copyrighted by yours truly, or by the clients that I've worked for. One way or the other, it doesn't belong to you, so don't be a dick and steal it.</p>
       </div>
     </article>
@@ -64,17 +53,17 @@
 </main>
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js" defer></script>
-<script type="text/javascript">
-function downloadJSAtOnload() {
-var element = document.createElement("script");
-element.src = "js/index.js";
-document.body.appendChild(element);
-}
-if (window.addEventListener)
-window.addEventListener("load", downloadJSAtOnload, false);
-else if (window.attachEvent)
-window.attachEvent("onload", downloadJSAtOnload);
-else window.onload = downloadJSAtOnload;
+<script>
+  function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "js/index.js";
+    document.body.appendChild(element);
+  }
+  if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+  else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+  else window.onload = downloadJSAtOnload;
 </script>
 <script>
   (function(d) {

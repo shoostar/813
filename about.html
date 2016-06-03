@@ -9,16 +9,7 @@
   <link rel="stylesheet" href="css/stylesheet.css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <style>
-    /* to prevent flickering */
-    .lazy-hidden {
-      opacity: 0;
-    }
-    .lazy-loaded {
-      -webkit-transition: opacity 1s;
-      -moz-transition: opacity 1s;
-      -ms-transition: opacity 1s;
-      -o-transition: opacity 1s;
-      transition: opacity 1s;
+    .loaded {
       opacity: 1;
     }
   </style>
@@ -45,7 +36,7 @@
 <main>
   <section>
     <div class="row">
-      <div class="w--1of2 pinned">
+      <div class="w--2of3 pinned">
         <h2>a little about me</h2>
         <p>I'm kind of a 'Jack of all trades' when it comes to creative work, but there are a few things that I'm really good at. Besides the obvious (designing logos, packaging, printed collateral), I'm also a solid UI designer, aspiring typographist, and I'm great at helping business owners brainstorm new ideas.</p>
         <p>You can download my shit <a href="jons-shit.pdf">right here</a> <span class="resume">.PDF</span></p>
@@ -60,17 +51,17 @@
 </main>
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js" defer></script>
-<script type="text/javascript">
-function downloadJSAtOnload() {
-var element = document.createElement("script");
-element.src = "js/index.js";
-document.body.appendChild(element);
-}
-if (window.addEventListener)
-window.addEventListener("load", downloadJSAtOnload, false);
-else if (window.attachEvent)
-window.attachEvent("onload", downloadJSAtOnload);
-else window.onload = downloadJSAtOnload;
+<script>
+  function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "js/index.js";
+    document.body.appendChild(element);
+  }
+  if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+  else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+  else window.onload = downloadJSAtOnload;
 </script>
 <script>
   (function(d) {
