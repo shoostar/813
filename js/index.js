@@ -36,12 +36,8 @@ function checkImages(e) {
 var toLoad = document.querySelectorAll("[data-src]"),
   toLoadLength = toLoad.length,
   nextI = 0,
-  preloadMargin = 469;
+  preloadMargin = 0;
 checkImages(), $(window).on("scroll", checkImages);
-
-$("img").onload({
-    failure_limit : 10
-});
 
 
 
