@@ -24,6 +24,7 @@ function lazyLoadBg(el, imageSource) {
     load: function() {
       $(this).remove();
       $(el).css('backgroundImage', 'url(' + imageSource + ')');
+      $(el).css('opacity', '1');
     },
     error: function() {
       $(this).remove();
