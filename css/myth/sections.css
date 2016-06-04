@@ -182,8 +182,7 @@ section {
       top: 0;
       left: 0;
       display: block;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
+      
     }
       .slide-hide {
         background: color(var(--black) shade(25%) alpha(65%));
@@ -254,6 +253,7 @@ section {
         position: sticky;
         top: 1em;
         margin-bottom: 9em;
+        box-shadow: 5px 5px 5px color(var(--black) alpha(50%));
       }
     }
 
