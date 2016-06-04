@@ -203,20 +203,22 @@ section {
         width: 100%;
         margin: auto;
       }
-    .loose-logo {
-      max-width: 6.6666em !important;
-      max-height: 5em !important;
-      width: 100%;
-      margin: auto;
-    }
-    .logo-item {
-      padding: 1.5em;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-    }
+      .view-project {
+        display: inline-block;
+        color: var(--white) !important;
+        border-bottom-color: var(--white) !important;
+      }
+        @media screen and (min-width: 1200px) {
+          .view-project {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            text-indent: -9999px;
+          }
+        }
 
 
 
@@ -257,27 +259,23 @@ section {
 
 
 
-    .view-project {
-      display: inline-block;
-      color: var(--white) !important;
-      border-bottom-color: var(--white) !important;
-    }
-      @media screen and (min-width: 1200px) {
-        .view-project {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          display: block;
-          text-indent: -9999px;
-        }
-      }
-
-
-
+/* north75 styles */
 section.north {
   background: var(--white);
+}
+.loose-logo {
+  max-width: 6.6666em !important;
+  max-height: 5em !important;
+  width: 100%;
+  margin: auto;
+}
+.logo-item {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 
