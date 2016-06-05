@@ -153,7 +153,7 @@ section {
       background-image: linear-gradient(rgb(66, 56, 40), rgb(161, 155, 132));
     }
     figure.portfolio-item figcaption.c4sauce {
-      background-image: linear-gradient(color(rgb(239, 65, 54) shade(50%)), rgb(239, 65, 54));
+      background-image: linear-gradient(rgb(232, 44, 12), rgb(255, 83, 13));
     }
     figure.portfolio-item figcaption.ktpqg {
       background-image: linear-gradient(rgb(10, 53, 66), rgb(51, 92, 100));
@@ -344,6 +344,7 @@ footer {
 }
 .glitch-btn:hover {
   animation: wiggle 0.357s infinite linear alternate-reverse;
+  text-shadow: 3px -6px 0 color(rgb(0, 178, 54) alpha(8.13%)), -6px 8px 0 color(rgb(62, 57, 191) alpha(8.13%));
 }
 .glitch-btn:hover:after {
   content: ':̪̺̠̺͗ͨ̋ͩ͗:̛͇̱̥̥̙̎͆̑ͮ̐͢:̷̲ͮ̃́̅ͦ̔͐̆:̴͈͖̮̪̗̈́̆̀:̨̙̗̺̞̥͗̐ͫ:̗̰̜̟̮̦̉̂' !important;
@@ -351,9 +352,10 @@ footer {
   position: absolute;
   left: 0.5em;
   top: -0.5em;
-  color: color(var(--red) alpha(50%));
+  color: color(var(--red) alpha(21.6%));
   opacity: 1;
-  animation: glitch-anim-1 0.357s infinite linear alternate-reverse;
+  clip: rect(44px, 50px, 56px, 0);
+  animation: glitch-anim-1 0.906s infinite linear alternate;
 }
 .glitch-btn:hover .glitch {
   color: var(--red);
