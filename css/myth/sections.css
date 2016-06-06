@@ -1,7 +1,8 @@
 /* HEADER */
 header {
-  padding-top: 1em;
+  padding-top: 1.25em;
   padding-bottom: 0;
+  height: 3em;
 }
   header .w--1of1 {
     display: flex;
@@ -14,8 +15,6 @@ header {
     background: color(var(--black) tint(95%));
     position: fixed;
     z-index: 2000;
-    min-height: 4em;
-    height: 12vw;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,12 +23,12 @@ header {
     align-items: center !important;
     transition: height 0.25s ease-in-out;
   }
-    @media screen and (min-width: 800px) {
-      .shrink {
-        height: 4vw !important;
-      }
+    @media screen and (min-width: 1200px) {
       header.home {
-        min-height: auto;
+        height: 10em;
+      }
+      .shrink {
+        height: 3em !important;
       }
     }
   header.projects {
@@ -83,7 +82,7 @@ main {
       padding: 6vw 0;
     }
     body.home main {
-      padding: 12vw 0 8vw !important;
+      padding: 10em 0 4em !important;
     }
   }
 section {
