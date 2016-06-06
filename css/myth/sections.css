@@ -341,10 +341,11 @@ footer {
 .glitch-btn {
   position: relative;
   border-bottom: none !important;
+  z-index: 1000;
+  display: inline-block;
 }
 .glitch-btn:hover {
-  animation: wiggle 0.357s infinite linear alternate-reverse;
-  text-shadow: 3px -6px 0 color(rgb(0, 178, 54) alpha(8.13%)), -6px 8px 0 color(rgb(62, 57, 191) alpha(8.13%));
+  animation: wiggle 0.357s linear alternate-reverse;
 }
 .glitch-btn:hover:after {
   content: ':̪̺̠̺͗ͨ̋ͩ͗:̛͇̱̥̥̙̎͆̑ͮ̐͢:̷̲ͮ̃́̅ͦ̔͐̆:̴͈͖̮̪̗̈́̆̀:̨̙̗̺̞̥͗̐ͫ:̗̰̜̟̮̦̉̂' !important;
@@ -352,10 +353,10 @@ footer {
   position: absolute;
   left: 0.5em;
   top: -0.5em;
-  color: color(var(--red) alpha(21.6%));
+  color: color(var(--red) alpha(8.13%));
   opacity: 1;
   clip: rect(44px, 50px, 56px, 0);
-  animation: glitch-anim-1 0.906s infinite linear alternate;
+  animation: glitch-anim-1 0.906s linear alternate;
 }
 .glitch-btn:hover .glitch {
   color: var(--red);
@@ -371,20 +372,21 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 0;
 }
 .glitch-btn:hover .glitch::before {
   left: -2px;
   text-shadow: -1px 0 var(--red);
   background: color(var(--black) tint(95%));
   clip: rect(44px, 50px, 56px, 0);
-  animation: glitch-anim-1 0.86s infinite linear alternate-reverse;
+  animation: glitch-anim-1 0.86s linear alternate-reverse;
 }
 .glitch-btn:hover .glitch::after {
   left: -2px;
   text-shadow: 1px 0 var(--red);
   background: color(var(--black) tint(95%));
   clip: rect(44px, 50px, 56px, 0);
-  animation: glitch-anim-2 1.12s infinite linear alternate-reverse;
+  animation: glitch-anim-2 1.12s linear alternate-reverse;
 }
 @keyframes glitch-anim-1 {
   0% { clip: rect(48px, 9999px, 36px, 0); }
