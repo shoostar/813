@@ -122,3 +122,9 @@ $(function() {
 	});
 
 });
+
+
+
+$(".modal").on("click", function() {
+  $("main").toggleClass("open");
+});
