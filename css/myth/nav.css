@@ -5,7 +5,7 @@ nav {
   nav a {
     display: inline-block;
     border-bottom: none !important;
-    margin-right: 1em;
+    margin-left: 1em;
     color: color(var(--black) alpha(100%)) !important;
   }
     nav a:hover {
