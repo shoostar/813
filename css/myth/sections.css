@@ -359,7 +359,7 @@ footer {
   z-index: -100;
   position: absolute;
   left: 0.5em;
-  top: -0.5em;
+  top: -0.25em;
   color: color(var(--red) alpha(8.13%));
   opacity: 1;
   clip: rect(44px, 50px, 56px, 0);
