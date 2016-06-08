@@ -151,7 +151,7 @@ p, ul, ol, dl, blockquote, strong, pre, code {
   line-height: 1.625;
 }
 pre, code {
-  font-family: "source-code-pro", sans-serif;
+  font-family: "inconsolata", monospace;
   background: color(var(--black) tint(90%));
   border-radius: 0.125rem;
   overflow-wrap: break-word !important;
