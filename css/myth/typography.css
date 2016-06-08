@@ -292,3 +292,41 @@ table {
 .text-right { text-align: right !important; }
 .topless { margin-top: 0 !important; }
 .bottomless { margin-bottom: 0 !important; }
+
+
+
+/* ICONS */
+[class*="icono"] {
+  position: relative;
+  display: inline-block;
+  color: var(--white);
+  box-sizing: border-box;
+}
+[class*="icono"]:after,
+[class*="icono"]:before {
+  content: "";
+  box-sizing: border-box;
+}
+[class*="icono-arrow1"] {
+  width: 0.5em;
+  height: 0.5em;
+  border-width: 0.15em 0.15em 0 0;
+  border-style: solid;
+  margin-left: 2em;
+  transition: margin-left 0.15s ease-in-out;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-link:hover [class*="icono-arrow1"] {
+    margin-left: 3em;
+  }
+}
+
+[class*="icono-arrow1"][class*="-left"] {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+[class*="icono-arrow1"][class*="-right"] {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+          right: 1em;
+}
