@@ -241,8 +241,12 @@ span.divider {
     left: 0;
   }
 .resume {
-  color: color(var(--black) tint(81.3%));
+  display: inline-block;
 }
+  .resume::after {
+    content: '.PDF';
+    color: color(var(--black) tint(81.3%));
+  }
 
 
 

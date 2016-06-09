@@ -183,7 +183,7 @@ a:link, a:visited {
   color: var(--black);
   transition: all ease-in-out 0.15s !important;
   text-decoration: none;
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid color(var(--black) alpha(25%));
 }
   a:hover, a:focus, a:active {
     color: color(var(--black) tint(50%));
