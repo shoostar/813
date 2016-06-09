@@ -2,11 +2,11 @@
 $(document).on("scroll", function(){
   if
     ($(document).scrollTop() > 5){
-    $(".homie").addClass("shrink");
+    $(".main-nav").addClass("shrink");
   }
   else
   {
-    $(".homie").removeClass("shrink");
+    $(".main-nav").removeClass("shrink");
   }
 });
 
@@ -121,10 +121,4 @@ $(function() {
 		}
 	});
 
-});
-
-
-
-$(".modal").on("click", function() {
-  $("main").toggleClass("open");
 });

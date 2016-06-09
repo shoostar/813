@@ -6,7 +6,7 @@
     align-content: flex-start;
     align-items: center;
   }
-  header.home {
+  header {
     background: color(var(--black) tint(95%));
     position: fixed;
     z-index: 2000;
@@ -15,75 +15,28 @@
     padding-top: 1.375em;
     display: flex;
     flex-direction: column;
-    justify-content: center !important;
-    align-content: center !important;
-    align-items: center !important;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     transition: height 0.25s ease-in-out;
   }
     @media screen and (min-width: 1200px) {
-      header.home {
-        height: 10em;
+      header.main-nav {
+        height: 8em;
       }
       .shrink {
         height: 3em !important;
       }
     }
-  header.projects {
-    background: color(var(--black) alpha(50%));
-    min-height: 20em;
-    height: 81.3%;
-    padding-bottom: 0em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between !important;
-    align-content: flex-start !important;
-    align-items: flex-start !important;
-    color: var(--white);
-    position: relative;
-    z-index: 1;
-  }
-    header.projects .w--1of1 {
-      align-items: flex-end;
-    }
-    header.projects h2 {
-      color: var(--white);
-      display: inline-block;
-      margin-top: 0;
-    }
-  body.error header {
-    height: 100%;
-    max-height: 100vh;
-    background: url('../img/profile-bg.jpg') center center no-repeat;
-    background-size: cover;
-    color: var(--white);
-    padding-bottom: 0em;
-  }
-    body.error header svg.main-logo use {
-      fill: var(--white) !important;
-    }
-    body.error header a {
-      color: color(var(--black) tint(75%));
-    }
-      body.error header a:hover {
-        color: var(--red);
-      }
 
 
 
 /* MAIN and SECTION */
 main {
-  padding: 8em 0 5em;
+  padding: 8em 0 0;
 }
-  @media screen and (min-width: 1200px) {
-    main {
-      padding: 5em 0;
-    }
-    body.home main {
-      padding: 10em 0 5em !important;
-    }
-  }
 section {
-  padding: 0 0 4vw;
+  padding: 0 0 5em;
 }
 .intro {
   padding-bottom: 4vw;
@@ -418,97 +371,4 @@ footer {
   80% { clip: rect(54px, 9999px, 16px, 0); }
   90% { clip: rect(44px, 9999px, 91px, 0); }
   100% { clip: rect(24px, 9999px, 90px, 0); }
-}
-
-
-
-/* Modal */
-.accelerate, .open-text, .x-out {
-  backface-visibility: hidden;
-  perspective: 1000px;
-  transform: translateZ(0);
-}
-
-.text {
-  color: #ccc;
-  width: 60%;
-  margin: 0 auto;
-}
-
-.modal {
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  position: relative;
-  background: var(--red);
-  padding: 10px 15px;
-  display: inline-block;
-  margin: 0 auto;
-  display: table;
-  color: #250202;
-  border-radius: 1px;
-  cursor: pointer;
-  transition: 0.5s all cubic-bezier(0.23, 1, 0.32, 1);
-}
-.modal:hover {
-  background: color(var(--black) tint(90%));
-}
-
-.open-text {
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  z-index: 5000;
-  top: 17px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  font-size: 0.3333em;
-}
-
-.x-out {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  right: 1px;
-  top: -20px;
-  fill: #555;
-}
-
-.open .modal {
-  transform: scale(3) translateY(-50px);
-  background: white;
-  transition: 0.35s all cubic-bezier(0.23, 1, 0.32, 1);
-}
-.open .closed {
-  opacity: 0;
-  transition: 0.05s all ease-in;
-  transition-delay: 0s;
-}
-.open .x-out {
-  visibility: visible;
-  opacity: 1;
-  transition: 0.2s opacity ease;
-  transition-delay: 0.5s;
-}
-.open .text {
-  opacity: 0.3;
-  transition: 0.5s opacity ease;
-}
-
-.closed {
-  transition-delay: 0.35s;
-}
-
-.open .open-text {
-  visibility: visible;
-  opacity: 1;
-  transition: 0.2s opacity ease;
-  transition-delay: 0.5s;
-}
-
-@media screen and (min-width: 800px) {
-  .open .modal {
-    transform: scale(4) translateY(-25px);
-  }
 }
