@@ -158,6 +158,12 @@ p, ul, ol, dl, blockquote, strong, pre, code {
     column-gap: 1.5em;
     break-inside: avoid;
   }
+    [class*='candy-columns--'] p {
+      margin-bottom: 0;
+    }
+    [class*='candy-columns--'] p+p {
+      text-indent: 1.5em;
+    }
     [class*='candy-columns--'] h1,
     [class*='candy-columns--'] h2,
     [class*='candy-columns--'] h3,
