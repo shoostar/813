@@ -237,7 +237,7 @@ span.divider {
   /*summadat pro soup*/
   .pro sup {
     position: relative;
-    top: 0.1em;
+    top: -0.3rem;
     left: 0;
   }
 .resume {
