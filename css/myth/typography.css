@@ -126,6 +126,8 @@ h1 {
   margin-top: 5.4em;
 }
 h2 {
+  font-family: 'acumin-pro-wide', sans-serif;
+  /*font-weight: 200;*/
   font-size: 250%;
   margin-top: 4.5em;
 }
@@ -134,6 +136,8 @@ h3 {
   margin-top: 4.05em;
 }
 h4 {
+  font-family: 'acumin-pro-wide', sans-serif;
+  /*font-weight: 200;*/
   font-size: 175%;
   margin-top: 3.15em;
 }
