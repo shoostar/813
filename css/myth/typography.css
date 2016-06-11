@@ -157,6 +157,7 @@ p, ul, ol, dl, blockquote, strong, pre, code {
     column-fill: balance;
     column-gap: 1.5em;
     break-inside: avoid;
+    margin-bottom: 0;
   }
     [class*='candy-columns--'] p {
       margin-bottom: 0;
