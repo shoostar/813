@@ -211,6 +211,11 @@ sup, sub {
   position: relative;
   vertical-align: baseline;
 }
+  sup {
+    position: relative;
+    top: -0.3rem;
+    left: 0;
+  }
 a:link, a:visited {
   color: var(--black);
   transition: all ease-in-out 0.15s !important;

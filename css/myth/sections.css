@@ -150,13 +150,13 @@ section {
         width: 100%;
         margin: auto;
       }
-      .view-project {
+      a.view-project {
         display: inline-block;
         color: var(--white) !important;
-        border-bottom-color: var(--white) !important;
+        border-bottom-color: var(--white);
       }
         @media screen and (min-width: 1200px) {
-          .view-project {
+          a.view-project {
             position: absolute;
             top: 0;
             left: 0;
@@ -164,6 +164,7 @@ section {
             height: 100%;
             display: block;
             text-indent: -9999px;
+            border-bottom: none !important;
           }
         }
 
@@ -234,12 +235,6 @@ span.divider {
   display: inline-block;
   margin-bottom: 0;
 }
-  /*summadat pro soup*/
-  .pro sup {
-    position: relative;
-    top: -0.3rem;
-    left: 0;
-  }
 .resume {
   display: inline-block;
 }
