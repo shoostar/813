@@ -336,14 +336,14 @@ footer {
   text-shadow: -1px 0 var(--red);
   background: color(var(--black) tint(95%));
   clip: rect(44px, 50px, 56px, 0);
-  animation: glitch-anim-1 0.86s linear alternate-reverse;
+  animation: glitch-anim-1 0.55s linear alternate-reverse;
 }
 .glitch-btn:hover .glitch::after {
   left: -2px;
   text-shadow: 1px 0 var(--red);
   background: color(var(--black) tint(95%));
   clip: rect(44px, 50px, 56px, 0);
-  animation: glitch-anim-2 1.12s linear alternate-reverse;
+  animation: glitch-anim-2 0.813s linear alternate;
 }
 @keyframes glitch-anim-1 {
   0% { clip: rect(48px, 9999px, 36px, 0); }
