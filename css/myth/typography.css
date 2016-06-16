@@ -34,7 +34,7 @@ body{
 .wf-loading use {
   visibility: hidden !important;
   opacity: 0 !important;
-  transition: opacity ease-in-out 1s !important;
+  transition: opacity ease-in-out 0.5s !important;
 }
 .wf-active h1,
 .wf-active h2,
@@ -63,7 +63,7 @@ body{
 .wf-inactive nav,
 .wf-inactive use {
   opacity: 1 !important;
-  transition: opacity ease-in-out 1s !important;
+  transition: opacity ease-in-out 0.5s !important;
 }
 
 
@@ -148,7 +148,7 @@ h6 {
   margin-top: 1.8em;
   text-transform: uppercase;
 }
-p, ul, ol, dl, blockquote, strong, pre, code {
+p, ul, ol, dl, blockquote, pre {
   margin-bottom: 0.75em;
   line-height: 1.5;
 }

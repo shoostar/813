@@ -22,7 +22,7 @@
   }
     @media screen and (min-width: 1200px) {
       header.main-nav {
-        height: 8em;
+        height: 11em;
       }
       .shrink {
         height: 3em !important;
@@ -33,24 +33,23 @@
 
 /* MAIN and SECTION */
 main {
-  padding: 8em 0 0;
+  padding: 11em 0 0;
 }
 section {
   padding: 0 0 5em;
 }
-.intro {
-  padding-bottom: 4vw;
-}
 .outro {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: flex-start !important;
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
 }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1200px) {
     .outro {
+      justify-content: flex-end;
       align-content: flex-end;
       align-items: flex-end;
+      text-align: right;
     }
   }
   figure.portfolio-item {
@@ -78,14 +77,14 @@ section {
       color: color(var(--white) alpha(75%));
     }
       figure.portfolio-item:hover figcaption {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: var(--red);
       }
     figure.portfolio-item figcaption {
       position: absolute;
       top: 0;
       left: 0;
       padding: 1.5em;
-      background-image: linear-gradient(rgb(174, 131, 90), rgb(96, 57, 19));
+      background: var(--red);
       height: 100%;
       width: 100%;
       opacity: 0;
@@ -94,30 +93,6 @@ section {
       flex-direction: column;
       justify-content: space-between;
       color: var(--white);
-    }
-    figure.portfolio-item figcaption.koffee {
-      background-image: linear-gradient(rgb(96, 57, 19), rgb(174, 131, 90));
-    }
-    figure.portfolio-item figcaption.aggam {
-      background-image: linear-gradient(rgb(66, 56, 40), rgb(161, 155, 132));
-    }
-    figure.portfolio-item figcaption.c4sauce {
-      background-image: linear-gradient(rgb(232, 44, 12), rgb(255, 83, 13));
-    }
-    figure.portfolio-item figcaption.ktpqg {
-      background-image: linear-gradient(rgb(10, 53, 66), rgb(51, 92, 100));
-    }
-    figure.portfolio-item figcaption.iceberg {
-      background-image: linear-gradient(rgb(31, 32, 37), rgb(143, 147, 156));
-    }
-    figure.portfolio-item figcaption.sss {
-      background-image: linear-gradient(color(rgb(132, 177, 196) shade(50%)), rgb(132, 177, 196));
-    }
-    figure.portfolio-item figcaption.jrs86 {
-      background-image: linear-gradient(color(var(--red) shade(50%)), var(--red));
-    }
-    figure.portfolio-item figcaption.north {
-      background-image: linear-gradient(rgb(38, 34, 98), rgb(28, 117, 188));
     }
       figure.portfolio-item:hover figcaption {
         opacity: 1;
@@ -206,9 +181,6 @@ section {
 
 
 /* north75 styles */
-section.north {
-
-}
 .loose-logo {
   max-width: 6.6666em !important;
   max-height: 5em !important;
@@ -216,13 +188,24 @@ section.north {
   margin: auto;
 }
 .logo-item {
+  background: var(--white);
   padding: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
+  max-width: calc(50% - 1.5em);
+  min-height: 12.5em;
+  /*border: 2px solid color(var(--black) tint(90%));*/
 }
+  .logo-item figcaption {
+    text-align: left;
+    border-top: 2px solid color(var(--black) tint(90%));
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+  }
 
 
 
@@ -254,14 +237,10 @@ article header {
 
 /* FOOTER */
 footer {
-  padding: 0 0 2em;
+  padding-bottom: 5em !important;
 }
-  footer p {
-    margin-bottom: 0;
-  }
-  footer .year {
-    text-transform: uppercase;
-    letter-spacing: 0.125em;
+  footer small {
+    text-align: center;
     font-weight: 500;
   }
   .big-fucker {
@@ -336,7 +315,7 @@ footer {
   text-shadow: -1px 0 var(--red);
   background: color(var(--black) tint(95%));
   clip: rect(44px, 50px, 56px, 0);
-  animation: glitch-anim-1 0.55s linear alternate-reverse;
+  animation: glitch-anim-1 0.616s linear alternate-reverse;
 }
 .glitch-btn:hover .glitch::after {
   left: -2px;
