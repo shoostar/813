@@ -69,35 +69,18 @@ body{
 
 
 /* TYPOGRAPHY */
-/*:root { font-size: 12px; line-height: 20px; }
-@media (min-width: 400px) and (max-width: 1199px){
-  :root {
-    font-size: calc( 12px + (20 - 12) * ( (100vw - 400px) / ( 1200 - 400) ));
-  }
-}
-@media (min-width: 1200px){
-  :root {
-    font-size: 18px;
-  }
-}
-@media (min-width: 1600px) {
-  :root {
-    font-size: 24px;
-  }
-}*/
-
-
 :root {
-  font-size: 0.8125em;
+  font-size: 14px;
 }
-@media (min-width: 40.625em) {
+
+@media (min-width: 400px) and (max-width: 800px) {
   :root {
-    font-size: 2vw;
+    font-size: calc( 14px + (30 - 14) * ( (100vw - 400px) / ( 800 - 400) ));
   }
 }
-@media (min-width: 56.25em) {
+@media (min-width: 800px) {
   :root {
-    font-size: 1.125em;
+    font-size: 30px;
   }
 }
 
@@ -126,47 +109,9 @@ html, body {
 }
 body {
   height: 100%;
-  line-height: 1.5;
-}
-/*h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1.5rem;
-  font-weight: 500;
   line-height: 1.25;
-  color: var(--black);
 }
-  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    line-height: 1.25 !important;
-  }
-  .section-title {
-    color: var(--red);
-  }
-h1 {
-  font-size: 300%;
-  margin-top: 5.4em;
-}
-h2 {
-  font-family: 'acumin-pro-wide', sans-serif;
-  font-size: 250%;
-  margin-top: 4.5em;
-}
-h3 {
-  font-size: 225%;
-  margin-top: 4.05em;
-}
-h4 {
-  font-family: 'acumin-pro-wide', sans-serif;
-  font-size: 175%;
-  margin-top: 3.15em;
-}
-h5 {
-  font-size: 125%;
-  margin-top: 2.25em;
-}
-h6 {
-  font-size: 100%;
-  margin-top: 1.8em;
-  text-transform: uppercase;
-}*/
+
 
 
 
@@ -177,32 +122,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 3em;
-  line-height: 1;
   margin-bottom: 0.5em;
 }
 h2 {
   font-size: 2.25em;
-  line-height: 1.333333333;
   margin-bottom: 0.666666666em;
 }
 h3 {
   font-size: 1.5em;
-  line-height: 1;
   margin-bottom: .9em;
 }
 h4 {
   font-size: 1.25em;
-  line-height: 1;
   margin-bottom: 1em;
 }
 h5 {
   font-size: 1.125em;
-  line-height: 1.333333333;
   margin-bottom: 0.6666666666em;
 }
 h6 {
   font-size: 1.0625em;
-  line-height: 1;
   margin-bottom: .9em;
 }
 p, ul, ol, dl, blockquote, pre {
