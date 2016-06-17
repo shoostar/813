@@ -34,7 +34,7 @@ body{
 .wf-loading use {
   visibility: hidden !important;
   opacity: 0 !important;
-  transition: opacity ease-in-out 1s !important;
+  transition: opacity ease-in-out 0.5s !important;
 }
 .wf-active h1,
 .wf-active h2,
@@ -63,28 +63,46 @@ body{
 .wf-inactive nav,
 .wf-inactive use {
   opacity: 1 !important;
-  transition: opacity ease-in-out 1s !important;
+  transition: opacity ease-in-out 0.5s !important;
 }
 
 
 
 /* TYPOGRAPHY */
-:root { font-size: 14px; line-height: 22px; }
+/*:root { font-size: 12px; line-height: 20px; }
 @media (min-width: 400px) and (max-width: 1199px){
   :root {
-    font-size: calc( 14px + (22 - 14) * ( (100vw - 400px) / ( 1200 - 400) ));
+    font-size: calc( 12px + (20 - 12) * ( (100vw - 400px) / ( 1200 - 400) ));
   }
 }
 @media (min-width: 1200px){
   :root {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 @media (min-width: 1600px) {
   :root {
-    font-size: 30px;
+    font-size: 24px;
+  }
+}*/
+
+
+:root {
+  font-size: 0.8125em;
+}
+@media (min-width: 40.625em) {
+  :root {
+    font-size: 2vw;
   }
 }
+@media (min-width: 56.25em) {
+  :root {
+    font-size: 1.125em;
+  }
+}
+
+
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -102,21 +120,22 @@ html {
 html, body {
   font-family: 'acumin-pro', sans-serif;
   color: color(var(--black) tint(25%));
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.0125rem;
   background: color(var(--black) tint(95%));
   font-weight: 300;
 }
 body {
   height: 100%;
+  line-height: 1.5;
 }
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
   font-weight: 500;
   line-height: 1.25;
   color: var(--black);
 }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    line-height: 1.5 !important;
+    line-height: 1.25 !important;
   }
   .section-title {
     color: var(--red);
@@ -147,10 +166,48 @@ h6 {
   font-size: 100%;
   margin-top: 1.8em;
   text-transform: uppercase;
+}*/
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin: 0;
+  color: var(--black);
 }
-p, ul, ol, dl, blockquote, strong, pre, code {
-  margin-bottom: 0.75em;
-  line-height: 1.5;
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333333333;
+  margin-bottom: 0.666666666em;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: .9em;
+}
+h4 {
+  font-size: 1.25em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+h5 {
+  font-size: 1.125em;
+  line-height: 1.333333333;
+  margin-bottom: 0.6666666666em;
+}
+h6 {
+  font-size: 1.0625em;
+  line-height: 1;
+  margin-bottom: .9em;
+}
+p, ul, ol, dl, blockquote, pre {
+  font-size: 1em;
+  margin-bottom: 1.5em;
 }
 @media screen and (min-width: 1200px) {
   [class*='candy-columns--'] {

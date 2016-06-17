@@ -5,15 +5,16 @@ nav {
   nav a {
     display: inline-block;
     border-bottom: none !important;
-    margin-left: 1em;
     color: color(var(--black) alpha(100%)) !important;
+    text-transform: lowercase;
   }
     nav a:hover {
       color: color(var(--black) alpha(35%)) !important;
     }
-    header.projects nav a {
-      color: color(var(--white) alpha(100%)) !important;
+    nav a:not(:first-child) {
+      margin-left: 1em;
     }
-      header.projects nav a:hover {
-        color: color(var(--white) alpha(35%)) !important;
+      .active-page {
+        display: none;
+        backface-visibility: hidden;
       }
