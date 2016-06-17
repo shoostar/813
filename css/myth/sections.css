@@ -281,6 +281,9 @@ footer {
   z-index: 1000;
   display: inline-block;
 }
+  .glitch {
+    display: inline-block;
+  }
 .glitch-btn:hover {
   animation: wiggle 0.357s linear alternate-reverse;
 }
