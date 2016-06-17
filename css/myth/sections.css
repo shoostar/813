@@ -1,10 +1,10 @@
 /* HEADER */
-  header .w--1of1 {
+  header .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
   }
   header {
     background: color(var(--red) tint(0%) alpha(0%));
