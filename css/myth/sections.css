@@ -7,7 +7,7 @@
     align-items: center;
   }
   header {
-    background: color(var(--black) tint(95%));
+    background: color(var(--red) tint(0%) alpha(0%));
     position: fixed;
     z-index: 2000;
     width: 100%;
@@ -18,13 +18,14 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    transition: height 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
   }
     @media screen and (min-width: 1200px) {
       header.main-nav {
         height: 11em;
       }
       .shrink {
+        background: color(var(--red) tint(0%) alpha(100%));
         height: 3em !important;
       }
     }
