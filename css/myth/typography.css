@@ -75,12 +75,12 @@ body{
 
 @media (min-width: 400px) and (max-width: 800px) {
   :root {
-    font-size: calc( 14px + (30 - 14) * ( (100vw - 400px) / ( 800 - 400) ));
+    font-size: calc( 14px + (28 - 14) * ( (100vw - 400px) / ( 800 - 400) ));
   }
 }
 @media (min-width: 800px) {
   :root {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
@@ -105,11 +105,17 @@ html, body {
   color: color(var(--black) tint(25%));
   letter-spacing: 0.0125rem;
   background: color(var(--black) tint(95%));
-  font-weight: 300;
+  font-weight: 200;
 }
 body {
   height: 100%;
   line-height: 1.25;
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 
@@ -122,27 +128,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 3em;
-  margin-bottom: 0.5em;
+  line-height: 1;
+  margin-bottom: 0.75em;
 }
 h2 {
   font-size: 2.25em;
-  margin-bottom: 0.666666666em;
+  line-height: 1;
+  margin-bottom: 0.5em;
 }
 h3 {
   font-size: 1.5em;
-  margin-bottom: .9em;
+  line-height: 1;
+  margin-bottom: 1em;
 }
 h4 {
   font-size: 1.25em;
-  margin-bottom: 1em;
+  line-height: 1;
+  margin-bottom: 1.25em;
 }
 h5 {
-  font-size: 1.125em;
-  margin-bottom: 0.6666666666em;
+  font-size: 1em;
+  line-height: 1;
+  margin-bottom: 0.25em;
 }
 h6 {
-  font-size: 1.0625em;
+  font-size: 0.8125em;
+  line-height: 1;
   margin-bottom: .9em;
+  text-transform: uppercase;
+  opacity: 0.25 !important;
+  letter-spacing: 0.25em;
 }
 p, ul, ol, dl, blockquote, pre {
   font-size: 1em;
@@ -210,7 +225,7 @@ sup, sub {
 }
   sup {
     position: relative;
-    top: -0.4rem;
+    top: -0.5em;
     left: 0;
   }
 a:link, a:visited {
@@ -322,11 +337,13 @@ table {
 
 /* UTILITIES */
 .lightened { color: color(var(--white) alpha(25%)); }
-.text-center { text-align: center !important; }
-.text-right { text-align: right !important; }
 .topless { margin-top: 0 !important; }
 .bottomless { margin-bottom: 0 !important; }
 
+@media screen and (min-width: 1200px) {
+  .text-center { text-align: center !important; }
+  .text-right { text-align: right !important; }
+}
 
 
 /* ICONS */

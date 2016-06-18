@@ -50,14 +50,24 @@
   display: block;
   overflow: hidden;
   position: relative;
-  max-height: 600px;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: var(--red);
 }
 .FlexEmbed--16to9:before {
   content: "";
   display: block;
   padding-bottom: 56.25%;
   width: 100%;
+}
+
+
+
+img[class] {
+  width: 100%;
+}
+.object-fit_cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }

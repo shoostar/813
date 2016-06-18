@@ -1,43 +1,56 @@
 /* HEADER */
-  header .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-start;
-    align-items: flex-start;
-  }
   header {
-    background: color(var(--red) tint(0%) alpha(0%));
-    position: fixed;
-    z-index: 2000;
+    background: color(var(--black) tint(0%) alpha(0%));
+    top: 0;
     width: 100%;
-    height: 3em;
-    padding-top: 1.375em;
+    height: 21.6em;
+    padding-top: var(--gridpadding);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     align-items: center;
-    transition: all 0.25s ease-in-out;
+    position: relative;
+    transform-style: inherit;
   }
-    @media screen and (min-width: 1200px) {
-      header.main-nav {
-        height: 11em;
-      }
-      .shrink {
-        background: color(var(--red) tint(0%) alpha(100%));
-        height: 3em !important;
-      }
+  header, header:before {
+  background: 50% 50% / cover;
+}
+header::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+	display: block;
+  background-image: url('../img/projects/north/north-bg.jpg');
+  background-size: cover;
+  transform-origin: center bottom 0;
+  transform: translateZ(-0.75px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+    header .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: flex-start;
+      align-items: flex-start;
     }
+
 
 
 
 /* MAIN and SECTION */
 main {
-  padding: 11em 0 0;
+
+  padding: calc(5 * var(--gridpadding)) 0 0;
+  background: var(--white);
+  min-height: calc(100vh - 21.6em);
 }
 section {
-  padding: 0 0 5em;
+  padding: 0 0 calc(4 * var(--gridpadding));
 }
 .outro {
   display: flex;
@@ -58,7 +71,7 @@ section {
     position: relative;
     display: block;
     width: 100%;
-    height: 469px;
+    /*height: 469px;*/
     overflow: hidden;
   }
     @media screen and (max-width: 800px) {
@@ -187,6 +200,8 @@ section {
   max-height: 5em !important;
   width: 100%;
   margin: auto;
+  position: absolute;
+  display: inline-block;
 }
 .logo-item {
   background: var(--white);
@@ -277,6 +292,7 @@ footer {
 }
 .glitch-btn {
   position: relative;
+  z-index: 2000;
   border-bottom: none !important;
   z-index: 1000;
   display: inline-block;
@@ -317,14 +333,14 @@ footer {
 .glitch-btn:hover .glitch::before {
   left: -2px;
   text-shadow: -1px 0 var(--red);
-  background: color(var(--black) tint(95%));
+  /*background: color(var(--black) tint(95%));*/
   clip: rect(44px, 50px, 56px, 0);
   animation: glitch-anim-1 0.616s linear alternate-reverse;
 }
 .glitch-btn:hover .glitch::after {
   left: -2px;
   text-shadow: 1px 0 var(--red);
-  background: color(var(--black) tint(95%));
+  /*background: color(var(--black) tint(95%));*/
   clip: rect(44px, 50px, 56px, 0);
   animation: glitch-anim-2 0.813s linear alternate;
 }

@@ -17,7 +17,7 @@ main {
   margin: 0 auto;
 }
   @media screen and (min-width: 800px) {
-    .row { width: 86%; }
+    .row { width: 81.3%; }
   }
 [class*='w--'] {
   flex: 1 0 calc(100% - var(--gridpadding));
@@ -26,10 +26,9 @@ main {
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end !important;
-  align-items: flex-end;
-  align-content: flex-end;
-  margin-bottom: 0;
+  justify-content: flex-start;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 
