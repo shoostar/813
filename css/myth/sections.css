@@ -1,6 +1,7 @@
 /* HEADER */
   header {
-    background: color(var(--black) tint(0%) alpha(0%));
+    background: color(var(--black) tint(90%));
+    position: fixed;
     top: 0;
     width: 100%;
     height: 21.6em;
@@ -10,27 +11,7 @@
     justify-content: flex-start;
     align-content: center;
     align-items: center;
-    position: relative;
-    transform-style: inherit;
   }
-  header, header:before {
-  background: 50% 50% / cover;
-}
-header::before {
-  bottom: 0;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-	display: block;
-  background-image: url('../img/projects/north/north-bg.jpg');
-  background-size: cover;
-  transform-origin: center bottom 0;
-  transform: translateZ(-0.75px) scale(2);
-  z-index: -1;
-  min-height: 100vh;
-}
     header .row {
       display: flex;
       flex-direction: row;
@@ -44,10 +25,10 @@ header::before {
 
 /* MAIN and SECTION */
 main {
-
+  margin-top: 21.6em;
   padding: calc(5 * var(--gridpadding)) 0 0;
-  background: var(--white);
-  min-height: calc(100vh - 21.6em);
+  background: color(var(--black) tint(95%));
+  min-height: 100%;
 }
 section {
   padding: 0 0 calc(4 * var(--gridpadding));
@@ -66,173 +47,11 @@ section {
       text-align: right;
     }
   }
-  figure.portfolio-item {
-    margin-bottom: 1.5em;
-    position: relative;
-    display: block;
-    width: 100%;
-    /*height: 469px;*/
-    overflow: hidden;
-  }
-    @media screen and (max-width: 800px) {
-      figure.portfolio-item {
-        height: 56.25vw;
-        overflow: hidden;
-      }
-    }
-    figure.portfolio-item figcaption {
-      background-color: rgba(0, 0, 0, 1);
-      color: var(--white);
-    }
-    figure.portfolio-item figcaption h6 {
-      color: var(--white);
-    }
-    figure.portfolio-item figcaption p {
-      color: color(var(--white) alpha(75%));
-    }
-      figure.portfolio-item:hover figcaption {
-        background-color: var(--red);
-      }
-    figure.portfolio-item figcaption {
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 1.5em;
-      background: var(--red);
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      transition: opacity 0.15s ease-in-out;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      color: var(--white);
-    }
-      figure.portfolio-item:hover figcaption {
-        opacity: 1;
-      }
-    .brand-image {
-      background-size: cover;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      position: relative;
-      top: 0;
-      left: 0;
-      display: block;
-    }
-      .slide-hide {
-        background: color(var(--black) shade(25%) alpha(65%));
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-      }
-      .brand-logo {
-        max-width: 10em !important;
-        max-height: 7.5em !important;
-        width: 100%;
-        margin: auto;
-      }
-      a.view-project {
-        display: inline-block;
-        color: var(--white) !important;
-        border-bottom-color: var(--white);
-      }
-        @media screen and (min-width: 1200px) {
-          a.view-project {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
-            text-indent: -9999px;
-            border-bottom: none !important;
-          }
-        }
-
-
-
-    /* TAP!!! */
-    button.tap {
-      width: 3em;
-      height: 3em;
-      border-radius: 1.5em;
-      background: none;
-      border: 0.1875em dotted var(--white);
-      color: var(--white);
-      position: absolute;
-      top: 1.5em;
-      right: 1.5em;
-      display: block;
-      text-align: center !important;
-      padding: 0 0 0.25em;
-      opacity: 0.5;
-    }
-
-
-
-    /* LOGO */
-    .main-logo {
-      height: 1em;
-      display: block;
-    }
-    @media screen and (min-width: 1200px) {
-      .sticky {
-        position: sticky;
-        top: 1em;
-        margin-bottom: 9em;
-        box-shadow: 5px 5px 5px color(var(--black) alpha(50%));
-      }
-    }
-
-
-
-/* north75 styles */
-.loose-logo {
-  max-width: 6.6666em !important;
-  max-height: 5em !important;
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  display: inline-block;
-}
-.logo-item {
-  background: var(--white);
-  padding: 1.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  max-width: calc(50% - 1.5em);
-  min-height: 12.5em;
-  /*border: 2px solid color(var(--black) tint(90%));*/
-}
-  .logo-item figcaption {
-    text-align: left;
-    border-top: 2px solid color(var(--black) tint(90%));
-    display: block;
-    width: 100%;
-    margin-top: 1em;
-  }
 
 
 
 span.divider {
   margin: 0 1em;
-}
-.pro {
-  color: var(--red);
-  font-weight: 800;
-  display: inline-block;
-  margin-bottom: 0;
 }
 .resume {
   display: inline-block;
@@ -253,26 +72,57 @@ article header {
 
 /* FOOTER */
 footer {
-  padding-bottom: 5em !important;
+
 }
   footer small {
     text-align: center;
     font-weight: 500;
   }
-  .big-fucker {
-    width: 80%;
-    position: fixed;
-    bottom: -5vw;
-    left: 10%;
-    z-index: -1;
-    opacity: 0.0313;
+
+
+
+/* Popup window for info section */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: var(--gridpadding) 0 calc(4 * var(--gridpadding));
+  min-height: 100%;
+  width: 100%;
+  z-index: 101;
+  background-color: var(--red);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+  .modal.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
   }
-    @media screen and (max-width: 800px) {
-      .big-fucker {
-        width: calc(100% - 3em) !important;
-        left: 1.5em !important;
-      }
-    }
+  .modal h1, .modal h2, .modal h3, .modal h4, .modal h5, .modal h6 {
+    color: color(var(--red) shade(12.5%));
+  }
+  .modal li {
+    color: color(var(--red) shade(50%));
+  }
+
+
+
+/* LOGO */
+.main-logo {
+  height: 1em;
+  display: block;
+}
+.pro {
+  color: var(--red);
+  font-weight: 800;
+  display: inline-block;
+  margin-bottom: 0;
+}
+  .modal .pro {
+    color: var(--white);
+  }
 
 
 
@@ -296,12 +146,13 @@ footer {
   border-bottom: none !important;
   z-index: 1000;
   display: inline-block;
+  cursor: pointer;
 }
   .glitch {
     display: inline-block;
   }
 .glitch-btn:hover {
-  animation: wiggle 0.357s linear alternate-reverse;
+  animation: wiggle 0.138s linear alternate-reverse;
 }
 .glitch-btn:hover:after {
   content: ':̪̺̠̺͗ͨ̋ͩ͗:̛͇̱̥̥̙̎͆̑ͮ̐͢:̷̲ͮ̃́̅ͦ̔͐̆:̴͈͖̮̪̗̈́̆̀:̨̙̗̺̞̥͗̐ͫ:̗̰̜̟̮̦̉̂' !important;
@@ -312,16 +163,23 @@ footer {
   color: color(var(--red) alpha(8.13%));
   opacity: 1;
   clip: rect(44px, 50px, 56px, 0);
-  animation: glitch-anim-1 0.906s linear alternate;
+  animation: glitch-anim-1 0.419s linear alternate;
 }
+  .modal .glitch-btn:hover:after {
+    color: color(var(--white) alpha(8.13%));
+  }
 .glitch-btn:hover .glitch {
   color: var(--red);
   position: relative;
   margin: 0 auto;
 }
+  .modal .glitch-btn:hover .glitch {
+    color: var(--white);
+  }
 .glitch-btn:hover .glitch:before,
 .glitch-btn:hover .glitch:after {
   content: attr(data-text);
+  color: -2px 0 color(var(--red) alpha(25%)) !important;
   font-weight: 500;
   position: absolute;
   top: 0;
@@ -330,20 +188,30 @@ footer {
   height: 100%;
   z-index: 0;
 }
+  .modal .glitch-btn:hover .glitch:before,
+  .modal .glitch-btn:hover .glitch:after {
+    color: -2px 0 color(var(--white) alpha(25%)) !important;
+  }
 .glitch-btn:hover .glitch::before {
   left: -2px;
-  text-shadow: -1px 0 var(--red);
-  /*background: color(var(--black) tint(95%));*/
+  text-shadow: -2px 0 color(green alpha(57.5%));
+  background: color(var(--black) tint(90%));
   clip: rect(44px, 50px, 56px, 0);
-  animation: glitch-anim-1 0.616s linear alternate-reverse;
+  animation: glitch-anim-1 0.313s linear alternate-reverse;
 }
+  .modal .glitch-btn:hover .glitch::before {
+    background: var(--red);
+  }
 .glitch-btn:hover .glitch::after {
   left: -2px;
-  text-shadow: 1px 0 var(--red);
-  /*background: color(var(--black) tint(95%));*/
+  text-shadow: 2px 1px color(dodgerblue alpha(75%));
+  background: color(var(--black) tint(90%));
   clip: rect(44px, 50px, 56px, 0);
-  animation: glitch-anim-2 0.813s linear alternate;
+  animation: glitch-anim-2 0.419s linear alternate;
 }
+  .modal .glitch-btn:hover .glitch::after {
+    background: var(--red);
+  }
 @keyframes glitch-anim-1 {
   0% { clip: rect(48px, 9999px, 36px, 0); }
   10% { clip: rect(9px, 9999px, 32px, 0); }

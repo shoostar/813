@@ -112,10 +112,6 @@ body {
   line-height: 1.25;
   margin:0;
   padding:0;
-	perspective: 1px;
-	transform-style: preserve-3d;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 
@@ -311,6 +307,14 @@ ol ul {
     text-decoration: underline;
       padding-bottom: 0.5rem;
   }
+  ul.also li {
+    display: block;
+  }
+    ul.also li::after:not(:last-child) {
+      content: '\2022';
+      margin: 0 1em;
+      display: inline-block;
+    }
 
 
 
