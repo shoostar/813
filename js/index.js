@@ -19,6 +19,26 @@ $('h1,h2,h3,h4,h5,h6,li,p,a').each(function() {
 
 
 
+// Simple fader
+$(document).ready(function() {
+  var fader = $('.fader');
+
+  fader.find('div:gt(0)').hide();
+
+  fader.fadeTo(500, 1);
+
+  setInterval(function(){
+    fader.find(':first-child')
+      .fadeTo(500, 0)
+      .next('div')
+      .fadeTo(500, 1)
+      .end()
+      .appendTo(fader);
+  }, 4000);
+});
+
+
+
 // Fire Modal
 $('#modal_button').click(function(e) {
   $('.modal').addClass('active');
