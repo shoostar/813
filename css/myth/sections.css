@@ -27,7 +27,8 @@
 main {
   margin-top: 21.6em;
   padding: calc(5 * var(--gridpadding)) 0 0;
-  background: color(var(--black) tint(95%));
+  background-color: color(var(--black) tint(95%));
+  transition: background-color 1s ease;
   min-height: 100%;
 }
 section {

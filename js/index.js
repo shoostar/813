@@ -20,22 +20,54 @@ $('h1,h2,h3,h4,h5,h6,li,p,a').each(function() {
 
 
 // Simple fader
-$(document).ready(function() {
-  var fader = $('.fader');
+( function () {
 
-  fader.find('div:gt(0)').hide();
+  var items = $('.fader figure');
+  var total = items.length;
+  var current = 0;
 
-  fader.fadeTo(500, 1);
+  setInterval ( function(){
+   $ ( items[current] ).removeClass('show');
+    ++current;
+    if( current >= total ) current = 0;
+   $ ( items[current] ).addClass('show');
 
-  setInterval(function(){
-    fader.find(':first-child')
-      .fadeTo(500, 0)
-      .next('div')
-      .fadeTo(500, 1)
-      .end()
-      .appendTo(fader);
-  }, 4000);
-});
+  }, 3000);
+
+}) ();
+
+
+
+// Color changing background on scroll$(window).scroll(function() {
+$(window).scroll(function() {
+
+  // selectors
+  var $window = $(window),
+    $main = $('main'),
+    $panel = $('.panel');
+
+  // Change 33% earlier than scroll position so colour is there when you arrive.
+  var scroll = $window.scrollTop() + ($window.height() / 3);
+
+  $panel.each(function() {
+    var $this = $(this);
+
+    // if position is within range of this panel.
+    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+    // Remember we set the scroll to 33% earlier in scroll var.
+    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+      // Remove all classes on body with color-
+      $main.removeClass(function(index, css) {
+        return (css.match(/(^|\s)color-\S+/g) || []).join(' ');
+      });
+
+      // Add class of currently active div
+      $main.addClass('color-' + $(this).data('color'));
+    }
+  });
+
+}).scroll();
 
 
 

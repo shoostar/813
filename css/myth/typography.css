@@ -104,7 +104,7 @@ html, body {
   font-family: 'acumin-pro', sans-serif;
   color: color(var(--black) tint(25%));
   letter-spacing: 0.0125rem;
-  background: color(var(--black) tint(95%));
+  background-color: color(var(--black) tint(95%));
   font-weight: 200;
 }
 body {
