@@ -308,10 +308,10 @@ ol ul {
       padding-bottom: 0.5rem;
   }
   ul.also li {
-    display: block;
+    display: inline-block;
   }
-    ul.also li::after:not(:last-child) {
-      content: '\2022';
+    ul.also li::after {
+      content: '';
       margin: 0 1em;
       display: inline-block;
     }
@@ -343,9 +343,10 @@ table {
 .lightened { color: color(var(--white) alpha(25%)); }
 .topless { margin-top: 0 !important; }
 .bottomless { margin-bottom: 0 !important; }
+.text-center { text-align: center !important; }
 
 @media screen and (min-width: 1200px) {
-  .text-center { text-align: center !important; }
+
   .text-right { text-align: right !important; }
 }
 
