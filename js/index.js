@@ -38,6 +38,20 @@ $('h1,h2,h3,h4,h5,h6,li,p,a').each(function() {
 
 
 
+//smoothscroll
+$('a[href^="#"]').on('click', function(e) {
+  e.preventDefault();
+  var target = this.hash,
+    $target = $(target);
+  $('html, body').stop().animate({
+    'scrollTop': $target.offset().top
+  }, 500, 'swing', function() {
+    window.location.hash = target;
+  });
+});
+
+
+
 // Color changing background on scroll$(window).scroll(function() {
 $(window).scroll(function() {
 
