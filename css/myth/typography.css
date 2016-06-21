@@ -316,7 +316,7 @@ ol ul {
     display: inline;
   }
     ul.also li::after {
-      content: '\00a0\00a0\00a0\2022\00a0\00a0\00a0';
+      content: '\00a0\00a0\00a0';
     }
 
 
