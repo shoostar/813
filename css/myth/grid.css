@@ -16,9 +16,9 @@ main {
   flex-direction: row;
   margin: 0 auto;
 }
-  @media screen and (min-width: 800px) {
+  /*@media screen and (min-width: 800px) {
     .row { width: 81.3%; }
-  }
+  }*/
 [class*='w--'] {
   flex: 1 0 calc(100% - var(--gridpadding));
   margin: 0 0.75em var(--gridpadding) 0.75em;
