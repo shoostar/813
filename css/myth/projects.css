@@ -170,7 +170,8 @@ img[class] {
 .fader {
   position: relative;
   width: 100%;
-  padding-bottom: calc(33.3333% + var(--gridpadding));
+  padding-bottom: calc(56.25% / var(--gridpadding));
+  max-height: 56.25%;
   overflow: hidden;
   -webkit-perspective: 2000px;
   -moz-perspective: 2000px;
@@ -217,6 +218,9 @@ img[class] {
   .spaced div {
     max-width: 50%;
   }
+  .spaced div::before {
+    padding-bottom: calc(56.25% - var(--gridpadding)/4)
+  }
   .spaced :not(:last-child) {
     margin-bottom: var(--gridpadding);
   }
@@ -229,7 +233,5 @@ img[class] {
     .spaced div {
       max-width: 100%;
     }
-      .spaced div::before {
-        padding-bottom: calc(56.25% - var(--gridpadding)/4)
-      }
+
   }
