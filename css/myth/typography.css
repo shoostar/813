@@ -308,12 +308,10 @@ ol ul {
       padding-bottom: 0.5rem;
   }
   ul.also li {
-    display: inline-block;
+    display: inline;
   }
     ul.also li::after {
-      content: '';
-      margin: 0 1em;
-      display: inline-block;
+      content: '\00a0\00a0\00a0\00a0\00a0';
     }
 
 

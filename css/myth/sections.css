@@ -35,7 +35,7 @@
 main {
   margin-top: 21.6em;
   padding: calc(5 * var(--gridpadding)) 0 0;
-  background-color: color(var(--black) tint(90%));
+  background-color: color(var(--black) tint(95%));
   background-image: url('../img/jrs86-logo.svg');
   background-attachment: fixed;
   background-position: 50% 50%;
