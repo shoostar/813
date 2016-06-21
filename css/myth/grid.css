@@ -1,5 +1,5 @@
 :root {
-  --gridpadding: 0.5em;
+  --gridpadding: 1.5em;
   --boxpadding: 1.5em;
 }
 main {
@@ -17,9 +17,9 @@ main {
   flex-direction: row;
   margin: 0 auto;
 }
-  /*@media screen and (min-width: 800px) {
+  @media screen and (min-width: 800px) {
     .row { width: 81.3%; }
-  }*/
+  }
 [class*='w--'] {
   flex: 1 0 calc(100% - var(--gridpadding));
   margin: 0 calc(var(--gridpadding) / 2) var(--gridpadding);
