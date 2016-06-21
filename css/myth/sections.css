@@ -116,7 +116,7 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  padding: var(--gridpadding) 0 calc(4 * var(--gridpadding));
+  padding: var(--boxpadding);
   min-height: 100%;
   width: 100%;
   z-index: 101;
