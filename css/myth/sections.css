@@ -23,30 +23,6 @@
 
 
 
-.spaced {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-  .spaced div {
-    max-width: 50%;
-  }
-  .spaced :not(:last-child) {
-    margin-bottom: var(--gridpadding);
-  }
-  @media screen and (min-width: 1200px) {
-    .spaced {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .spaced div {
-      max-width: 100%;
-    }
-  }
-
-
-
 /* MAIN and SECTION */
 main {
   margin-top: 21.6em;
