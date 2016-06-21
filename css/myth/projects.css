@@ -1,66 +1,10 @@
-
-.projects {
-  height: 100vh;
-  display: block;
-}
-.project__list {
-  z-index: 1;
-  font-size: 1em;
-}
-  @media screen and (min-width: 1200px) {
-    .project__list {
-      text-align: right;
-    }
-  }
-.project__link {
-  will-change: opacity;
-  display: inline;
-  cursor: pointer;
-  color: var(--white) !important;
-}
-.project__bg-list {
-  background: var(--black);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  display: block;
-  min-height: 20em;
-  height: 81.3%;
-  width: 100%;
-}
-.project__bg-item {
-  will-change: transform, opacity;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  background-size: cover !important;
-  background-position: center center;
-  height: 100%;
-  opacity: 0;
-  transition: all 0.375s ease-in-out;
-}
-.project__bg-item--active {
-  opacity: 1;
-}
-
-
-
 figure.portfolio-item {
-  margin-bottom: 1.5em;
   position: relative;
   display: block;
   width: 100%;
-  /*height: 469px;*/
+  height: 56.25%;
   overflow: hidden;
 }
-  @media screen and (max-width: 800px) {
-    figure.portfolio-item {
-      height: 56.25vw;
-      overflow: hidden;
-    }
-  }
   figure.portfolio-item figcaption {
     background-color: rgba(0, 0, 0, 1);
     color: var(--white);
@@ -142,28 +86,7 @@ figure.portfolio-item {
         max-height: 5em !important;
         width: 100%;
         margin: auto;
-        position: absolute;
-        display: inline-block;
       }
-      .logo-item {
-        background: var(--white);
-        padding: 1.5em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        max-width: calc(50% - 1.5em);
-        min-height: 12.5em;
-        /*border: 2px solid color(var(--black) tint(90%));*/
-      }
-        .logo-item figcaption {
-          text-align: left;
-          border-top: 2px solid color(var(--black) tint(90%));
-          display: block;
-          width: 100%;
-          margin-top: 1em;
-        }
 
 
 
@@ -240,4 +163,45 @@ img[class] {
 .object-fit_cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+
+
+.fader {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  -webkit-perspective: 2000px;
+  -moz-perspective: 2000px;
+  perspective: 2000px;
+}
+.fader .fader-dots {
+  position: absolute;
+  bottom: 0;
+  right: 1.5em;
+  z-index: 3000;
+}
+.fader .fader-dots li {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  background: var(--red);
+  margin-left: 0.25em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.fader .fader-dots li.active {
+  background: var(--black);
+}
+.fader .item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  transition-property: visibility;
+}
+.fader .item.active {
+  visibility: visible;
 }

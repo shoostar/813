@@ -38,7 +38,7 @@ $('h1,h2,h3,h4,h5,h6,li,p,a').each(function() {
 
 
 
-//smoothscroll
+// Navigational scrolling
 $('a[href^="#"]').on('click', function(e) {
   e.preventDefault();
   var target = this.hash,
@@ -52,36 +52,70 @@ $('a[href^="#"]').on('click', function(e) {
 
 
 
-// Color changing background on scroll
-$(window).scroll(function() {
+// Simple gallery
+$(function($){
+  'use strict';
+  $.fn.darthFader = function(params){
+    var defaults = {
+      waitTime: false,
+      dots: true,
+      items: '.item',
+      activeClass: 'active',
+      speed: 200
+    };
 
-  // selectors
-  var $window = $(window),
-      $main = $('main'),
-      $panel = $('.panel');
+    var options = $.extend(defaults, params),
+        container = this,
+        items = container.find(options.items),
+        curItem = 0,
+        timer = false;
 
-  // Change 33% earlier than scroll position so colour is there when you arrive.
-  var scroll = $window.scrollTop() + ($window.height() / 20);
-
-  $panel.each(function () {
-    var $this = $(this);
-
-    // if position is within range of this panel.
-    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-    // Remember we set the scroll to 33% earlier in scroll var.
-    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-
-      // Remove all classes on body with color-
-      $main.removeClass(function (index, css) {
-        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+    if(options.dots){
+      var dots = $(Array(items.length + 1).join('<li></li>')).on('click', function(){
+        curItem = $(this).index();
+        changeItem();
       });
-
-      // Add class of currently active div
-      $main.addClass('color-' + $(this).data('color'));
+      dots.first().addClass(options.activeClass);
+      $('<ul></ul>').addClass('fader-dots').append(dots).appendTo(container);
     }
-  });
 
-}).scroll();
+    if(options.waitTime){
+      timer = setTimeout(function(){
+        nextItem();
+      }, options.waitTime);
+    }
+
+    function nextItem(){
+      curItem = (curItem >= items.length - 1)? 0 : curItem+1;
+      changeItem();
+    }
+
+    function changeItem(){
+      if(timer){
+        clearTimeout(timer);
+      }
+
+      if(options.dots){
+        dots.removeClass(options.activeClass);
+        dots.eq(curItem).addClass(options.activeClass);
+      }
+
+      items.removeClass(options.activeClass);
+      items.eq(curItem).addClass(options.activeClass);
+
+      if(options.waitTime){
+        timer = setTimeout(function(){
+          nextItem();
+        }, options.waitTime + options.speed);
+      }
+    }
+  };
+}(jQuery));
+
+$('.fader').darthFader({
+  speed: 1,
+  waitTime: 2000
+});
 
 
 

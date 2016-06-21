@@ -19,18 +19,3 @@ nav {
         display: none;
         backface-visibility: hidden;
       }
-
-
-
-
-      .side-nav {
-        position: fixed;
-        bottom: 1.5em;
-        left: 1.5em;
-        z-index: 9999;
-      }
-        nav.side-nav a {
-          color: var(--white) !important;
-          display: block;
-          margin: 0;
-        }

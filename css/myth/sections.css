@@ -6,12 +6,12 @@
     width: 100%;
     min-height: 21.6em;
     height: 75vw;
-    padding-top: var(--gridpadding);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
     align-items: center;
+    padding: var(--boxpadding);
   }
     header .row {
       display: flex;
@@ -25,9 +25,25 @@
 
 .spaced {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
+  .spaced div {
+    max-width: 50%;
+  }
+  .spaced :not(:last-child) {
+    margin-bottom: var(--gridpadding);
+  }
+  @media screen and (min-width: 1200px) {
+    .spaced {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .spaced div {
+      max-width: 100%;
+    }
+  }
 
 
 
