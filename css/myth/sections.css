@@ -4,7 +4,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 21.6em;
+    min-height: 21.6em;
+    height: 75vw;
     padding-top: var(--gridpadding);
     display: flex;
     flex-direction: column;
@@ -34,7 +35,7 @@
 main {
   margin-top: 21.6em;
   padding: calc(5 * var(--gridpadding)) 0 0;
-  background-color: color(var(--black) tint(95%));
+  background-color: color(var(--black) tint(90%));
   background-image: url('../img/jrs86-logo.svg');
   background-attachment: fixed;
   background-position: 50% 50%;

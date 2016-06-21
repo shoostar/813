@@ -52,48 +52,36 @@ $('a[href^="#"]').on('click', function(e) {
 
 
 
-// Color changing background on scroll$(window).scroll(function() {
-var Sasha = (function () {
+// Color changing background on scroll
+$(window).scroll(function() {
 
-  var api = {};
-  var $panels = null;
-  var watchers = [];
-  var currentColor = null;
+  // selectors
+  var $window = $(window),
+      $main = $('main'),
+      $panel = $('.panel');
 
-  api.init = function() {
-    $panels = document.querySelectorAll( '.panel' );
+  // Change 33% earlier than scroll position so colour is there when you arrive.
+  var scroll = $window.scrollTop() + ($window.height() / 20);
 
-    for (var i = 0; i < $panels.length; i++) {
-      watchers.push = api.createWatcher( $panels[i] );
+  $panel.each(function () {
+    var $this = $(this);
+
+    // if position is within range of this panel.
+    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+    // Remember we set the scroll to 33% earlier in scroll var.
+    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+      // Remove all classes on body with color-
+      $main.removeClass(function (index, css) {
+        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+      });
+
+      // Add class of currently active div
+      $main.addClass('color-' + $(this).data('color'));
     }
+  });
 
-  };
-
-  api.createWatcher = function( element ) {
-    var watcher = scrollMonitor.create( element );
-    var elementColor = element.getAttribute( "data-color" );
-
-    watcher.stateChange( function() {
-      if (!watcher.isFullyInViewport) {
-        return
-      } else if (currentColor !== elementColor) {
-        currentColor = elementColor;
-        requestAnimationFrame( api.changeBodyClass() );
-      }
-    });
-  };
-
-  api.changeSectionClass = function( ) {
-    document.section.style.backgroundColor = currentColor;
-  };
-
-  return api;
-
-})();
-
-$(document).ready(function() {
-  Sasha.init();
-});
+}).scroll();
 
 
 
