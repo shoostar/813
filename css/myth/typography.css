@@ -83,6 +83,11 @@ body{
     font-size: 28px;
   }
 }
+@media (min-width: 1200px) {
+  :root {
+    font-size: 36px;
+  }
+}
 
 
 
