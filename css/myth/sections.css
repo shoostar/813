@@ -93,7 +93,7 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  padding: var(--boxpadding) 0;
+  padding: var(--gridpadding) 0;
   min-height: 100%;
   width: 100%;
   z-index: 101;
@@ -161,20 +161,6 @@ footer {
 .glitch-btn:hover {
   animation: wiggle 0.138s linear alternate-reverse;
 }
-.glitch-btn:hover:after {
-  content: ':̪̺̠̺͗ͨ̋ͩ͗:̛͇̱̥̥̙̎͆̑ͮ̐͢:̷̲ͮ̃́̅ͦ̔͐̆:̴͈͖̮̪̗̈́̆̀:̨̙̗̺̞̥͗̐ͫ:̗̰̜̟̮̦̉̂' !important;
-  z-index: -100;
-  position: absolute;
-  left: 0.5em;
-  top: -0.25em;
-  color: color(var(--red) alpha(8.13%));
-  opacity: 1;
-  clip: rect(44px, 50px, 56px, 0);
-  animation: glitch-anim-1 0.419s linear alternate;
-}
-  .modal .glitch-btn:hover:after {
-    color: color(var(--white) alpha(8.13%));
-  }
 .glitch-btn:hover .glitch {
   color: var(--red);
   position: relative;
