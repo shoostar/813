@@ -11,7 +11,7 @@
     justify-content: flex-start;
     align-content: center;
     align-items: center;
-    padding: var(--gridpadding) 0;
+    padding: calc(var(--gridpadding) * 6) 0 var(--gridpadding);
   }
     header .row {
       display: flex;
@@ -93,7 +93,7 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  padding: var(--gridpadding) 0;
+  padding: calc(var(--gridpadding) * 6) 0 var(--gridpadding);
   min-height: 100%;
   width: 100%;
   z-index: 101;
@@ -126,6 +126,7 @@ footer {
   font-weight: 800;
   display: inline-block;
   margin-bottom: 0;
+  z-index: 5000 !important;
 }
   .modal .pro {
     color: var(--white);
