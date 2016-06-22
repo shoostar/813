@@ -107,11 +107,8 @@ footer {
     visibility: visible;
     transition: opacity 0.5s;
   }
-  .modal h1, .modal h2, .modal h3, .modal h4, .modal h5, .modal h6 {
-    color: color(var(--red) shade(12.5%));
-  }
   .modal li {
-    color: color(var(--red) shade(50%));
+    color: var(--black);
   }
 
 
