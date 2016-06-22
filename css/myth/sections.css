@@ -4,14 +4,13 @@
     position: fixed;
     top: 0;
     width: 100%;
-    min-height: 13.8em;
-    height: 75vw;
+    height: 13.8em;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: center;
     align-items: center;
-    padding: calc(var(--gridpadding) * 6) 0 var(--gridpadding);
+
   }
     header .row {
       display: flex;
@@ -101,6 +100,11 @@ footer {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s, visibility 0s 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
   .modal.active {
     opacity: 1;
