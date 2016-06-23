@@ -226,7 +226,7 @@ a:link, a:visited {
   text-decoration: none;
   font-weight: 500;
 }
-  a:link:not(.glitch-btn)::before, a:link:not(.glitch-btn)::after, a:visited:not(.glitch-btn)::before, a:visited:not(.glitch-btn)::after {
+  a:link:not(.nav-item)::before, a:link:not(.nav-item)::after, a:visited:not(.nav-item)::before, a:visited:not(.nav-item)::after {
     content: '/';
     color: color(var(--black) tint(75%));
   }

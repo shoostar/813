@@ -7,6 +7,7 @@ nav {
     display: inline-block;
     border-bottom: none !important;
     color: color(var(--black) alpha(100%)) !important;
+    font-weight: 500;
   }
     nav a:hover {
       color: color(var(--black) alpha(35%)) !important;
@@ -18,3 +19,9 @@ nav {
         display: none;
         backface-visibility: hidden;
       }
+      .about .nav-item {
+        color: color(var(--black) tint(75%)) !important;
+      }
+        .about .nav-item:hover {
+          color: color(var(--black) tint(75%) alpha(50%)) !important;
+        }
