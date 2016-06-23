@@ -130,12 +130,13 @@ figure.portfolio-item {
   visibility: visible;
   transition: opacity 0.5s;
 }
-.modal-btn {
-  border: none;
-  outline: none;
-}
+  .modal p {
+    color: var(--white);
+  }
 [class*='-btn'] {
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Panel colors */

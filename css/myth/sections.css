@@ -134,7 +134,7 @@ section {
   position: relative;
   border-bottom: none !important;
   display: inline-block;
-  
+
 }
   .glitch {
     display: inline-block;
@@ -153,6 +153,9 @@ section {
   .about .glitch-btn:hover .glitch {
     color: color(var(--black) tint(75%));
   }
+  .modal .glitch-btn:hover .glitch {
+    color: var(--red);
+  }
 .glitch-btn:hover .glitch:before,
 .glitch-btn:hover .glitch:after {
   content: attr(data-text);
@@ -170,6 +173,10 @@ section {
   .about .glitch-btn:hover .glitch:after {
     color: -2px 0 var(--white) !important;
   }
+  .modal .glitch-btn:hover .glitch:before,
+  .modal .glitch-btn:hover .glitch:after {
+    color: -2px 0 var(--black) !important;
+  }
 .glitch-btn:hover .glitch::before {
   left: -2px;
   text-shadow: -0.0813em 0 color(green alpha(57.5%));
@@ -180,6 +187,9 @@ section {
   .about .glitch-btn:hover .glitch::before {
     background: var(--red);
   }
+  .modal .glitch-btn:hover .glitch::before {
+    background: var(--black);
+  }
 .glitch-btn:hover .glitch::after {
   left: -2px;
   text-shadow: 0.0813em 0.0419em color(dodgerblue alpha(50%));
@@ -189,6 +199,9 @@ section {
 }
   .about .glitch-btn:hover .glitch::after {
     background: var(--red);
+  }
+  .modal .glitch-btn:hover .glitch::after {
+    background: var(--black);
   }
 @keyframes glitch-anim-1 {
   0% { clip: rect(48px, 9999px, 36px, 0); }
