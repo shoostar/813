@@ -99,7 +99,7 @@ html {
 html, body {
   font-family: 'acumin-pro', sans-serif;
   color: color(var(--black) tint(25%));
-  letter-spacing: 0.0125rem;
+  letter-spacing: 0.025rem;
   background-color: color(var(--black) tint(95%));
   font-weight: 200;
 }
@@ -306,8 +306,9 @@ ol ul {
   ul.also li {
     display: inline;
   }
-    ul.also li::after {
-      content: '\00a0\00a0\00a0\00a0\00a0';
+    ul.also li:not(:last-child)::after {
+      content: '\00a0\2014';
+      color: color(var(--black) tint(75%));
     }
 
 
