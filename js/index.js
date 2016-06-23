@@ -175,7 +175,7 @@ var Glitch = function () {
         this.timeline.to(this._turbValX, 0.1, {
             val: 0.2,
             ease: Power0.easeNone
-        }, 0.5);
+        }, 1);
         this.timeline.set(this._turbValX, {
             val: 0,
             ease: Power0.easeNone
