@@ -152,6 +152,42 @@ $('.fader').darthFader({
 
 
 
+
+'use strict';
+var Glitch = function () {
+    function Glitch() {
+        this._text = document.querySelector('.heading');
+        this._filter = document.querySelector('.svg-filters');
+        this._turb = this._filter.querySelector('#filter feTurbulence');
+        this._turbVal = { val: 0.000001 };
+        this._turbValX = { val: 0.000001 };
+        this.createTimeline();
+    }
+    Glitch.prototype.createTimeline = function () {
+        var _this = this;
+        this.timeline = new TimelineMax({
+            repeat: 9999,
+            onUpdate: function () {
+                _this._turb.setAttribute('baseFrequency', _this._turbVal.val + ' ' + _this._turbValX.val);
+            }
+        });
+
+        this.timeline.to(this._turbValX, 0.1, {
+            val: 0.2,
+            ease: Power0.easeNone
+        }, 0.5);
+        this.timeline.set(this._turbValX, {
+            val: 0,
+            ease: Power0.easeNone
+        }, 2);
+
+    };
+    return Glitch;
+}();
+new Glitch();
+
+
+
 // Fire Modal
 $('.modal-btn').click(function(e) {
   $('.modal').addClass('active');

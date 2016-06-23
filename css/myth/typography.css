@@ -114,7 +114,7 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+  font-weight: 800;
   margin: 0;
   color: var(--black);
 }
@@ -224,6 +224,7 @@ a:link, a:visited {
   color: var(--black);
   transition: all ease-in-out 0.15s !important;
   text-decoration: none;
+  font-weight: 500;
 }
   a:link:not(.glitch-btn)::before, a:link:not(.glitch-btn)::after, a:visited:not(.glitch-btn)::before, a:visited:not(.glitch-btn)::after {
     content: '/';
@@ -305,6 +306,7 @@ ol ul {
   }
   ul.also li {
     display: inline;
+    font-weight: 500;
   }
     ul.also li:not(:last-child)::after {
       content: '\00a0\2014';

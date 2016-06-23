@@ -22,14 +22,24 @@
 
 <body>
 
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+  <defs>
+    <filter id="filter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.000001 0.000001" numOctaves="1" result="warp"></feTurbulence>
+      <feOffset dx="0" dy="0" result="warpOffset"></feOffset>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+    </filter>
+  </defs>
+</svg>
+
 <main>
   <header class="row panel about" data-color="jrs86">
-    <div class="w--2of3 o--1of6 pinned">
-      <h4><a class="glitch-btn">
-        <span class="glitch" data-text="JRS⁸⁶">
+    <div class="w--1of1 pinned">
+      <h2 class="heading"><a class="glitch-btn">
+        <span class="glitch super-glitch" data-text="JRS⁸⁶">
           <strong class="pro">JRS<sup>86</sup></strong>
         </span>
-      </a> creates durable brands that establish confidence in ownership. this helps brands gain the trust and undivided attention of their audience. this can be achieved by:</h4>
+      </a> creates durable brands that establish confidence in ownership. this helps brands gain the trust and undivided attention of their audience. this can be achieved by:</h2>
       <ul class="also">
         <li>strategizing with new startups</li>
         <li>developing innovative product packaging</li>
@@ -39,7 +49,7 @@
         <li>directing project design process</li>
       </ul>
       <p> Jon is a production designer from Michigan. kind of an introvert, avid Red Wings fan, games far too much. right now he's keeping his suey chopped at <a href="http://nopp.com/" target="_blank">NOPP</a>, but he's looking to expand his horizons and seek new opportunities.</p>
-      <nav>
+      <nav >
         <a class="glitch-btn" href="mailto:aonmedia@live.com?subject=hey man">
           <span class="glitch" data-text="email Jon">
             <strong class="pro">email Jon</strong>
@@ -58,6 +68,7 @@
 
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js" defer></script>
 <script>
   function downloadJSAtOnload() {
     var element = document.createElement("script");
