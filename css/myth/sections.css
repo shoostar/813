@@ -79,6 +79,9 @@ section {
   .about li, p {
     color: var(--black);
   }
+  .about small {
+    color: color(var(--black) alpha(75%));
+  }
 
 
 
