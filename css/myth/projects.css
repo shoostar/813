@@ -110,19 +110,9 @@ figure.portfolio-item {
 
 
 
-  /* colours */
-  .panel {
-    min-height: 100vh !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 6.5em 0 5em;
-  }
-    .panel * {
-      color: var(--white) !important;
-    }
+/* Panel colors */
 .color-white {
-  background-color: var(--white);
+  background-color: color(var(--black) tint(95%));
 }
 .color-dope {
   background-color: #8DC63F;
@@ -135,6 +125,9 @@ figure.portfolio-item {
 }
 .color-jrs86 {
   background-color: var(--red);
+}
+.color-black {
+  background-color: var(--black);
 }
 
 
@@ -161,77 +154,5 @@ img[class] {
   width: 100%;
 }
 .object-fit_cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
-
-
-.fader {
-  position: relative;
-  width: 100%;
-  padding-bottom: calc(56.25% / var(--gridpadding));
-  max-height: 56.25%;
-  overflow: hidden;
-  -webkit-perspective: 2000px;
-  -moz-perspective: 2000px;
-  perspective: 2000px;
-}
-.fader .fader-dots {
-  position: absolute;
-  bottom: 0;
-  right: 1.5em;
-  z-index: 3000;
-}
-.fader .fader-dots li {
-  display: inline-block;
-  width: 0.5em;
-  height: 0.5em;
-  background: var(--red);
-  margin-left: 0.25em;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.fader .fader-dots li.active {
-  background: var(--black);
-}
-.fader .item {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: block;
-  visibility: hidden;
-  transition-property: visibility;
-}
-.fader .item.active {
-  visibility: visible;
-}
-
-
-.spaced {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-  .spaced div {
-    max-width: 50%;
-  }
-  .spaced div::before {
-    padding-bottom: calc(56.25% - var(--gridpadding)/4)
-  }
-  .spaced :not(:last-child) {
-    margin-bottom: var(--gridpadding);
-  }
-  @media screen and (min-width: 1200px) {
-    .spaced {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .spaced div {
-      max-width: 100%;
-    }
-
-  }

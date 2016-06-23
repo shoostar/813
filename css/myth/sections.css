@@ -1,34 +1,15 @@
 /* HEADER */
   header {
-    background: color(var(--black) tint(90%));
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 13.8em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-
+    padding: var(--boxpadding) 0;
   }
-    header .row {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-content: flex-start;
-      align-items: flex-start;
-    }
+
 
 
 
 /* MAIN and SECTION */
 main {
-  margin-top: 13.8em;
   /*padding: calc(5 * var(--gridpadding)) 0 0;*/
-  padding: var(--gridpadding) 0 0;
-  background-color: color(var(--black) tint(90%));
-  background-image: url('../img/jrs86-logo.svg');
+  /*background-image: url('../img/jrs86-logo.svg');*/
   background-attachment: fixed;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -37,13 +18,12 @@ main {
   min-height: 100%;
 }
 section {
-  /*padding: 0 0 calc(4 * var(--gridpadding));*/
+  padding: var(--gridpadding) 0 0;
 }
 .outro {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
 }
   @media screen and (min-width: 1200px) {
     .outro {
@@ -88,30 +68,14 @@ footer {
 
 
 /* Popup window for info section */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
+section {
   padding: var(--gridpadding) 0;
-  min-height: 100%;
-  width: 100%;
-  z-index: 101;
-  background-color: var(--red);
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.5s, visibility 0s 0.5s;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
   align-items: center;
 }
-  .modal.active {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.5s;
-  }
-  .modal li, p {
+  .about li, p {
     color: var(--black);
   }
 
@@ -129,7 +93,7 @@ footer {
   margin-bottom: 0;
   z-index: 5000 !important;
 }
-  .modal .pro {
+  .about .pro {
     color: color(var(--black) tint(75%));
   }
 
@@ -168,7 +132,7 @@ footer {
   position: relative;
   margin: 0 auto;
 }
-  .modal .glitch-btn:hover .glitch {
+  .about .glitch-btn:hover .glitch {
     color: color(var(--black) tint(75%));
   }
 .glitch-btn:hover .glitch:before,
@@ -183,28 +147,28 @@ footer {
   height: 100%;
   z-index: 0;
 }
-  .modal .glitch-btn:hover .glitch:before,
-  .modal .glitch-btn:hover .glitch:after {
+  .about .glitch-btn:hover .glitch:before,
+  .about .glitch-btn:hover .glitch:after {
     color: -2px 0 var(--white) !important;
   }
 .glitch-btn:hover .glitch::before {
   left: -2px;
   text-shadow: -2px 0 color(green alpha(57.5%));
-  background: color(var(--black) tint(90%));
+  background: color(var(--black) tint(95%));
   clip: rect(44px, 50px, 56px, 0);
   animation: glitch-anim-1 0.313s linear alternate-reverse;
 }
-  .modal .glitch-btn:hover .glitch::before {
+  .about .glitch-btn:hover .glitch::before {
     background: var(--red);
   }
 .glitch-btn:hover .glitch::after {
   left: -2px;
   text-shadow: 2px 1px color(dodgerblue alpha(75%));
-  background: color(var(--black) tint(90%));
+  background: color(var(--black) tint(95%));
   clip: rect(44px, 50px, 56px, 0);
   animation: glitch-anim-2 0.419s linear alternate;
 }
-  .modal .glitch-btn:hover .glitch::after {
+  .about .glitch-btn:hover .glitch::after {
     background: var(--red);
   }
 @keyframes glitch-anim-1 {
@@ -232,42 +196,4 @@ footer {
   80% { clip: rect(54px, 9999px, 16px, 0); }
   90% { clip: rect(44px, 9999px, 91px, 0); }
   100% { clip: rect(24px, 9999px, 90px, 0); }
-}
-
-.scroll {
-  position: absolute;
-  display: block;
-  z-index: 2;
-  width: 30px;
-  height: 50px;
-  border-radius: 14px;
-  border: 2px #111 solid;
-  transition: all 0.5s ease;
-}
-.scroll:hover {
-  opacity: 0.5;
-  transition: all 0.5s ease;
-}
-.scroll:before {
-  content: '';
-  position: absolute;
-  top: 8px;
-  left: 11px;
-  width: 4px;
-  height: 4px;
-  background: #111;
-  border-radius: 4px;
-  animation: scrollanim 2s infinite;
-}
-
-@keyframes scrollanim {
-  0% {
-    height: 5px;
-  }
-  50% {
-    height: 24px;
-  }
-  100% {
-    height: 5px;
-  }
 }

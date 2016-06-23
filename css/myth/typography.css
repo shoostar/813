@@ -26,10 +26,7 @@ body{
 .wf-loading h5,
 .wf-loading h6,
 .wf-loading p,
-.wf-loading small,
-.wf-loading strong,
-.wf-loading em,
-.wf-loading a,
+.wf-loading ul,
 .wf-loading nav,
 .wf-loading use {
   visibility: hidden !important;
@@ -43,10 +40,7 @@ body{
 .wf-active h5,
 .wf-active h6,
 .wf-active p,
-.wf-active small,
-.wf-active strong,
-.wf-active em,
-.wf-active a,
+.wf-active ul,
 .wf-active nav,
 .wf-active use
 .wf-inactive h1,
@@ -56,10 +50,7 @@ body{
 .wf-inactive h5,
 .wf-inactive h6,
 .wf-inactive p,
-.wf-inactive small,
-.wf-inactive strong,
-.wf-inactive em,
-.wf-inactive a,
+.wf-inactive ul,
 .wf-inactive nav,
 .wf-inactive use {
   opacity: 1 !important;
@@ -306,9 +297,7 @@ ol ul {
   font-size: 90%;
 }
   li {
-    -webkit-column-break-inside: avoid;
-            page-break-inside: avoid;
-                 break-inside: avoid;
+    break-inside: avoid;
   }
   ol li {
     text-decoration: underline;
@@ -318,7 +307,7 @@ ol ul {
     display: inline;
   }
     ul.also li::after {
-      content: '\00a0\00a0\00a0';
+      content: '\00a0\00a0\00a0\00a0\00a0';
     }
 
 
