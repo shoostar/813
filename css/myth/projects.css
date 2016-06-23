@@ -109,6 +109,34 @@ figure.portfolio-item {
 
 
 
+/* Modals */
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 101;
+  background-color: var(--black);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+.modal-btn {
+  border: none;
+  outline: none;
+}
+[class*='-btn'] {
+  cursor: pointer;
+}
 
 /* Panel colors */
 .color-white {
