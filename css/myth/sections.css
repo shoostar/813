@@ -92,7 +92,7 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  padding: calc(var(--gridpadding) * 6) 0 var(--gridpadding);
+  padding: var(--gridpadding) 0;
   min-height: 100%;
   width: 100%;
   z-index: 101;
@@ -111,7 +111,7 @@ footer {
     visibility: visible;
     transition: opacity 0.5s;
   }
-  .modal li {
+  .modal li, p {
     color: var(--black);
   }
 
@@ -130,7 +130,7 @@ footer {
   z-index: 5000 !important;
 }
   .modal .pro {
-    color: var(--white);
+    color: color(var(--black) tint(75%));
   }
 
 
@@ -169,12 +169,12 @@ footer {
   margin: 0 auto;
 }
   .modal .glitch-btn:hover .glitch {
-    color: var(--white);
+    color: color(var(--black) tint(75%));
   }
 .glitch-btn:hover .glitch:before,
 .glitch-btn:hover .glitch:after {
   content: attr(data-text);
-  color: -2px 0 color(var(--red) alpha(25%)) !important;
+  color: -2px 0 var(--red) !important;
   font-weight: 500;
   position: absolute;
   top: 0;
@@ -185,7 +185,7 @@ footer {
 }
   .modal .glitch-btn:hover .glitch:before,
   .modal .glitch-btn:hover .glitch:after {
-    color: -2px 0 color(var(--white) alpha(25%)) !important;
+    color: -2px 0 var(--white) !important;
   }
 .glitch-btn:hover .glitch::before {
   left: -2px;

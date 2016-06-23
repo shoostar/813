@@ -7,7 +7,6 @@ nav {
     display: inline-block;
     border-bottom: none !important;
     color: color(var(--black) alpha(100%)) !important;
-    text-transform: lowercase;
   }
     nav a:hover {
       color: color(var(--black) alpha(35%)) !important;

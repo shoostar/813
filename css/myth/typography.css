@@ -233,11 +233,13 @@ a:link, a:visited {
   color: var(--black);
   transition: all ease-in-out 0.15s !important;
   text-decoration: none;
-  border-bottom: 1px solid color(var(--black) alpha(25%));
 }
+  a:link:not(.glitch-btn)::before, a:link:not(.glitch-btn)::after, a:visited:not(.glitch-btn)::before, a:visited:not(.glitch-btn)::after {
+    content: '/';
+    color: color(var(--black) tint(75%));
+  }
   a:hover, a:focus, a:active {
-    color: color(var(--black) tint(50%));
-    border-bottom: 1px solid color(var(--black) alpha(0%));
+    color: color(var(--black) tint(75%));
   }
 hr {
   border: 0;
