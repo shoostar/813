@@ -10,6 +10,7 @@
 main {
   /*padding: calc(5 * var(--gridpadding)) 0 0;*/
   /*background-image: url('../img/jrs86-logo.svg');*/
+  background-color: var(--red);
   background-attachment: fixed;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -75,9 +76,6 @@ section {
   flex-direction: column;
   align-items: center;
 }
-  .about {
-    background-color: var(--red);
-  }
   .about li, p {
     color: var(--black);
   }
