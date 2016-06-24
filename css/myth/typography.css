@@ -241,7 +241,7 @@ hr {
   width: 100%;
 }
   hr.chunk {
-    height: 0.35em;
+    height: 0.325em;
     margin-bottom: var(--boxpadding);
     width: 4em;
   }
