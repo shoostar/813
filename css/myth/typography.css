@@ -243,7 +243,7 @@ hr {
   hr.chunk {
     height: 0.35em;
     margin-bottom: var(--boxpadding);
-    width: 5em;
+    width: 4em;
   }
 kbd {
   padding: 0.125rem 0.5rem 0.25rem 0.5rem;
@@ -313,8 +313,8 @@ ol ul {
     display: inline;
     font-weight: 500;
   }
-    ul.also li:not(:first-child)::before {
-      content: '\2014\00a0';
+    ul.also li:not(:last-child)::after {
+      content: '\00a0\2014';
       color: color(var(--black) tint(75%));
     }
 

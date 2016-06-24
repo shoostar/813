@@ -37,8 +37,14 @@ section {
 
 
 
-span.divider {
-  margin: 0 1em;
+.divider {
+  margin-left: calc(var(--gridpadding) / 2.5);
+  position: relative;
+  top: calc(var(--gridpadding) / 3);
+  font-size: 400%;
+  font-weight: 500;
+  line-height: 0;
+  color: color(var(--black) tint(75%));
 }
 .resume {
   display: inline-block;
