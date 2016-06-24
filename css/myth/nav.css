@@ -25,8 +25,7 @@ nav {
         .about .nav-item:hover {
           color: color(var(--black) tint(75%) alpha(50%)) !important;
         }
-        /* I don't care that shitty class names are shitty. What the fuck would you call it? */
-        .about .nav-item:hover::after {
+        /*.about .nav-item:hover::after {
           content: '/';
           color: color(var(--black) tint(75%) alpha(50%)) !important;
           position: absolute;
@@ -34,4 +33,4 @@ nav {
           top: 0;
           font-size: 5em;
           display: inline;
-        }
+        }*/
