@@ -138,6 +138,14 @@ figure.portfolio-item {
   border: none;
   outline: none;
 }
+  .activity-btn, .activity-btn::before {
+    color: color(var(--black) tint(75%));
+  }
+  .activity-btn::before {
+    content: '\00a0+\00a0';
+  }
+
+
 
 /* Panel colors */
 .color-white {

@@ -313,8 +313,8 @@ ol ul {
     display: inline;
     font-weight: 500;
   }
-    ul.also li:not(:last-child)::after {
-      content: '\00a0\2014';
+    ul.also li:not(:first-child)::before {
+      content: '\2014\00a0';
       color: color(var(--black) tint(75%));
     }
 
