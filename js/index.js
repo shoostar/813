@@ -218,9 +218,12 @@ $(document).ready(function() {
       });
 
       json.forEach(function(val) {
-        html += "<li class = 'activity'>";
+        html += "<p class = 'activity'>";
         html += val.Activity;
-        html += "</li>";
+        html += "</p>";
+        html += "<p class = 'activity'>";
+        html += val.laterUse;
+        html += "</p>";
       });
       $(".activity").html(html);
     });
