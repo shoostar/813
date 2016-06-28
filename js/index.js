@@ -199,8 +199,6 @@ $(document).ready(function() {
   var lastActivity = "";
   var whichActivityToChoose = "";
 
-  $("#getActivity").on("click", getTheActivity);
-
   // time to get investors
   function getTheActivity() {  
     $.getJSON("js/lets-party.js", function(json) {
@@ -218,12 +216,7 @@ $(document).ready(function() {
       });
 
       json.forEach(function(val) {
-        html += "<p class = 'activity'>";
         html += val.Activity;
-        html += "</p>";
-        html += "<p class = 'activity'>";
-        html += val.laterUse;
-        html += "</p>";
       });
       $(".activity").html(html);
     });
