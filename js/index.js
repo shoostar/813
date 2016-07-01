@@ -193,36 +193,36 @@ new Glitch();
 
 
 // SO MUCH ROOM FOR ACTIVITIES!!!
+function Quote(text, author) {
+  this.text = text;
+  this.author = author;
+}
+
+var quotes = [];
+quotes.push(new Quote("smashing his face into pies", "He absolutely LOVES apple pie"));
+quotes.push(new Quote("scribbling doodles on notepads", "He can't actually draw for shit"));
+quotes.push(new Quote("reinstalling Windows 7", "Windows 10 is incompatible with everything"));
+quotes.push(new Quote("keeping his suey chopped", "He doesn't particularly care for Chinese food"));
+
+var getNewRandomQuote = function() {
+  return quotes[Math.floor(Math.random() * quotes.length)];
+};
+
 $(document).ready(function() {
+  // Set background on initial run
 
-  // list all activities only once
-  var lastActivity = "";
-  var whichActivityToChoose = "";
+  var buttons = [];
+  var body = $(document.body);
+  var quoteElement = $('#quote');
 
-  // time to get investors
-  function getTheActivity() {  
-    $.getJSON("js/lets-party.js", function(json) {
-      var html = "";
+  var displayNewQuote = function() {
+    var newQuote = getNewRandomQuote();
 
-      // don't be boring and do an activity twice in a row
-      while (whichActivityToChoose === lastActivity) {
-        whichActivityToChoose = Math.floor(Math.random() * 10); // returns a number between 0 and 9
-      }
-      lastActivity = whichActivityToChoose;
-
-      // we need to show people how we're gonna party
-      json = json.filter(function(val) {
-        return (val.id == whichActivityToChoose);
-      });
-
-      json.forEach(function(val) {
-        html += val.Activity;
-      });
-      $(".activity").html(html);
-    });
+    $("#text").html(newQuote.text);
+    $("#author").html(newQuote.author);
   };
-  // because there's so much room for them
-  getTheActivity();
+
+  displayNewQuote();
 });
 
 
