@@ -200,9 +200,9 @@ function Quote(text, author) {
 
 var quotes = [];
 quotes.push(new Quote("smashing his face into pies", "He absolutely LOVES apple pie"));
-quotes.push(new Quote("scribbling doodles on notepads", "He can't actually draw for shit"));
-quotes.push(new Quote("reinstalling Windows 7", "Windows 10 is incompatible with everything"));
+quotes.push(new Quote("scribbling doodles on notepads", "Paper is in near-limitless supply here"));
 quotes.push(new Quote("keeping his suey chopped", "He doesn't particularly care for Chinese food"));
+quotes.push(new Quote("probab", "He doesn't particularly care for Chinese food"));
 
 var getNewRandomQuote = function() {
   return quotes[Math.floor(Math.random() * quotes.length)];
