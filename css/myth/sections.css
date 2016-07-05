@@ -83,12 +83,6 @@ section {
   flex-direction: column;
   align-items: center;
 }
-  .about li, p {
-    color: var(--black);
-  }
-  .about small {
-    color: color(var(--black) alpha(75%));
-  }
 
 
 
@@ -111,9 +105,9 @@ section {
   visibility: visible;
   transition: opacity 0.5s;
 }
-  .modal p {
-    color: var(--white);
-  }
+
+
+
 [class*='-btn'] {
   cursor: pointer;
   border: none;
