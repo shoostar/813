@@ -109,44 +109,6 @@ figure.portfolio-item {
 
 
 
-/* Modals */
-.modal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 101;
-  background-color: var(--black);
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.5s, visibility 0s 0.5s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.modal.active {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s;
-}
-  .modal p {
-    color: var(--white);
-  }
-[class*='-btn'] {
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-  .activity-btn, .activity-btn::before {
-    color: color(var(--black) tint(75%));
-  }
-  .activity-btn::before {
-    content: '\00a0+\00a0';
-  }
-
-
-
 /* Panel colors */
 .color-white {
   background-color: color(var(--black) tint(95%));

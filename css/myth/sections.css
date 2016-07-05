@@ -44,7 +44,7 @@ section {
   font-size: 400%;
   font-weight: 500;
   line-height: 0;
-  color: color(var(--black) tint(75%));
+  color: var(--red);
 }
 .resume {
   display: inline-block;
@@ -87,6 +87,43 @@ section {
   }
   .about small {
     color: color(var(--black) alpha(75%));
+  }
+
+
+
+/* Modals */
+.modal {
+  position: absolute;
+  padding: var(--boxpadding) 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 101;
+  background-color: var(--black);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+
+}
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+  .modal p {
+    color: var(--white);
+  }
+[class*='-btn'] {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+  .activity-btn, .activity-btn::before {
+    color: color(var(--black) tint(75%));
+  }
+  .activity-btn::before {
+    content: '\00a0+\00a0';
   }
 
 
