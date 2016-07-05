@@ -6,11 +6,11 @@ nav {
   nav a {
     display: inline-block;
     border-bottom: none !important;
-    color: color(var(--black) tint(75%)) !important;
+    color: var(--white);
     font-weight: 500;
   }
     nav a:hover {
-      color: color(var(--black) tint(35%)) !important;
+      color: color(var(--white) alpha(35%)) !important;
     }
     nav a:not(:first-child) {
       margin-left: 1em;

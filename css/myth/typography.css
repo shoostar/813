@@ -243,7 +243,7 @@ hr {
 }
   hr.chunk {
     height: 0.325em;
-    margin-top: var(--boxpadding);
+    margin: var(--boxpadding) 0;
     width: 4em;
   }
 kbd {
@@ -316,7 +316,7 @@ ol ul {
   }
     ul.also li:not(:last-child)::after {
       content: '\00a0\2014';
-      color: color(var(--black) tint(75%));
+      color: var(--red);
     }
 
 
