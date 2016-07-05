@@ -98,9 +98,9 @@ html {
 }
 html, body {
   font-family: 'acumin-pro', sans-serif;
-  color: color(var(--black) tint(25%));
+  color: var(--white);
   letter-spacing: 0.0125rem;
-  background-color: color(var(--black) tint(95%));
+  background-color: color(var(--black) shade(81.3%));
   font-weight: 200;
 }
 body {
@@ -114,9 +114,9 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 800;
+  font-weight: 200;
   margin: 0;
-  color: var(--black);
+
 }
 h1 {
   font-size: 3em;
@@ -221,28 +221,29 @@ sup, sub {
     left: 0;
   }
 a:link, a:visited {
-  color: var(--black);
+  color: var(--white);
   transition: all ease-in-out 0.15s !important;
   text-decoration: none;
   font-weight: 500;
 }
   a:link:not(.nav-item)::before, a:link:not(.nav-item)::after, a:visited:not(.nav-item)::before, a:visited:not(.nav-item)::after {
     content: '/';
-    color: color(var(--black) tint(75%));
+    font-weight: 800;
+    color: var(--red);
   }
   a:hover, a:focus, a:active {
-    color: color(var(--black) tint(75%));
+    color: color(var(--black) tint(50%));
   }
 hr {
   border: 0;
   height: 3px;
-  background: color(var(--black) tint(75%));
+  background: var(--red);
   margin: 0;
   width: 100%;
 }
   hr.chunk {
     height: 0.325em;
-    margin-bottom: var(--boxpadding);
+    margin-top: var(--boxpadding);
     width: 4em;
   }
 kbd {

@@ -19,9 +19,3 @@ nav {
         display: none;
         backface-visibility: hidden;
       }
-      .about .nav-item {
-        color: var(--black) !important;
-      }
-        .about .nav-item:hover {
-          color: color(var(--black) tint(75%)) !important;
-        }

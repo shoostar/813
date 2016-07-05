@@ -1,126 +1,25 @@
-figure.portfolio-item {
-  position: relative;
+/* TAP!!! */
+button.tap {
+  width: 3em;
+  height: 3em;
+  border-radius: 1.5em;
+  background: none;
+  border: 0.1875em dotted var(--white);
+  color: var(--white);
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
   display: block;
-  width: 100%;
-  height: 56.25%;
-  overflow: hidden;
+  text-align: center !important;
+  padding: 0 0 0.25em;
+  opacity: 0.5;
 }
-  figure.portfolio-item figcaption {
-    background-color: rgba(0, 0, 0, 1);
-    color: var(--white);
-  }
-  figure.portfolio-item figcaption h6 {
-    color: var(--white);
-  }
-  figure.portfolio-item figcaption p {
-    color: color(var(--white) alpha(75%));
-  }
-    figure.portfolio-item:hover figcaption {
-      background-color: var(--red);
-    }
-  figure.portfolio-item figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 1.5em;
-    background: var(--red);
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.15s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: var(--white);
-  }
-    figure.portfolio-item:hover figcaption {
-      opacity: 1;
-    }
-  .brand-image {
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-  }
-    .slide-hide {
-      background: color(var(--black) shade(25%) alpha(65%));
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-    }
-    .brand-logo {
-      max-width: 8em !important;
-      max-height: 6.5em !important;
-      width: 100%;
-      margin: auto;
-    }
-    a.view-project {
-      display: inline-block;
-      color: var(--white) !important;
-      border-bottom-color: var(--white);
-    }
-      @media screen and (min-width: 1200px) {
-        a.view-project {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          display: block;
-          text-indent: -9999px;
-          border-bottom: none !important;
-        }
-      }
-      .loose-logo {
-        max-width: 6.6666em !important;
-        max-height: 5em !important;
-        width: 100%;
-        margin: auto;
-      }
-
-
-
-  /* TAP!!! */
-  button.tap {
-    width: 3em;
-    height: 3em;
-    border-radius: 1.5em;
-    background: none;
-    border: 0.1875em dotted var(--white);
-    color: var(--white);
-    position: absolute;
-    top: 1.5em;
-    right: 1.5em;
-    display: block;
-    text-align: center !important;
-    padding: 0 0 0.25em;
-    opacity: 0.5;
-  }
 
 
 
 /* Panel colors */
 .color-white {
   background-color: color(var(--black) tint(95%));
-}
-.color-dope {
-  background-color: #8DC63F;
-}
-.color-aggam {
-  background-color: #556B2F;
-}
-.color-c4sauce {
-  background-color: #FF4500;
 }
 .color-jrs86 {
   background-color: var(--red);
