@@ -242,7 +242,7 @@ hr {
 }
   hr.chunk {
     height: 0.325em;
-    margin-bottom: var(--boxpadding);
+    margin: var(--boxpadding) 0;
     width: 4em;
   }
 kbd {

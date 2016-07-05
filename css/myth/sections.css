@@ -44,8 +44,11 @@ section {
   font-size: 400%;
   font-weight: 500;
   line-height: 0;
-  color: var(--red);
+  color: color(var(--black) tint(75%));
 }
+  .modal .divider {
+    color: var(--red);
+  }
 .resume {
   display: inline-block;
 }
@@ -112,8 +115,21 @@ section {
   transition: opacity 0.5s;
 }
   .modal p {
-    color: var(--white);
+    color: color(var(--black) tint(75%));
   }
+  .modal a:link, .modal a:visited {
+    color: var(--white);
+    transition: all ease-in-out 0.15s !important;
+    text-decoration: none;
+    font-weight: 500;
+  }
+    .modal a:link:not(.nav-item)::before, .modal a:link:not(.nav-item)::after, .modal a:visited:not(.nav-item)::before, .modal a:visited:not(.nav-item)::after {
+      content: '/';
+      color: color(var(--black) tint(35%));
+    }
+    .modal a:hover, .modal a:focus, .modal a:active {
+      color: color(var(--black) tint(35%));
+    }
 [class*='-btn'] {
   cursor: pointer;
   border: none;
