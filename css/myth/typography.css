@@ -98,9 +98,9 @@ html {
 }
 html, body {
   font-family: 'acumin-pro', sans-serif;
-  color: var(--white);
+  color: var(--red);
   letter-spacing: 0.0125rem;
-  background-color: color(var(--black) shade(81.3%));
+  background-color: var(--white);
   font-weight: 200;
 }
 body {
@@ -236,7 +236,7 @@ a:link, a:visited {
 hr {
   border: 0;
   height: 3px;
-  background: var(--red);
+  background: var(--black);
   margin: 0;
   width: 100%;
 }
@@ -315,7 +315,7 @@ ol ul {
   }
     ul.also li:not(:last-child)::after {
       content: '\00a0\2014';
-      color: var(--red);
+      color: var(--black);
     }
 
 
