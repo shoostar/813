@@ -202,7 +202,7 @@ var quotes = [];
 quotes.push(new Quote("smashing his face into pies", "He absolutely LOVES homemade Dutch apple pie"));
 quotes.push(new Quote("scribbling doodles on notepads", "Paper is in near-limitless supply here"));
 quotes.push(new Quote("keeping his suey chopped", "He doesn't particularly care for Chinese food"));
-quotes.push(new Quote("probab", "He doesn't particularly care for Chinese food"));
+quotes.push(new Quote("probably listening to obnoxiously loud music", "Very much a metalhead"));
 
 var getNewRandomQuote = function() {
   return quotes[Math.floor(Math.random() * quotes.length)];
