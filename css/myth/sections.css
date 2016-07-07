@@ -76,16 +76,6 @@ footer {
 
 
 
-/* Popup window for info section */
-section {
-  padding: var(--gridpadding) 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
 /* Modals */
 .modal {
   position: absolute;
