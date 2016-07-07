@@ -29,13 +29,18 @@ button.tap {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     text-shadow: 2px 2px 2px color(var(--black) alpha(25%));
     padding: var(--gridpadding);
+    background-color: color(var(--black) alpha(75%));
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+    cursor: pointer;
   }
     .portfolio-item figcaption:hover {
-      background-color: color(var(--black) alpha(75%));
+      opacity: 1;
     }
 
 
