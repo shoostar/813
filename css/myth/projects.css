@@ -17,6 +17,29 @@ button.tap {
 
 
 
+.portfolio-item {
+  min-height: 20em;
+  max-height: 50vw;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--red);
+}
+  .portfolio-item figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-shadow: 2px 2px 2px color(var(--black) alpha(25%));
+    padding: var(--gridpadding);
+  }
+    .portfolio-item figcaption:hover {
+      background-color: color(var(--black) alpha(75%));
+    }
+
+
+
 /* Panel colors */
 .color-white {
   background-color: color(var(--black) tint(95%));

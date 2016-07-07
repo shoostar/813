@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <title>JRS86</title>
+  <title>JRS⁸⁶ is on his way</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/stylesheet.css">
@@ -21,46 +22,77 @@
 
 <body>
 
-<header>
-  <div class="row">
-    <div class="w--1of1">
-      <a class="glitch-btn" href="index.html">
-        <div class="glitch" data-text="JRS86">
-          <strong class="pro">JRS<sup>86</sup></strong>
-        </div>
-      </a>
-      <nav>
-        <a href="about.html">about</a>
-        <a href="notes.html">notes</a>
-      </nav>
-    </div>
-  </div>
-</header>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+  <defs>
+    <filter id="filter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.000001 0.000001" numOctaves="1" result="warp"></feTurbulence>
+      <feOffset dx="0" dy="0" result="warpOffset"></feOffset>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+    </filter>
+  </defs>
+</svg>
 
 <main>
+  <a class="skip-main" href="#main" tabindex="-1">Skip to main content</a>
+  <header>
+    <div class="row">
+      <div class="w--1of2 pinned">
+        <h4 class="heading"><a class="glitch-btn modal-btn">
+          <span class="glitch super-glitch" data-text="JRS⁸⁶">
+            <span class="pro">JRS<sup>86</sup></span>
+          </span>
+        </a> creates durable brands that establish confidence in clients.</h4>
+        <hr class="chunk">
+      </div>
+      <div class="w--1of2 text-right pinned">
+        <nav>
+          <a class="nav-item" href="mailto:aonmedia@live.com?subject=hello%20Jon">Email</a>
+          <!-- <span class="divider">/</span> -->
+          <!-- <a class="nav-item" href="files/jons-cv.pdf">CV</a> -->
+          <a class="nav-item" href="https://linkedin.com/in/jonschuster">Linkedin</a>
+          <a class="nav-item" href="https://twitter.com/jon_schuster">Twitter</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
   <section>
     <div class="row">
-      <div class="w--1of2 column">
-        <p>Cliche taxidermy humblebrag, leggings meh lumbersexual normcore ethical flannel franzen irony roof party man bun XOXO. Fashion axe williamsburg mlkshk mumblecore, taxidermy tacos letterpress skateboard vinyl small batch blue bottle tote bag. Forage
-        etsy pour-over, small batch literally disrupt biodiesel synth. Shoreditch meggings freegan, kogi cronut locavore wayfarers migas affogato asymmetrical waistcoat narwhal jean shorts. Austin meggings cornhole tattooed vice, franzen +1 lumbersexual
-        try-hard gentrify 8-bit listicle farm-to-table synth. Ennui post-ironic mlkshk, iPhone pabst bitters marfa next level bicycle rights. Crucifix etsy wolf quinoa hoodie, neutra sriracha paleo tote bag.
-      </p>
-      <div class="modal">
-        <span class="closed">Open Me</span>
-        <span class="x-out">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5" height="5" viewBox="0 0 20 32">
-            <path d="M20 10l-4-4-6 6-6-6-4 4 6 6-6 6 4 4 6-6 6 6 4-4-6-6 6-6z"></path>
-          </svg>
-        </span>
-        <div class="open-text">
-          This is an open state of the modal.<br> Dismiss me please.
-        </div>
-      </div>
+      <figure class="w--1of3 portfolio-item lazy" data-src="img/mockups/bfc-cards.jpg">
+        <figcaption>
+          <h5>project title</h5>
+          <p>this is a project.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="w--2of3 portfolio-item lazy" data-src="img/mockups/bfc-cards.jpg">
+        <figcaption>
+          <h5>project title</h5>
+          <p>this is a project.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="w--2of3 portfolio-item lazy" data-src="img/mockups/bfc-cards.jpg">
+        <figcaption>
+          <h5>project title</h5>
+          <p>this is a project.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="w--1of3 portfolio-item lazy" data-src="img/mockups/bfc-cards.jpg">
+        <figcaption>
+          <h5>project title</h5>
+          <p>this is a project.</p>
+        </figcaption>
+      </figure>
     </div>
   </section>
 </main>
 
+
+
 <script src="//code.jquery.com/jquery-2.2.4.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js" defer></script>
 <script>
   function downloadJSAtOnload() {
     var element = document.createElement("script");
