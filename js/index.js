@@ -209,8 +209,6 @@ var getNewRandomQuote = function() {
 };
 
 $(document).ready(function() {
-  // Set background on initial run
-
   var buttons = [];
   var body = $(document.body);
   var quoteElement = $('#quote');

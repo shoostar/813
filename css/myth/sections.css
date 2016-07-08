@@ -140,9 +140,6 @@ footer {
   .glitch {
     display: inline-block;
   }
-.glitch-btn:hover {
-  animation: wiggle 0.138s linear alternate-reverse;
-}
 .glitch-btn:hover .glitch {
   color: var(--white);
   position: relative;
@@ -151,8 +148,8 @@ footer {
 .glitch-btn:hover .super-glitch {
   animation: jiggle 0.813s linear;
 }
-.glitch-btn:hover .glitch:before,
-.glitch-btn:hover .glitch:after {
+.glitch-btn:hover ::before,
+.glitch-btn:hover ::after {
   content: attr(data-text);
   color: var(--white) !important;
   font-weight: 800;

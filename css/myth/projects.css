@@ -33,7 +33,7 @@ button.tap {
     width: 100%;
     height: 100%;
     padding: var(--gridpadding);
-    background-color: color(var(--black) alpha(75%));
+    background-color: color(var(--black) tint(75%));
     opacity: 0;
     transition: opacity 0.15s ease-in-out;
     cursor: pointer;
