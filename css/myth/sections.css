@@ -109,7 +109,7 @@ footer {
   display: block;
 }
 .pro {
-
+  color: var(--red);
   font-weight: 800;
   display: inline-block;
   margin-bottom: 0;
@@ -138,7 +138,7 @@ footer {
     display: inline-block;
   }
 .glitch-btn:hover .glitch {
-  color: var(--white);
+  color: var(--red);
   position: relative;
   margin: 0 auto;
 }
@@ -148,7 +148,7 @@ footer {
 .glitch-btn:hover ::before,
 .glitch-btn:hover ::after {
   content: attr(data-text);
-  color: var(--white) !important;
+  color: var(--red) !important;
   font-weight: 800;
   position: absolute;
   top: 0;
@@ -160,14 +160,14 @@ footer {
 }
 .glitch-btn:hover .glitch::before {
   left: -2px;
-  text-shadow: -0.0813em 0 1px color(var(--red) alpha(100%));
+  text-shadow: -0.0813em 0 1px color(green alpha(50%));
   background-color: color(var(--black) shade(81.3%));
   clip: rect(100px, 50px, 56px, 0);
   animation: glitch-anim-1 0.313s linear alternate-reverse;
 }
 .glitch-btn:hover .glitch::after {
   left: -2px;
-  text-shadow: 0.0813em 0.0419em 1px color(dodgerblue alpha(75%));
+  text-shadow: 0.0813em 0.0419em 1px color(dodgerblue alpha(50%));
   background-color: color(var(--black) shade(81.3%));
   clip: rect(100px, 50px, 56px, 0);
   animation: glitch-anim-2 0.419s linear alternate;
