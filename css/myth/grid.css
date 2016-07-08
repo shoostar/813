@@ -84,7 +84,7 @@ main {
 
 
 /* OFFSETS */
-[class*='o--'] { margin-left: inherit; }
+[class*='o--'] { margin-left: calc(var(--gridpadding)); }
   @media screen and (min-width: 1200px) {
     .o--2of3 { margin-left: calc(66.6666% + calc(var(--gridpadding) / 2)); }
     .o--3of4 { margin-left: calc(75% + calc(var(--gridpadding) / 2));      }
