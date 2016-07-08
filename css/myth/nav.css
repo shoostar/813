@@ -1,7 +1,6 @@
 nav {
   position: relative;
   z-index: 100;
-
 }
   nav a {
     display: inline-block;
@@ -10,7 +9,7 @@ nav {
     font-weight: 500;
   }
     nav a:hover {
-      color: color(var(--black) tint(35%));
+      color: color(var(--black) tint(100%) alpha(35%));
     }
     nav a:not(:first-child) {
       margin-left: 1em;
@@ -18,4 +17,18 @@ nav {
       .active-page {
         display: none;
         backface-visibility: hidden;
+      }
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0.125em;
+      background: var(--red);
+      position: relative;
+      top: -0.5em;
+      z-index: -1;
+      transition: width 0.15s ease-in-out;
+    }
+      nav a:hover::after {
+        width: 100% !important;
       }

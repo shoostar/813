@@ -100,20 +100,25 @@ html, body {
   font-family: 'acumin-pro', sans-serif;
   color: var(--white);
   letter-spacing: 0.0125rem;
-  background-color: color(var(--black) shade(81.3%));
   font-weight: 200;
 }
 body {
   height: 100%;
   line-height: 1.25;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
+  background-color: color(var(--black) shade(81.3%));
+  background-image: url('../img/jrs86-logo.svg') !important;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 12.5%;
 }
 
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 800;
+  font-weight: 200;
   margin: 0;
 }
 h1 {
@@ -242,7 +247,7 @@ hr {
   hr.chunk {
     height: 0.325em;
     margin: var(--boxpadding) 0;
-    width: 4em;
+    width: 3.5em;
   }
 kbd {
   padding: 0.125rem 0.5rem 0.25rem 0.5rem;
