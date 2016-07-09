@@ -21,12 +21,7 @@
 Header set Connection keep-alive
 
 # Cache-control headers
-  # 2 HOURS
-  #<filesMatch "*">
-    Header set Cache-Control "max-age=7200, must-revalidate"
-  #</filesMatch>
 
-  # 480 weeks - 290304000
   # 2 WEEKS
   <filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|swf)$">
     Header set Cache-Control "max-age=1209600, public"
@@ -48,9 +43,6 @@ Header set Connection keep-alive
     Header set Cache-Control "max-age=7200, must-revalidate"
   </filesMatch>
 
-  <FilesMatch "\.(gif|jpg|png|ico|css|js|pdf|txt)$">
-    Header append Cache-Control "public"
-  </FilesMatch>
 </IfModule>
 
 ErrorDocument 400 error.html
