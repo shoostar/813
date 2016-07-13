@@ -33,10 +33,7 @@ var Glitch = function() {
       val: 0.3,
       ease: Power0.easeNone
     }, 1);
-    this.timeline.set(this._turbValX, {
-      val: 0,
-      ease: Power0.easeNone
-    }, 2);
+
 
   };
   return Glitch;
