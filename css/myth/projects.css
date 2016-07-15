@@ -7,6 +7,7 @@ button.tap {
   border: 0.1875em dotted var(--white);
   color: var(--white);
   position: absolute;
+  z-index: 50;
   top: 1.5em;
   right: 1.5em;
   display: block;
@@ -18,12 +19,13 @@ button.tap {
 
 
 .portfolio-item {
-  min-height: 20em;
+  min-height: 17.5em;
   max-height: 50vw;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--red);
+  position: relative;
 }
   .portfolio-item figcaption {
     display: flex;
@@ -31,7 +33,8 @@ button.tap {
     width: 100%;
     height: 100%;
     padding: var(--boxpadding);
-
+    position: relative;
+    z-index: 100;
     opacity: 0;
     transition: opacity 0.15s ease-in-out;
     cursor: pointer;
