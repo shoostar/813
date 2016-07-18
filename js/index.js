@@ -6,7 +6,6 @@ $('h1,h2,h3,h4,h5,h6,p').each(function() {
 
 
 // Glitch
-'use strict';
 var Glitch = function() {
   function Glitch() {
     this._text = document.querySelector('.heading');
@@ -56,17 +55,16 @@ function Quote(text, author) {
 }
 
 var quotes = [];
-quotes.push(new Quote("smashing his face into pies", "He absolutely LOVES homemade Dutch apple pie"));
+quotes.push(new Quote("thinking about what to eat for lunch", "Will work for homemade apple pie"));
 quotes.push(new Quote("scribbling doodles on notepads", "Paper is in near-limitless supply here"));
 quotes.push(new Quote("keeping his suey chopped", "He doesn't particularly care for Chinese food"));
-quotes.push(new Quote("probably listening to obnoxiously loud music", "Very much a metalhead"));
+quotes.push(new Quote("listening to obnoxiously loud music", "He is very much a metalhead"));
 
 var getNewRandomQuote = function() {
   return quotes[Math.floor(Math.random() * quotes.length)];
 };
 
 $(document).ready(function() {
-  var buttons = [];
   var body = $(document.body);
   var quoteElement = $('#quote');
 
