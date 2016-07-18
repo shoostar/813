@@ -31,7 +31,7 @@ var Glitch = function() {
     this.timeline.to(this._turbValX, 0.1, {
       val: 0.3,
       ease: Power0.easeNone
-    }, 1);
+    }, 0.25);
 
 
   };
@@ -65,9 +65,6 @@ var getNewRandomQuote = function() {
 };
 
 $(document).ready(function() {
-  var body = $(document.body);
-  var quoteElement = $('#quote');
-
   var displayNewQuote = function() {
     var newQuote = getNewRandomQuote();
 
