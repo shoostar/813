@@ -351,8 +351,7 @@ table {
 .bottomless { margin-bottom: 0 !important; }
 .text-center { text-align: center !important; }
 
-@media screen and (min-width: 1200px) {
-
+@media screen and (min-width: 800px) {
   .text-right { text-align: right !important; }
 }
 
