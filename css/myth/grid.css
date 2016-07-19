@@ -42,7 +42,7 @@ main {
   .w--1of3 { flex: 1 0 calc(50% - var(--gridpadding));          }
   .w--2of5 { flex: 1 0 calc(50% - var(--gridpadding));          }
   .w--1of2 { flex: 1 0 calc(100% - var(--gridpadding));         }
-  .w--3of5 { flex: 1 0 calc(66.6666% - var(--gridpadding));     }
+  .w--3of5 { flex: 1 0 calc(50% - var(--gridpadding));     }
   .w--2of3 { flex: 1 0 calc(100% - var(--gridpadding));         }
   .w--3of4 { flex: 1 0 calc(100% - var(--gridpadding));         }
   .w--4of5 { flex: 1 0 calc(100% - var(--gridpadding));         }
