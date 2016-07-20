@@ -28,6 +28,7 @@ body{
 .wf-loading p,
 .wf-loading ul,
 .wf-loading a,
+.wf-loading hr,
 .wf-loading use {
   visibility: hidden !important;
   opacity: 0 !important;
@@ -42,6 +43,7 @@ body{
 .wf-active p,
 .wf-active ul,
 .wf-active a,
+.wf-active hr,
 .wf-active use
 .wf-inactive h1,
 .wf-inactive h2,
@@ -52,6 +54,7 @@ body{
 .wf-inactive p,
 .wf-inactive ul,
 .wf-inactive a,
+.wf-inactive hr,
 .wf-inactive use {
   opacity: 1 !important;
   transition: opacity ease-in-out 0.5s !important;
