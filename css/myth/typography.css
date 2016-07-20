@@ -27,7 +27,7 @@ body{
 .wf-loading h6,
 .wf-loading p,
 .wf-loading ul,
-.wf-loading nav,
+.wf-loading a,
 .wf-loading use {
   visibility: hidden !important;
   opacity: 0 !important;
@@ -41,7 +41,7 @@ body{
 .wf-active h6,
 .wf-active p,
 .wf-active ul,
-.wf-active nav,
+.wf-active a,
 .wf-active use
 .wf-inactive h1,
 .wf-inactive h2,
@@ -51,7 +51,7 @@ body{
 .wf-inactive h6,
 .wf-inactive p,
 .wf-inactive ul,
-.wf-inactive nav,
+.wf-inactive a,
 .wf-inactive use {
   opacity: 1 !important;
   transition: opacity ease-in-out 0.5s !important;
@@ -151,7 +151,7 @@ h6 {
   line-height: 1;
   margin-bottom: .9em;
   text-transform: uppercase;
-  opacity: 0.25 !important;
+  color: color(var(--white) alpha(25%));
   letter-spacing: 0.25em;
 }
 p, ul, ol, dl, blockquote, pre {
