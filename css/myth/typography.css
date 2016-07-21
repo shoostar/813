@@ -154,7 +154,7 @@ h6 {
   line-height: 1;
   margin-bottom: .9em;
   text-transform: uppercase;
-  color: color(var(--white) alpha(25%));
+  color: var(--red);
   letter-spacing: 0.25em;
 }
 p, ul, ol, dl, blockquote, pre {
