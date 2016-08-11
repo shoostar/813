@@ -24,7 +24,6 @@ button.tap {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--red);
   position: relative;
 }
   .portfolio-item figcaption {
