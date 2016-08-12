@@ -44,40 +44,73 @@ button.tap {
 
 
 
-/* Panel colors */
-.color-white {
-  background-color: color(var(--black) tint(95%));
-}
-.color-jrs86 {
-  background-color: var(--red);
-}
-.color-black {
-  background-color: var(--black);
-}
-
-
-
-.FlexEmbed--16to9 {
-  display: block;
-  overflow: hidden;
-  position: relative;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--red);
-}
-.FlexEmbed--16to9:before {
-  content: "";
-  display: block;
-  padding-bottom: 56.25%;
-  width: 100%;
-}
-
-
-
 img[class] {
   width: 100%;
 }
 .object-fit_cover {
   object-fit: cover;
+}
+
+
+
+/* Modals */
+.btn {
+  background: #428bca;
+  border: #357ebd solid 1px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  transition: color .1s ease;
+}
+.btn:hover {
+  background: #357ebd;
+}
+.btn-close {
+  color: #aaa;
+  font-size: 30px;
+  text-decoration: none;
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+.btn-close:hover {
+  color: #919191;
+}
+.modal:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.modal:target:before {
+  display: block;
+}
+.modal:target .modal-dialog {
+  transform: translate(0, 0);
+  top: 20%;
+}
+.modal-dialog {
+  background: #fefefe;
+  border: #333 solid 1px;
+  border-radius: 5px;
+  margin-left: -200px;
+  position: fixed;
+  left: 50%;
+  top: -100%;
+  padding: 20px;
+  z-index: 11;
+  width: 360px;
+  transform: translate(0, -500%);
+  transition: transform 0.3s ease-in-out;
 }
