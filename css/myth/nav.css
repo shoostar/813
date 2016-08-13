@@ -9,7 +9,7 @@ nav {
     font-weight: 500;
   }
     nav a:hover {
-      color: color(var(--black) tint(100%) alpha(35%));
+      color: color(var(--white) alpha(10%));
     }
     nav a:not(:first-child) {
       margin-left: 1em;
@@ -23,7 +23,7 @@ nav {
       display: block;
       width: 0;
       height: 0.125em;
-      background: var(--red);
+      background: var(--white);
       position: relative;
       top: -0.5em;
       z-index: -1;

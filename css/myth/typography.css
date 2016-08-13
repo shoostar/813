@@ -155,7 +155,7 @@ h6 {
   line-height: 1;
   margin-bottom: .9em;
   text-transform: uppercase;
-  color: var(--red);
+  color: color(var(--white) alpha(10%));
   letter-spacing: 0.25em;
 }
 .shiv {
@@ -243,16 +243,16 @@ a:link, a:visited {
 }
   a:link:not(.nav-item)::before, a:link:not(.nav-item)::after, a:visited:not(.nav-item)::before, a:visited:not(.nav-item)::after {
     content: '/';
-    font-weight: 800;
-    color: var(--red);
+    font-weight: 500;
+    color: color(var(--white) alpha(10%));
   }
   a:hover, a:focus, a:active {
-    color: color(var(--black) tint(35%));
+    color: color(var(--white) alpha(10%));
   }
 hr {
   border: 0;
   height: 3px;
-  background: var(--red);
+  background: color(var(--white) alpha(10%));
   margin: 0;
   width: 100%;
 }
@@ -331,7 +331,7 @@ ol ul {
   }
     ul.also li:not(:last-child)::after {
       content: '\00a0\2014';
-      color: var(--red);
+      color: var(--white);
     }
 
 
