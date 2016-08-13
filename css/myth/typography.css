@@ -158,6 +158,14 @@ h6 {
   color: var(--red);
   letter-spacing: 0.25em;
 }
+.shiv {
+  /*color: transparent;*/
+  font-weight: 800;
+  color: color(var(--white) alpha(25%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: 50% 50%;
+}
 p, ul, ol, dl, blockquote, pre {
   font-size: 1em;
   margin-bottom: 1.5em;

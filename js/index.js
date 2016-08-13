@@ -1,5 +1,5 @@
 // Widows
-$('h1,h2,h3,h4,h5,h6,p').each(function() {
+$('p').each(function() {
   $(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
 });
 

@@ -5,7 +5,7 @@
 }
 .pro {
   color: var(--white);
-  font-weight: 800;
+  font-weight: 500;
   display: inline-block;
   margin-bottom: 0;
 }
@@ -43,7 +43,7 @@
 .glitch-btn:hover ::after {
   content: attr(data-text);
   color: var(--white);
-  font-weight: 800;
+  font-weight: 500;
   position: absolute;
   top: 0;
   left: 0;
