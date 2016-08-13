@@ -56,7 +56,6 @@ function Quote(text, author) {
 
 var quotes = [];
 quotes.push(new Quote("thinking about what to eat for lunch", "Will work for homemade apple pie"));
-quotes.push(new Quote("scribbling doodles on notepads", "Paper is in near-limitless supply here"));
 quotes.push(new Quote("keeping his suey chopped", "He doesn't really care for Chinese food"));
 quotes.push(new Quote("listening to obnoxiously loud music", "Very metalhead, but listens to anything"));
 
