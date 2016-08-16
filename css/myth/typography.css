@@ -156,7 +156,7 @@ h6 {
   line-height: 1;
   margin-bottom: .9em;
   text-transform: uppercase;
-  color: color(var(--white) alpha(15%));
+  color: color(var(--white) alpha(20%));
   letter-spacing: 0.25em;
 }
 .shiv {
@@ -243,12 +243,12 @@ a:link, a:visited {
   font-weight: 500;
 }
   a:hover, a:focus, a:active {
-    color: color(var(--white) alpha(15%));
+    color: color(var(--white) alpha(20%));
   }
 hr {
   border: 0;
   height: 3px;
-  background: color(var(--white) alpha(15%));
+  background: color(var(--white) alpha(20%));
   margin: 0;
   width: 100%;
 }

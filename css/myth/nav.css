@@ -9,7 +9,7 @@ nav {
     font-weight: 500;
   }
     nav a:hover {
-      color: color(var(--white) alpha(15%));
+      color: color(var(--white) alpha(20%));
     }
     nav a:not(:first-child) {
       margin-left: 1em;
