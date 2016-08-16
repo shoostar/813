@@ -156,7 +156,7 @@ h6 {
   line-height: 1;
   margin-bottom: .9em;
   text-transform: uppercase;
-  color: color(var(--white) alpha(10%));
+  color: color(var(--white) alpha(15%));
   letter-spacing: 0.25em;
 }
 .shiv {
@@ -242,18 +242,13 @@ a:link, a:visited {
   text-decoration: none;
   font-weight: 500;
 }
-  a:link:not(.nav-item)::before, a:link:not(.nav-item)::after, a:visited:not(.nav-item)::before, a:visited:not(.nav-item)::after {
-    content: '/';
-    font-weight: 500;
-    color: color(var(--white) alpha(10%));
-  }
   a:hover, a:focus, a:active {
-    color: color(var(--white) alpha(10%));
+    color: color(var(--white) alpha(15%));
   }
 hr {
   border: 0;
   height: 3px;
-  background: color(var(--white) alpha(10%));
+  background: color(var(--white) alpha(15%));
   margin: 0;
   width: 100%;
 }

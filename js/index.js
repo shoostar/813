@@ -45,9 +45,6 @@ new Glitch();
 $('figcaption').hover( function() {
     $(this).css({ "background-color" : $(this).attr('data-color') });
 });
-$('section').hover( function() {
-    $(this).css({ "background-color" : $(this).attr('data-color') });
-});
 
 
 

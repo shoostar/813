@@ -29,6 +29,7 @@ button.tap {
   .portfolio-item figcaption {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     padding: var(--boxpadding);
@@ -36,7 +37,6 @@ button.tap {
     z-index: 100;
     opacity: 0;
     transition: opacity 0.15s ease-in-out;
-    cursor: pointer;
   }
     .portfolio-item figcaption:hover {
       opacity: 1;
