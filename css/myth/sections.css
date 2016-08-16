@@ -68,15 +68,14 @@ footer {
 
 /* Modals */
 .modal {
-  position: absolute;
-  padding: var(--boxpadding) 0;
+  position: fixed;
+  padding: var(--boxpadding);
   color: var(--white);
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 101;
-  background-color: color(var(--black) shade(81.3%));
+  min-height: 100vh;
+  width: 100vw;
+  z-index: 10000;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s, visibility 0s 0.5s;
@@ -85,6 +84,7 @@ footer {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s;
+  display: block;
 }
 
 

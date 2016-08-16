@@ -36,7 +36,7 @@ button.tap {
     z-index: 100;
     opacity: 0;
     transition: opacity 0.15s ease-in-out;
-    cursor: help;
+    cursor: pointer;
   }
     .portfolio-item figcaption:hover {
       opacity: 1;
