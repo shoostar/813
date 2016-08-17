@@ -273,19 +273,6 @@ blockquote {
   font-size: 1.25em;
   font-style: italic;
 }
-blockquote:before {
-  color: color(var(--black) tint(95%));
-  content: open-quote;
-  font-size: 36em;
-  float: left;
-  line-height: 0.1em;
-  margin-top: 0.125em;
-  font-family: Georgia, serif;
-  font-style: italic;
-  position: absolute;
-  right: 50%;
-  z-index: -1;
-}
 blockquote p, blockquote cite {
   display: block;
   position: relative;
