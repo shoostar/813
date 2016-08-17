@@ -22,15 +22,6 @@ section {
 
 
 
-.divider {
-  margin-left: calc(var(--gridpadding) / 2.5);
-  position: relative;
-  top: calc(var(--gridpadding) / 3);
-  font-size: 400%;
-  font-weight: 500;
-  line-height: 0;
-  color: var(--red);
-}
 .resume {
   display: inline-block;
 }
