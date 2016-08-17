@@ -76,19 +76,6 @@ $(document).ready(function() {
 
 
 
-// Fire Modal
-$('.modal-btn').click(function(e) {
-  $('.modal').addClass('active');
-  e.preventDefault();
-});
-
-$('.close-btn').click(function(e) {
-  $('.modal').removeClass('active');
-  e.preventDefault();
-});
-
-
-
 // Lazy load backgrounds
 function lazyLoadBg(el, imageSource) {
   $('<img/>').attr('src', imageSource).on({
