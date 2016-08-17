@@ -1,7 +1,13 @@
 nav {
   position: relative;
   z-index: 100;
+  text-align: left;
 }
+  @media screen and (min-width: 1200px) {
+    nav {
+      text-align: right;
+    }
+  }
   nav a {
     display: inline-block;
     border-bottom: none !important;

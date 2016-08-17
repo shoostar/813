@@ -66,6 +66,13 @@ footer {
 
 
 
+@media screen and (max-width: 1199px) {
+  header [class*='w--'], footer [class*='w--'] {
+    flex: 1 0 calc(100% - var(--gridpadding));
+  }
+}
+
+
 [class*='-btn'] {
   cursor: pointer;
   border: none;
