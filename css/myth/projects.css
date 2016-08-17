@@ -26,9 +26,9 @@ button.tap {
   background-size: cover;
   position: relative;
 }
-  @media screen and (max-width: 1199px) {
+  @media screen (min-width: 800px) and (max-width: 1199px) {
     .portfolio-item {
-      min-height: calc(50% - var(--gridpadding));
+      min-height: calc(66.6666% - var(--gridpadding));
     }
   }
   .portfolio-item figcaption {
