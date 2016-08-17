@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <title>JRS86</title>
+  <title>JRS⁸⁶ is on his way</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/stylesheet.css">
@@ -19,22 +20,36 @@
   </style>
 </head>
 
-<header>
-  <div class="row">
-    <div class="w--1of1">
-      <a class="glitch-btn" href="index.html">
-        <div class="glitch" data-text="JRS86">
-          <strong class="pro">JRS<sup>86</sup></strong>
-        </div>
-      </a>
-      <nav>
-        <a href="index.html">&larr; back to main page</a>
-      </nav>
-    </div>
-  </div>
-</header>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+  <defs>
+    <filter id="filter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.000001 0.000001" numOctaves="1" result="warp"></feTurbulence>
+      <feOffset dx="0" dy="0" result="warpOffset"></feOffset>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+    </filter>
+  </defs>
+</svg>
 
 <main>
+  <a class="skip-main" href="#main" tabindex="-1">Skip to main content</a>
+  <header class="row">
+    <div class="w--3of5 pinned">
+      <h3 class="heading bottomless"><a class="glitch-btn modal-btn">
+        <span class="glitch super-glitch" data-text="JRS⁸⁶">
+          <span class="pro">JRS<sup>86</sup></span>
+        </span>
+      </a> creates durable brands. <span id="author">He does other things, too</span>.</h3>
+    </div>
+    <div class="w--2of5 text-right pinned">
+      <nav>
+        <a class="nav-item" href="https://linkedin.com/in/jonschuster">Li</a>
+        <a class="nav-item" href="https://twitter.com/jon_schuster">Tw</a>
+      </nav>
+    </div>
+  </header>
+
   <section>
     <div class="row">
       <div class="w--2of3 pinned">
@@ -46,10 +61,11 @@
 </main>
 
 <script src="//code.jquery.com/jquery-2.2.4.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js" defer></script>
 <script>
   function downloadJSAtOnload() {
     var element = document.createElement("script");
-    element.src = "js/index.js";
+    element.src = "js/index.min.js";
     document.body.appendChild(element);
   }
   if (window.addEventListener)
