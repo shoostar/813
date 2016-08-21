@@ -17,16 +17,6 @@
     .lazy-loaded {
       opacity: 1 !important;
     }
-		#result {
-			border: solid 1px black;
-			background: #e0e0e0;
-			padding: 1em;
-			margin: 1em 0;
-		}
-		#ajax-loader {
-			display: none;
-			margin-bottom: -4px;
-		}
 	</style>
 </head>
 
@@ -49,11 +39,11 @@
   				<label>
   					Things to pick from…<br>
   					<div style="font: 12px/1.5 helvetica, sans-serif;">Comma-separated list</div>
-  					<textarea style="width: 400px;height: 100px;" name="things" id="things">Borderlands 2, The Crew, F.E.A.R. 3, Garry's Mod, Left 4 Dead 2, PAYDAY 2, Portal 2, Resident Evil 5, Rocket League, The Division, Trine 2</textarea>
+  					<textarea style="width: 100%;height: 300px;" name="things" id="things">Borderlands 2, The Crew, F.E.A.R. 3, Garry's Mod, Left 4 Dead 2, PAYDAY 2, Portal 2, Resident Evil 5, Rocket League, The Division, Trine 2</textarea>
   				</label>
   			</fieldset>
   			<p>
-  				<input type="button" value="Pick one!" onclick="rnd();">
+  				<input type="button" value="PLAY SOMETHING ALREADY!" onclick="rnd();">
   				<img id="ajax-loader" src="./Random Thing Picker_files/ajax-loader.gif" alt="Picking..." style="display: none;">
   			</p>
   		</form>
