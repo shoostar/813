@@ -69,7 +69,7 @@ button.tap {
     }
     .not-spread {
       order: inherit;
-      
+
     }
   }
 
@@ -85,7 +85,7 @@ img[class] {
 
 picture {
 	display: inline-block;
-	padding-bottom: 75%;
+	padding-bottom: 62.5%;
 	position: relative;
 	width: 100%;
 }
