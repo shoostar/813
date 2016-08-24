@@ -51,7 +51,19 @@ button.tap {
     .portfolio-item figcaption:hover {
       opacity: 1;
     }
-
+.spread {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  @media screen and (max-width: 799px) {
+    .spread {
+      order: 1 !important;
+    }
+    .not-spread {
+      order: 2 !important;
+    }
+  }
 
 
 img[class] {
