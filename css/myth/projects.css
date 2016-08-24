@@ -51,17 +51,25 @@ button.tap {
     .portfolio-item figcaption:hover {
       opacity: 1;
     }
-.spread {
+.spread, .not-spread {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end !important;
 }
-  @media screen and (max-width: 799px) {
+  .spread {
+    order: 1;
+  }
+  .not-spread {
+    order: 2;
+  }
+  @media screen and (min-width: 800px) {
     .spread {
-      order: 1 !important;
+      order: inherit;
+      justify-content: space-between !important;
     }
     .not-spread {
-      order: 2 !important;
+      order: inherit;
+      
     }
   }
 
@@ -73,6 +81,22 @@ img[class] {
   object-fit: cover;
 }
 
+
+
+picture {
+	display: inline-block;
+	padding-bottom: 75%;
+	position: relative;
+	width: 100%;
+}
+  picture img {
+  	object-fit: cover;
+  	display: block;
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	top: 0;
+  }
 
 
 /* Modals */
