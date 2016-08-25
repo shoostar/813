@@ -51,14 +51,22 @@ button.tap {
     .portfolio-item figcaption:hover {
       opacity: 1;
     }
-.spread, .not-spread {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end !important;
-}
-  .me-first {
-    order: 1 !important;
+
+
+@media screen and (min-width: 1200px) {
+  .open-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--boxpadding);
+    color: var(--white) !important;
   }
+}
 
 
 
