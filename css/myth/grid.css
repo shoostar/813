@@ -84,15 +84,15 @@ main {
 
 
 /* OFFSETS */
-[class*='o--'] { margin-left: calc(var(--gridpadding)); }
+[class*='o--'] { margin-left: calc(var(--gridpadding)/2); }
   @media screen and (min-width: 1200px) {
-    .o--2of3 { margin-left: calc(66.6666% + calc(var(--gridpadding) / 2)); }
-    .o--3of4 { margin-left: calc(75% + calc(var(--gridpadding) / 2));      }
-    .o--1of2 { margin-left: calc(50% + calc(var(--gridpadding) / 2));      }
-    .o--2of5 { margin-left: calc(40% + calc(var(--gridpadding) / 2));      }
-    .o--1of3 { margin-left: calc(33.3333% + calc(var(--gridpadding) / 2)); }
+    .o--2of3 { margin-left: calc(66.6666% + calc(var(--gridpadding)/2)); }
+    .o--3of4 { margin-left: calc(75% + calc(var(--gridpadding)/2));      }
+    .o--1of2 { margin-left: calc(50% + calc(var(--gridpadding)/2));      }
+    .o--2of5 { margin-left: calc(40% + calc(var(--gridpadding)/2));      }
+    .o--1of3 { margin-left: calc(33.3333% + calc(var(--gridpadding)/2)); }
     .o--1of4 { margin-left: calc(25% + calc(var(--gridpadding)/2));      }
-    .o--1of5 { margin-left: calc(20% + calc(var(--gridpadding) / 2));      }
+    .o--1of5 { margin-left: calc(20% + calc(var(--gridpadding)/2));      }
     .o--1of6 { margin-left: calc(16.6666% + calc(var(--gridpadding)/2)); }
   }
 

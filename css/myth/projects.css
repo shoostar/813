@@ -56,25 +56,13 @@ button.tap {
   flex-direction: column;
   justify-content: flex-end !important;
 }
-  .spread {
-    order: 1;
-  }
-  .not-spread {
-    order: 2;
-  }
-  @media screen and (min-width: 800px) {
-    .spread {
-      order: inherit;
-      justify-content: space-between !important;
-    }
-    .not-spread {
-      order: inherit;
-
-    }
+  .me-first {
+    order: 1 !important;
   }
 
 
-img[class] {
+
+img, img[class] {
   width: 100%;
 }
 .object-fit_cover {
