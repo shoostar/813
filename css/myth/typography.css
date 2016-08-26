@@ -248,13 +248,13 @@ a:link, a:visited {
 hr {
   border: 0;
   height: 3px;
-  background: color(var(--white) alpha(20%));
+  background: var(--white);
   margin: 0;
   width: 100%;
 }
   hr.chunk {
     height: 0.325em;
-    margin: var(--boxpadding) 0;
+    margin-bottom: var(--boxpadding);
     width: 3.5em;
   }
 kbd {

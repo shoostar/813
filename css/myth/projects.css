@@ -67,8 +67,14 @@ button.tap {
     color: var(--white) !important;
   }
 }
-
-
+.spread {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shadowed {
+  box-shadow: 0 0.5em 1em color(var(--black) shade(100%) alpha(35%));
+}
 
 .portfolio-nav {
   background-color: color(var(--black) shade(81.3%));
