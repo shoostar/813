@@ -368,15 +368,9 @@ table {
   height: 0.5em;
   border-width: 0.15em 0.15em 0 0;
   border-style: solid;
-  margin-left: 2em;
+  margin-left: 1em;
   transition: margin-left 0.15s ease-in-out;
 }
-@media screen and (min-width: 1200px) {
-  .portfolio-link:hover [class*="icono-arrow1"] {
-    margin-left: 3em;
-  }
-}
-
 [class*="icono-arrow1"][class*="-left"] {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);

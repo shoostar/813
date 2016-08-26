@@ -70,6 +70,13 @@ button.tap {
 
 
 
+.portfolio-nav {
+  background-color: color(var(--black) shade(81.3%));
+  padding: var(--boxpadding) 0;
+}
+
+
+
 img, img[class] {
   width: 100%;
 }
