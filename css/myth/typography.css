@@ -16,7 +16,14 @@ body{
     from { opacity: 0; }
     to { opacity: 1; }
   }
-
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+  }
+  ::-webkit-scrollbar-track {
+    border: none;
+    background-color: color(var(--black) shade(81.3%));
+  }
 
 
 .wf-loading h1,
