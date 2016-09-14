@@ -3,11 +3,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: var(--boxpadding);
+  padding-top: calc(8.13 * var(--boxpadding)/2);
   padding-bottom: calc(8.13 * var(--boxpadding));
+  background-color: var(--red);
 }
   .parallax {
-    background: url('../img/profile-bg.jpg');
+    background-image: url('../img/profile-bg.jpg');
+    background-blend-mode: multiply;
     background-position: center center;
     background-size: cover;
     position: relative;
