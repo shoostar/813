@@ -1,17 +1,23 @@
 /* HEADER */
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: calc(8.13 * var(--gridpadding));
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: var(--boxpadding);
+  padding-bottom: calc(8.13 * var(--boxpadding));
+}
+  .parallax {
+    background: url('../img/profile-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: calc(-8.13 * var(--gridpadding));
   }
-
 
 
 
 /* MAIN and SECTION */
 main {
-  padding: calc(8.13 * var(--gridpadding)) 0 0;
   background-color: color(var(--black) shade(81.3%));
   transition: background-color 0.5s ease;
   min-height: 100%;
