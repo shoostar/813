@@ -12,9 +12,20 @@ header {
     background-blend-mode: multiply;
     background-position: center center;
     background-size: cover;
-    margin-bottom: calc(-8.13 * var(--gridpadding));
     position: relative;
+    margin-bottom: calc(-8.13 * var(--gridpadding));
   }
+    .parallax::after {
+      height: 8.13em;
+      width: 100%;
+      display: block;
+      content: '';
+      background-image: linear-gradient(color(var(--black) shade(81.3%) alpha(0%)), color(var(--black) shade(81.3%)));
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 0;
+    }
 
 
 
