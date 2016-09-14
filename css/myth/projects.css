@@ -19,23 +19,12 @@ button.tap {
 
 
 .portfolio-item {
-  height: 17.5em;
+  margin-bottom: var(--gridpadding);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-  @media screen and (min-width: 800px) {
-    .portfolio-item {
-      height: 50vw;
-    }
-  }
-  @media screen and (min-width: 799px) {
-    .portfolio-item {
-      height: 33.3333vw;
-    }
-  }
-
   .portfolio-item figcaption {
     display: flex;
     flex-direction: column;
@@ -51,7 +40,14 @@ button.tap {
     .portfolio-item figcaption:hover {
       opacity: 1;
     }
-
+    .portfolio-item figcaption span {
+      margin-bottom: 5em;
+    }
+    @media screen and (max-width: 799px) {
+      .portfolio-item, .portfolio-item figcaption {
+        min-height: 17.5em;
+      }
+    }
 
 @media screen and (min-width: 1200px) {
   .open-project {
@@ -85,6 +81,7 @@ button.tap {
 
 img, img[class] {
   width: 100%;
+  margin-bottom: var(--gridpadding);
 }
 .object-fit_cover {
   object-fit: cover;
