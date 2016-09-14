@@ -54,18 +54,19 @@
 }
 .glitch-btn:hover .glitch::before {
   left: -2px;
-  text-shadow: -0.0813em 0 1px color(var(--red) alpha(75%)), 0.138em -0.313em 2px color(chartreuse alpha(50%)); /* if there were ever a time to use it... */
-  background-color: color(var(--black) shade(81.3%));
-  clip: rect(100px, 50px, 56px, 0);
-  animation: glitch-anim-1 0.313s linear alternate-reverse;
+  text-shadow: -0.0813em 0 1px color(var(--red) alpha(75%)), 0.0138em -0.0313em 2px color(chartreuse alpha(75%)); /* if there were ever a time to use it... */
+  /*clip: rect(100px, 50px, 56px, 0);
+  animation: glitch-anim-1 0.313s linear alternate-reverse;*/
 }
 .glitch-btn:hover .glitch::after {
   left: -2px;
   text-shadow: 0.0813em 0.0419em 1px color(dodgerblue alpha(50%));
-  background-color: color(var(--black) shade(81.3%));
-  clip: rect(100px, 50px, 56px, 0);
-  animation: glitch-anim-2 0.419s linear alternate;
+  /*clip: rect(100px, 50px, 56px, 0);
+  animation: glitch-anim-2 0.419s linear alternate;*/
 }
+/*.glitch-btn:hover .glitch::before, .glitch-btn:hover .glitch::after {
+  background-color: transparent;
+}*/
 @keyframes jiggle {
   0% {
     outline: 90px solid transparent !important;
