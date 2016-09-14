@@ -12,8 +12,8 @@ header {
     background-blend-mode: multiply;
     background-position: center center;
     background-size: cover;
-    position: relative;
     margin-bottom: calc(-8.13 * var(--gridpadding));
+    position: relative;
   }
 
 
