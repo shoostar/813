@@ -10,8 +10,8 @@ main {
   z-index: 1;
 }
 .row, .row-full {
-  padding-left: calc(var(--gridpadding) / 2);
-  padding-right: calc(var(--gridpadding) / 2);
+  padding-left: calc(var(--gridpadding)/2);
+  padding-right: calc(var(--gridpadding)/2);
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -20,11 +20,11 @@ main {
 }
   @media screen and (min-width: 800px) {
     .row { width: 81.3%; }
-    .row-full { padding-left: 9.35%; padding-right: 9.35%; }
+    .row-full { padding-left: calc(9.35% + (var(--gridpadding)/2)); padding-right: calc(9.35% + (var(--gridpadding)/2)); }
   }
 [class*='w--'] {
   width: calc(100% - var(--gridpadding));
-  margin: 0 calc(var(--gridpadding) / 2);
+  margin: 0 calc(var(--gridpadding)/2);
 }
 
 

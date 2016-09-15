@@ -7,7 +7,7 @@ $('p').each(function() {
 
 // Simple parallax background
 $(window).scroll(function() {
-  $('.parallax').css('background-position','center calc(50% + '+($(window).scrollTop()*0.4)+'px');
+  $('.parallax').css('background-position','center calc(50% + '+($(window).scrollTop()*0.813)+'px');
 });
 
 

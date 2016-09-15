@@ -4,11 +4,15 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding-top: calc(8.13 * var(--boxpadding)/2);
-  padding-bottom: calc(8.13 * var(--boxpadding));
-  background-color: var(--red);
+  padding-bottom: calc(8.13 * var(--boxpadding)/2);
 }
+  header.header-home, header.header-project {
+    padding-bottom: calc(8.13 * var(--boxpadding));
+  }
+  header.header-home {
+    background-color: var(--red);
+  }
   .parallax {
-    background-image: url('../img/profile-bg.jpg');
     background-blend-mode: multiply;
     background-position: center center;
     background-size: cover;
