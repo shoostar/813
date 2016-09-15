@@ -6,8 +6,12 @@ $('p').each(function() {
 
 
 // Simple parallax background
-$(window).scroll(function() {
-  $('.parallax').css('background-position','center calc(50% + '+($(window).scrollTop()*0.813)+'px');
+window.addEventListener('resize', function(){
+  if(window.innerWidth > 800){
+    $(window).scroll(function() {
+      $('.parallax').css('background-position','center calc(50% + '+($(window).scrollTop()*0.813)+'px');
+    });
+  }
 });
 
 
