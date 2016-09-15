@@ -1,0 +1,51 @@
+.scene {
+  -webkit-perspective: 100px;
+  perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin-left: -1500px;
+}
+
+.scene__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.scene__layer img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.scene__cover {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 2000px;
+  z-index: 2;
+}
+
+.scene__layer__0 {
+  -webkit-transform: translateZ(-275px) scale(2.75);
+  transform: translateZ(-275px) scale(2.875);
+}
+
+.scene__layer__1 {
+  -webkit-transform: translateZ(-250px) scale(3);
+  transform: translateZ(-250px) scale(3);
+}
+
+.scene__layer__2 {
+  -webkit-transform: translateZ(-200px) scale(4);
+  transform: translateZ(-200px) scale(4);
+}
