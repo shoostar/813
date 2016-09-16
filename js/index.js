@@ -12,6 +12,11 @@ window.addEventListener('scroll', function(){
       $('.parallax').css('background-position','center calc(50% + '+($(window).scrollTop()*0.813)+'px');
     });
   }
+  else if(window.innerWidth < 799){
+    $(window).scroll(function() {
+      $('.parallax').css('background-position','center center');
+    });
+  }
 });
 
 
