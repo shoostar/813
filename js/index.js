@@ -6,7 +6,7 @@ $('p').each(function() {
 
 
 // Simple parallax background
-window.addEventListener('resize', function(){
+window.addEventListener('scroll', function(){
   if(window.innerWidth > 800){
     $(window).scroll(function() {
       $('.parallax').css('background-position','center calc(50% + '+($(window).scrollTop()*0.813)+'px');
