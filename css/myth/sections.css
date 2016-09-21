@@ -9,27 +9,6 @@ header {
   header.header-home, header.header-project {
     padding-bottom: calc(8.13 * var(--boxpadding));
   }
-  header.header-home {
-    background-color: var(--red);
-  }
-  .parallax {
-    background-blend-mode: multiply;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    margin-bottom: calc(-8.13 * var(--gridpadding));
-  }
-    .parallax::after {
-      height: 8.13em;
-      width: 100%;
-      display: block;
-      content: '';
-      background-image: linear-gradient(color(var(--black) shade(81.3%) alpha(0%)), color(var(--black) shade(81.3%)));
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      z-index: 0;
-    }
 
 
 
@@ -42,6 +21,31 @@ main {
 section {
   padding-bottom: calc(8.13 * var(--gridpadding));
 }
+
+
+
+/* Parallax bullshit */
+.cover {
+	position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 81.3vh;
+  z-index: -1;
+  background: url('https://source.unsplash.com/category/nature') no-repeat 25% 50% / cover;
+  will-change: transform;
+}
+  .cover::after {
+    height: 8.13em;
+    width: 100%;
+    display: block;
+    content: '';
+    background-image: linear-gradient(color(var(--black) shade(81.3%) alpha(0%)), color(var(--black) shade(81.3%)));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 
 
 
