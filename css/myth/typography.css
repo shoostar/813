@@ -350,7 +350,7 @@ table {
 
 
 /* UTILITIES */
-.lightened { color: color(var(--white) alpha(25%)); }
+.lightenup { color: color(var(--white) alpha(13.8%)); }
 .topless { margin-top: 0 !important; }
 .bottomless { margin-bottom: 0 !important; }
 .text-center { text-align: center !important; }
