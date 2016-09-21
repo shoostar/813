@@ -6,7 +6,7 @@ $('p').each(function() {
 
 
 // Simple parallax background
-var cover = document.querySelector('.js-parallax'),
+var cover = document.querySelector('.parallax'),
   coverHeight = Math.round(cover.offsetHeight),
   translate,
   parallaxThreshold = 3;
