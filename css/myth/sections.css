@@ -39,7 +39,7 @@ main {
   transition: background-color 0.5s ease;
   min-height: 100%;
 }
-section, footer {
+section {
   padding-bottom: calc(8.13 * var(--gridpadding));
 }
 
