@@ -11,6 +11,7 @@
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="js/modernizr-custom.js"></script>
   <style>
+    /* This is for lazy-loading bg images */
     .lazy {
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
@@ -34,9 +35,10 @@
 </svg>
 
 <main>
+
   <a class="skip-main" href="#main" tabindex="-1">Skip to main content</a>
-  <div class="cover js-parallax lazy" data-src="img/profile-bg.jpg"></div>
-  <header class="row-full">
+  <div class="cover parallax lazy" data-src="img/profile-bg.jpg"></div>
+  <header class="row">
     <div class="w--3of5 pinned">
       <h3 class="heading"><a class="glitch-btn modal-btn" href="/">
         <span class="glitch super-glitch" data-text="JRS⁸⁶">
@@ -63,8 +65,7 @@
               <li>stationery</li>
             </ul>
           </span>
-          <!-- <a class="open-project" href="bfc.html">check it out</a> -->
-          <strong>coming soon</strong>
+          <a class="open-project" href="bfc.html">check it out</a>
         </figcaption>
       </figure>
       <figure class="portfolio-item lazy" data-src="img/mockups/forge.jpg">
@@ -222,7 +223,7 @@
           <strong>coming soon</strong>
         </figcaption>
       </figure>
-      <figure class="portfolio-item lazy" data-src="img/projects/afge/afge-1-1.jpg">
+      <figure class="portfolio-item lazy" data-src="img/projects/afge/afge-1-2.jpg">
         <figcaption data-color="rgb(40, 56, 144)">
           <span>
             <h4>afge 830</h4>
@@ -275,6 +276,14 @@
     },
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-84586441-1', 'auto');
+  ga('send', 'pageview');
 </script>
 
 </body>
