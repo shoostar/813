@@ -6,7 +6,7 @@
 	width: 100vw;
 }
 
-.carousel > .container {
+.carousel > .slider {
 	display: flex;
 	flex-direction: row;
 	height: 100%;
@@ -14,7 +14,7 @@
 	transition: transform 600ms;
 }
 
-.carousel > nav {
+.carousel > nav.nav-slider {
 	bottom: 0;
 	left: 0;
 	position: absolute;
@@ -23,18 +23,18 @@
 	z-index: 1;
 }
 
-.carousel > nav a {
+.carousel > nav.nav-slider a {
 	color: #000;
 	font-size: 14px;
 	opacity: .2;
 	text-decoration: none;
 }
 
-.carousel > nav a:hover {
+.carousel > nav.nav-slider a:hover {
 	opacity: .5;
 }
 
-.carousel > nav a.current {
+.carousel > nav.nav-slider a.current {
 	opacity: 1;
 }
 
