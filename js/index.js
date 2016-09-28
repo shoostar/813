@@ -200,7 +200,7 @@ Carousel.prototype.handleEvent = function(event) {
       this._touchAnchorX = this._touchX1 = this._touchX2;
       break;
     case 'touchmove':
-      this._container.style.transform = 'translate3d(' + (-position * 100) + 'vw, 0, 0)';
+      this._container.style.transform = 'translate3d(' + (-position * 100) + '%, 0, 0)';
       break;
     case 'touchend':
       this._container.style.transition = '';
@@ -213,7 +213,7 @@ Carousel.prototype.handleEvent = function(event) {
       if (i >= 0 && i < count) break;
       // The slides should wrap around. Instantly move to just outside screen on the other end.
       this._container.style.transition = 'none';
-      this._container.style.transform = 'translate3d(' + (i < 0 ? -count * 100 : 100) + 'vw, 0, 0)';
+      this._container.style.transform = 'translate3d(' + (i < 0 ? -count * 100 : 100) + '%, 0, 0)';
       // Force changes to be applied sequentially by reflowing the element.
       this._container.offsetHeight;
       this._container.style.transition = '';
@@ -240,7 +240,7 @@ Carousel.prototype.set = function(i) {
     i = count;
   }
   this._slide = i;
-  this._container.style.transform = 'translate3d(' + (-i * 100) + 'vw, 0, 0)';
+  this._container.style.transform = 'translate3d(' + (-i * 100) + '%, 0, 0)';
   this._updateNav();
 };
 

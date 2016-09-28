@@ -1,9 +1,8 @@
 .carousel {
 	justify-content: flex-start;
 	overflow: hidden;
-  padding: 40px 0;
 	position: relative;
-	width: 100vw;
+	width: 100%;
 }
 
 .carousel > .slider {
@@ -18,13 +17,13 @@
 	bottom: 0;
 	left: 0;
 	position: absolute;
-	text-align: center;
-	width: 100vw;
+	text-align: left;
+	width: 100%;
 	z-index: 1;
 }
 
 .carousel > nav.nav-slider a {
-	color: #000;
+	color: #fff;
 	font-size: 14px;
 	opacity: .2;
 	text-decoration: none;
@@ -40,7 +39,6 @@
 
 .carousel .slide {
 	flex-shrink: 0;
-	line-height: 1.4;
-	text-align: center;
-	width: 100vw;
+	text-align: left;
+	width: 100%;
 }
