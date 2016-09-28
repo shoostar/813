@@ -22,17 +22,20 @@
 }
 
 .carousel > nav.nav-slider a {
-	color: #fff;
-	opacity: .2;
-	text-decoration: none;
+	color: var(--white) !important;
+	opacity: .2 !important;
+	text-decoration: none !important;
 }
+  .carousel > nav.nav-slider a::after {
+    border-bottom: none;
+  }
 
 .carousel > nav.nav-slider a:hover {
-	opacity: .5;
+	opacity: .5 !important;
 }
 
 .carousel > nav.nav-slider a.current {
-	opacity: 1;
+	opacity: 1 !important;
 }
 
 .carousel .slide {

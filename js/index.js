@@ -253,13 +253,13 @@ Carousel.prototype._updateNav = function() {
     count = this._countSlides();
   for (var i = 0; i < count; i++) {
     if (i > 0) html += '&nbsp;';
-    html += '<a' + (i == this._slide ? ' class="current"' : '') + ' data-slide="' + i + '" href="#">●</a>';
+    html += '<a' + (i == this._slide ? ' class="current"' : '') + ' data-slide="' + i + '">●</a>';
   }
   this._nav.innerHTML = html;
 }
 
 var carousels = Array.prototype.map.call(document.querySelectorAll('.carousel'), function(element) {
   var carousel = new Carousel(element);
-  carousel.auto(5000);
+  carousel.auto(3000);
   return carousel;
 });
