@@ -1,45 +1,15 @@
-.carousel {
-	overflow: hidden;
-	position: relative;
-
+.slideshow * {
+  outline: none;
 }
-
-.carousel > .slider {
-	display: flex;
-	flex-direction: row;
-	height: 100%;
-	transform: translate3d(0, 0, 0);
-	transition: transform 600ms;
+.slideshow .slider {
+  width: 100%;
+  position: relative;
 }
-
-.carousel > nav.nav-slider {
-	bottom: 2em;
-	right: 1.5em;
-	position: absolute;
-	text-align: right;
-	width: 100%;
-	z-index: 1;
-}
-
-.carousel > nav.nav-slider a {
-	color: var(--white) !important;
-	opacity: .2 !important;
-	text-decoration: none !important;
-}
-  .carousel > nav.nav-slider a::after {
-    border-bottom: none;
-  }
-
-.carousel > nav.nav-slider a:hover {
-	opacity: .5 !important;
-}
-
-.carousel > nav.nav-slider a.current {
-	opacity: 1 !important;
-}
-
-.carousel .slide {
-	flex-shrink: 0;
-	text-align: left;
-	width: 100%;
+.slideshow .item {
+  height: 100%;
+  width: 100%;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
