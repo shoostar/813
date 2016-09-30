@@ -88,4 +88,4 @@ main {
 .no-pad        { padding: 0 !important;         }
 .pinned        { flex-grow: 0 !important;       }
 .blimped       { flex-grow: 1 !important;       }
-.bottomed      { align-items: flex-end;     }
+.bottomed      { align-items: flex-end;         }
