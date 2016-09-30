@@ -135,11 +135,12 @@ function debounce(fn, wait) {
 $(document).ready(function(){
   $('.slider').slick({
     draggable: true,
-    arrows: false,
+    arrows: true,
     dots: true,
     fade: false,
     speed: 900,
     infinite: true,
+    autoplay: true,
     touchThreshold: 100
   });
 });
