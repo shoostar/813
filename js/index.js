@@ -132,12 +132,14 @@ function debounce(fn, wait) {
 
 
 // Simple slider
-$('.slider').slick({
-  draggable: true,
-  arrows: true,
-  dots: true,
-  fade: true,
-  speed: 900,
-  infinite: true,
-  touchThreshold: 100
-})
+$(document).ready(function(){
+  $('.slider').slick({
+    draggable: true,
+    arrows: true,
+    dots: true,
+    fade: true,
+    speed: 900,
+    infinite: true,
+    touchThreshold: 100
+  });
+});
