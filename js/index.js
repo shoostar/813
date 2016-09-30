@@ -137,10 +137,14 @@ $(document).ready(function(){
     draggable: true,
     arrows: true,
     dots: true,
-    fade: true,
+    fade: false,
     speed: 900,
     infinite: true,
     autoplay: true,
+    grabCursor: true,
+    mousewheelControl: true,
+    direction: 'vertical',
+    slidesPerView: 1,
     touchThreshold: 100
   });
 });
