@@ -20,7 +20,7 @@ main {
 }
   @media screen and (min-width: 800px) {
     .row { width: 81.3%; }
-    .row-full { padding-left: calc(9.35% + (var(--gridpadding)/2)); padding-right: calc(9.35% + (var(--gridpadding)/2)); }
+    /*.row-full { padding-left: calc(9.35% + (var(--gridpadding)/2)); padding-right: calc(9.35% + (var(--gridpadding)/2)); }*/
   }
 [class*='w--'] {
   width: calc(100% - var(--gridpadding));

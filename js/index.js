@@ -137,7 +137,7 @@ $(document).ready(function(){
     draggable: true,
     arrows: true,
     dots: true,
-    fade: false,
+    fade: true,
     speed: 900,
     infinite: true,
     autoplay: true,
