@@ -135,9 +135,9 @@ function debounce(fn, wait) {
 $(document).ready(function(){
   $('.slider').slick({
     draggable: true,
-    arrows: true,
+    arrows: false,
     dots: true,
-    fade: true,
+    fade: false,
     speed: 900,
     infinite: true,
     touchThreshold: 100
