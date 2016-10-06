@@ -10,7 +10,7 @@
   width: 20px;
   height: 20px;
   padding: 0;
-  z-index: 2;
+  z-index: -1;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -19,6 +19,11 @@
   outline: none;
   background: transparent;
 }
+  @media screen and (min-width: 1200px) {
+    .slick-prev, .slick-next {
+      z-index: 2;
+    }
+  }
 .slick-prev, .slick-next {
   text-indent: -1000em;
 }

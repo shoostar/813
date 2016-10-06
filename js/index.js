@@ -141,9 +141,6 @@ $(document).ready(function(){
     speed: 900,
     infinite: true,
     autoplay: true,
-    grabCursor: true,
-    mousewheelControl: true,
-    direction: 'vertical',
     slidesPerView: 1,
     touchThreshold: 100
   });
