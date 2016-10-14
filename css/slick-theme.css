@@ -80,6 +80,7 @@
   margin: 0 0 1.5em 1em;
   list-style: none;
   text-align: left;
+  z-index: 3;
 }
 .slick-dots li
 {
