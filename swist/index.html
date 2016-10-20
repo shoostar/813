@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>SWIST</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="js/modernizr-custom.js"></script>
+  <style>
+    /* This is for lazy-loading bg images */
+    .lazy {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .lazy-loaded {
+      opacity: 1 !important;
+    }
+  </style>
+</head>
+
+<body>
+
+<main>
+  <a class="skip-main" href="#main" tabindex="-1">Skip to main content</a>
+  <!-- <div class="cover parallax lazy" data-src="img/header.jpg"></div> -->
+  <header class="row">
+    <div class="m--full">
+      <h1>+ swist</h1>
+      <hr>
+    </div>
+  </header>
+
+	<section class="row">
+		<div class="m--full l--4">
+      <!-- <hr> -->
+			<p>Instead of precompiling math for our grids we can do it live in the browser using CSS variables, thus saving us a LOT of lines in CSS (...in the future. I'm looking at you Explorer). This is achieved using nothing but vanilla CSS.</p>
+		</div>
+    <div class="m--full l--4">
+      <!-- <hr> -->
+			<p>All of the text you see here is also responsive, based on viewport units. It moderately scales with the browser window, giving a proportionately smaller font-size/leading on small screens, larger on big screens.</p>
+		</div>
+		<div class="m--full">
+      <h6>CREDIT</h6>
+			<p>The credit for this mini framework belong <a href="#">here</a> and <a href="#">here</a>. I've only contributed a few small tweaks to make everything play nicely together. Also, the box sizing below is completely random. It wouldn't make sense for a real website.</p>
+		</div>
+	</section>
+
+	<section class="row">
+		<div class="m--2 l--4">
+			<div class="demo">1</div>
+		</div>
+		<div class="m--2">
+			<div class="demo">2</div>
+		</div>
+		<div class="m--2">
+			<div class="demo">3</div>
+		</div>
+		<div class="m--2">
+			<div class="demo">4</div>
+		</div>
+		<div class="m--4 l--2">
+			<div class="demo">5</div>
+		</div>
+		<div class="m--4 l--4">
+			<div class="demo">6</div>
+		</div>
+		<div class="m--6 l--2">
+			<div class="demo">7</div>
+		</div>
+		<div class="m--2 l--6">
+			<div class="demo">8</div>
+		</div>
+		<div class="m--4 l--4">
+			<div class="demo">9</div>
+		</div>
+		<div class="m--4">
+			<div class="demo">10</div>
+		</div>
+		<div class="m--2">
+			<div class="demo">11</div>
+		</div>
+		<div class="m--2">
+			<div class="demo">12</div>
+		</div>
+		<div class="m--4 l--2">
+			<div class="demo">13</div>
+		</div>
+		<div class="m--2 l--2">
+			<div class="demo">14</div>
+		</div>
+		<div class="m--6 l--2">
+			<div class="demo">15</div>
+		</div>
+		<div class="m--full l--6">
+			<div class="demo">16</div>
+		</div>
+    <div class="m--2 l--5">
+			<div class="demo">17</div>
+		</div>
+    <div class="m--2 l--1">
+			<div class="demo">18</div>
+		</div>
+    <div class="m--2 l--2">
+			<div class="demo">19</div>
+		</div>
+    <div class="m--2 l--full">
+			<div class="demo">20</div>
+		</div>
+	</section>
+
+  <section class="row">
+    <div class="m--full">
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+      <p><a href="#">This is a regular link</a></p>
+      <p><strong>Strong is used to indicate strong importance</strong></p>
+      <p><em>This text has added emphasis</em></p>
+      <p>The <b>b element</b> is stylistically different text from normal text, without any special importance</p>
+      <p>The <i>i element</i> is text that is set off from the normal text</p>
+      <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
+      <p><del>This text is deleted</del> and <ins>This text is inserted</ins></p>
+      <p><s>This text has a strikethrough</s></p>
+      <p>Superscript<sup>®</sup></p>
+      <p>Subscript for things like H<sub>2</sub>O</p>
+      <p><small>This small text is small for for fine print, etc.</small></p>
+      <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+      <p>Keybord input: <kbd>Cmd</kbd></p>
+      <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q></p>
+      <p><cite>This is a citation</cite></p>
+      <p>The <dfn>dfn element</dfn> indicates a definition.</p>
+      <p>The <mark>mark element</mark> indicates a highlight</p>
+      <p><code>This is what inline code looks like.</code></p>
+      <p><pre><code>This is what inline code looks like.</code></pre></p>
+      <p><samp>This is sample output from a computer program</samp></p>
+      <p>The <var>variarble element</var>, such as <var>x</var> = <var>y</var></p>
+      <figure>
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Player</th>
+              <th class="text-right">G</th>
+              <th class="text-right">A</th>
+              <th class="text-right">P</th>
+              <th class="text-right">+/-</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>40</td>
+              <td>H. Zetterberg (C)</td>
+              <td class="text-right">13</td>
+              <td class="text-right">37</td>
+              <td class="text-right">50</td>
+              <td class="text-right">-15</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>P. Datsyuk</td>
+              <td class="text-right">16</td>
+              <td class="text-right">33</td>
+              <td class="text-right">49</td>
+              <td class="text-right">7</td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>T. Tatar</td>
+              <td class="text-right">21</td>
+              <td class="text-right">24</td>
+              <td class="text-right">45</td>
+              <td class="text-right">4</td>
+            </tr>
+            <tr>
+              <td>71</td>
+              <td>D. Larkin</td>
+              <td class="text-right">23</td>
+              <td class="text-right">22</td>
+              <td class="text-right">45</td>
+              <td class="text-right">11</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>G. Nyquist</td>
+              <td class="text-right">17</td>
+              <td class="text-right">26</td>
+              <td class="text-right">43</td>
+              <td class="text-right">-2</td>
+            </tr>
+          </tbody>
+        </table>
+        <figcaption>
+          Detroit Red Wings team leaders through 82 games, 2015-2016 season.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<script src="//code.jquery.com/jquery-2.2.4.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js" defer></script>
+<script>
+  function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "js/index.min.js";
+    document.body.appendChild(element);
+  }
+  if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+  else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+  else window.onload = downloadJSAtOnload;
+</script>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'huh6mpu',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-84586441-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
