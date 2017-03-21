@@ -32,14 +32,13 @@ Header set Connection keep-alive
 # Cache-control headers
 
   # 2 WEEKS
-  <filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|swf)$">
+  <filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|swf|svg)$">
     Header set Cache-Control "max-age=1209600, public"
   </filesMatch>
 
   # 1 DAY
   <filesMatch "\.(css)$">
     Header set Cache-Control "max-age=86400, public, must-revalidate"
-    #Header set Cache-Control "max-age=0, public, must-revalidate"
   </filesMatch>
 
   # 2 DAYS
