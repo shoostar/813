@@ -6,6 +6,15 @@
 # enable awesome urls
   RewriteEngine on
 
+# https/http www -> https non-www
+  RewriteBase /
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# http non-www -> https non-www
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
 <ifModule mod_gzip.c>
   mod_gzip_on Yes
   mod_gzip_dechunk Yes
