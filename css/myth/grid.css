@@ -19,7 +19,7 @@ main {
   margin: 0 auto;
 }
   @media screen and (min-width: 800px) {
-    .row { width: 81.3%; }
+    .row { width: 81.3%; max-width: 50em; }
     /*.row-full { padding-left: calc(9.35% + (var(--gridpadding)/2)); padding-right: calc(9.35% + (var(--gridpadding)/2)); }*/
   }
 [class*='w--'] {
