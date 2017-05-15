@@ -1,30 +1,30 @@
-nav {
+header nav {
   position: relative;
   z-index: 100;
   text-align: left;
 }
   @media screen and (min-width: 1200px) {
-    nav {
+    header nav {
       text-align: right;
     }
   }
-  nav a {
+  header nav a {
     display: inline-block;
     border-bottom: none !important;
     color: color(var(--black) tint(100%));
     font-weight: 500;
   }
-    nav a:hover {
+    header nav a:hover {
       color: color(var(--white) alpha(20%));
     }
-    nav a:not(:first-child) {
+    header nav a:not(:first-child) {
       margin-left: 1em;
     }
       .active-page {
         display: none;
         backface-visibility: hidden;
       }
-    nav a::after {
+    header nav a::after {
       content: '';
       display: block;
       width: 0;
@@ -35,6 +35,6 @@ nav {
       z-index: -1;
       transition: width 0.15s ease-in-out;
     }
-      nav a:hover::after {
+      header nav a:hover::after {
         width: 100% !important;
       }

@@ -19,6 +19,15 @@ main {
 section {
   padding-bottom: calc(8.13 * var(--gridpadding));
 }
+article:not(:last-of-type) {
+  margin-bottom: calc(8.13 * var(--gridpadding));
+}
+  article nav {
+    margin-top: calc(8.13 * var(--gridpadding));
+  }
+    article nav a {
+      display: block;
+    }
 
 
 
