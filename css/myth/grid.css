@@ -36,7 +36,7 @@ main {
   .w--1of3 { width: calc(50% - var(--gridpadding));          }
   .w--2of5 { width: calc(50% - var(--gridpadding));          }
   .w--1of2 { width: calc(50% - var(--gridpadding));          }
-  .w--3of5 { width: calc(50% - var(--gridpadding));          }
+  .w--3of5 { width: calc(100% - var(--gridpadding));         }
   .w--2of3 { width: calc(50% - var(--gridpadding));          }
   .w--3of4 { width: calc(100% - var(--gridpadding));         }
   .w--4of5 { width: calc(100% - var(--gridpadding));         }
@@ -88,4 +88,3 @@ main {
 .no-pad        { padding: 0 !important;         }
 .pinned        { flex-grow: 0 !important;       }
 .blimped       { flex-grow: 1 !important;       }
-.bottomed      { align-items: flex-end;         }
